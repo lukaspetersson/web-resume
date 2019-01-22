@@ -21,7 +21,7 @@ function Contact(props){
         <div className="Contact">
             <div className="email">
                 <img src={email_logo}/>
-                <p>Lukas.petersson.1999@gmail.com</p>
+                <p>Lukas.Petersson.1999@gmail.com</p>
             </div>
             <div className="phone">
                 <img src={phone_logo}/>
