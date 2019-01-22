@@ -1,9 +1,10 @@
 import React from 'react';
-import './style.css';
-import profilePic from "./img/person.png"
-import email_logo from "./img/email_logo.png"
-import phone_logo from "./img/phone_logo.png"
-import linkedin_logo from "./img/linkedin_logo.png"
+import './FrontPage.css';
+import profilePic from "./../img/person.png"
+import email_logo from "./../img/email_logo.png"
+import phone_logo from "./../img/phone_logo.png"
+import linkedin_logo from "./../img/linkedin_logo.png"
+import github_logo from "./../img/github_logo.png"
 
 function Me(props){
     return (
@@ -29,6 +30,10 @@ function Contact(props){
             <div className="linked_in">
                 <img src={linkedin_logo}/>
                 <p >Lukas Petersson</p>
+            </div>
+            <div className="github">
+                <img src={github_logo}/>
+                <p >LukasPetersson</p>
             </div>
         </div>
     )

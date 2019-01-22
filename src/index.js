@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.css';
-import FrontPage from './FrontPage';
+import FrontPage from './components/FrontPage';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<FrontPage />, document.getElementById('root'));
