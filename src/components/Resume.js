@@ -19,8 +19,9 @@ function Me(props){
 function Contact(props){
     return (
         <div className="Contact">
+            <h3>Contact</h3>
             <div className="email">
-                <img src={email_logo}/>
+                <img src={email_logo}></img>
                 <p>Lukas.Petersson.1999@gmail.com</p>
             </div>
             <div className="phone">
