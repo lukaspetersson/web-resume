@@ -1,7 +1,9 @@
 import React from 'react';
 import './Resume.css';
 import profilePic from "./../img/person.png"
-import football_logo from "./../img/football.png"
+import football_logo from "./../img/football_logo.png"
+import code_logo from "./../img/code_logo.png"
+import politics_logo from "./../img/politics_logo.png"
 import ContactResume from "./ContactResume.js";
 
 function Me(props){
@@ -19,8 +21,8 @@ function Hobbies(props){
         <div className="Hobbies">
             <h3>Hobbies</h3>
             <img src={football_logo}/>
-            <img src={football_logo}/>
-            <img src={football_logo}/>
+            <img src={code_logo}/>
+            <img src={politics_logo}/>
         </div>
     )
 }
@@ -41,7 +43,7 @@ class Resume extends React.Component {
     }
     render() {
         return (
-            <div className="paper" >
+            <div>
                 <div className="left_side" >
                     <div onClick={this.moveTo} >
                         <Me />

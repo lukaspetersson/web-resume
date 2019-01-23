@@ -14,7 +14,9 @@ class FrontPage extends React.Component {
     render() {
         return (
             <div>
-                <Resume/>
+                <div className="paper">
+                    <Resume/>
+                </div>
                 <MeSection/>
             </div>
 
