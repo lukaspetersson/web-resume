@@ -47,3 +47,12 @@
     width: 32px;
     margin: 0px 4px;
 }
+
+.right_side{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 150px;
+    color:#00AEC3;
+}

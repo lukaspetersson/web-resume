@@ -5,6 +5,7 @@ import football_logo from "./../img/football_logo.png"
 import code_logo from "./../img/code_logo.png"
 import politics_logo from "./../img/politics_logo.png"
 import ContactResume from "./ContactResume.js";
+import ExperianceResume from "./ExperianceResume.js";
 
 function Me(props){
     return (
@@ -35,6 +36,23 @@ function hej(){
 class Resume extends React.Component {
     constructor(props){
             super(props)
+            this.state = {
+                education:{
+                    title:"Education",
+                    examples: [{
+                        name: "Engelska Skolan",
+                        year: "-2015",
+                    },
+                    {
+                        name: "Kungsholmens gymnasium",
+                        year: "2015-2018"
+                    },
+                    {
+                        name: "IGCSE",
+                        year: "2014-2015"
+                    }]
+                }
+            }
         this.moveTo = this.moveTo.bind(this)
     }
 
@@ -53,6 +71,11 @@ class Resume extends React.Component {
                     </div>
                     <div onClick={this.moveTo} >
                         <Hobbies />
+                    </div>
+                </div>
+                <div className="right_side" >
+                    <div onClick={this.moveTo} >
+                        <ExperianceResume info = {this.state.education}/>
                     </div>
                 </div>
             </div>
