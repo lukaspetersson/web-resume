@@ -24,34 +24,3 @@
     background-color: white;
     margin-top: 30px;
 }
-
-.Contact{
-    position: absolute;
-    display: block;
-    top:265px;
-    left:0;
-    width: 150px;
-    background-color: #00AEC3;
-    color: white;
-}
-.Contact div{
-    position: relative;
-    display: block;
-}
-
-.Contact img{
-    display: inline-block;
-    position: relative;
-    width: 32px;
-    margin: 10px;
-}
-.Contact h3{
-    padding: 10px;
-    background-color: #375A63;
-    color: #00AEC3;
-}
-
-.Contact p{
-    position: relative;
-    font-size: 10px;
-}
