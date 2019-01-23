@@ -16,28 +16,69 @@ function Me(props){
     )
 }
 
-function Contact(props){
-    return (
-        <div className="Contact">
-            <h3>Contact</h3>
-            <div className="email">
-                <img src={email_logo}></img>
-                <p>Lukas.Petersson.1999@gmail.com</p>
+
+class Contact extends React.Component {
+    constructor(props){
+            super(props)
+            this.state = {
+                contactDetails:"Lukas.Petersson.1999@gmail.com",
+                emailStyle:{
+                    height:"50px",
+                    width:"50px",
+                },
+                phoneStyle:{
+                  height:"32px",
+                  width:"32px",
+                }
+            }
+        this.contactText = this.contactText.bind(this)
+    }
+
+    contactText(text){
+        if ( text == "email"){
+            this.setState({
+                contactDetails:"Lukas.Petersson.1999@gmail.com",
+                emailStyle:{
+                    height:"50px",
+                    width:"50px",
+                },
+                phoneStyle:{
+                  height:"32px",
+                  width:"32px",
+                }
+            });
+        }
+        else if(text == "phone"){
+            this.setState({
+                contactDetails:"0707898860",
+                emailStyle:{
+                    height:"32px",
+                    width:"32px",
+                },
+                phoneStyle:{
+                  height:"50px",
+                  width:"50px",
+                }
+            });
+        }
+    }
+
+    render() {
+        return (
+            <div className="Contact">
+                <h3>Contact</h3>
+                <p>{this.state.contactDetails}</p>
+                <div className="personal">
+                    <img src={email_logo} style = {this.state.emailStyle} onClick={() => this.contactText("email")}/>
+                    <img src={phone_logo} style = {this.state.phoneStyle} onClick={() => this.contactText("phone")}/>
+                </div>
+                <div className="social_media">
+                    <img src={linkedin_logo} onClick={function(event){  window.open("https://www.linkedin.com/in/lukas-petersson-181a83172/");}}/>
+                    <img src={github_logo} onClick={function(event){ window.open("https://github.com/lukaspetersson");}}/>
+                </div>
             </div>
-            <div className="phone">
-                <img src={phone_logo}/>
-                <p>0707898860</p>
-            </div>
-            <div className="linked_in">
-                <img src={linkedin_logo}/>
-                <p >Lukas Petersson</p>
-            </div>
-            <div className="github">
-                <img src={github_logo}/>
-                <p >LukasPetersson</p>
-            </div>
-        </div>
-    )
+        );
+    }
 }
 
 function hej(){

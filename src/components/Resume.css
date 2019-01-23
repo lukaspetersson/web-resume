@@ -5,7 +5,6 @@
     width: 150px;
     height: 265px;
     background-color: #00AEC3;
-
 }
 
 .name{
@@ -14,8 +13,7 @@
 }
 .profession{
     padding: 10px;
-    background-color: #375A63;
-    color: #00AEC3;
+    color: #375A63;
 
 }
 .profilePic{
@@ -38,15 +36,22 @@
 }
 .Contact div{
     position: relative;
+    display: block;
 }
 
 .Contact img{
-    
-    width: 24px;
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    margin: 10px;
+}
+.Contact h3{
+    padding: 10px;
+    background-color: #375A63;
+    color: #00AEC3;
 }
 
 .Contact p{
     position: relative;
-
     font-size: 10px;
 }
