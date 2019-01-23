@@ -1,7 +1,10 @@
-.Me{
+.left_side{
     position: absolute;
     top:0;
     left:0;
+}
+
+.Me{
     width: 150px;
     height: 265px;
     background-color: #00AEC3;

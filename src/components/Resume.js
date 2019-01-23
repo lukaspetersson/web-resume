@@ -1,6 +1,7 @@
 import React from 'react';
 import './Resume.css';
 import profilePic from "./../img/person.png"
+import football_logo from "./../img/football.png"
 import ContactResume from "./ContactResume.js";
 
 function Me(props){
@@ -9,6 +10,17 @@ function Me(props){
             <img className="profilePic" src={profilePic}/>
             <p className="name">Lukas Petersson</p>
             <p className="profession">App and Web Developer</p>
+        </div>
+    )
+}
+
+function Hobbies(props){
+    return (
+        <div className="Hobbies">
+            <h3>Hobbies</h3>
+            <img src={football_logo}/>
+            <img src={football_logo}/>
+            <img src={football_logo}/>
         </div>
     )
 }
@@ -30,11 +42,16 @@ class Resume extends React.Component {
     render() {
         return (
             <div className="paper" >
-                <div onClick={this.moveTo} >
-                    <Me />
-                </div>
-                <div onClick={this.moveTo} >
-                    <ContactResume />
+                <div className="left_side" >
+                    <div onClick={this.moveTo} >
+                        <Me />
+                    </div>
+                    <div onClick={this.moveTo} >
+                        <ContactResume />
+                    </div>
+                    <div onClick={this.moveTo} >
+                        <Hobbies />
+                    </div>
                 </div>
             </div>
         );
