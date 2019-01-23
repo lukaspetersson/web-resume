@@ -1,4 +1,19 @@
-span{
-    font-size: 10px;
+li{
+    padding-left: 0;
+}
+.name{
+    font-size: 13px;
     float:left;
+}
+.year{
+    font-size: 13px;
+    float:right;
+}
+.boder{
+    width: 80%;
+    height: 100%;
+    border-bottom: 1px solid #375A63;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
