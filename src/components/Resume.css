@@ -5,6 +5,7 @@
     bottom: 0;
     right: 270px;
     background-color: #00AEC3;
+    color:white;
 }
 .left_side div{
     display: block;
@@ -13,15 +14,14 @@
 .Me{
     width: 150px;
     height: 265px;
+    background-color: #375A63;
 
 }
 
 .name{
-    color: #375A63;
     font-size: 20px;
 }
 .profession{
-    color: #375A63;
 
 }
 .profilePic{
