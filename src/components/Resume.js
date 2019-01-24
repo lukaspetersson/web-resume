@@ -66,6 +66,45 @@ class Resume extends React.Component {
                         name: "BookLog",
                         year: "2018-2019",
                     }]
+                },
+                web:{
+                    title:"Web and Robots",
+                    examples: [{
+                        name: "Ericsson",
+                        year: " Jan 2019 - now"
+                    },
+                    {
+                        name: "Digital Edge",
+                        year: "Nov 2018 - now"
+                    }]
+                },
+                service:{
+                    title:"Service",
+                    examples: [{
+                        name: "Abbekås hamnkrog",
+                        year: "summer 2015 + 2016"
+                    },
+                    {
+                        name: "Drottningholms GK",
+                        year: "2015 - 2017"
+                    },
+                    {
+                        name: "Bedinge GK",
+                        year: "summer 2015 + 2016"
+                    },
+                    {
+                        name: "TUI",
+                        year: "summer 2018"
+                    },
+                    {
+                        name: "Hemköp",
+                        year: "Oct-Nov 2018"
+                    },
+                    {
+                        name: "IESB",
+                        year: "Oct-Nov 2018"
+                    },
+                    ]
                 }
             }
         this.moveTo = this.moveTo.bind(this)
@@ -90,10 +129,16 @@ class Resume extends React.Component {
                 </div>
                 <div className="right_side" >
                     <div onClick={this.moveTo} >
+                        <ExperianceResume info = {this.state.education}/>
+                    </div>
+                    <div onClick={this.moveTo} >
                         <ExperianceResume info = {this.state.apps}/>
                     </div>
                     <div onClick={this.moveTo} >
-                        <ExperianceResume info = {this.state.education}/>
+                        <ExperianceResume info = {this.state.web}/>
+                    </div>
+                    <div onClick={this.moveTo} >
+                        <ExperianceResume info = {this.state.service}/>
                     </div>
                 </div>
             </div>

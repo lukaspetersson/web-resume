@@ -7,11 +7,11 @@ class ExperianceResume extends React.Component {
     }
 
     render() {
-        let schools=[]
-        for(let i=0; i < 3 ; i++){
-          schools.push(
+        let examples=[]
+        for(let i=0; i < this.props.info.examples.length ; i++){
+          examples.push(
               <li>
-                <span className="title">{this.props.info.examples[i].name}</span>
+                <span className="type">{this.props.info.examples[i].name}</span>
                 <span className="year">{this.props.info.examples[i].year}</span>
               </li>
           )
@@ -19,7 +19,7 @@ class ExperianceResume extends React.Component {
         return (
             <div className="Experiance">
                 <p>{this.props.info.title}</p>
-                <ul>{schools}</ul>
+                <ul>{examples}</ul>
                 <div className="boder"></div>
             </div>
         );
