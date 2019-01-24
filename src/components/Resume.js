@@ -20,7 +20,7 @@ function Me(props){
 function Hobbies(props){
     return (
         <div className="Hobbies">
-            <h3>Hobbies</h3>
+            <h2>Hobbies</h2>
             <img src={football_logo}/>
             <img src={code_logo}/>
             <img src={politics_logo}/>

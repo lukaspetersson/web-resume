@@ -19,11 +19,11 @@
 
 .name{
     display: block;
-    font-size: 20px;
+    font-size: 25px;
 }
 .profession{
     display: block;
-    font-size: 18px;
+    font-size: 20px;
 }
 .profilePic{
     width: 150px;
@@ -35,10 +35,10 @@
 }
 
 .Hobbies{
-    margin-top: 345px;
+    margin-top: 240px;
 }
 
-.Hobbies h3{
+.Hobbies h2{
     padding: 10px;
     background-color: #375A63;
     color: #00AEC3;

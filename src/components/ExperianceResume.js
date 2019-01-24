@@ -16,7 +16,9 @@ class ExperianceResume extends React.Component {
                     <span className="type">{this.props.info.examples[i].name}</span>
                     <span className="year">{this.props.info.examples[i].year}</span>
                   </div>
+                  <br/>
                      <div className="description">{this.props.info.examples[i].description}</div>
+                     <br/><br/>
                   </li>
               )
           }else{
@@ -24,6 +26,7 @@ class ExperianceResume extends React.Component {
                   <li>
                     <span className="type">{this.props.info.examples[i].name}</span>
                     <span className="year">{this.props.info.examples[i].year}</span>
+                    <br/>
                   </li>
               )
           }

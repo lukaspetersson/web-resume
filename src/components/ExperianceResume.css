@@ -4,6 +4,7 @@ ul{
     margin-top: -10px;
     width: 83%;
     color:gray;
+    list-style: none;
 }
 .item{
     display: block;
@@ -12,9 +13,10 @@ ul{
     font-size: 20px;
 }
 .description{
-    padding-left: 10px;
-    font-size: 13px;
+    padding-left: 15px;
+    font-size: 14px;
     display: block;
+    float: left;
 }
 
 .type{

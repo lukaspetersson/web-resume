@@ -11,8 +11,8 @@ class ContactResume extends React.Component {
             this.state = {
                 contactDetails:"Lukas.Petersson.1999@gmail.com",
                 emailStyle:{
-                    height:"72px",
-                    width:"72px",
+                    height:"64px",
+                    width:"64px",
                 },
                 phoneStyle:{
                   height:"48px",
@@ -27,12 +27,12 @@ class ContactResume extends React.Component {
             this.setState({
                 contactDetails:"Lukas.Petersson.1999@gmail.com",
                 emailStyle:{
-                    height:"72px",
-                    width:"72px",
+                    height:"64px",
+                    width:"64px",
                 },
                 phoneStyle:{
-                  height:"48px",
-                  width:"48px",
+                  height:"40px",
+                  width:"40px",
                 }
             });
         }
@@ -40,12 +40,12 @@ class ContactResume extends React.Component {
             this.setState({
                 contactDetails:"0707898860",
                 emailStyle:{
-                    height:"48px",
-                    width:"48px",
+                    height:"40px",
+                    width:"40px",
                 },
                 phoneStyle:{
-                  height:"72px",
-                  width:"72px",
+                  height:"64px",
+                  width:"64px",
                 }
             });
         }
@@ -54,7 +54,7 @@ class ContactResume extends React.Component {
     render() {
         return (
             <div className="Contact">
-                <h3>Contact</h3>
+                <h2>Contact</h2>
                 <p>{this.state.contactDetails}</p>
                 <div className="personal">
                     <img src={email_logo} style = {this.state.emailStyle} onClick={() => this.contactText("email")}/>
