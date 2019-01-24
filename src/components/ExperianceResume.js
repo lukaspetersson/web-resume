@@ -11,7 +11,7 @@ class ExperianceResume extends React.Component {
         for(let i=0; i < 3 ; i++){
           schools.push(
               <li>
-                <span className="name">{this.props.info.examples[i].name}</span>
+                <span className="title">{this.props.info.examples[i].name}</span>
                 <span className="year">{this.props.info.examples[i].year}</span>
               </li>
           )

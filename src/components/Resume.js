@@ -44,12 +44,27 @@ class Resume extends React.Component {
                         year: "-2015",
                     },
                     {
-                        name: "Kungsholmens gymnasium",
-                        year: "2015-2018"
-                    },
-                    {
                         name: "IGCSE",
                         year: "2014-2015"
+                    },
+                    {
+                        name: "Kungsholmens gymnasium",
+                        year: "2015-2018"
+                    }]
+                },
+                apps:{
+                    title:"Mobile Apps",
+                    examples: [{
+                        name: "Brännbollräknare",
+                        year: "2018"
+                    },
+                    {
+                        name: "Falling Kitten",
+                        year: "2018"
+                    },
+                    {
+                        name: "BookLog",
+                        year: "2018-2019",
                     }]
                 }
             }
@@ -74,6 +89,9 @@ class Resume extends React.Component {
                     </div>
                 </div>
                 <div className="right_side" >
+                    <div onClick={this.moveTo} >
+                        <ExperianceResume info = {this.state.apps}/>
+                    </div>
                     <div onClick={this.moveTo} >
                         <ExperianceResume info = {this.state.education}/>
                     </div>

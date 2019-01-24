@@ -15,14 +15,15 @@
     width: 150px;
     height: 265px;
     background-color: #375A63;
-
 }
 
 .name{
+    display: block;
     font-size: 20px;
 }
 .profession{
-
+    display: block;
+    font-size: 18px;
 }
 .profilePic{
     width: 100px;
