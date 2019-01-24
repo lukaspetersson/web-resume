@@ -1,3 +1,15 @@
+.body{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-size: 100vw 970px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+}
+
 .paper{
   /* layout */
   position: relative;
@@ -6,6 +18,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-top: 100px;
 
   /* design */
   border: 1px solid #375A63;

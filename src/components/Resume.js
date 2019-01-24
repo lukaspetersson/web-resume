@@ -44,7 +44,7 @@ class Resume extends React.Component {
                         year: "-2015",
                     },
                     {
-                        name: "IGCSE",
+                        name: "Cambridge IGCSE",
                         year: "2014-2015"
                     },
                     {
@@ -71,12 +71,12 @@ class Resume extends React.Component {
                     title:"Web and Robots",
                     examples: [{
                         name: "Ericsson",
-                        description: "internship as web developer",
+                        description: "Internship as web developer",
                         year: "Jan 2019 - now"
                     },
                     {
                         name: "Digital Edge",
-                        description: "consultant developer for web and robotics",
+                        description: "Consultant developer for web and robotics",
                         year: "Nov 2018 - now"
                     }]
                 },
@@ -103,7 +103,7 @@ class Resume extends React.Component {
                         year: "Oct-Nov 2018"
                     },
                     {
-                        name: "IESB",
+                        name: "Internationella Engelska Skolan",
                         year: "Oct-Nov 2018"
                     },
                     ]
