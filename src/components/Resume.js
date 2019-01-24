@@ -123,12 +123,19 @@ class Resume extends React.Component {
                         year: "Mar 2018"
                     },]
                 },
+                fromChild: "HEJ"
             }
+            this.myRef = React.createRef();
         this.moveTo = this.moveTo.bind(this)
+        this.hejsan = this.hejsan.bind(this)
     }
 
     moveTo(){
         window.scrollBy(0, 110);
+    }
+    hejsan(){
+        const node = this.myRef.current;
+        node.innerHTML = this.state.fromChild+"";
     }
     render() {
         return (
@@ -157,7 +164,7 @@ class Resume extends React.Component {
                     <div onClick={this.moveTo} >
                         <ExperianceResume info = {this.state.service}/>
                     </div>
-                    <div onClick={this.moveTo} >
+                    <div onClick={this.hejsan} ref={this.myRef}>
                         <ExperianceResume info = {this.state.other}/>
                     </div>
                 </div>
