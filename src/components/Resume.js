@@ -71,10 +71,12 @@ class Resume extends React.Component {
                     title:"Web and Robots",
                     examples: [{
                         name: "Ericsson",
-                        year: " Jan 2019 - now"
+                        description: "internship as web developer",
+                        year: "Jan 2019 - now"
                     },
                     {
                         name: "Digital Edge",
+                        description: "consultant developer for web and robotics",
                         year: "Nov 2018 - now"
                     }]
                 },
@@ -105,7 +107,22 @@ class Resume extends React.Component {
                         year: "Oct-Nov 2018"
                     },
                     ]
-                }
+                },
+                other:{
+                    title:"Other",
+                    examples: [{
+                        name: "Driver licence",
+                        year: "Mar 2017"
+                    },
+                    {
+                        name: "Erasmus +",
+                        year: "Oct 2017"
+                    },
+                    {
+                        name: "Unga forskare",
+                        year: "Mar 2018"
+                    },]
+                },
             }
         this.moveTo = this.moveTo.bind(this)
     }
@@ -139,6 +156,9 @@ class Resume extends React.Component {
                     </div>
                     <div onClick={this.moveTo} >
                         <ExperianceResume info = {this.state.service}/>
+                    </div>
+                    <div onClick={this.moveTo} >
+                        <ExperianceResume info = {this.state.other}/>
                     </div>
                 </div>
             </div>

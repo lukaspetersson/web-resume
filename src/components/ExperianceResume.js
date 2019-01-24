@@ -7,19 +7,31 @@ class ExperianceResume extends React.Component {
     }
 
     render() {
-        let examples=[]
+        let itmes=[]
         for(let i=0; i < this.props.info.examples.length ; i++){
-          examples.push(
-              <li>
-                <span className="type">{this.props.info.examples[i].name}</span>
-                <span className="year">{this.props.info.examples[i].year}</span>
-              </li>
-          )
+          if(this.props.info.examples[i].description){
+              itmes.push(
+                  <li>
+                  <div className="item">
+                    <span className="type">{this.props.info.examples[i].name}</span>
+                    <span className="year">{this.props.info.examples[i].year}</span>
+                  </div>
+                     <div className="description">{this.props.info.examples[i].description}</div>
+                  </li>
+              )
+          }else{
+              itmes.push(
+                  <li>
+                    <span className="type">{this.props.info.examples[i].name}</span>
+                    <span className="year">{this.props.info.examples[i].year}</span>
+                  </li>
+              )
+          }
         }
         return (
             <div className="Experiance">
-                <p>{this.props.info.title}</p>
-                <ul>{examples}</ul>
+                <p className="heading">{this.props.info.title}</p>
+                <ul>{itmes}</ul>
                 <div className="boder"></div>
             </div>
         );

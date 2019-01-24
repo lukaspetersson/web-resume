@@ -1,9 +1,9 @@
 .Contact{
     position: absolute;
     display: block;
-    top:265px;
+    top:397.5px;
     left:0;
-    width: 150px;
+    width: 225px;
     background-color: #00AEC3;
     color: white;
 }
@@ -15,7 +15,7 @@
 .Contact img{
     display: inline-block;
     position: relative;
-    width: 32px;
+    width: 48px;
     margin: 10px;
 }
 .Contact h3{

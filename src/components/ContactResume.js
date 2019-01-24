@@ -11,12 +11,12 @@ class ContactResume extends React.Component {
             this.state = {
                 contactDetails:"Lukas.Petersson.1999@gmail.com",
                 emailStyle:{
-                    height:"50px",
-                    width:"50px",
+                    height:"72px",
+                    width:"72px",
                 },
                 phoneStyle:{
-                  height:"32px",
-                  width:"32px",
+                  height:"48px",
+                  width:"48px",
                 }
             }
         this.contactText = this.contactText.bind(this)
@@ -27,12 +27,12 @@ class ContactResume extends React.Component {
             this.setState({
                 contactDetails:"Lukas.Petersson.1999@gmail.com",
                 emailStyle:{
-                    height:"50px",
-                    width:"50px",
+                    height:"72px",
+                    width:"72px",
                 },
                 phoneStyle:{
-                  height:"32px",
-                  width:"32px",
+                  height:"48px",
+                  width:"48px",
                 }
             });
         }
@@ -40,12 +40,12 @@ class ContactResume extends React.Component {
             this.setState({
                 contactDetails:"0707898860",
                 emailStyle:{
-                    height:"32px",
-                    width:"32px",
+                    height:"48px",
+                    width:"48px",
                 },
                 phoneStyle:{
-                  height:"50px",
-                  width:"50px",
+                  height:"72px",
+                  width:"72px",
                 }
             });
         }
