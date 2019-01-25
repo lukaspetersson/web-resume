@@ -1,16 +1,8 @@
 import React from 'react';
 import './FrontPage.css';
 import Resume from './Resume.js'
+import MeSection from './MeSection.js'
 import kid from "./../img/kid.jpg"
-import owl from "./../img/owl.jpg"
-
-function MeSection(props){
-    return (
-        <div>
-            <p>Lukas Petersson</p>
-        </div>
-    )
-}
 
 class FrontPage extends React.Component {
     constructor(props){
@@ -20,7 +12,7 @@ class FrontPage extends React.Component {
                     backgroundImage :"url(" + kid + ")",
                 },
             }
-                    this.handleData = this.handleData.bind(this);
+            this.handleData = this.handleData.bind(this);
         }
     handleData(data) {
         this.setState({
@@ -31,13 +23,19 @@ class FrontPage extends React.Component {
     }
     render() {
         return (
-            <div style = {this.state.backgroundStyle} className="body">
-                <div className="paper" >
-                    <Resume handlerFromParent={this.handleData}/>
+            <div className="body">
+                <div style = {this.state.backgroundStyle} className="Resume">
+                    <div className="paper" >
+                        <Resume handlerFromParent={this.handleData}/>
+                    </div>
                 </div>
-                <MeSection/>
-            </div>
+                <div className="MeSection">
+                    <div >
+                        <MeSection/>
+                    </div>
+                </div>
 
+            </div>
         );
     }
 }

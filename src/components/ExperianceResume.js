@@ -5,9 +5,6 @@ class ExperianceResume extends React.Component {
     constructor(props){
             super(props)
     }
-    hejsan(){
-        this.props.handlerFromParent(this.state.hej);
-    }
 
     render() {
         let itmes=[]
@@ -27,7 +24,7 @@ class ExperianceResume extends React.Component {
           }else{
               itmes.push(
                   <li>
-                    <span onClick={this.hejsan} className="type">{this.props.info.examples[i].name}</span>
+                    <span className="type">{this.props.info.examples[i].name}</span>
                     <span className="year">{this.props.info.examples[i].year}</span>
                     <br/>
                   </li>

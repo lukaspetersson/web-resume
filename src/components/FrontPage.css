@@ -5,6 +5,15 @@
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+}
+
+.Resume{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 970px;
+    overflow-x: hidden;
     background-size: 100vw 970px;
     background-attachment: local;
     background-repeat: no-repeat;
@@ -24,4 +33,12 @@
   /* design */
   border: 1px solid #375A63;
   background-color: white;
+}
+
+.MeSection{
+    position: absolute;
+    top:970px;
+    left:0;
+    width: 100vw;
+    height: 970px;
 }
