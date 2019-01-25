@@ -9,7 +9,7 @@ class MeSection extends React.Component {
     render() {
         return (
 
-            <p className="Metest">kköl</p>
+            <p className="Metest">me</p>
         );
     }
 }

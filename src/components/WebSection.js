@@ -9,7 +9,7 @@ class WebSection extends React.Component {
     render() {
         return (
 
-            <p className="Metest">kköl</p>
+            <p className="Metest">web</p>
         );
     }
 }

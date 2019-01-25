@@ -9,7 +9,7 @@ class ServiceSection extends React.Component {
     render() {
         return (
 
-            <p className="Metest">kköl</p>
+            <p className="Metest">service</p>
         );
     }
 }

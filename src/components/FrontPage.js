@@ -1,12 +1,13 @@
 import React from 'react';
 import './FrontPage.css';
 import Resume from './Resume.js'
-import WelcomeSection from './MeSection.js'
+import WelcomeSection from './WelcomeSection.js'
 import MeSection from './MeSection.js'
-import WebSection from './MeSection.js'
-import AppsSection from './MeSection.js'
-import ServiceSection from './MeSection.js'
+import WebSection from './WebSection.js'
+import AppsSection from './AppsSection.js'
+import ServiceSection from './ServiceSection.js'
 import kid from "./../img/kid.jpg"
+import scrollToComponent from 'react-scroll-to-component';
 
 class FrontPage extends React.Component {
     constructor(props){
@@ -17,6 +18,8 @@ class FrontPage extends React.Component {
                 },
             }
             this.handleData = this.handleData.bind(this);
+            this.handleScroll = this.handleScroll.bind(this);
+            this.bodyRef = React.createRef();
         }
     handleData(data) {
         this.setState({
@@ -24,20 +27,41 @@ class FrontPage extends React.Component {
                 backgroundImage :"url(" + data + ")",
             }
         });
-
-        window.scrollTo(0, 110)
+    }
+    handleScroll(data) {
+        const body = this.bodyRef.current;
+        switch(data) {
+          case "welcome":
+            body.scrollTo(0, 0);
+            break;
+          case "me":
+            body.scrollTo(0, 1400);
+            break;
+          case "web":
+            body.scrollTo(0, 1900);
+            break;
+          case "apps":
+            body.scrollTo(0, 2400);
+            break;
+          case "service":
+            body.scrollTo(0, 2900);
+            break;
+          case "other":
+            body.scrollTo(0, 0);
+            break;
+        }
     }
     render() {
         return (
-            <div className="body">
+            <div className="body" ref={this.bodyRef}>
                 <div className="WelcomeSection">
                     <div >
-                        <WelcomeSection/>
+                        <WelcomeSection />
                     </div>
                 </div>
                 <div style = {this.state.backgroundStyle} className="Resume">
-                    <div className="paper" >
-                        <Resume handlerFromParent={this.handleData}/>
+                    <div className="paper">
+                        <Resume handlerFromParent={this.handleData} scrollfromParent={this.handleScroll}/>
                     </div>
                 </div>
                 <div className="MeSection">

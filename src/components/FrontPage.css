@@ -5,6 +5,7 @@
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    overflow:auto;
 }
 
 .WelcomeSection{
@@ -23,6 +24,7 @@
     background-attachment: local;
     background-repeat: no-repeat;
     transition: background 1s linear;
+    overflow:auto;
 }
 
 .paper{

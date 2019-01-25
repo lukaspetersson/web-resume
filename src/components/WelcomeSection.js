@@ -9,7 +9,7 @@ class WelcomeSection extends React.Component {
     render() {
         return (
 
-            <p className="Metest">kköl</p>
+            <p className="Metest">welcome</p>
         );
     }
 }
