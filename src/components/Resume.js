@@ -167,7 +167,7 @@ class Resume extends React.Component {
                     <div onMouseEnter={() => this.props.handlerFromParent(service)} onClick={() => this.props.scrollfromParent("service")}>
                         <ExperianceResume info = {this.state.service}/>
                     </div>
-                    <div onMouseEnter={() => this.props.handlerFromParent(erasmus)} onClick={() => this.props.scrollfromParent("other")}>
+                    <div onMouseEnter={() => this.props.handlerFromParent(erasmus)} onClick={() => this.props.scrollfromParent("me")}>
                         <ExperianceResume info = {this.state.other}/>
                     </div>
                 </div>

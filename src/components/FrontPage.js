@@ -35,19 +35,16 @@ class FrontPage extends React.Component {
             body.scrollTo(0, 0);
             break;
           case "me":
-            body.scrollTo(0, 1400);
+            body.scrollTo(0, 1500);
             break;
           case "web":
-            body.scrollTo(0, 1900);
+            body.scrollTo(0, 2000);
             break;
           case "apps":
-            body.scrollTo(0, 2400);
+            body.scrollTo(0, 2500);
             break;
           case "service":
-            body.scrollTo(0, 2900);
-            break;
-          case "other":
-            body.scrollTo(0, 0);
+            body.scrollTo(0, 3000);
             break;
         }
     }
