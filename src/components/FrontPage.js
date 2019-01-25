@@ -20,12 +20,20 @@ class FrontPage extends React.Component {
                     backgroundImage :"url(" + kid + ")",
                 },
             }
+                    this.handleData = this.handleData.bind(this);
         }
+    handleData(data) {
+        this.setState({
+            backgroundStyle:{
+                backgroundImage :"url(" + data + ")",
+            }
+        });
+    }
     render() {
         return (
             <div style = {this.state.backgroundStyle} className="body">
-                <div className="paper">
-                    <Resume/>
+                <div className="paper" >
+                    <Resume handlerFromParent={this.handleData}/>
                 </div>
                 <MeSection/>
             </div>

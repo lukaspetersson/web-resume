@@ -6,6 +6,13 @@ import code_logo from "./../img/code_logo.png"
 import politics_logo from "./../img/politics_logo.png"
 import ContactResume from "./ContactResume.js";
 import ExperianceResume from "./ExperianceResume.js";
+import apps from "./../img/apps.jpg"
+import education from "./../img/education.jpg"
+import erasmus from "./../img/erasmus.jpg"
+import pepper from "./../img/pepper.jpg"
+import service from "./../img/service.jpg"
+import owl from "./../img/owl.jpg"
+
 
 function Me(props){
     return (
@@ -37,6 +44,7 @@ class Resume extends React.Component {
     constructor(props){
             super(props)
             this.state = {
+                image: owl,
                 education:{
                     title:"Education",
                     examples: [{
@@ -123,19 +131,13 @@ class Resume extends React.Component {
                         year: "Mar 2018"
                     },]
                 },
-                fromChild: "HEJ"
             }
-            this.myRef = React.createRef();
         this.moveTo = this.moveTo.bind(this)
-        this.hejsan = this.hejsan.bind(this)
+
     }
 
     moveTo(){
         window.scrollBy(0, 110);
-    }
-    hejsan(){
-        const node = this.myRef.current;
-        node.innerHTML = this.state.fromChild+"";
     }
     render() {
         return (
@@ -152,19 +154,19 @@ class Resume extends React.Component {
                     </div>
                 </div>
                 <div className="right_side" >
-                    <div onClick={this.moveTo} >
+                    <div onMouseEnter={() => this.props.handlerFromParent(education)} >
                         <ExperianceResume info = {this.state.education}/>
                     </div>
-                    <div onClick={this.moveTo} >
+                    <div onMouseEnter={() => this.props.handlerFromParent(apps)} >
                         <ExperianceResume info = {this.state.apps}/>
                     </div>
-                    <div onClick={this.moveTo} >
+                    <div onMouseEnter={() => this.props.handlerFromParent(pepper)} >
                         <ExperianceResume info = {this.state.web}/>
                     </div>
-                    <div onClick={this.moveTo} >
+                    <div onMouseEnter={() => this.props.handlerFromParent(service)} >
                         <ExperianceResume info = {this.state.service}/>
                     </div>
-                    <div onClick={this.hejsan} ref={this.myRef}>
+                    <div onMouseEnter={() => this.props.handlerFromParent(erasmus)}>
                         <ExperianceResume info = {this.state.other}/>
                     </div>
                 </div>

@@ -8,6 +8,7 @@
     background-size: 100vw 970px;
     background-attachment: local;
     background-repeat: no-repeat;
+    transition: background 0.5s linear;
 }
 
 .paper{

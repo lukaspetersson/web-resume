@@ -23,7 +23,7 @@ class ContactResume extends React.Component {
     }
 
     contactText(text){
-        if ( text == "email"){
+        if ( text === "email"){
             this.setState({
                 contactDetails:"Lukas.Petersson.1999@gmail.com",
                 emailStyle:{
@@ -36,7 +36,7 @@ class ContactResume extends React.Component {
                 }
             });
         }
-        else if(text == "phone"){
+        else if(text === "phone"){
             this.setState({
                 contactDetails:"0707898860",
                 emailStyle:{
