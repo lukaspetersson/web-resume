@@ -24,6 +24,8 @@ class FrontPage extends React.Component {
                 backgroundImage :"url(" + data + ")",
             }
         });
+
+        window.scrollTo(0, 110)
     }
     render() {
         return (

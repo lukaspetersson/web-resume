@@ -7,17 +7,22 @@
     overflow-x: hidden;
 }
 
+.WelcomeSection{
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    background-color: green;
+}
+
 .Resume{
-    position: absolute;
-    top:0;
-    left:0;
+    position: relative;
     width: 100vw;
     height: 970px;
     overflow-x: hidden;
     background-size: 100vw 970px;
     background-attachment: local;
     background-repeat: no-repeat;
-    transition: background 0.5s linear;
+    transition: background 1s linear;
 }
 
 .paper{
@@ -36,9 +41,26 @@
 }
 
 .MeSection{
-    position: absolute;
-    top:970px;
-    left:0;
+    position: relative;
     width: 100vw;
-    height: 970px;
+    height: 500px;
+    background-color: blue;
+}
+.WebSection{
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    background-color: green;
+}
+.AppsSection{
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    background-color: blue;
+}
+.ServiceSection{
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    background-color: green;
 }

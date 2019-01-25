@@ -12,6 +12,7 @@ import erasmus from "./../img/erasmus.jpg"
 import pepper from "./../img/pepper.jpg"
 import service from "./../img/service.jpg"
 import owl from "./../img/owl.jpg"
+import scrollToComponent from 'react-scroll-to-component';
 
 
 function Me(props){
@@ -133,40 +134,42 @@ class Resume extends React.Component {
                 },
             }
         this.moveTo = this.moveTo.bind(this)
+        this.myRef = React.createRef()
 
     }
 
     moveTo(){
-        window.scrollBy(0, 110);
+        const node = this.myRef.current;
+        node.scrollTo(0, 110);
     }
     render() {
         return (
-            <div>
+            <div ref={this.myRef} >
                 <div className="left_side" >
-                    <div onClick={this.moveTo} >
-                        <Me />
+                    <div  >
+                        <Me onClick={this.moveTo}/>
                     </div>
                     <div onClick={this.moveTo} >
                         <ContactResume />
                     </div>
-                    <div onClick={this.moveTo} >
+                    <div onClick={() => window.scrollTo(0, 10)} >
                         <Hobbies />
                     </div>
                 </div>
                 <div className="right_side" >
-                    <div onMouseEnter={() => this.props.handlerFromParent(education)} >
+                    <div onMouseEnter={() => this.props.handlerFromParent(education)} onClick={() => window.scrollTo(0, 110)} >
                         <ExperianceResume info = {this.state.education}/>
                     </div>
-                    <div onMouseEnter={() => this.props.handlerFromParent(apps)} >
+                    <div onMouseEnter={() => this.props.handlerFromParent(apps)} onClick={() => window.scrollTo(0, 110)}>
                         <ExperianceResume info = {this.state.apps}/>
                     </div>
-                    <div onMouseEnter={() => this.props.handlerFromParent(pepper)} >
+                    <div onMouseEnter={() => this.props.handlerFromParent(pepper)} onClick={() => window.scrollTo(0, 110)}>
                         <ExperianceResume info = {this.state.web}/>
                     </div>
-                    <div onMouseEnter={() => this.props.handlerFromParent(service)} >
+                    <div onMouseEnter={() => this.props.handlerFromParent(service)} onClick={() => window.scrollTo(0, 110)}>
                         <ExperianceResume info = {this.state.service}/>
                     </div>
-                    <div onMouseEnter={() => this.props.handlerFromParent(erasmus)}>
+                    <div onMouseEnter={() => this.props.handlerFromParent(erasmus)} onClick={() => window.scrollTo(0, 110)}>
                         <ExperianceResume info = {this.state.other}/>
                     </div>
                 </div>
