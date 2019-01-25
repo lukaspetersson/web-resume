@@ -1,7 +1,7 @@
 import React from 'react';
-import './AppsSection.css';
+import './WelcomeSection.css';
 
-class AppsSection extends React.Component {
+class WelcomeSection extends React.Component {
     constructor(props){
             super(props)
             this.state = {}
@@ -14,4 +14,4 @@ class AppsSection extends React.Component {
     }
 }
 
-export default AppsSection;
+export default WelcomeSection;

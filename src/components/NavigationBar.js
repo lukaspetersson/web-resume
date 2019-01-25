@@ -1,7 +1,7 @@
 import React from 'react';
-import './AppsSection.css';
+import './NavigationBar.css';
 
-class AppsSection extends React.Component {
+class NavigationBar extends React.Component {
     constructor(props){
             super(props)
             this.state = {}
@@ -9,9 +9,8 @@ class AppsSection extends React.Component {
     render() {
         return (
 
-            <p className="Metest">kköl</p>
         );
     }
 }
 
-export default AppsSection;
+export default NavigationBar;
