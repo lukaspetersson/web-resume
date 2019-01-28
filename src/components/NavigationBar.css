@@ -3,17 +3,21 @@
     height: 100%;
     display: block;
     overflow: hidden;
-    text-align: center;
-    color: gray;
+    color: white;
 }
 .bar h1{
     display: inline-block;
     float: left;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .bar p{
     display: inline-block;
-    margin: 30px;
-
+    float:right;
+    cursor: pointer;
+    margin-right: 70px;
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
 }

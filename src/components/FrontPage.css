@@ -25,7 +25,6 @@
     height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    padding-top: 50px;
     z-index: 1;
 }
 

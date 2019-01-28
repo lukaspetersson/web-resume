@@ -14,17 +14,37 @@ class FrontPage extends React.Component {
     constructor(props){
             super(props)
             this.state = {
-                backgroundStyle:{
+                resumeBackground:{
                     backgroundImage :"url(" + kid + ")",
+                },
+                navigationBackground:{
+                    backgroundColor :"transparent",
                 },
             }
             this.handleData = this.handleData.bind(this);
             this.handleScroll = this.handleScroll.bind(this);
+            this.changeNav = this.changeNav.bind(this);
             this.bodyRef = React.createRef();
         }
+    changeNav() {
+        const body = this.bodyRef.current;
+        if(body.scrollTop > 490){
+            this.setState({
+                navigationBackground:{
+                    backgroundColor :"black",
+                }
+            });
+        }else{
+            this.setState({
+                navigationBackground:{
+                    backgroundColor :"transparent",
+                }
+            });
+        }
+    }
     handleData(data) {
         this.setState({
-            backgroundStyle:{
+            resumeBackground:{
                 backgroundImage :"url(" + data + ")",
             }
         });
@@ -52,16 +72,16 @@ class FrontPage extends React.Component {
     render() {
         return (
             <div className="FrontPage">
-                <div className="NavigationBar">
-                    <NavigationBar scrollfromParent={this.handleScroll}/>
+                <div className="NavigationBar" style = {this.state.navigationBackground}>
+                    <NavigationBar scrollfromParent={this.handleScroll} />
                 </div>
-                <div className="body" ref={this.bodyRef}>
+                <div className="body" ref={this.bodyRef} onScroll={this.changeNav}>
                     <div className="WelcomeSection">
                         <div >
                             <WelcomeSection />
                         </div>
                     </div>
-                    <div style = {this.state.backgroundStyle} className="Resume">
+                    <div style = {this.state.resumeBackground} className="Resume">
                         <div className="paper">
                             <Resume handlerFromParent={this.handleData} scrollfromParent={this.handleScroll}/>
                         </div>
