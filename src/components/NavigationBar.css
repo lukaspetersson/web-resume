@@ -4,6 +4,7 @@
     display: block;
     overflow: hidden;
     color: white;
+        background-color: rgba(0, 0, 0, 0.2);
 }
 .bar h1{
     display: inline-block;

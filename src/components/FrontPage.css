@@ -8,12 +8,13 @@
     bottom: 0;
     overflow-y: hidden;
     z-index: 0;
+    color: white;
 }
 .NavigationBar{
     position: absolute;
     top:0;
     left:0;
-    right:0;
+    right:17px;
     height: 70px;
     z-index: 2;
     overflow: hidden;

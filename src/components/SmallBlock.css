@@ -1,0 +1,19 @@
+.SmallBlock{
+    width:200px;
+    height: 350px;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.SmallBlock img{
+    margin-top: 24px;
+    width: 144px;
+
+}
+
+.SmallBlock p{
+
+}
