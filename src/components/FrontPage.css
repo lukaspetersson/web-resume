@@ -5,14 +5,16 @@
     right:0;
     bottom: 0;
     overflow-y: hidden;
+    z-index: 0;
 }
 .NavigationBar{
     position: absolute;
     top:0;
     left:0;
-    right:50px;
-    height: 50px;
+    right:0;
+    height: 70px;
     z-index: 2;
+    overflow: hidden;
 }
 
 .body{
@@ -21,9 +23,10 @@
     left:0;
     right:0;
     height: 100vh;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     padding-top: 50px;
+    z-index: 1;
 }
 
 .WelcomeSection{

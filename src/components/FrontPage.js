@@ -52,11 +52,10 @@ class FrontPage extends React.Component {
     render() {
         return (
             <div className="FrontPage">
-
-                <div className="body" ref={this.bodyRef}>
                 <div className="NavigationBar">
-                    <NavigationBar />
+                    <NavigationBar scrollfromParent={this.handleScroll}/>
                 </div>
+                <div className="body" ref={this.bodyRef}>
                     <div className="WelcomeSection">
                         <div >
                             <WelcomeSection />
