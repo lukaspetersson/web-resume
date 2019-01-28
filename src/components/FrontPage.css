@@ -21,7 +21,7 @@
     left:0;
     right:0;
     height: 100vh;
-
+    overflow-x: scroll;
     scroll-behavior: smooth;
     padding-top: 50px;
 }
