@@ -6,6 +6,7 @@ import MeSection from './MeSection.js'
 import WebSection from './WebSection.js'
 import AppsSection from './AppsSection.js'
 import ServiceSection from './ServiceSection.js'
+import NavigationBar from './NavigationBar.js'
 import kid from "./../img/kid.jpg"
 import scrollToComponent from 'react-scroll-to-component';
 
@@ -50,35 +51,40 @@ class FrontPage extends React.Component {
     }
     render() {
         return (
-            <div className="body" ref={this.bodyRef}>
-                <div className="WelcomeSection">
-                    <div >
-                        <WelcomeSection />
-                    </div>
+            <div className="FrontPage">
+                <div className="NavigationBar">
+                    <NavigationBar />
                 </div>
-                <div style = {this.state.backgroundStyle} className="Resume">
-                    <div className="paper">
-                        <Resume handlerFromParent={this.handleData} scrollfromParent={this.handleScroll}/>
+                <div className="body" ref={this.bodyRef}>
+                    <div className="WelcomeSection">
+                        <div >
+                            <WelcomeSection />
+                        </div>
                     </div>
-                </div>
-                <div className="MeSection">
-                    <div >
-                        <MeSection/>
+                    <div style = {this.state.backgroundStyle} className="Resume">
+                        <div className="paper">
+                            <Resume handlerFromParent={this.handleData} scrollfromParent={this.handleScroll}/>
+                        </div>
                     </div>
-                </div>
-                <div className="WebSection">
-                    <div >
-                        <WebSection/>
+                    <div className="MeSection">
+                        <div >
+                            <MeSection/>
+                        </div>
                     </div>
-                </div>
-                <div className="AppsSection">
-                    <div >
-                        <AppsSection/>
+                    <div className="WebSection">
+                        <div >
+                            <WebSection/>
+                        </div>
                     </div>
-                </div>
-                <div className="ServiceSection">
-                    <div >
-                        <ServiceSection/>
+                    <div className="AppsSection">
+                        <div >
+                            <AppsSection/>
+                        </div>
+                    </div>
+                    <div className="ServiceSection">
+                        <div >
+                            <ServiceSection/>
+                        </div>
                     </div>
                 </div>
             </div>

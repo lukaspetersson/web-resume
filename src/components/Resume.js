@@ -131,21 +131,13 @@ class Resume extends React.Component {
                     },]
                 },
             }
-        this.moveTo = this.moveTo.bind(this)
-        this.myRef = React.createRef()
-
-    }
-
-    moveTo(){
-        const node = this.myRef.current;
-        node.scrollTo(0, 110);
-    }
+}
     render() {
         return (
-            <div ref={this.myRef} >
+            <div >
                 <div className="left_side" >
-                    <div  >
-                        <Me onClick={() => this.props.scrollfromParent("me")}/>
+                    <div onClick={() => this.props.scrollfromParent("me")} >
+                        <Me />
                     </div>
                     <div onClick={this.moveTo} >
                         <ContactResume />
