@@ -62,10 +62,11 @@ class NavigationBar extends React.Component {
         return (
             <div className="bar">
                 <h1 onClick={() => this.props.scrollfromParent("welcome")}>LP</h1>
-                <p onMouseEnter={() => this.setBackground("me")} onMouseLeave={() => this.setState(this.baseState)} style = {this.state.meBackground} onClick={() => this.props.scrollfromParent("me")}>ME</p>
-                <p onMouseEnter={() => this.setBackground("web")} onMouseLeave={() => this.setState(this.baseState)} style = {this.state.webBackground} onClick={() => this.props.scrollfromParent("web")}>WEB</p>
-                <p onMouseEnter={() => this.setBackground("apps")} onMouseLeave={() => this.setState(this.baseState)} style = {this.state.appsBackground} onClick={() => this.props.scrollfromParent("apps")}>APPS</p>
                 <p onMouseEnter={() => this.setBackground("service")} onMouseLeave={() => this.setState(this.baseState)} style = {this.state.serviceBackground} onClick={() => this.props.scrollfromParent("service")}>SERVICE</p>
+                <p onMouseEnter={() => this.setBackground("apps")} onMouseLeave={() => this.setState(this.baseState)} style = {this.state.appsBackground} onClick={() => this.props.scrollfromParent("apps")}>APPS</p>
+                <p onMouseEnter={() => this.setBackground("web")} onMouseLeave={() => this.setState(this.baseState)} style = {this.state.webBackground} onClick={() => this.props.scrollfromParent("web")}>WEB</p>
+                <p onMouseEnter={() => this.setBackground("me")} onMouseLeave={() => this.setState(this.baseState)} style = {this.state.meBackground} onClick={() => this.props.scrollfromParent("me")}>ME</p>
+
             </div>
         );
     }

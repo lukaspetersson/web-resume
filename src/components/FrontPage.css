@@ -1,5 +1,7 @@
+
 .FrontPage{
     position: absolute;
+    display: block;
     top:0;
     left:0;
     right:0;
@@ -32,7 +34,11 @@
     position: relative;
     width: 100vw;
     height: 500px;
-    background-color: green;
+    background-image: url("./../img/welcome.jpg");
+    background-size: cover;
+    background-position: center;
+
+
 }
 
 .Resume{

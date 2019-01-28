@@ -55,6 +55,9 @@ class FrontPage extends React.Component {
           case "welcome":
             body.scrollTo(0, 0);
             break;
+          case "resume":
+            body.scrollTo(0, 500);
+            break;
           case "me":
             body.scrollTo(0, 1500);
             break;
@@ -78,7 +81,7 @@ class FrontPage extends React.Component {
                 <div className="body" ref={this.bodyRef} onScroll={this.changeNav}>
                     <div className="WelcomeSection">
                         <div >
-                            <WelcomeSection />
+                            <WelcomeSection scrollfromParent={this.handleScroll}/>
                         </div>
                     </div>
                     <div style = {this.state.resumeBackground} className="Resume">
