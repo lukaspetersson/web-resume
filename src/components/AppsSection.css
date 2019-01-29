@@ -6,3 +6,19 @@
     right:0;
     padding: 0px 30px;
 }
+.appsContainer{
+    display: inline-block;
+    overflow: hidden;
+    height: 350px;
+}
+
+.app{
+    display: inline-block;
+    position: relative;
+    vertical-align:top;
+    margin: 0px 20px;
+}
+
+.appsBody img{
+
+}
