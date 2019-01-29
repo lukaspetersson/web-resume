@@ -22,46 +22,55 @@ class AppsSection extends React.Component {
                 fallingKitten:{
                     description:"fallingKitten wdmwp cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p",
                     image: fallingkitten_logo
-                }
+                },
             }
+            this.appsContainerRef = React.createRef();
     }
     render() {
-        return (
+        const appsContainer = this.appsContainerRef.current;
 
-            <div className="appsBody">
-                <h1>My Mobile Apps</h1>
-                <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
-                <img src={arrow_back}/>
-                <div className="appsContainer">
-                    <div className="app">
-                        <SmallBlock info={this.state.bookLog}/>
+        console.log(this.myInput.current.offsetWidth)
+
+        if(appsContainer.offsetWidth > 700){
+            return (
+                <div className="appsBody">
+                    <h1>My Mobile Apps</h1>
+                    <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
+                    <img src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)}/>
+                    <div className="appsContainer" ref={this.appsContainerRef}>
+                        <div className="app">
+                            <SmallBlock info={this.state.bookLog}/>
+                        </div>
+                        <div className="app">
+                            <SmallBlock info={this.state.burnBall}/>
+                        </div>
+                        <div className="app">
+                            <SmallBlock info={this.state.fallingKitten}/>
+                        </div>
                     </div>
-                    <div className="app">
-                        <SmallBlock info={this.state.burnBall}/>
-                    </div>
-                    <div className="app">
-                        <SmallBlock info={this.state.fallingKitten}/>
-                    </div>
-                    <div className="app">
-                        <SmallBlock info={this.state.fallingKitten}/>
-                    </div>
-                    <div className="app">
-                        <SmallBlock info={this.state.fallingKitten}/>
-                    </div>
-                    <div className="app">
-                        <SmallBlock info={this.state.fallingKitten}/>
-                    </div>
-                    <div className="app">
-                        <SmallBlock info={this.state.fallingKitten}/>
-                    </div>
-                    <div className="app">
-                        <SmallBlock info={this.state.fallingKitten}/>
+                    <img src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)}/>
+                </div>
+            );
+        }else{
+            return (
+                <div className="appsBody">
+                    <h1>My Mobile Apps</h1>
+                    <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
+                    <div className="appsContainer" ref={this.appsContainerRef}>
+                        <div className="app">
+                            <SmallBlock info={this.state.bookLog}/>
+                        </div>
+                        <div className="app">
+                            <SmallBlock info={this.state.burnBall}/>
+                        </div>
+                        <div className="app">
+                            <SmallBlock info={this.state.fallingKitten}/>
+                        </div>
                     </div>
                 </div>
-                <img src={arrow_back}/>
+            );
+        }
 
-            </div>
-        );
     }
 }
 

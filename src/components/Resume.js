@@ -34,10 +34,6 @@ function Hobbies(props){
     )
 }
 
-function hej(){
-    console.log("HHHHHHHHHHHHHHHHHHHHHHHhh")
-}
-
 
 class Resume extends React.Component {
     constructor(props){
@@ -150,11 +146,11 @@ class Resume extends React.Component {
                     <div onMouseEnter={() => this.props.handlerFromParent(education)} onClick={() => this.props.scrollfromParent("me")} >
                         <ExperianceResume info = {this.state.education}/>
                     </div>
-                    <div onMouseEnter={() => this.props.handlerFromParent(apps)} onClick={() => this.props.scrollfromParent("apps")}>
-                        <ExperianceResume info = {this.state.apps}/>
-                    </div>
                     <div onMouseEnter={() => this.props.handlerFromParent(pepper)} onClick={() => this.props.scrollfromParent("web")}>
                         <ExperianceResume info = {this.state.web}/>
+                    </div>
+                    <div onMouseEnter={() => this.props.handlerFromParent(apps)} onClick={() => this.props.scrollfromParent("apps")}>
+                        <ExperianceResume info = {this.state.apps}/>
                     </div>
                     <div onMouseEnter={() => this.props.handlerFromParent(service)} onClick={() => this.props.scrollfromParent("service")}>
                         <ExperianceResume info = {this.state.service}/>

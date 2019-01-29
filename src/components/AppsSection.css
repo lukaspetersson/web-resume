@@ -4,12 +4,15 @@
     bottom: 0;
     left: 0;
     right:0;
-    padding: 0px 30px;
+    padding: 0px 20px;
 }
 .appsContainer{
     display: inline-block;
     overflow: hidden;
+    white-space: nowrap;
     height: 350px;
+    width: calc(100vw - 168px);
+    scroll-behavior: smooth;
 }
 
 .app{
@@ -20,5 +23,17 @@
 }
 
 .appsBody img{
+    margin-top: 15%;
+    width: 64px;
+    display: inline-block;
+    vertical-align:top;
+    cursor: pointer;
+}
 
+.appsBody h1{
+    margin-left: 10px;
+}
+
+.appsBody h3{
+    margin-left: 10px;
 }
