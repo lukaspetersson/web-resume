@@ -26,10 +26,37 @@ class AppsSection extends React.Component {
             }
             this.appsContainerRef = React.createRef();
     }
-    render() {
+    componentDidMount(){
         const appsContainer = this.appsContainerRef.current;
+        this.render(appsContainer);
+    }
+    render(appsContainer) {
 
-        console.log(this.myInput.current.offsetWidth)
+        if(appsContainer == null){
+            return (
+                <div className="appsBody">
+                    <h1>My Mobile Apps</h1>
+                    <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
+                    <div className="appsContainer" ref={this.appsContainerRef}>
+                        <div className="app">
+                            <SmallBlock info={this.state.bookLog}/>
+                        </div>
+                        <div className="app">
+                            <SmallBlock info={this.state.burnBall}/>
+                        </div>
+                        <div className="app">
+                            <SmallBlock info={this.state.fallingKitten}/>
+                        </div>
+                        <div className="app">
+                            <SmallBlock info={this.state.fallingKitten}/>
+                        </div>
+                        <div className="app">
+                            <SmallBlock info={this.state.fallingKitten}/>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
 
         if(appsContainer.offsetWidth > 700){
             return (
