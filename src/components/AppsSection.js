@@ -23,82 +23,44 @@ class AppsSection extends React.Component {
                     description:"fallingKitten wdmwp cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p",
                     image: fallingkitten_logo
                 },
+                arrowStyle:{
+                    display: "inline-block"
+                }
             }
             this.appsContainerRef = React.createRef();
     }
     componentDidMount(){
         const appsContainer = this.appsContainerRef.current;
-        this.render(appsContainer);
-    }
-    render(appsContainer) {
-
-        if(appsContainer == null){
-            return (
-                <div className="appsBody">
-                    <h1>My Mobile Apps</h1>
-                    <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
-                    <div className="appsContainer" ref={this.appsContainerRef}>
-                        <div className="app">
-                            <SmallBlock info={this.state.bookLog}/>
-                        </div>
-                        <div className="app">
-                            <SmallBlock info={this.state.burnBall}/>
-                        </div>
-                        <div className="app">
-                            <SmallBlock info={this.state.fallingKitten}/>
-                        </div>
-                        <div className="app">
-                            <SmallBlock info={this.state.fallingKitten}/>
-                        </div>
-                        <div className="app">
-                            <SmallBlock info={this.state.fallingKitten}/>
-                        </div>
-                    </div>
-                </div>
-            );
-        }
-
         if(appsContainer.offsetWidth > 700){
-            return (
-                <div className="appsBody">
-                    <h1>My Mobile Apps</h1>
-                    <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
-                    <img src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)}/>
-                    <div className="appsContainer" ref={this.appsContainerRef}>
-                        <div className="app">
-                            <SmallBlock info={this.state.bookLog}/>
-                        </div>
-                        <div className="app">
-                            <SmallBlock info={this.state.burnBall}/>
-                        </div>
-                        <div className="app">
-                            <SmallBlock info={this.state.fallingKitten}/>
-                        </div>
-                    </div>
-                    <img src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)}/>
-                </div>
-            );
-        }else{
-            return (
-                <div className="appsBody">
-                    <h1>My Mobile Apps</h1>
-                    <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
-                    <div className="appsContainer" ref={this.appsContainerRef}>
-                        <div className="app">
-                            <SmallBlock info={this.state.bookLog}/>
-                        </div>
-                        <div className="app">
-                            <SmallBlock info={this.state.burnBall}/>
-                        </div>
-                        <div className="app">
-                            <SmallBlock info={this.state.fallingKitten}/>
-                        </div>
-                    </div>
-                </div>
-            );
+            this.setState({
+                arrowStyle:{
+                    display: "none"
+                }
+            });
         }
-
     }
+    render() {
+        const appsContainer = this.appsContainerRef.current;
+        return (
+            <div className="appsBody">
+                <h1>My Mobile Apps</h1>
+                <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
+                <img src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle}/>
+                <div className="appsContainer" ref={this.appsContainerRef} >
+                    <div className="app">
+                        <SmallBlock info={this.state.bookLog}/>
+                    </div>
+                    <div className="app">
+                        <SmallBlock info={this.state.burnBall}/>
+                    </div>
+                    <div className="app">
+                        <SmallBlock info={this.state.fallingKitten}/>
+                    </div>
+                </div>
+                <img src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle}/>
+            </div>
+        );
+        }
 }
 
 export default AppsSection;

@@ -25,7 +25,6 @@
 .appsBody img{
     margin-top: 15%;
     width: 64px;
-    display: inline-block;
     vertical-align:top;
     cursor: pointer;
 }
