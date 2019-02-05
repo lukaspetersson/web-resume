@@ -17,8 +17,23 @@ class FrontPage extends React.Component {
                 resumeBackground:{
                     backgroundImage :"url(" + kid + ")",
                 },
-                navigationBackground:{
+                NavigationBarBackground:{
                     backgroundColor :"transparent",
+                },
+                navShowSection:{
+                  me:{
+                    borderBottom: "0px"
+                  },
+                  web:{
+                    borderBottom: "0px"
+                  },
+                  apps:{
+                    borderBottom: "0px"
+                  },
+                  service:{
+                    borderBottom: "0px"
+                  }
+
                 },
             }
             this.handleData = this.handleData.bind(this);
@@ -28,19 +43,26 @@ class FrontPage extends React.Component {
         }
     changeNav() {
         const body = this.bodyRef.current;
-        if(body.scrollTop > 490){
             this.setState({
-                navigationBackground:{
-                    backgroundColor :"black",
-                }
+                NavigationBarBackground:{
+                    backgroundColor: body.scrollTop > 485 ? "black":"transparent"
+                },
+                navShowSection:{
+                  me:{
+                    borderBottom: (body.scrollTop >= 1000 && body.scrollTop < 1500) ? "5px solid white" : "0px"
+                  },
+                  web:{
+                    borderBottom: (body.scrollTop >= 1500 && body.scrollTop < 2000) ? "5px solid white" : "0px"
+                  },
+                  apps:{
+                    borderBottom: (body.scrollTop >= 2000 && body.scrollTop < 2500) ? "5px solid white" : "0px"
+                  },
+                  service:{
+                    borderBottom: (body.scrollTop >= 2500 && body.scrollTop < 3000) ? "5px solid white" : "0px"
+                  }
+
+                },
             });
-        }else{
-            this.setState({
-                navigationBackground:{
-                    backgroundColor :"transparent",
-                }
-            });
-        }
     }
     handleData(data) {
         this.setState({
@@ -75,8 +97,8 @@ class FrontPage extends React.Component {
     render() {
         return (
             <div className="FrontPage">
-                <div className="NavigationBar" style = {this.state.navigationBackground}>
-                    <NavigationBar scrollfromParent={this.handleScroll} />
+                <div className="NavigationBar" style = {this.state.NavigationBarBackground}>
+                    <NavigationBar scrollfromParent={this.handleScroll} section={this.state.navShowSection}/>
                 </div>
                 <div className="body" ref={this.bodyRef} onScroll={this.changeNav}>
                     <div className="WelcomeSection">
