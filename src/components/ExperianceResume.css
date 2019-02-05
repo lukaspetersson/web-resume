@@ -12,12 +12,15 @@ ul{
 .heading{
     font-size: 20px;
     margin-top: 0;
+    float:left;
+    margin-left: 30px;
+    transition: all 0.6s ease-in-out;
 }
 .description{
     padding-left: 15px;
     font-size: 14px;
     display: block;
-    float: left;
+    float:left;
 }
 
 .type{
@@ -38,5 +41,5 @@ ul{
 }
 .Experiance{
   padding-top: 20px;
-transition:all 0.6s ease;
+transition:all 2.6s ease;
 }

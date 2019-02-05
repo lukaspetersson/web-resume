@@ -7,9 +7,10 @@ class ExperianceResume extends React.Component {
             this.state={
               textTheme: {
                 color: "#00AEC3",
+                marginLeft: "30px"
               },
               backgroundTheme:{
-                backgroundColor: "white"
+                backgroundColor: "white",
               }
             }
             this.sectionHoover = this.sectionHoover.bind(this);
@@ -18,6 +19,7 @@ class ExperianceResume extends React.Component {
       this.setState({
         textTheme: {
           color: enter? this.props.info.color : "#00AEC3",
+          marginLeft:  enter? "100px" : "30px",
         },
         backgroundTheme:{
           backgroundColor: enter? this.props.info.colorlight : "white"
