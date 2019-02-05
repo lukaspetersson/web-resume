@@ -13,7 +13,7 @@ class FrontPage extends React.Component {
             super(props)
             this.state = {
                 resumeBackground:{
-                    backgroundColor : "#00AEC3",
+                    backgroundColor : "#f2e8de",
                 },
                 NavigationBarBackground:{
                     backgroundColor :"transparent",

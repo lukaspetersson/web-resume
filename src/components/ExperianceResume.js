@@ -5,16 +5,22 @@ class ExperianceResume extends React.Component {
     constructor(props){
             super(props)
             this.state={
-              colorTheme: {
-                color: "#00AEC3"
+              textTheme: {
+                color: "#00AEC3",
+              },
+              backgroundTheme:{
+                backgroundColor: "white"
               }
             }
             this.sectionHoover = this.sectionHoover.bind(this);
     }
     sectionHoover(enter){
       this.setState({
-        colorTheme: {
-          color: enter? this.props.info.color : "#00AEC3"
+        textTheme: {
+          color: enter? this.props.info.color : "#00AEC3",
+        },
+        backgroundTheme:{
+          backgroundColor: enter? this.props.info.colorlight : "white"
         }
       })
 
@@ -45,8 +51,8 @@ class ExperianceResume extends React.Component {
           }
         }
         return (
-            <div className="Experiance" onMouseEnter={() => this.sectionHoover(true)} onMouseLeave={() => this.sectionHoover(false)}>
-                <p className="heading" style={this.state.colorTheme}>{this.props.info.title}</p>
+            <div className="Experiance" style={this.state.backgroundTheme} onMouseEnter={() => this.sectionHoover(true)} onMouseLeave={() => this.sectionHoover(false)}>
+                <p className="heading" style={this.state.textTheme}>{this.props.info.title}</p>
                 <ul>{itmes}</ul>
                 <div className="boder"></div>
             </div>

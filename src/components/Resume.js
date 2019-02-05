@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resume.css';
-import profilePic from "./../img/person.png"
+import profilePic from "./../img/profile_pic.jpg"
 import football_logo from "./../img/football_logo.png"
 import code_logo from "./../img/code_logo.png"
 import politics_logo from "./../img/politics_logo.png"
@@ -35,7 +35,8 @@ class Resume extends React.Component {
             this.state = {
                 education:{
                     title:"Education",
-                    color: "blue",
+                    color: "#0053c1",
+                    colorlight: "#afcff7",
                     examples: [{
                         name: "Engelska Skolan",
                         year: "-2015",
@@ -51,7 +52,8 @@ class Resume extends React.Component {
                 },
                 apps:{
                     title:"Mobile Apps",
-                    color: "green",
+                    color: "#128e2d",
+                    colorlight: "#aee8ba",
                     examples: [{
                         name: "Brännbollräknare",
                         year: "2018"
@@ -67,21 +69,23 @@ class Resume extends React.Component {
                 },
                 web:{
                     title:"Web and Robots",
-                    color: "purple",
+                    color: "#6820a0",
+                    colorlight: "#d8baef",
                     examples: [{
                         name: "Ericsson",
                         description: "Internship as web developer",
-                        year: "Jan 2019 - now"
+                        year: "Jan 2019 - present"
                     },
                     {
                         name: "Digital Edge",
                         description: "Consultant developer for web and robotics",
-                        year: "Nov 2018 - now"
+                        year: "Nov 2018 - present"
                     }]
                 },
                 service:{
                     title:"Service",
-                    color: "red",
+                    color: "#8e1818",
+                    colorlight: "#ffbfbf",
                     examples: [{
                         name: "Abbekås hamnkrog",
                         year: "summer 2015 + 2016"
@@ -110,9 +114,10 @@ class Resume extends React.Component {
                 },
                 other:{
                     title:"Other",
-                    color: "pink",
+                    color: "#9b6500",
+                    colorlight: "#fff5e2",
                     examples: [{
-                        name: "Driver licence",
+                        name: "Driving licence",
                         year: "Mar 2017"
                     },
                     {
@@ -140,7 +145,7 @@ class Resume extends React.Component {
                         <Hobbies />
                     </div>
                 </div>
-                <div className="right_side" onMouseLeave={() => this.props.handlerFromParent("#00AEC3")}>
+                <div className="right_side" onMouseLeave={() => this.props.handlerFromParent("#f2e8de")}>
                     <div onMouseEnter={() => this.props.handlerFromParent(this.state.education.color)} onClick={() => this.props.scrollfromParent("me")} >
                         <ExperianceResume info = {this.state.education}/>
                     </div>
