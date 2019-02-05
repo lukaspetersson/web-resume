@@ -4,14 +4,15 @@
     bottom: 0;
     left: 0;
     right:0;
-    padding: 0px 20px;
+    padding: 10px 20px;
+
 }
 .appsContainer{
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     height: 350px;
-    width: calc(100vw - 168px);
+    width: 100%;
     scroll-behavior: smooth;
 }
 
@@ -19,20 +20,29 @@
     display: inline-block;
     position: relative;
     vertical-align:top;
-    margin: 0px 20px;
+    margin: 0px 10px;
 }
 
-.appsBody img{
-    margin-top: 15%;
+.arrows{
+    position: absolute;
+    top: 280px;
     width: 64px;
-    vertical-align:top;
     cursor: pointer;
+    z-index: 3;
+}
+#firstArrow{
+      left:10px;
+}
+#secondArrow{
+      right:20px;
 }
 
 .appsBody h1{
-    margin-left: 10px;
+  margin: 0px 10px;
+  min-width: 437px;
 }
 
 .appsBody h3{
-    margin-left: 10px;
+  margin: 20px 10px;
+  min-width: 437px;
 }
