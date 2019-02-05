@@ -50,7 +50,7 @@
     background-size: 100vw 970px;
     background-attachment: local;
     background-repeat: no-repeat;
-    transition: background 1s linear;
+    transition:all 0.3s ease;
     overflow:auto;
 }
 

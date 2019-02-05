@@ -7,10 +7,22 @@ class SmallBlock extends React.Component {
     }
     render() {
         return (
-            <div className="SmallBlock">
-                <img src={this.props.info.image}/>
-                <p>{this.props.info.description}</p>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <div className="SmallBlock">
+                      <img src={this.props.info.image.front}/>
+                      <p>{this.props.info.description}</p>
+                  </div>
+                </div>
+                <div className="flip-card-back">
+                  <img src={this.props.info.image.back}/>
+                </div>
+              </div>
             </div>
+
+
+
         );
     }
 }

@@ -13,3 +13,7 @@
     margin-top: 300px;
     font-size: 30px;
 }
+
+.welcomeText img {
+    cursor: pointer;
+}
