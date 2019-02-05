@@ -6,12 +6,6 @@ import code_logo from "./../img/code_logo.png"
 import politics_logo from "./../img/politics_logo.png"
 import ContactResume from "./ContactResume.js";
 import ExperianceResume from "./ExperianceResume.js";
-import apps from "./../img/apps.jpg"
-import education from "./../img/education.jpg"
-import erasmus from "./../img/erasmus.jpg"
-import pepper from "./../img/pepper.jpg"
-import service from "./../img/service.jpg"
-import owl from "./../img/owl.jpg"
 
 function Me(props){
     return (
@@ -39,9 +33,9 @@ class Resume extends React.Component {
     constructor(props){
             super(props)
             this.state = {
-                image: owl,
                 education:{
                     title:"Education",
+                    color: "blue",
                     examples: [{
                         name: "Engelska Skolan",
                         year: "-2015",
@@ -57,6 +51,7 @@ class Resume extends React.Component {
                 },
                 apps:{
                     title:"Mobile Apps",
+                    color: "green",
                     examples: [{
                         name: "Brännbollräknare",
                         year: "2018"
@@ -72,6 +67,7 @@ class Resume extends React.Component {
                 },
                 web:{
                     title:"Web and Robots",
+                    color: "purple",
                     examples: [{
                         name: "Ericsson",
                         description: "Internship as web developer",
@@ -85,6 +81,7 @@ class Resume extends React.Component {
                 },
                 service:{
                     title:"Service",
+                    color: "red",
                     examples: [{
                         name: "Abbekås hamnkrog",
                         year: "summer 2015 + 2016"
@@ -113,6 +110,7 @@ class Resume extends React.Component {
                 },
                 other:{
                     title:"Other",
+                    color: "pink",
                     examples: [{
                         name: "Driver licence",
                         year: "Mar 2017"
@@ -127,11 +125,11 @@ class Resume extends React.Component {
                     },]
                 },
             }
-}
+          }
     render() {
         return (
             <div >
-                <div className="left_side" >
+                <div className="left_side">
                     <div onClick={() => this.props.scrollfromParent("me")} >
                         <Me />
                     </div>
@@ -142,20 +140,20 @@ class Resume extends React.Component {
                         <Hobbies />
                     </div>
                 </div>
-                <div className="right_side" >
-                    <div onMouseEnter={() => this.props.handlerFromParent(education)} onClick={() => this.props.scrollfromParent("me")} >
+                <div className="right_side" onMouseLeave={() => this.props.handlerFromParent("#00AEC3")}>
+                    <div onMouseEnter={() => this.props.handlerFromParent(this.state.education.color)} onClick={() => this.props.scrollfromParent("me")} >
                         <ExperianceResume info = {this.state.education}/>
                     </div>
-                    <div onMouseEnter={() => this.props.handlerFromParent(pepper)} onClick={() => this.props.scrollfromParent("web")}>
+                    <div onMouseEnter={() => this.props.handlerFromParent(this.state.web.color)} onClick={() => this.props.scrollfromParent("web")}>
                         <ExperianceResume info = {this.state.web}/>
                     </div>
-                    <div onMouseEnter={() => this.props.handlerFromParent(apps)} onClick={() => this.props.scrollfromParent("apps")}>
+                    <div onMouseEnter={() => this.props.handlerFromParent(this.state.apps.color)} onClick={() => this.props.scrollfromParent("apps")}>
                         <ExperianceResume info = {this.state.apps}/>
                     </div>
-                    <div onMouseEnter={() => this.props.handlerFromParent(service)} onClick={() => this.props.scrollfromParent("service")}>
+                    <div onMouseEnter={() => this.props.handlerFromParent(this.state.service.color)} onClick={() => this.props.scrollfromParent("service")}>
                         <ExperianceResume info = {this.state.service}/>
                     </div>
-                    <div onMouseEnter={() => this.props.handlerFromParent(erasmus)} onClick={() => this.props.scrollfromParent("me")}>
+                    <div onMouseEnter={() => this.props.handlerFromParent(this.state.other.color)} onClick={() => this.props.scrollfromParent("me")}>
                         <ExperianceResume info = {this.state.other}/>
                     </div>
                 </div>

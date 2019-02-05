@@ -7,15 +7,13 @@ import WebSection from './WebSection.js'
 import AppsSection from './AppsSection.js'
 import ServiceSection from './ServiceSection.js'
 import NavigationBar from './NavigationBar.js'
-import kid from "./../img/kid.jpg"
-import scrollToComponent from 'react-scroll-to-component';
 
 class FrontPage extends React.Component {
     constructor(props){
             super(props)
             this.state = {
                 resumeBackground:{
-                    backgroundImage :"url(" + kid + ")",
+                    backgroundColor : "#00AEC3",
                 },
                 NavigationBarBackground:{
                     backgroundColor :"transparent",
@@ -67,8 +65,8 @@ class FrontPage extends React.Component {
     handleData(data) {
         this.setState({
             resumeBackground:{
-                backgroundImage :"url(" + data + ")",
-            }
+                backgroundColor :data,
+            },
         });
     }
     handleScroll(data) {

@@ -4,8 +4,21 @@ import './ExperianceResume.css';
 class ExperianceResume extends React.Component {
     constructor(props){
             super(props)
+            this.state={
+              colorTheme: {
+                color: "#00AEC3"
+              }
+            }
+            this.sectionHoover = this.sectionHoover.bind(this);
     }
+    sectionHoover(enter){
+      this.setState({
+        colorTheme: {
+          color: enter? this.props.info.color : "#00AEC3"
+        }
+      })
 
+    }
     render() {
         let itmes=[]
         for(let i=0; i < this.props.info.examples.length ; i++){
@@ -32,8 +45,8 @@ class ExperianceResume extends React.Component {
           }
         }
         return (
-            <div className="Experiance">
-                <p className="heading">{this.props.info.title}</p>
+            <div className="Experiance" onMouseEnter={() => this.sectionHoover(true)} onMouseLeave={() => this.sectionHoover(false)}>
+                <p className="heading" style={this.state.colorTheme}>{this.props.info.title}</p>
                 <ul>{itmes}</ul>
                 <div className="boder"></div>
             </div>
