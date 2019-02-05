@@ -11,6 +11,7 @@
 .SmallBlock img{
     margin-top: 24px;
     width: 144px;
+    height: 144px;
 }
 
 .SmallBlock p{
@@ -52,5 +53,6 @@
 .flip-card-back img{
   width:200px;
   height: 350px;
+  object-fit: cover;
   border-radius: 10px;
 }
