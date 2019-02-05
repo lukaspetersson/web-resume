@@ -36,7 +36,12 @@ class AppsSection extends React.Component {
                     }
                 },
                 arrowStyle:{
-                    display: "inline-block"
+                  left:{
+                    display: "block"
+                  },
+                  right:{
+                    display: "block"
+                  }
                 }
             }
             this.appsContainerRef = React.createRef();
@@ -46,17 +51,28 @@ class AppsSection extends React.Component {
     componentDidMount() {
       this.resize.call();
       window.addEventListener('resize', this.resize)
+
+      const appsContainer = this.appsContainerRef.current;
+      appsContainer.addEventListener('scroll', this.resize)
     }
     componentWillUnmount() {
       window.removeEventListener('resize', this.resize)
+
+      const appsContainer = this.appsContainerRef.current;
+      appsContainer.removeEventListener('scroll', this.resize)
     }
     resize = function(){
           const appsContainer = this.appsContainerRef.current;
-              this.setState({
-                  arrowStyle:{
-                      display: ((appsContainer.offsetWidth > 715) ? "none": "inline-block")
+            this.setState({
+                arrowStyle:{
+                  left:{
+                    display: appsContainer.scrollLeft < 10 ? "none": "block"
+                  },
+                  right:{
+                    display: (appsContainer.scrollLeft + appsContainer.offsetWidth) > (appsContainer.scrollWidth -10) ? "none": "block"
                   }
-              });
+                }
+            });
     }
     render() {
         const appsContainer = this.appsContainerRef.current;
@@ -64,7 +80,7 @@ class AppsSection extends React.Component {
             <div className="appsBody">
                 <h1>My Mobile Apps</h1>
                 <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
-                <img className="arrows" id="firstArrow" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle}/>
+                <img className="arrows" id="firstArrow" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="appsContainer" ref={this.appsContainerRef} >
                     <div className="app">
                         <SmallBlock info={this.state.bookLog}/>
@@ -76,7 +92,7 @@ class AppsSection extends React.Component {
                         <SmallBlock info={this.state.fallingKitten}/>
                     </div>
                 </div>
-                <img className="arrows" id="secondArrow" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle}/>
+                <img className="arrows" id="secondArrow" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }

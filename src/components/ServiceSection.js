@@ -75,7 +75,6 @@ class ServiceSection extends React.Component {
             }
             this.appsContainerRef = React.createRef();
             this.resize = this.resize.bind(this);
-            this.arrowClick = this.arrowClick.bind(this);
     }
 
     componentDidMount() {
@@ -91,12 +90,8 @@ class ServiceSection extends React.Component {
       const appsContainer = this.appsContainerRef.current;
       appsContainer.removeEventListener('scroll', this.resize)
     }
-    resize = function(e){
-      console.log("recalc arrows")
-
+    resize = function(){
           const appsContainer = this.appsContainerRef.current;
-          console.log(appsContainer.offsetWidth)
-          console.log(appsContainer.scrollLeft)
             this.setState({
                 arrowStyle:{
                   left:{
@@ -107,21 +102,14 @@ class ServiceSection extends React.Component {
                   }
                 }
             });
-
-    }
-    arrowClick(direction){
-      const appsContainer = this.appsContainerRef.current;
-      if(appsContainer){
-        var scrollLenght = direction*200;
-        appsContainer.scrollBy(scrollLenght, 0)
-      }
     }
     render() {
+        const appsContainer = this.appsContainerRef.current;
         return (
             <div className="serviceBody">
                 <h1>Service jobs</h1>
                 <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
-                <img className="arrows" id="firstArrow" src={arrow_back} onClick={() => this.arrowClick(-1)} style = {this.state.arrowStyle.left}/>
+                <img className="arrows" id="firstArrow" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="serviceContainer" ref={this.appsContainerRef} >
                     <div className="service">
                         <SmallBlock info={this.state.abbekas}/>
@@ -142,7 +130,7 @@ class ServiceSection extends React.Component {
                         <SmallBlock info={this.state.iesb}/>
                     </div>
                 </div>
-                <img className="arrows" id="secondArrow" src={arrow_forward} onClick={() => this.arrowClick(1)} style = {this.state.arrowStyle.right}/>
+                <img className="arrows" id="secondArrow" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }
