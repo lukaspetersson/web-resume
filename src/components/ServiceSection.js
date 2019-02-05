@@ -65,35 +65,63 @@ class ServiceSection extends React.Component {
                     }
                 },
                 arrowStyle:{
-                    display: "inline-block"
+                  left:{
+                    display: "block"
+                  },
+                  right:{
+                    display: "block"
+                  }
                 }
             }
             this.appsContainerRef = React.createRef();
             this.resize = this.resize.bind(this);
+            this.arrowClick = this.arrowClick.bind(this);
     }
 
     componentDidMount() {
       this.resize.call();
       window.addEventListener('resize', this.resize)
+
+      const appsContainer = this.appsContainerRef.current;
+      appsContainer.addEventListener('scroll', this.resize)
     }
     componentWillUnmount() {
       window.removeEventListener('resize', this.resize)
+
+      const appsContainer = this.appsContainerRef.current;
+      appsContainer.removeEventListener('scroll', this.resize)
     }
-    resize = function(){
+    resize = function(e){
+      console.log("recalc arrows")
+
           const appsContainer = this.appsContainerRef.current;
-              this.setState({
-                  arrowStyle:{
-                      display: ((appsContainer.offsetWidth > 1400) ? "none": "inline-block")
+          console.log(appsContainer.offsetWidth)
+          console.log(appsContainer.scrollLeft)
+            this.setState({
+                arrowStyle:{
+                  left:{
+                    display: appsContainer.scrollLeft < 10 ? "none": "block"
+                  },
+                  right:{
+                    display: (appsContainer.scrollLeft + appsContainer.offsetWidth) > (appsContainer.scrollWidth -10) ? "none": "block"
                   }
-              });
+                }
+            });
+
+    }
+    arrowClick(direction){
+      const appsContainer = this.appsContainerRef.current;
+      if(appsContainer){
+        var scrollLenght = direction*200;
+        appsContainer.scrollBy(scrollLenght, 0)
+      }
     }
     render() {
-        const appsContainer = this.appsContainerRef.current;
         return (
             <div className="serviceBody">
                 <h1>Service jobs</h1>
                 <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
-                <img className="arrows" id="firstArrow" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle}/>
+                <img className="arrows" id="firstArrow" src={arrow_back} onClick={() => this.arrowClick(-1)} style = {this.state.arrowStyle.left}/>
                 <div className="serviceContainer" ref={this.appsContainerRef} >
                     <div className="service">
                         <SmallBlock info={this.state.abbekas}/>
@@ -114,7 +142,7 @@ class ServiceSection extends React.Component {
                         <SmallBlock info={this.state.iesb}/>
                     </div>
                 </div>
-                <img className="arrows" id="secondArrow" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle}/>
+                <img className="arrows" id="secondArrow" src={arrow_forward} onClick={() => this.arrowClick(1)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }
