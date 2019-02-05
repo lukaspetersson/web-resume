@@ -1,33 +1,11 @@
 import React from 'react';
 import './Resume.css';
-import profilePic from "./../img/profile_pic.jpg"
+import profilePic from "./../img/profile_pic.png"
 import football_logo from "./../img/football_logo.png"
 import code_logo from "./../img/code_logo.png"
 import politics_logo from "./../img/politics_logo.png"
 import ContactResume from "./ContactResume.js";
 import ExperianceResume from "./ExperianceResume.js";
-
-function Me(props){
-    return (
-        <div className="Me">
-            <img className="profilePic" src={profilePic}/>
-            <p className="name">Lukas Petersson</p>
-            <p className="profession">App and Web Developer</p>
-        </div>
-    )
-}
-
-function Hobbies(props){
-    return (
-        <div className="Hobbies">
-            <h2>Hobbies</h2>
-            <img src={football_logo}/>
-            <img src={code_logo}/>
-            <img src={politics_logo}/>
-        </div>
-    )
-}
-
 
 class Resume extends React.Component {
     constructor(props){
@@ -136,13 +114,22 @@ class Resume extends React.Component {
             <div >
                 <div className="left_side">
                     <div onClick={() => this.props.scrollfromParent("me")} >
-                        <Me />
+                      <div className="Me">
+                          <img className="profilePic" src={profilePic}/>
+                          <p className="name">Lukas Petersson</p>
+                          <p className="profession">App and Web Developer</p>
+                      </div>
                     </div>
                     <div onClick={this.moveTo} >
                         <ContactResume />
                     </div>
                     <div onClick={() => this.props.scrollfromParent("me")} >
-                        <Hobbies />
+                      <div className="Hobbies">
+                          <h2>Hobbies</h2>
+                          <img src={football_logo}/>
+                          <img src={code_logo}/>
+                          <img src={politics_logo}/>
+                      </div>
                     </div>
                 </div>
                 <div className="right_side" onMouseLeave={() => this.props.handlerFromParent("#f2e8de")}>

@@ -17,3 +17,7 @@
 .welcomeText img {
     cursor: pointer;
 }
+
+.welcomeText p {
+    margin-bottom: 0;
+}

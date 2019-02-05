@@ -8,8 +8,9 @@ class MeSection extends React.Component {
     }
     render() {
         return (
+            <div className="meBody">
 
-            <p className="Metest">me</p>
+            </div>
         );
     }
 }

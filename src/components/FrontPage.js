@@ -43,7 +43,7 @@ class FrontPage extends React.Component {
         const body = this.bodyRef.current;
             this.setState({
                 NavigationBarBackground:{
-                    backgroundColor: body.scrollTop > 485 ? "black":"transparent"
+                    backgroundColor: body.scrollTop > 1485 ? "black":"transparent"
                 },
                 navShowSection:{
                   me:{
