@@ -9,6 +9,7 @@
     overflow-y: hidden;
     z-index: 0;
     color: white;
+    font-family: Verdana;
 }
 .NavigationBar{
     position: absolute;
