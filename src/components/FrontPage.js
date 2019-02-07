@@ -7,6 +7,7 @@ import WebSection from './WebSection.js'
 import AppsSection from './AppsSection.js'
 import ServiceSection from './ServiceSection.js'
 import NavigationBar from './NavigationBar.js'
+import ContactSection from './ContactSection.js'
 
 class FrontPage extends React.Component {
     constructor(props){
@@ -127,6 +128,11 @@ class FrontPage extends React.Component {
                     <div className="ServiceSection">
                         <div >
                             <ServiceSection/>
+                        </div>
+                    </div>
+                    <div className="ContactSection">
+                        <div >
+                            <ContactSection/>
                         </div>
                     </div>
                 </div>

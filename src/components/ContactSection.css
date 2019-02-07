@@ -1,0 +1,10 @@
+.contactBody{
+  position: absolute;
+  display: block;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  color: white;
+  background-color: #375A63;
+}
