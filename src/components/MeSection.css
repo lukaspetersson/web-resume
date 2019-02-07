@@ -6,10 +6,12 @@
   right:0;
   bottom: 0;
   color: #00AEC3;
+  background-color: #f2e8de;
 }
 .infoContainer{
   position: relative;
   margin: auto;
   text-align: center;
-  margin: 0px 70px;
+  padding: 0px 70px;
+
 }
