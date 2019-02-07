@@ -5,4 +5,11 @@
   left:0;
   right:0;
   bottom: 0;
+  color: #00AEC3;
+}
+.infoContainer{
+  position: relative;
+  margin: auto;
+  text-align: center;
+  margin: 0px 70px;
 }

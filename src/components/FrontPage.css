@@ -23,12 +23,15 @@
 .body{
     position: absolute;
     top:0;
-    left:0;
+    left:-0.2%;
     right:0;
     height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
     z-index: 1;
+    background-image: url("./../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .WelcomeSection{
@@ -70,23 +73,20 @@
     position: relative;
     width: 100vw;
     height: 500px;
-    background-color: gray;
+    background-color: #f2e8de;
 }
 .WebSection{
     position: relative;
     width: 100vw;
     height: 500px;
-    background-color: green;
 }
 .AppsSection{
     position: relative;
     width: 100vw;
     height: 500px;
-    background-color: blue;
 }
 .ServiceSection{
     position: relative;
     width: 100vw;
     height: 500px;
-    background-color: green;
 }

@@ -65,7 +65,7 @@ class FrontPage extends React.Component {
     handleData(data) {
         this.setState({
             resumeBackground:{
-                backgroundColor :data,
+                backgroundColor : data,
             },
         });
     }
