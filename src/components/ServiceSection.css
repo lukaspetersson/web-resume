@@ -43,6 +43,18 @@
 }
 
 .serviceBody h3{
-  margin: 20px 10px;
+  display: block;
+  margin: 10px;
   min-width: 437px;
+}
+
+.quote{
+  display: inline-block;
+  width: 300px;
+  margin:10px;
+  vertical-align: middle;
+}
+
+.quote p{
+  margin: 0;
 }

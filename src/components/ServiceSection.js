@@ -108,7 +108,13 @@ class ServiceSection extends React.Component {
         return (
             <div className="serviceBody">
                 <h1>Service jobs</h1>
-                <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
+                <h3>Skills are great but it is wasted without hard work, I got my first job almost as soon as it was leagaly possible. From that I have developed an unmatchable work ethic, something my former emplyers can certify.</h3>
+                <div className="quote">
+                  <p>"Jag kan verkligen rekomendera denna unge man, ävenom om jag helst slipper då jag hoppas ha honom många år framöver"</p>
+                </div>
+                <div className="quote">
+                  <p>"Jag ger honom högsta betyg"</p>
+                </div>
                 <img className="arrows" id="firstArrow" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="serviceContainer" ref={this.appsContainerRef} >
                     <div className="service">
