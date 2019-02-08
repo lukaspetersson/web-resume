@@ -44,20 +44,20 @@ class FrontPage extends React.Component {
         const body = this.bodyRef.current;
             this.setState({
                 NavigationBarBackground:{
-                    backgroundColor: body.scrollTop > 1485 ? "black":"transparent"
+                    backgroundColor: body.scrollTop > 1800 ? "black":"transparent"
                 },
                 navShowSection:{
                   me:{
-                    borderBottom: (body.scrollTop >= 1000 && body.scrollTop < 1500) ? "7px solid white" : "0px"
+                    borderBottom: (body.scrollTop >= 1200 && body.scrollTop < 1700) ? "7px solid white" : "0px"
                   },
                   web:{
-                    borderBottom: (body.scrollTop >= 1500 && body.scrollTop < 2000) ? "7px solid white" : "0px"
+                    borderBottom: (body.scrollTop >= 1700 && body.scrollTop < 2200) ? "7px solid white" : "0px"
                   },
                   apps:{
-                    borderBottom: (body.scrollTop >= 2000 && body.scrollTop < 2500) ? "7px solid white" : "0px"
+                    borderBottom: (body.scrollTop >= 2200 && body.scrollTop < 2700) ? "7px solid white" : "0px"
                   },
                   service:{
-                    borderBottom: (body.scrollTop >= 2500 && body.scrollTop < 3300) ? "7px solid white" : "0px"
+                    borderBottom: (body.scrollTop >= 2700 && body.scrollTop < 3300) ? "7px solid white" : "0px"
                   }
 
                 },

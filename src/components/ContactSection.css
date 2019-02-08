@@ -7,4 +7,21 @@
   bottom: 0;
   color: white;
   background-color: #375A63;
+  text-align: center;
+}
+
+.contactBody img{
+  width: 32px;
+  display: inline-block;
+}
+.contactBody p{
+  display: inline-block;
+  height: 32px;
+  margin: 0;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.withText{
+    background: black;
 }
