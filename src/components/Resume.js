@@ -29,7 +29,7 @@ class Resume extends React.Component {
                     }]
                 },
                 apps:{
-                    title:"Mobile Apps",
+                    title:"Mobile Apps Development",
                     color: "#128e2d",
                     colorlight: "#aee8ba",
                     examples: [{
@@ -61,7 +61,7 @@ class Resume extends React.Component {
                     }]
                 },
                 service:{
-                    title:"Service",
+                    title:"Jobs within Service",
                     color: "#8e1818",
                     colorlight: "#ffbfbf",
                     examples: [{

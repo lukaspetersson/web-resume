@@ -48,16 +48,16 @@ class FrontPage extends React.Component {
                 },
                 navShowSection:{
                   me:{
-                    borderBottom: (body.scrollTop >= 1000 && body.scrollTop < 1500) ? "5px solid white" : "0px"
+                    borderBottom: (body.scrollTop >= 1000 && body.scrollTop < 1500) ? "7px solid white" : "0px"
                   },
                   web:{
-                    borderBottom: (body.scrollTop >= 1500 && body.scrollTop < 2000) ? "5px solid white" : "0px"
+                    borderBottom: (body.scrollTop >= 1500 && body.scrollTop < 2000) ? "7px solid white" : "0px"
                   },
                   apps:{
-                    borderBottom: (body.scrollTop >= 2000 && body.scrollTop < 2500) ? "5px solid white" : "0px"
+                    borderBottom: (body.scrollTop >= 2000 && body.scrollTop < 2500) ? "7px solid white" : "0px"
                   },
                   service:{
-                    borderBottom: (body.scrollTop >= 2500 && body.scrollTop < 3000) ? "5px solid white" : "0px"
+                    borderBottom: (body.scrollTop >= 2500 && body.scrollTop < 3300) ? "7px solid white" : "0px"
                   }
 
                 },
@@ -80,16 +80,16 @@ class FrontPage extends React.Component {
             body.scrollTo(0, 500);
             break;
           case "me":
-            body.scrollTo(0, 1500);
+            body.scrollTo(0, 1300);
             break;
           case "web":
-            body.scrollTo(0, 2000);
+            body.scrollTo(0, 1800);
             break;
           case "apps":
-            body.scrollTo(0, 2500);
+            body.scrollTo(0, 2300);
             break;
           case "service":
-            body.scrollTo(0, 3000);
+            body.scrollTo(0, 2800);
             break;
         }
     }
