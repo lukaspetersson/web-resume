@@ -61,7 +61,7 @@ class NavigationBar extends React.Component {
     render() {
         return (
             <div className="bar">
-                <h1 onClick={() => this.props.scrollfromParent("welcome")}>LP</h1>
+                <h1 onClick={() => this.props.scrollfromParent("welcome")}>Lukas</h1>
                 <p onMouseEnter={() => this.setBackground("service")} onMouseLeave={() => this.setState(this.baseState)} style = {{...this.state.serviceBackground,...this.props.section.service}} onClick={() => this.props.scrollfromParent("service")}>SERVICE JOBS</p>
                 <p onMouseEnter={() => this.setBackground("apps")} onMouseLeave={() => this.setState(this.baseState)} style = {{...this.state.appsBackground,...this.props.section.apps}} onClick={() => this.props.scrollfromParent("apps")}>MOBILE APPS</p>
                 <p onMouseEnter={() => this.setBackground("web")} onMouseLeave={() => this.setState(this.baseState)} style = {{...this.state.webBackground,...this.props.section.web}} onClick={() => this.props.scrollfromParent("web")}>WEB & ROBOTS</p>

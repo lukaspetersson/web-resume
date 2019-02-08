@@ -2,9 +2,8 @@
   width:200px;
   height: 350px;
     text-align: center;
-    background-color: #00AEC3;
-    color: white;
-    border-radius: 10px;
+    background-color: white;
+    color: #375A63;
     white-space: normal;
 }
 
@@ -44,17 +43,14 @@
   height: 100%;
   z-index: 2;
   backface-visibility: hidden;
-  border-radius: 10px;
 }
 
 .flip-card-back {
   transform: rotateY(180deg);
-  background-color: #f2e8de;
 }
 
 .flip-card-back img{
   width:200px;
   height: 350px;
   object-fit: cover;
-  border-radius: 10px;
 }
