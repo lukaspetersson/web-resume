@@ -13,15 +13,23 @@
 .contactBody img{
   width: 32px;
   display: inline-block;
+  margin-right: 10px;
 }
 .contactBody p{
   display: inline-block;
   height: 32px;
   margin: 0;
   vertical-align: middle;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  max-width: 900px;
+  font-size: 12px;
+  margin-right: 20px;
 }
 
 .withText{
-    background: black;
+    display: inline-block;
+    opacity:0.6;
+}
+.withText:hover{
+    opacity:1;
 }
