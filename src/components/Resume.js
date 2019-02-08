@@ -132,7 +132,7 @@ class Resume extends React.Component {
                       </div>
                     </div>
                 </div>
-                <div className="right_side" onMouseLeave={() => this.props.handlerFromParent("#f2e8de")}>
+                <div className="right_side" onMouseLeave={() => this.props.handlerFromParent("#EAE5E2")}>
                     <div onMouseEnter={() => this.props.handlerFromParent(this.state.education.color)} onClick={() => this.props.scrollfromParent("me")} >
                         <ExperianceResume info = {this.state.education}/>
                     </div>
