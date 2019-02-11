@@ -110,31 +110,21 @@ class FrontPage extends React.Component {
                             <Resume handlerFromParent={this.handleData} scrollfromParent={this.handleScroll}/>
                         </div>
                     </div>
-                    <div className="MeSection">
-                        <div >
+                        <div className="experiancesSections">
                             <MeSection/>
                         </div>
-                    </div>
-                    <div className="WebSection">
-                        <div >
-                            <WebSection/>
+                        <div className="experiancesSections">
+                                <WebSection/>
                         </div>
-                    </div>
-                    <div className="AppsSection">
-                        <div >
+                        <div className="experiancesSections">
                             <AppsSection/>
                         </div>
-                    </div>
-                    <div className="ServiceSection">
-                        <div >
+                        <div className="experiancesSections">
                             <ServiceSection/>
-                        </div>
-                    </div>
-                    <div className="ContactSection">
-                        <div >
+                            </div>
+                        <div className="experiancesSections">
                             <ContactSection/>
                         </div>
-                    </div>
                 </div>
             </div>
         );
