@@ -42,6 +42,7 @@
   display: block;
   margin: 10px;
   min-width: 437px;
+  color: #375A63;
 }
 
 .quote{
@@ -49,6 +50,7 @@
   width: 300px;
   margin:10px;
   vertical-align: middle;
+  color: #375A63;
 }
 
 .quote p{
