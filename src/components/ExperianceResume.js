@@ -18,8 +18,9 @@ class ExperianceResume extends React.Component {
     sectionHoover(enter){
       this.setState({
         textTheme: {
-          color: enter? this.props.info.color : "#00AEC3",
-          marginLeft:  enter? "100px" : "30px",
+            color: enter? "#375A63" : "#00AEC3",
+          //color: enter? this.props.info.color : "#00AEC3",
+          //marginLeft:  enter? "100px" : "30px",
         },
         backgroundTheme:{
           backgroundColor: enter? this.props.info.colorlight : "white"

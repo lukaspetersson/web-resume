@@ -13,8 +13,8 @@ class Resume extends React.Component {
             this.state = {
                 education:{
                     title:"Education",
-                    color: "#0053c1",
-                    colorlight: "#afcff7",
+                    color: "#4C5B5C",
+                    colorlight: "#dee4e5",
                     examples: [{
                         name: "Engelska Skolan",
                         year: "-2015",
@@ -30,8 +30,8 @@ class Resume extends React.Component {
                 },
                 apps:{
                     title:"Mobile Apps Development",
-                    color: "#128e2d",
-                    colorlight: "#aee8ba",
+                    color: "#FF715B",
+                    colorlight: "#ffe8e5",
                     examples: [{
                         name: "Brännbollräknare",
                         year: "2018"
@@ -47,8 +47,8 @@ class Resume extends React.Component {
                 },
                 web:{
                     title:"Web and Robots",
-                    color: "#6820a0",
-                    colorlight: "#d8baef",
+                    color: "#F9CB40",
+                    colorlight: "#fff7e2",
                     examples: [{
                         name: "Ericsson",
                         description: "Internship as web developer",
@@ -62,8 +62,8 @@ class Resume extends React.Component {
                 },
                 service:{
                     title:"Jobs within Service",
-                    color: "#8e1818",
-                    colorlight: "#ffbfbf",
+                    color: "#BCED09",
+                    colorlight: "#f3f9de",
                     examples: [{
                         name: "Abbekås hamnkrog",
                         year: "summer 2015 + 2016"
@@ -92,8 +92,8 @@ class Resume extends React.Component {
                 },
                 other:{
                     title:"Other",
-                    color: "#9b6500",
-                    colorlight: "#fff5e2",
+                    color: "#2F52E0",
+                    colorlight: "#e5eaff",
                     examples: [{
                         name: "Driving licence",
                         year: "Mar 2017"
