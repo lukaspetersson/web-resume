@@ -1,24 +1,22 @@
 .boxBody{
     width: 33vw;
     height: 33vw;
-    border: 1px solid black;
     background-size:100%;
     background-repeat: no-repeat;
     background-position: center;
-    line-height: 33vw;
-    vertical-align: middle;
     transition: background-size 0.5s;
+    color:white
 }
 
 .boxTitle{
     margin: 0;
-    color: white;
     font-size: 25px;
+    height: 100%;
+    padding-top: 8%;
 }
 
 .boxSubTitle{
-    margin-top: calc(40px - 100%);
-    color: white;
+    margin-top: -60%;
 }
 
 .boxBody:hover{
@@ -33,6 +31,7 @@
     height: 100%;
     opacity:0;
     transition: opacity 0.5s;
+    cursor: pointer;
 }
 
 .hoverContainer:hover{

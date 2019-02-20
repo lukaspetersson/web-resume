@@ -16,9 +16,16 @@ class Resume extends React.Component {
                 digitalEdge: {
                     image:pepperPic,
                     title: "Digital Edge",
-                    subTitle: "Consultant developer for web and robotics",
+                    subTitle: ["Consultant developer for web and robotics"],
                     color: "rgb(226, 18, 18)",
                     subColor: "rgba(140, 8, 8, 0.7)"
+                },
+                mobileApps: {
+                    image:pepperPic,
+                    title: "Mobile Development",
+                    subTitle: ["Brännbollräknare", "BookLog", "FallingKitten"],
+                    color: "rgb(18, 226, 18)",
+                    subColor: "rgba(8, 140, 8, 0.7)"
                 },
             }
           }
@@ -29,7 +36,7 @@ class Resume extends React.Component {
                 <BoxResume info={this.state.digitalEdge}/>
             </div>
             <div className="boxContainer">
-                <BoxResume info={this.state.digitalEdge}/>
+                <BoxResume info={this.state.mobileApps}/>
             </div>
             <div className="boxContainer">
                 <BoxResume info={this.state.digitalEdge}/>

@@ -111,10 +111,10 @@ class FrontPage extends React.Component {
                         </div>
                     </div>*/}
                         <div className="experiancesSections">
-                            <Resume/>
+                            <MeSection/>
                         </div>
                         <div className="experiancesSections">
-                            <MeSection/>
+                            <Resume/>
                         </div>
                         <div className="experiancesSections">
                                 <WebSection/>
