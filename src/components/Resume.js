@@ -13,20 +13,51 @@ class Resume extends React.Component {
     constructor(props){
             super(props)
             this.state = {
+                education: {
+                    image:pepperPic,
+                    title: "Education",
+                    examples: ["Engelska Skolan", "Cambridge IGCSE", "Kungsholmens gymnasium"],
+                    examplesYear: ["-2015", "2014-2015", "2015-2018"],
+                    color: "rgb(34, 94, 191)",
+                    subColor: "rgba(19, 54, 109, 0.7)"
+                },
                 digitalEdge: {
                     image:pepperPic,
-                    title: "Digital Edge",
-                    subTitle: ["Consultant developer for web and robotics"],
-                    color: "rgb(226, 18, 18)",
+                    title: "Robots",
+                    subTitle: ["Consultant developer for Digital Edge"],
+                    color: "rgb(191, 33, 33)",
                     subColor: "rgba(140, 8, 8, 0.7)"
+                },
+                ericsson: {
+                    image:pepperPic,
+                    title: "Internship",
+                    subTitle: ["Intern developer at Ericsson"],
+                    color: "rgb(191, 33, 146)",
+                    subColor: "rgba(112, 19, 85, 0.7)"
                 },
                 mobileApps: {
                     image:pepperPic,
                     title: "Mobile Development",
                     examples: ["Brännbollräknare", "BookLog", "FallingKitten"],
                     examplesYear: ["2018", "2018-2019", "2018"],
-                    color: "rgb(18, 226, 18)",
-                    subColor: "rgba(8, 140, 8, 0.7)"
+                    color: "rgb(143, 33, 191)",
+                    subColor: "rgba(65, 15, 86, 0.7)"
+                },
+                serviceJobs: {
+                    image:pepperPic,
+                    title: "Service jobs",
+                    examples: ["Abbekås hamnkrog", "Drottningholms GK", "Bedinge GK", "TUI", "Hemköp", "Engelska skolan"],
+                    examplesYear: ["summer 2015 + 2015", "2015 - 2017", "summer 2017", "summer 2018", "Oct-Nov 2018" , "Oct-Nov 2018"],
+                    color: "rgb(33, 191, 117)",
+                    subColor: "rgba(13, 86, 52, 0.7)"
+                },
+                other: {
+                    image:pepperPic,
+                    title: "Other",
+                    examples: ["Driving licence", "Erasmus +", "Unga forskare"],
+                    examplesYear: ["2017", "2017", "2018"],
+                    color: "rgb(191, 183, 33)",
+                    subColor: "rgba(102, 98, 15, 0.7)"
                 },
             }
           }
@@ -34,22 +65,22 @@ class Resume extends React.Component {
         return (
             <div >
             <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
+                <BoxResume info={this.state.education}/>
+            </div>
+            <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
                 <BoxResume info={this.state.digitalEdge}/>
+            </div>
+            <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
+                <BoxResume info={this.state.ericsson}/>
             </div>
             <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
                 <BoxResume info={this.state.mobileApps}/>
             </div>
             <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
-                <BoxResume info={this.state.digitalEdge}/>
+                <BoxResume info={this.state.serviceJobs}/>
             </div>
             <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
-                <BoxResume info={this.state.digitalEdge}/>
-            </div>
-            <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
-                <BoxResume info={this.state.digitalEdge}/>
-            </div>
-            <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
-                <BoxResume info={this.state.digitalEdge}/>
+                <BoxResume info={this.state.other}/>
             </div>
 
 
