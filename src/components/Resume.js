@@ -17,8 +17,8 @@ class Resume extends React.Component {
                     image:pepperPic,
                     title: "Digital Edge",
                     subTitle: "Consultant developer for web and robotics",
-                    color: "#dd2c00",
-                    subColor: "#ef9b86"
+                    color: "rgb(226, 18, 18)",
+                    subColor: "rgba(140, 8, 8, 0.7)"
                 },
             }
           }
