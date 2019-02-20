@@ -114,7 +114,7 @@ class FrontPage extends React.Component {
                             <MeSection/>
                         </div>
                         <div className="experiancesSections">
-                            <Resume/>
+                            <Resume scrollfromParent={this.handleScroll}/>
                         </div>
                         <div className="experiancesSections">
                                 <WebSection/>

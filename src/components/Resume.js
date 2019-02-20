@@ -33,22 +33,22 @@ class Resume extends React.Component {
     render() {
         return (
             <div >
-            <div className="boxContainer">
+            <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
                 <BoxResume info={this.state.digitalEdge}/>
             </div>
-            <div className="boxContainer">
+            <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
                 <BoxResume info={this.state.mobileApps}/>
             </div>
-            <div className="boxContainer">
+            <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
                 <BoxResume info={this.state.digitalEdge}/>
             </div>
-            <div className="boxContainer">
+            <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
                 <BoxResume info={this.state.digitalEdge}/>
             </div>
-            <div className="boxContainer">
+            <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
                 <BoxResume info={this.state.digitalEdge}/>
             </div>
-            <div className="boxContainer">
+            <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
                 <BoxResume info={this.state.digitalEdge}/>
             </div>
 
