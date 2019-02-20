@@ -1,9 +1,24 @@
 .boxBody{
     width: 33vw;
     height: 33vw;
-    background-color: green;
     border: 1px solid black;
-    background-image: url("../img/pepper_transparent.png");
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
+}
+
+.boxBody:hover{
+    background-size:cover;
+}
+
+.hoverContainer{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity:0;
+}
+
+.hoverContainer:hover{
+    opacity:1;
 }

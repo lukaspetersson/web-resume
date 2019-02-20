@@ -1,43 +1,47 @@
 import React from 'react';
 import './Resume.css';
-import profilePic from "./../img/profile_pic.png"
-import football_logo from "./../img/football_logo.png"
-import code_logo from "./../img/code_logo.png"
-import politics_logo from "./../img/politics_logo.png"
-import ContactResume from "./ContactResume.js";
-import ExperianceResume from "./ExperianceResume.js";
+// import profilePic from "./../img/profile_pic.png"
+// import football_logo from "./../img/football_logo.png"
+// import code_logo from "./../img/code_logo.png"
+// import politics_logo from "./../img/politics_logo.png"
+// import ContactResume from "./ContactResume.js";
+// import ExperianceResume from "./ExperianceResume.js";
 import BoxResume from "./BoxResume.js";
+import pepperPic from "./../img/pepper_transparent.png"
 
 class Resume extends React.Component {
     constructor(props){
             super(props)
             this.state = {
-
+                digitalEdge: {
+                    image:pepperPic,
+                    title: "Digital Edge",
+                    subTitle: "Consultant developer for web and robotics",
+                    color: "#dd2c00",
+                    subColor: "#ef9b86"
+                },
             }
           }
     render() {
         return (
             <div >
             <div className="boxContainer">
-                <BoxResume />
+                <BoxResume info={this.state.digitalEdge}/>
             </div>
             <div className="boxContainer">
-                <BoxResume />
+                <BoxResume info={this.state.digitalEdge}/>
             </div>
             <div className="boxContainer">
-                <BoxResume />
+                <BoxResume info={this.state.digitalEdge}/>
             </div>
             <div className="boxContainer">
-                <BoxResume />
+                <BoxResume info={this.state.digitalEdge}/>
             </div>
             <div className="boxContainer">
-                <BoxResume />
+                <BoxResume info={this.state.digitalEdge}/>
             </div>
             <div className="boxContainer">
-                <BoxResume />
-            </div>
-            <div className="boxContainer">
-                <BoxResume />
+                <BoxResume info={this.state.digitalEdge}/>
             </div>
 
 
