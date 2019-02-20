@@ -105,11 +105,14 @@ class FrontPage extends React.Component {
                             <WelcomeSection scrollfromParent={this.handleScroll}/>
                         </div>
                     </div>
-                    <div style = {this.state.resumeBackground} className="Resume">
+                    {/*<div style = {this.state.resumeBackground} className="Resume">
                         <div className="paper">
                             <Resume handlerFromParent={this.handleData} scrollfromParent={this.handleScroll}/>
                         </div>
-                    </div>
+                    </div>*/}
+                        <div className="experiancesSections">
+                            <Resume/>
+                        </div>
                         <div className="experiancesSections">
                             <MeSection/>
                         </div>

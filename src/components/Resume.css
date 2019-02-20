@@ -1,4 +1,12 @@
+.boxContainer{
+    position: relative;
+    display: inline-block;
+}
 
+
+
+
+/*
 .left_side{
     position: absolute;
     top:0;
@@ -60,4 +68,4 @@
     left: 225px;
     cursor: pointer;
     color:#00AEC3;
-}
+} */

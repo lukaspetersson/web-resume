@@ -1,0 +1,9 @@
+.boxBody{
+    width: 33vw;
+    height: 33vw;
+    background-color: green;
+    border: 1px solid black;
+    background-image: url("../img/pepper_transparent.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
