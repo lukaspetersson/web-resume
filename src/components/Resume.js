@@ -23,7 +23,8 @@ class Resume extends React.Component {
                 mobileApps: {
                     image:pepperPic,
                     title: "Mobile Development",
-                    subTitle: ["Brännbollräknare", "BookLog", "FallingKitten"],
+                    examples: ["Brännbollräknare", "BookLog", "FallingKitten"],
+                    examplesYear: ["2018", "2018-2019", "2018"],
                     color: "rgb(18, 226, 18)",
                     subColor: "rgba(8, 140, 8, 0.7)"
                 },
