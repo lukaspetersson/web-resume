@@ -19,17 +19,17 @@
     margin: 0px 10px;
 }
 
-.arrows{
+.arrowsService{
     position: absolute;
-    top: 280px;
+    bottom: 142px;
     width: 64px;
     cursor: pointer;
     z-index: 3;
 }
-#firstArrow{
+#firstArrowService{
       left:10px;
 }
-#secondArrow{
+#secondArrowService{
       right:20px;
 }
 

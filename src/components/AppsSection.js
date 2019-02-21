@@ -80,7 +80,7 @@ class AppsSection extends React.Component {
             <div className="appsBody">
                 <h1>Mobile App Development</h1>
                 <h3>Mobile app development became the catalyst to make my programming passion explode. The feeling of observing your project go from an idea in your head to an usable tool is truly satisfying. </h3>
-                <img className="arrows" id="firstArrow" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
+                <img className="arrowsApps" id="firstArrowApps" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="appsContainer" ref={this.appsContainerRef} >
                     <div className="app">
                         <SmallBlock info={this.state.bookLog}/>
@@ -92,7 +92,7 @@ class AppsSection extends React.Component {
                         <SmallBlock info={this.state.fallingKitten}/>
                     </div>
                 </div>
-                <img className="arrows" id="secondArrow" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
+                <img className="arrowsApps" id="secondArrowApps" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }

@@ -18,17 +18,17 @@
     margin: 0px 10px;
 }
 
-.arrows{
+.arrowsApps{
     position: absolute;
-    top: 280px;
+    bottom: 142px;
     width: 64px;
     cursor: pointer;
     z-index: 3;
 }
-#firstArrow{
+#firstArrowApps{
       left:10px;
 }
-#secondArrow{
+#secondArrowApps{
       right:20px;
 }
 

@@ -71,7 +71,7 @@ class WebSection extends React.Component {
             <div className="webBody">
                 <h1>Jobs as programmer</h1>
                 <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
-                <img className="arrows" id="firstArrow" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
+                <img className="arrowsWeb" id="firstArrowWeb" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="webContainer" ref={this.appsContainerRef} >
                     <div className="web">
                         <SmallBlock info={this.state.de}/>
@@ -80,7 +80,7 @@ class WebSection extends React.Component {
                         <SmallBlock info={this.state.ericsson}/>
                     </div>
                 </div>
-                <img className="arrows" id="secondArrow" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
+                <img className="arrowsWeb" id="secondArrowWeb" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }

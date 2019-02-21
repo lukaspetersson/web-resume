@@ -19,17 +19,17 @@
     margin: 0px 10px;
 }
 
-.arrows{
+.arrowsWeb{
     position: absolute;
-    top: 280px;
+    bottom: 142px;
     width: 64px;
     cursor: pointer;
     z-index: 3;
 }
-#firstArrow{
+#firstArrowWeb{
       left:10px;
 }
-#secondArrow{
+#secondArrowWeb{
       right:20px;
 }
 
