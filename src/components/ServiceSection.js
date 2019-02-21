@@ -23,42 +23,42 @@ class ServiceSection extends React.Component {
             super(props)
             this.state = {
                 tui:{
-                    description:"booklog cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p ",
+                    description:"I spent the summer of 2018 in Greece working at a TUI hotel as a Entertainer. Me and colleagues performed on stage and hosted family games. I had the time of my life and made some great friends!",
                     image: {
                       front: tui_logo,
                       back: tui_back
                     }
                 },
                 iesb:{
-                    description:"burnBall wdmpqow cpqw cpcqwpo cw cqpw coqw +co qwp cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p ",
+                    description:"3 years after graduating from IESB I came back but this time in the role of a substitute teacher. My respect for teachers grew as I realized how hard the balance between inspiration and authority is.",
                     image: {
                       front: iesb_logo,
                       back: iesb_back
                     }
                 },
                 hemkop:{
-                    description:"fallingKitten wdmwp cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p",
+                    description:"The magic of a supermarket was ruined for me while I was working at Hemköp. The shelfs apparently don´t get filled by themselves, but by hard work and time optimization.",
                     image: {
                       front: hemkop_logo,
                       back: hemkop_back
                     }
                 },
                 drottningholm:{
-                    description:"fallingKitten wdmwp cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p",
+                    description:"Leadership, planning and organization were essential skills in my work as a golf instructor, although pronouncing all the names during attendance was by far the hardest part.",
                     image: {
                       front: drottningholm_logo,
                       back: drottningholm_back
                     }
                 },
                 bedinge:{
-                    description:"fallingKitten wdmwp cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p",
+                    description:"Working in a smaller restaurant sets completely different requirements, you can no longer specialize in one thing. I had become an amazing dishwasher at Abbekås, but now I had to learn new skills.",
                     image: {
                       front: bedinge_logo,
                       back: bedinge_back
                     }
                 },
                 abbekas:{
-                    description:"fallingKitten wdmwp cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p",
+                    description:"My first ever job was a harsh but fun welcoming into working life. Washing dishes at a restaurant is an extremely stressful task. When the piles stack up, there is no time to waste.",
                     image: {
                       front: abbekas_logo,
                       back: abbekas_back
@@ -107,8 +107,8 @@ class ServiceSection extends React.Component {
         const appsContainer = this.appsContainerRef.current;
         return (
             <div className="serviceBody">
-                <h1>Service jobs</h1>
-                <h3>Skills are great but it is wasted without hard work, I got my first job almost as soon as it was leagaly possible. From that I have developed an unmatchable work ethic, something my former emplyers can certify.</h3>
+                <h1>Service Jobs</h1>
+                <h3>Skills are great but it is wasted without hard work, I got my first job almost as soon as it was legally possible. From that I have developed an unmatchable work ethic, something my former employers can certify.</h3>
                 <div className="quote">
                   <p>"Jag kan verkligen rekomendera denna unge man, ävenom om jag helst slipper då jag hoppas ha honom många år framöver"</p>
                 </div>
