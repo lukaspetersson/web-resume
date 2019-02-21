@@ -15,21 +15,21 @@ class AppsSection extends React.Component {
             super(props)
             this.state = {
                 bookLog:{
-                    description:"booklog cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p ",
+                    description:"The virtual bookshelf BoogLog lets you keep track of the books you read. It uses APIs such as google Books, Vision and Cloud Firestore.",
                     image: {
                       front: booklog_logo,
                       back: booklog_screen
                     }
                 },
                 burnBall:{
-                    description:"burnBall wdmpqow cpqw cpcqwpo cw cqpw coqw +co qwp cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p ",
+                    description:"The Brännbollräknare takes away the inconvenience of handling pen and paper during your brännboll matches.",
                     image: {
                       front: burnball_logo,
                       back: burnball_screen
                     }
                 },
                 fallingKitten:{
-                    description:"fallingKitten wdmwp cp qwl clqwcl l  pc qlw c wqålpclqwåclwlc p",
+                    description:"In this adorable endless arcade game, you will rotate the kittens falling from the sky and save them from exploding.",
                     image: {
                       front: fallingkitten_logo,
                       back: fallingkitten_screen
@@ -78,8 +78,8 @@ class AppsSection extends React.Component {
         const appsContainer = this.appsContainerRef.current;
         return (
             <div className="appsBody">
-                <h1>My Mobile Apps</h1>
-                <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo </h3>
+                <h1>Mobile App Development</h1>
+                <h3>Mobile app development became the catalyst to make my programming passion explode. The feeling of observing your project go from an idea in your head to an usable tool is truly satisfying. </h3>
                 <img className="arrows" id="firstArrow" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="appsContainer" ref={this.appsContainerRef} >
                     <div className="app">
