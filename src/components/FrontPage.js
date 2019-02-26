@@ -93,12 +93,13 @@ class FrontPage extends React.Component {
             break;
         }
     }
+    // // <div className="FrontPage">
+    //     {/*<div className="NavigationBar" style = {this.state.NavigationBarBackground}>
+    //         <NavigationBar scrollfromParent={this.handleScroll} section={this.state.navShowSection}/>
+    //     </div>*/}
     render() {
         return (
-            <div className="FrontPage">
-                {/*<div className="NavigationBar" style = {this.state.NavigationBarBackground}>
-                    <NavigationBar scrollfromParent={this.handleScroll} section={this.state.navShowSection}/>
-                </div>*/}
+
                 <div className="body" ref={this.bodyRef} onScroll={this.changeNav}>
                     <div className="WelcomeSection">
                         <div >
@@ -129,7 +130,6 @@ class FrontPage extends React.Component {
                             <ContactSection/>
                         </div>
                 </div>
-            </div>
         );
     }
 }

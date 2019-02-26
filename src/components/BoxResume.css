@@ -1,11 +1,11 @@
 .boxBody{
-    width: 33vw;
+    width: calc(100vw / 3 - 5px);
     height: 33vw;
     background-size:100%;
     background-repeat: no-repeat;
     background-position: center;
     transition: background-size 0.5s;
-    color:white
+    color:white;
 }
 
 .boxTitle{

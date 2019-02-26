@@ -1,17 +1,15 @@
 
-.FrontPage{
+/* .FrontPage{
     position: absolute;
     display: block;
     top:0;
     left:0;
     right:0;
     bottom: 0;
-    overflow-y: hidden;
-    z-index: 0;
-    color: #00AEC3;
-    font-family: Verdana;
-}
-.NavigationBar{
+    overflow-y: scroll;
+
+} */
+/* .NavigationBar{
     position: absolute;
     top:0;
     left:0;
@@ -19,7 +17,7 @@
     height: 70px;
     z-index: 2;
     overflow: hidden;
-}
+} */
 
 .body{
     position: absolute;
@@ -31,7 +29,11 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     z-index: 1;
+
     background-color: #EAE5E2;
+    z-index: 0;
+    color: #00AEC3;
+    font-family: Verdana;
 }
 
 .WelcomeSection{
@@ -43,7 +45,7 @@
     background-position: center;
 }
 
-.Resume{
+/* .Resume{
     position: relative;
     width: 100vw;
     height: 870px;
@@ -53,10 +55,9 @@
     background-repeat: no-repeat;
     transition:all 0.6s ease;
     overflow:auto;
-}
+} */
 
-.paper{
-  /* layout */
+/* .paper{
   position: relative;
   width: 630px;
   height: 770px;
@@ -64,10 +65,8 @@
   margin-right: auto;
   text-align: center;
   margin-top: 50px;
-
-  /* design */
   background-color: white;
-}
+} */
 
 .experiances{
     position: relative;
@@ -76,7 +75,7 @@
 
 .experiancesSections{
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: block;
     height: auto;
     clear: both;

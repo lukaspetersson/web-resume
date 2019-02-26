@@ -30,8 +30,6 @@ class BoxResume extends React.Component {
                         <div style={{float : "right"}}>
                         {years}
                         </div>
-
-
                     </div>
                 </div>
             </div>
