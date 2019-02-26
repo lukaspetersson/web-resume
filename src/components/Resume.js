@@ -1,11 +1,5 @@
 import React from 'react';
 import './Resume.css';
-// import profilePic from "./../img/profile_pic.png"
-// import football_logo from "./../img/football_logo.png"
-// import code_logo from "./../img/code_logo.png"
-// import politics_logo from "./../img/politics_logo.png"
-// import ContactResume from "./ContactResume.js";
-// import ExperianceResume from "./ExperianceResume.js";
 import BoxResume from "./BoxResume.js";
 import pepperPic from "./../img/pepper_transparent.png"
 import ericssonLogo from "./../img/ericsson_logo.png"
