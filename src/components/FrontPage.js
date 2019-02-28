@@ -8,6 +8,8 @@ import AppsSection from './AppsSection.js'
 import ServiceSection from './ServiceSection.js'
 import NavigationBar from './NavigationBar.js'
 import ContactSection from './ContactSection.js'
+import DigitalEdgeSection from './DigitalEdgeSection.js'
+import EricssonSection from './EricssonSection.js'
 
 class FrontPage extends React.Component {
     constructor(props){
@@ -107,6 +109,12 @@ class FrontPage extends React.Component {
                         </div>
                         <div className="experiancesSections">
                             <Resume scrollfromParent={this.handleScroll}/>
+                        </div>
+                        <div className="experiancesSections">
+                                <DigitalEdgeSection/>
+                        </div>
+                        <div className="experiancesSections">
+                                <EricssonSection/>
                         </div>
                         <div className="experiancesSections">
                                 <WebSection/>
