@@ -1,0 +1,12 @@
+.ericssonBody{
+  height: 400px;
+  background-image: url("./../img/kista1.jpg");
+  background-size: cover;
+  background-position: center;
+  color:white;
+}
+
+.ericssonBody div{
+  text-align: center;
+  padding: 4% 15%;
+}
