@@ -13,6 +13,11 @@ class DigitalEdgeSection extends React.Component {
         return (
             <div className="digitalEdgeBody">
                 <img src={pepper_hello}/>
+                <div>
+                <h1>Jobs as programmer</h1>
+                <h3>oem+v oe+mo våemvm emvemvp mvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo  mvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo  omqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo opscnisnvc +woc+onwncw +woc+own+cn +wfc+omw+cm w+mc+omwqmc+wom w´0j+mwomcmw</h3>
+                </div>
+
             </div>
         );
         }
