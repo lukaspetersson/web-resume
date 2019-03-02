@@ -4,7 +4,25 @@ import './BoxResume.css';
 class BoxResume extends React.Component {
     constructor(props){
             super(props)
+            this.state={
+              textOpacity:0
+            }
+            this.toggleOpacity = this.toggleOpacity.bind(this)
     }
+    componentDidMount(){
+        this.setState({
+          textOpacity:1 == 2 ? 0 : 1
+        })
+    }
+
+    toggleOpacity(onMouse){
+      if(1==2){
+        this.setState({
+          textOpacity:onMouse == "leave" ? 0 : 1
+        })
+      }
+    }
+
     render() {
         if(this.props.info.examples){
             var examples =[]
@@ -16,11 +34,10 @@ class BoxResume extends React.Component {
             }
         }
 
-
         return (
             <div className="boxBody" style={{backgroundColor : this.props.info.color, backgroundImage : "url("+this.props.info.image+")"}}>
                 <p className="boxTitle">{this.props.info.title}</p>
-                <div className="hoverContainer" style={{backgroundColor : this.props.info.subColor}}>
+                <div className="hoverContainer" style={{backgroundColor : this.props.info.subColor, opacity: this.state.textOpacity}} onMouseEnter={()=>{this.toggleOpacity("enter")}} onMouseLeave={()=>{this.toggleOpacity("leave")}}>
                     <p className="boxTitle">{this.props.info.title}</p>
                     <div className="boxSubTitle">
                         {this.props.info.subTitle}

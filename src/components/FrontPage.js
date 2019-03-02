@@ -117,9 +117,6 @@ class FrontPage extends React.Component {
                                 <EricssonSection/>
                         </div>
                         <div className="experiancesSections">
-                                <WebSection/>
-                        </div>
-                        <div className="experiancesSections">
                             <AppsSection/>
                         </div>
                         <div className="experiancesSections">
