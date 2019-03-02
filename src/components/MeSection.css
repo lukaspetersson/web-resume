@@ -9,6 +9,23 @@
 
 }
 
-.meBody h3{
+.infoContainer h3{
     color: #375A63;
+}
+
+.readMoreContainer{
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.readMoreContainer img{
+  height: 64px;
+  display: inline-block;
+
+}
+
+.readMoreContainer h3{
+display: inline-block;
+vertical-align: top;
+
 }
