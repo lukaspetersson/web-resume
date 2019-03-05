@@ -11,12 +11,12 @@ class BoxResume extends React.Component {
     }
     componentDidMount(){
         this.setState({
-          textOpacity:1 == 2 ? 0 : 1
+          textOpacity: window.innerWidth > 800 ? 0 : 1
         })
     }
 
     toggleOpacity(onMouse){
-      if(1==2){
+      if(window.innerWidth > 800){
         this.setState({
           textOpacity:onMouse == "leave" ? 0 : 1
         })

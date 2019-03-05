@@ -12,7 +12,7 @@ class WelcomeSection extends React.Component {
             <div className="welcomeBody">
                 <div className="welcomeText">
                     <p>Hi!<br/>Welcome to my <br/>interactive resume</p>
-                    <img src={down_logo} onClick={() => this.props.scrollfromParent("resume")}/>
+                    <img src={down_logo} onClick={() => this.props.scrollfromParent("me")}/>
                 </div>
             </div>
 

@@ -39,41 +39,44 @@ class FrontPage extends React.Component {
 
                 },
             }
+            this.refResume = React.createRef()
+            this.refMe = React.createRef()
             this.refEducation = React.createRef()
             this.refDigitalEdge = React.createRef()
             this.refEricsson = React.createRef()
             this.refApps = React.createRef()
             this.refService = React.createRef()
             this.refOther = React.createRef()
+            this.bodyRef = React.createRef();
 
             this.handleData = this.handleData.bind(this);
             this.handleScroll = this.handleScroll.bind(this);
-            this.changeNav = this.changeNav.bind(this);
-            this.bodyRef = React.createRef();
-        }
-    changeNav() {
-        const body = this.bodyRef.current;
-            this.setState({
-                NavigationBarBackground:{
-                    backgroundColor: body.scrollTop > 1800 ? "black":"transparent"
-                },
-                navShowSection:{
-                  me:{
-                    borderBottom: (body.scrollTop >= 1200 && body.scrollTop < 1700) ? "7px solid white" : "0px"
-                  },
-                  web:{
-                    borderBottom: (body.scrollTop >= 1700 && body.scrollTop < 2200) ? "7px solid white" : "0px"
-                  },
-                  apps:{
-                    borderBottom: (body.scrollTop >= 2200 && body.scrollTop < 2700) ? "7px solid white" : "0px"
-                  },
-                  service:{
-                    borderBottom: (body.scrollTop >= 2700 && body.scrollTop < 3300) ? "7px solid white" : "0px"
-                  }
+            //this.changeNav = this.changeNav.bind(this);
 
-                },
-            });
-    }
+        }
+    // changeNav() {
+    //     const body = this.bodyRef.current;
+    //         this.setState({
+    //             NavigationBarBackground:{
+    //                 backgroundColor: body.scrollTop > 1800 ? "black":"transparent"
+    //             },
+    //             navShowSection:{
+    //               me:{
+    //                 borderBottom: (body.scrollTop >= 1200 && body.scrollTop < 1700) ? "7px solid white" : "0px"
+    //               },
+    //               web:{
+    //                 borderBottom: (body.scrollTop >= 1700 && body.scrollTop < 2200) ? "7px solid white" : "0px"
+    //               },
+    //               apps:{
+    //                 borderBottom: (body.scrollTop >= 2200 && body.scrollTop < 2700) ? "7px solid white" : "0px"
+    //               },
+    //               service:{
+    //                 borderBottom: (body.scrollTop >= 2700 && body.scrollTop < 3300) ? "7px solid white" : "0px"
+    //               }
+    //
+    //             },
+    //         });
+    // }
     handleData(data) {
         this.setState({
             resumeBackground:{
@@ -84,24 +87,27 @@ class FrontPage extends React.Component {
     handleScroll(data) {
         const body = this.bodyRef.current;
         switch(data) {
-          case "education":
-            body.scrollTo(0, this.refEducation.current.offsetTop);
-            break;
-          case "digitalEdge":
-            body.scrollTo(0, this.refDigitalEdge.current.offsetTop);
-            break;
-          case "ericsson":
-            body.scrollTo(0, this.refEricsson.current.offsetTop);
-            break;
-          case "apps":
-            body.scrollTo(0, this.refApps.current.offsetTop);
-            break;
-          case "service":
-            body.scrollTo(0, this.refService.current.offsetTop);
-            break;
-          case "other":
-            body.scrollTo(0, this.refOther.current.offsetTop);
-            break;
+            case "me":
+                body.scrollTo(0, this.refMe.current.offsetTop);
+                break;
+            case "education":
+                body.scrollTo(0, this.refEducation.current.offsetTop);
+                break;
+            case "digitalEdge":
+                body.scrollTo(0, this.refDigitalEdge.current.offsetTop);
+                break;
+            case "ericsson":
+                body.scrollTo(0, this.refEricsson.current.offsetTop);
+                break;
+            case "apps":
+                body.scrollTo(0, this.refApps.current.offsetTop);
+                break;
+            case "service":
+                body.scrollTo(0, this.refService.current.offsetTop);
+                break;
+            case "other":
+                body.scrollTo(0, this.refOther.current.offsetTop);
+                break;
         }
     }
     render() {
@@ -113,11 +119,11 @@ class FrontPage extends React.Component {
                             <WelcomeSection scrollfromParent={this.handleScroll}/>
                         </div>
                     </div>
-                        <div className="experiancesSections">
+                        <div className="experiancesSections" ref={this.refMe}>
                             <MeSection/>
                         </div>
-                        <div className="experiancesSections">
-                            <Resume scrollfromParent={this.handleScroll}/>
+                        <div className="experiancesSections" ref={this.refResume}>
+                            <Resume scrollfromParent={this.handleScroll} />
                         </div>
                         <div className="experiancesSections" ref={this.refEducation}>
                             <EducationSection/>
