@@ -1,5 +1,6 @@
 .SmallBlock{
-  width:200px;
+  width:250px;
+  padding: 0 20px;
     text-align: center;
     background-color: white;
     color: #375A63;
@@ -18,7 +19,8 @@
 
 .flip-card {
   background-color: transparent;
-  width:200px;
+  width:250px;
+  padding: 0 20px;
 }
 
 .flip-card-inner {
@@ -48,6 +50,7 @@
 }
 
 .flip-card-back img{
-  width:200px;
+  width:250px;
+  padding: 0 20px;
   object-fit: cover;
 }
