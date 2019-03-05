@@ -39,6 +39,13 @@ class FrontPage extends React.Component {
 
                 },
             }
+            this.refEducation = React.createRef()
+            this.refDigitalEdge = React.createRef()
+            this.refEricsson = React.createRef()
+            this.refApps = React.createRef()
+            this.refService = React.createRef()
+            this.refOther = React.createRef()
+
             this.handleData = this.handleData.bind(this);
             this.handleScroll = this.handleScroll.bind(this);
             this.changeNav = this.changeNav.bind(this);
@@ -77,23 +84,23 @@ class FrontPage extends React.Component {
     handleScroll(data) {
         const body = this.bodyRef.current;
         switch(data) {
-          case "welcome":
-            body.scrollTo(0, 0);
+          case "education":
+            body.scrollTo(0, this.refEducation.current.offsetTop);
             break;
-          case "resume":
-            body.scrollTo(0, 500);
+          case "digitalEdge":
+            body.scrollTo(0, this.refDigitalEdge.current.offsetTop);
             break;
-          case "me":
-            body.scrollTo(0, 1300);
-            break;
-          case "web":
-            body.scrollTo(0, 1800);
+          case "ericsson":
+            body.scrollTo(0, this.refEricsson.current.offsetTop);
             break;
           case "apps":
-            body.scrollTo(0, 2300);
+            body.scrollTo(0, this.refApps.current.offsetTop);
             break;
           case "service":
-            body.scrollTo(0, 2800);
+            body.scrollTo(0, this.refService.current.offsetTop);
+            break;
+          case "other":
+            body.scrollTo(0, this.refOther.current.offsetTop);
             break;
         }
     }
@@ -112,22 +119,22 @@ class FrontPage extends React.Component {
                         <div className="experiancesSections">
                             <Resume scrollfromParent={this.handleScroll}/>
                         </div>
-                        <div className="experiancesSections">
+                        <div className="experiancesSections" ref={this.refEducation}>
                             <EducationSection/>
                         </div>
-                        <div className="experiancesSections">
+                        <div className="experiancesSections" ref={this.refDigitalEdge}>
                             <DigitalEdgeSection/>
                         </div>
-                        <div className="experiancesSections">
+                        <div className="experiancesSections" ref={this.refEricsson}>
                             <EricssonSection/>
                         </div>
-                        <div className="experiancesSections">
+                        <div className="experiancesSections" ref={this.refApps}>
                             <AppsSection/>
                         </div>
-                        <div className="experiancesSections">
+                        <div className="experiancesSections" ref={this.refService}>
                             <ServiceSection/>
                         </div>
-                        <div className="experiancesSections">
+                        <div className="experiancesSections" ref={this.refOther}>
                             <OtherSection/>
                         </div>
                         <div className="experiancesSections">

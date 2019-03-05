@@ -63,13 +63,13 @@ class Resume extends React.Component {
     render() {
         return (
             <div >
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("me")}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("education")}>
                     <BoxResume info={this.state.education}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("web")}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("digitalEdge")}>
                     <BoxResume info={this.state.digitalEdge}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("web")}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("ericsson")}>
                     <BoxResume info={this.state.ericsson}/>
                 </div>
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}>
@@ -78,7 +78,7 @@ class Resume extends React.Component {
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("service")}>
                     <BoxResume info={this.state.serviceJobs}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("me")}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("other")}>
                     <BoxResume info={this.state.other}/>
                 </div>
             </div>
