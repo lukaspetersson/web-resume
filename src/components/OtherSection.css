@@ -1,0 +1,44 @@
+.otherBody{
+    padding: 10px 20px;
+    height: auto;
+}
+.otherContainer{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 350px;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.other{
+    display: inline-block;
+    position: relative;
+    vertical-align:top;
+    margin: 0px 10px;
+}
+
+.arrowsOther{
+    position: absolute;
+    bottom: 142px;
+    width: 64px;
+    cursor: pointer;
+    z-index: 3;
+}
+#firstArrowOther{
+      left:10px;
+}
+#secondArrowOther{
+      right:20px;
+}
+
+.otherBody h1{
+  margin: 0px 10px;
+  min-width: 437px;
+}
+
+.otherBody h3{
+  margin: 20px 10px;
+  min-width: 437px;
+  color: #375A63;
+}
