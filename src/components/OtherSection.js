@@ -83,13 +83,13 @@ class OtherSection extends React.Component {
                 <img className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="otherContainer" ref={this.appsContainerRef} >
                     <div className="other">
-                        <SmallBlock info={this.state.bookLog} height={"400px"}/>
+                        <SmallBlock info={this.state.bookLog} height={"350px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.burnBall} height={"400px"}/>
+                        <SmallBlock info={this.state.burnBall} height={"350px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.fallingKitten} height={"400px"}/>
+                        <SmallBlock info={this.state.fallingKitten} height={"350px"}/>
                     </div>
                 </div>
                 <img className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>

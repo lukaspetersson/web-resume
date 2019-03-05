@@ -10,7 +10,7 @@ class SmallBlock extends React.Component {
             <div className="flip-card" style={{height:this.props.height}}>
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <div className="SmallBlock">
+                  <div className="SmallBlock" style={{height:this.props.height}}>
                       <img src={this.props.info.image.front}/>
                       <p>2018</p>
                       <p>{this.props.info.description}</p>

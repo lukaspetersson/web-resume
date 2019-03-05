@@ -6,7 +6,6 @@
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    height: 350px;
     width: 100%;
     scroll-behavior: smooth;
 }
