@@ -3,7 +3,6 @@ import './FrontPage.css';
 import Resume from './Resume.js'
 import WelcomeSection from './WelcomeSection.js'
 import MeSection from './MeSection.js'
-import WebSection from './WebSection.js'
 import AppsSection from './AppsSection.js'
 import ServiceSection from './ServiceSection.js'
 import NavigationBar from './NavigationBar.js'

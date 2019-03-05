@@ -20,7 +20,7 @@
 .flip-card {
   background-color: transparent;
   width:200px;
-  height: 350px;
+
 }
 
 .flip-card-inner {
@@ -51,6 +51,5 @@
 
 .flip-card-back img{
   width:200px;
-  height: 350px;
   object-fit: cover;
 }

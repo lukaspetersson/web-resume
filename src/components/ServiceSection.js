@@ -118,22 +118,22 @@ class ServiceSection extends React.Component {
                 <img className="arrowsService" id="firstArrowService" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="serviceContainer" ref={this.appsContainerRef} >
                     <div className="service">
-                        <SmallBlock info={this.state.abbekas}/>
+                        <SmallBlock info={this.state.abbekas} height={"400px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.drottningholm}/>
+                        <SmallBlock info={this.state.drottningholm} height={"400px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.bedinge}/>
+                        <SmallBlock info={this.state.bedinge} height={"400px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.tui}/>
+                        <SmallBlock info={this.state.tui} height={"400px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.hemkop}/>
+                        <SmallBlock info={this.state.hemkop} height={"400px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.iesb}/>
+                        <SmallBlock info={this.state.iesb} height={"400px"}/>
                     </div>
                 </div>
                 <img className="arrowsService" id="secondArrowService" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
