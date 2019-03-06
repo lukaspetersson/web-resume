@@ -5,7 +5,7 @@ class BoxResume extends React.Component {
     constructor(props){
             super(props)
             this.state={
-              textOpacity:0
+              textOpacity:0,
             }
             this.toggleOpacity = this.toggleOpacity.bind(this)
             this.resizeWindow = this.resizeWindow.bind(this)
