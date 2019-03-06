@@ -91,7 +91,7 @@ class Resume extends React.Component {
             height: this.state.boxSize+"vw",
             width: this.state.boxSize+"%",
             fontSize: this.state.boxSize/30+"vw",
-            lineHeight: this.state.boxSize/30+"vw"
+            lineHeight: this.state.boxSize/30+"vw",
         }
         return (
             <div >

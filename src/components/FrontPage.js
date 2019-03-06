@@ -46,7 +46,6 @@ class FrontPage extends React.Component {
             this.refApps = React.createRef()
             this.refService = React.createRef()
             this.refOther = React.createRef()
-            this.bodyRef = React.createRef();
 
             this.handleData = this.handleData.bind(this);
             this.handleScroll = this.handleScroll.bind(this);
@@ -84,35 +83,34 @@ class FrontPage extends React.Component {
         });
     }
     handleScroll(data) {
-        const body = this.bodyRef.current;
         switch(data) {
             case "me":
-                body.scrollTo(0, this.refMe.current.offsetTop);
+                window.scrollTo(0, this.refMe.current.offsetTop);
                 break;
             case "education":
-                body.scrollTo(0, this.refEducation.current.offsetTop);
+                window.scrollTo(0, this.refEducation.current.offsetTop);
                 break;
             case "digitalEdge":
-                body.scrollTo(0, this.refDigitalEdge.current.offsetTop);
+                window.scrollTo(0, this.refDigitalEdge.current.offsetTop);
                 break;
             case "ericsson":
-                body.scrollTo(0, this.refEricsson.current.offsetTop);
+                window.scrollTo(0, this.refEricsson.current.offsetTop);
                 break;
             case "apps":
-                body.scrollTo(0, this.refApps.current.offsetTop);
+                window.scrollTo(0, this.refApps.current.offsetTop);
                 break;
             case "service":
-                body.scrollTo(0, this.refService.current.offsetTop);
+                window.scrollTo(0, this.refService.current.offsetTop);
                 break;
             case "other":
-                body.scrollTo(0, this.refOther.current.offsetTop);
+                window.scrollTo(0, this.refOther.current.offsetTop);
                 break;
         }
     }
     render() {
         return (
 
-                <div className="body" ref={this.bodyRef} onScroll={this.changeNav}>
+                <div className="body">
                         <div className="WelcomeSection">
                             <WelcomeSection scrollfromParent={this.handleScroll}/>
                         </div>

@@ -15,6 +15,7 @@ class AppsSection extends React.Component {
             super(props)
             this.state = {
                 bookLog:{
+                    year:"2019",
                     description:"The virtual bookshelf BoogLog lets you keep track of the books you read. It uses APIs such as google Books, Vision and Cloud Firestore.",
                     image: {
                       front: booklog_logo,
@@ -22,6 +23,7 @@ class AppsSection extends React.Component {
                     }
                 },
                 burnBall:{
+                    year:"2019",
                     description:"The Brännbollräknare takes away the inconvenience of handling pen and paper during your brännboll matches.",
                     image: {
                       front: burnball_logo,
@@ -29,6 +31,7 @@ class AppsSection extends React.Component {
                     }
                 },
                 fallingKitten:{
+                    year:"2019",
                     description:"In this adorable endless arcade game, you will rotate the kittens falling from the sky and save them from exploding.",
                     image: {
                       front: fallingkitten_logo,

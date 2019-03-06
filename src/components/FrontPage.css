@@ -1,11 +1,12 @@
-
+html {
+  scroll-behavior: smooth;
+}
 .body{
     position: absolute;
     top:0;
     right:0;
     left:0;
     display: block;
-    scroll-behavior: smooth;
     background-color: #EAE5E2;
     z-index: 0;
     color: #00AEC3;
