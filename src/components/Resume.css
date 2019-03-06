@@ -1,4 +1,5 @@
 .boxContainer{
     position: relative;
     display: inline-block;
+    width: 33.3333333%
 }
