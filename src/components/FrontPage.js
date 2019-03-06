@@ -113,11 +113,9 @@ class FrontPage extends React.Component {
         return (
 
                 <div className="body" ref={this.bodyRef} onScroll={this.changeNav}>
-                    <div className="WelcomeSection">
-                        <div >
+                        <div className="WelcomeSection">
                             <WelcomeSection scrollfromParent={this.handleScroll}/>
                         </div>
-                    </div>
                         <div className="experiancesSections" ref={this.refMe}>
                             <MeSection/>
                         </div>
