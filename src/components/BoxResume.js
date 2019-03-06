@@ -8,8 +8,17 @@ class BoxResume extends React.Component {
               textOpacity:0
             }
             this.toggleOpacity = this.toggleOpacity.bind(this)
+            this.resizeWindow = this.resizeWindow.bind(this)
     }
     componentDidMount(){
+         window.addEventListener('resize', this.resizeWindow)
+    }
+
+    componentWillUnmount() {
+      window.removeEventListener('resize', this.resizeWindow)
+    }
+
+    resizeWindow = ()=>{
         this.setState({
           textOpacity: window.innerWidth > 800 ? 0 : 1
         })
