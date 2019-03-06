@@ -87,24 +87,30 @@ class Resume extends React.Component {
           }
       }
     render() {
+        var boxStyle ={
+            height: this.state.boxSize+"vw",
+            width: this.state.boxSize+"%",
+            fontSize: this.state.boxSize/30+"vw",
+            lineHeight: this.state.boxSize/30+"vw"
+        }
         return (
             <div >
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("education")} style={{height: this.state.boxSize+"vw", width: this.state.boxSize+"%"}}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("education")} style={boxStyle}>
                     <BoxResume info={this.state.experiance.education}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("digitalEdge")} style={{height: this.state.boxSize+"vw", width: this.state.boxSize+"%"}}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("digitalEdge")} style={boxStyle}>
                     <BoxResume info={this.state.experiance.digitalEdge}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("ericsson")} style={{height: this.state.boxSize+"vw", width: this.state.boxSize+"%"}}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("ericsson")} style={boxStyle}>
                     <BoxResume info={this.state.experiance.ericsson}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")} style={{height: this.state.boxSize+"vw", width: this.state.boxSize+"%"}}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}style={boxStyle}>
                     <BoxResume info={this.state.experiance.mobileApps}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("service")} style={{height: this.state.boxSize+"vw", width: this.state.boxSize+"%"}}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("service")} style={boxStyle}>
                     <BoxResume info={this.state.experiance.serviceJobs}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("other")} style={{height: this.state.boxSize+"vw", width: this.state.boxSize+"%"}}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("other")} style={boxStyle}>
                     <BoxResume info={this.state.experiance.other}/>
                 </div>
             </div>

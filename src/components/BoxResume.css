@@ -13,14 +13,14 @@
 
 .boxTitle{
     margin: 0;
-    font-size: 25px;
+    font-size: 2em;
     height: 100%;
     padding-top: 8%;
 }
 
 .boxSubTitle{
     margin-top: -85%;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .boxBody:hover{
