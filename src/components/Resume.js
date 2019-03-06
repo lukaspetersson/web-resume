@@ -5,7 +5,7 @@ import pepperPic from "./../img/pepper_transparent.png"
 import ericssonLogo from "./../img/ericsson_logo.png"
 import educationLogo from "./../img/education_logo.png"
 import bamseLogo from "./../img/bamse_logo.png"
-import erasmusLogo from "./../img/erasmus_logo.jpg"
+import moreLogo from "./../img/more_icon.png"
 import booklogLogo from "./../img/booklog.png"
 
 class Resume extends React.Component {
@@ -53,7 +53,7 @@ class Resume extends React.Component {
                         subColor: "rgba(13, 86, 52, 0.7)"
                     },
                     other: {
-                        image:erasmusLogo,
+                        image:moreLogo,
                         title: "Other",
                         examples: ["Driving licence", "Erasmus +", "Unga forskare"],
                         examplesYear: ["2017", "2017", "2018"],
