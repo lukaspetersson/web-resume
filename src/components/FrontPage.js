@@ -111,6 +111,9 @@ class FrontPage extends React.Component {
         return (
 
                 <div className="body">
+                        <div className="navigationMenu">
+                            <NavigationBar scrollfromParent={this.handleScroll}/>
+                        </div>
                         <div className="WelcomeSection">
                             <WelcomeSection scrollfromParent={this.handleScroll}/>
                         </div>
