@@ -46,6 +46,7 @@ class FrontPage extends React.Component {
             this.refApps = React.createRef()
             this.refService = React.createRef()
             this.refOther = React.createRef()
+            this.refContact = React.createRef()
 
             this.handleData = this.handleData.bind(this);
             this.handleScroll = this.handleScroll.bind(this);
@@ -84,6 +85,9 @@ class FrontPage extends React.Component {
     }
     handleScroll(data) {
         switch(data) {
+            case "top":
+                window.scrollTo(0, 0);
+                break;
             case "me":
                 window.scrollTo(0, this.refMe.current.offsetTop);
                 break;
@@ -104,6 +108,9 @@ class FrontPage extends React.Component {
                 break;
             case "other":
                 window.scrollTo(0, this.refOther.current.offsetTop);
+                break;
+            case "contact":
+                window.scrollTo(0, this.refContact.current.offsetTop);
                 break;
         }
     }
@@ -141,7 +148,7 @@ class FrontPage extends React.Component {
                         <div className="experiancesSections" ref={this.refOther}>
                             <OtherSection/>
                         </div>
-                        <div className="experiancesSections">
+                        <div className="experiancesSections" ref={this.refContact}>
                             <ContactSection/>
                         </div>
                 </div>

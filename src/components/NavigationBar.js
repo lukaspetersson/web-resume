@@ -12,9 +12,9 @@ class NavigationBar extends React.Component {
     render() {
         return (
             <div className="bar">
-                <span>Top</span>
-                <span>Top</span>
-                <span>Contact</span>
+                <span onClick={() => this.props.scrollfromParent("top")}>Top</span>
+                <span onClick={()=>{window.open("https://www.w3schools.com")}}>Compleate resume</span>
+                <span onClick={() => this.props.scrollfromParent("contact")}>Contact</span>
             </div>
         );
     }
