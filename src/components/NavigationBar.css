@@ -1,0 +1,9 @@
+.navBar{
+    color:white;
+    margin-top: 20px;
+}
+.navBar span{
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
