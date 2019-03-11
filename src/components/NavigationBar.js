@@ -12,7 +12,9 @@ class NavigationBar extends React.Component {
     render() {
         return (
             <div className="bar">
-                pmod+mwod+m
+                <span>Top</span>
+                <span>Top</span>
+                <span>Contact</span>
             </div>
         );
     }
