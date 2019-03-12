@@ -11,7 +11,7 @@ class WelcomeSection extends React.Component {
         return (
             <div className="welcomeBody">
                 <div className="welcomeText">
-                    <p>Hi!<br/>Welcome to my <br/>interactive resume</p>
+                    <p>Welcome!</p>
                     <img src={down_logo} onClick={() => this.props.scrollfromParent("me")}/>
                 </div>
             </div>
