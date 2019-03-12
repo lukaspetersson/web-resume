@@ -26,7 +26,7 @@ class NavigationBar extends React.Component {
                 <span onClick={()=>{window.open("https://www.w3schools.com")}}>Compleate resume</span>
                 <span onClick={() => this.props.scrollfromParent("contact")}>Contact</span>
                 <div style={{visibility : this.state.downloadVisibility? "visible" : "hidden"}}>
-                    <DowloadPage/>
+                    <DowloadPage toggleVisibility={this.visibilityToggle}/>
                 </div>
             </div>
         );

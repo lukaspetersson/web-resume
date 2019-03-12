@@ -1,6 +1,6 @@
 import React from 'react';
 import './DowloadPage.css';
-
+import menu_icon from "./../img/menu_icon.png"
 
 class DowloadPage extends React.Component {
     constructor(props){
@@ -12,8 +12,9 @@ class DowloadPage extends React.Component {
 
     render() {
         return (
-            <div className="downloadPageBody">
-                sdcwqcwq
+            <div className="downloadPageBody" >
+                <a href={menu_icon} download>Click to download</a>
+                <p onClick={this.props.toggleVisibility}>close</p>
             </div>
         );
     }
