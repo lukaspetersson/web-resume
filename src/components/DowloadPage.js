@@ -12,9 +12,10 @@ class DowloadPage extends React.Component {
 
     render() {
         return (
-            <div className="downloadPageBody" >
-                <a href={menu_icon} download>Click to download</a>
-                <p onClick={this.props.toggleVisibility}>close</p>
+            <div className="downloadPageBody" onClick={this.props.toggleVisibility}>
+                <div className="dowloadList" onClick={(e) => {e.stopPropagation()}}>
+                    <a href={menu_icon} download>Click to download</a>
+                </div>
             </div>
         );
     }
