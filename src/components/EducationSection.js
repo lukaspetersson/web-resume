@@ -14,25 +14,25 @@ class EducationSection extends React.Component {
     constructor(props){
             super(props)
             this.state = {
-                bookLog:{
-                    year:"2019",
-                    description:"The virtual bookshelf BoogLog lets you keep track of the books you read. It uses APIs such as google Books, Vision and Cloud Firestore.",
+                iesb:{
+                    year:"- 2015",
+                    description:"Choosing IESB is one of the best choices of my life, not only because it improved my english skills enormously, but also because the diversity of the students taught me different perspectives.",
                     image: {
                       front: booklog_logo,
                       back: booklog_screen
                     }
                 },
-                burnBall:{
-                    year:"2019",
-                    description:"The Brännbollräknare takes away the inconvenience of handling pen and paper during your brännboll matches.",
+                igcse:{
+                    year:"2014 - 2015",
+                    description:"I took extra IGCSE courses in math, english and science because I longed for a challenge and I have always been curious. As it turned out, I made great friends as well!",
                     image: {
                       front: burnball_logo,
                       back: burnball_screen
                     }
                 },
-                fallingKitten:{
-                    year:"2019",
-                    description:"In this adorable endless arcade game, you will rotate the kittens falling from the sky and save them from exploding.",
+                kungsholmen:{
+                    year:"2015 - 2018",
+                    description:"Choosing a international Science program at Kungsholmens gymnasium was an obvious choice. I loved math, and going from an international school to another felt natural.",
                     image: {
                       front: fallingkitten_logo,
                       back: fallingkitten_screen
@@ -82,7 +82,6 @@ class EducationSection extends React.Component {
         return (
             <div className="educationBody">
                 <h1>Education</h1>
-                <h3>oienvennep vne  epvoeo+fmoem+wvmpweov wef+vowemovm+wem+ovwe+momv+owe e+wov+owemv ew+voemwv weov+m+ewo v+we ovoev w pvew vwe vwe+ ovpe v+e vpwe v  </h3>
                 <img className="arrowsEducation" id="firstArrowEducation" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="educationContainer" ref={this.appsContainerRef} >
                     <div className="education">
