@@ -43,8 +43,12 @@ class NavigationBar extends React.Component {
     resizeWindow = ()=>{
         if(window.innerWidth < 600){
             this.setState({
-              menuSize:"99vw",
+              menuSize:"0",
             })
+        }else if(window.innerWidth < 800){
+          this.setState({
+            menuSize:"20vw",
+          })
         }else{
             this.setState({
               menuSize:"50vw",
@@ -55,7 +59,7 @@ class NavigationBar extends React.Component {
     render() {
         return (
             <div className="navBar">
-               <div className={this.state.downloadContainerClass} style={{width: this.state.menuSize}}>
+               <div className={this.state.downloadContainerClass} style={{right: this.state.menuSize}}>
                     <div id="nav-container" onClick={this.renderInfo} >
                         <div id="nav-icon1">
                             <span style={{backgroundColor: "white"}}></span>

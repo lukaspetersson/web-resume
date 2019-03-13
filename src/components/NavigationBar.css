@@ -8,11 +8,6 @@
   display: inline-block;
 }
 
-.downloadContainer {
-    width: calc(4.5vw + 6vh);
-    height: calc(4.5vw + 6vh);
-}
-
 .downloadContainer.open {
     position: fixed;
     left: 0;
