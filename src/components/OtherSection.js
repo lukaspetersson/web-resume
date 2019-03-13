@@ -30,7 +30,7 @@ class OtherSection extends React.Component {
                       back: burnball_screen
                     }
                 },
-                ungaforskare:{
+                ungaForskare:{
                     year:"2018",
                     description:"I improved that same physics paper from Erasmus and competed in in a competition by Ungaforskare.",
                     image: {
@@ -38,7 +38,7 @@ class OtherSection extends React.Component {
                       back: fallingkitten_screen
                     }
                 },
-                ungaforskare:{
+                football:{
                     year:"2004-2019",
                     description:"I have always liked exercising and being active and I played football for Brommapojkarna for 14 years.",
                     image: {
@@ -46,7 +46,7 @@ class OtherSection extends React.Component {
                       back: fallingkitten_screen
                     }
                 },
-                ungaforskare:{
+                alexa:{
                     year:"2019",
                     description:"As a hobby I have built apps for Alexa. Built with an API from my local public transport system I can now ask “when is the next train leaving?”",
                     image: {
@@ -110,13 +110,22 @@ class OtherSection extends React.Component {
                 <img className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="otherContainer" ref={this.appsContainerRef} >
                     <div className="other">
-                        <SmallBlock info={this.state.bookLog} height={"350px"}/>
+                        <SmallBlock info={this.state.luf} height={"350px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.burnBall} height={"350px"}/>
+                        <SmallBlock info={this.state.erasmus} height={"350px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.fallingKitten} height={"350px"}/>
+                        <SmallBlock info={this.state.ungaForskare} height={"350px"}/>
+                    </div>
+                    <div className="other">
+                        <SmallBlock info={this.state.football} height={"350px"}/>
+                    </div>
+                    <div className="other">
+                        <SmallBlock info={this.state.alexa} height={"350px"}/>
+                    </div>
+                    <div className="other">
+                        <SmallBlock info={this.state.driver} height={"350px"}/>
                     </div>
                 </div>
                 <img className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>

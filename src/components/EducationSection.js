@@ -85,13 +85,13 @@ class EducationSection extends React.Component {
                 <img className="arrowsEducation" id="firstArrowEducation" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="educationContainer" ref={this.appsContainerRef} >
                     <div className="education">
-                        <SmallBlock info={this.state.bookLog} height={"350px"}/>
+                        <SmallBlock info={this.state.iesb} height={"350px"}/>
                     </div>
                     <div className="education">
-                        <SmallBlock info={this.state.burnBall} height={"350px"}/>
+                        <SmallBlock info={this.state.igcse} height={"350px"}/>
                     </div>
                     <div className="education">
-                        <SmallBlock info={this.state.fallingKitten} height={"350px"}/>
+                        <SmallBlock info={this.state.kungsholmen} height={"350px"}/>
                     </div>
                 </div>
                 <img className="arrowsEducation" id="secondArrowEducation" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
