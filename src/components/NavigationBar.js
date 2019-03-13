@@ -11,6 +11,7 @@ class NavigationBar extends React.Component {
                 downloadVisibility: false,
                 downloadContainerClass: "downloadContainer",
                 downloadContainerContentClass: "downloadContainerContent",
+                menuSize:"50vw",
             }
             this.visibilityToggle = this.visibilityToggle.bind(this)
             this.renderInfo = this.renderInfo.bind(this)
@@ -31,23 +32,30 @@ class NavigationBar extends React.Component {
         })
     }
 
+    componentDidMount(){
+        this.resizeWindow()
+         window.addEventListener('resize', this.resizeWindow)
+    }
+
+    componentWillUnmount() {
+      window.removeEventListener('resize', this.resizeWindow)
+    }
+    resizeWindow = ()=>{
+        if(window.innerWidth < 600){
+            this.setState({
+              menuSize:"99vw",
+            })
+        }else{
+            this.setState({
+              menuSize:"50vw",
+            })
+        }
+    }
+
     render() {
-        // <img src={menu_icon} onClick={this.visibilityToggle}/>
-        // <span onClick={()=>{window.open("https://www.w3schools.com")}}>Compleate resume</span>
-        // <span onClick={() => this.props.scrollfromParent("contact")}>Contact</span>
-        // <div style={{visibility : this.state.downloadVisibility? "visible" : "hidden"}}>
-        //     <DowloadPage toggleVisibility={this.visibilityToggle}/>
-        // </div>
         return (
             <div className="navBar">
-
-
-
-
-
-
-
-               <div className={this.state.downloadContainerClass}>
+               <div className={this.state.downloadContainerClass} style={{width: this.state.menuSize}}>
                     <div id="nav-container" onClick={this.renderInfo} >
                         <div id="nav-icon1">
                             <span style={{backgroundColor: "white"}}></span>
@@ -57,13 +65,19 @@ class NavigationBar extends React.Component {
                     </div>
                     <div className={this.state.downloadContainerContentClass}>
                         <div className="infoDisplay">
-                            dwdwd
+                            <h1>Resume download links</h1>
                         </div>
-                        <div className="divider"></div>
-
+                        <div className="divider"/>
                         <div className="filesDisplay">
-
-                        asdasd
+                        <a href={menu_icon} download>Resume</a>
+                        <a href={menu_icon} download>Personal letter</a>
+                        <a href={menu_icon} download>IGCSE grades</a>
+                        <a href={menu_icon} download>Gymnasium grades</a>
+                        <a href={menu_icon} download>TUI work certificate</a>
+                        <a href={menu_icon} download>Abbekås work certificate</a>
+                        <a href={menu_icon} download>Drottningholm work certificate</a>
+                        <div className="divider"/>
+                        <a href={menu_icon} download>Full resume</a>
                         </div>
                     </div>
                 </div>

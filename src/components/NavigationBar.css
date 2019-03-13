@@ -14,13 +14,12 @@
 }
 
 .downloadContainer.open {
-    position: absolute;
+    position: fixed;
     left: 0;
     top:0;
-  width: 50vw;
   height: 100vh;
-  padding: 40px;
-  overflow-y: scroll;
+  padding: 5vw;
+  overflow-y: hidden;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .downloadContainer.open::-webkit-scrollbar {
@@ -37,24 +36,36 @@
 }
 
 .infoDisplay {
-    margin-top: 20vh;
+    margin-top: calc(1.5vw + 5vh);
   display: block;
   color: white;
+  text-align: center;
+}
+
+.infoDisplay h1{
+    position: relative;
 }
 
 .divider {
-  width: 80%;
+  width: 30%;
   height: 0px;
-  border-bottom: 0.6vh solid white;
+  border-bottom: 0.2vh solid white;
   padding-bottom: 3vh;
   display: table;
   margin: 0 auto;
 }
 
 .filesDisplay {
-
+text-align: center;
   overflow-x: hidden;
   margin-top: 2vh;
+}
+
+.filesDisplay a{
+   display: block;
+   margin: 10px;
+   font-size: 20px;
+   color: white;
 }
 
 #nav-container {
@@ -62,7 +73,7 @@
   width: calc(3vw + 4vh);
   height: calc(3vw + 4vh);
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   left: calc(1vw + 2vh);
   top:calc(1vw + 2vh);;
 }
