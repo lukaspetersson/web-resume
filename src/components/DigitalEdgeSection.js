@@ -14,8 +14,8 @@ class DigitalEdgeSection extends React.Component {
             <div className="digitalEdgeBody">
                 <img src={pepper_hello}/>
                 <div>
-                  <h1>Jobs as programmer</h1>
-                  <h3>oem+v oe+mo våemvm emvemvp mvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo  mvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo  omqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo opscnisnvc +woc+onwncw +woc+own+cn +wfc+omw+cm w+mc+omwqmc+wom w´0j+mwomcmw</h3>
+                  <h1>Digital Edge</h1>
+                  <h3>After spending much of my freetime teaching myself to code I got a job as a developer at a startup called Digital Edge, my hobby had become my full time job. At Digital Edge I have been programming a humanoid robot so that it can work as a receptionist. I worked full time for 2 months, but then switched to working weekends during my internship at Ericsson.</h3>
                 </div>
 
             </div>
