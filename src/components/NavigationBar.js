@@ -9,24 +9,20 @@ class NavigationBar extends React.Component {
             super(props)
             this.state = {
                 downloadVisibility: false,
-                infoContainerClass: "infoContainer open",
-                infoContainerContentClass: "infoContainerContent open",
+                downloadContainerClass: "downloadContainer",
+                downloadContainerContentClass: "downloadContainerContent",
             }
             this.visibilityToggle = this.visibilityToggle.bind(this)
             this.renderInfo = this.renderInfo.bind(this)
     }
 
-    componentDidMount(){
-        const menu = document.querySelector('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4');
-        menu.classList.toggle("open");
-    }
     renderInfo() {
         const menu = document.querySelector('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4');
         menu.classList.toggle("open");
-        // this.setState({
-        //     infoContainerClass: this.state.infoContainerClass === "infoContainer" ? "infoContainer open" : "infoContainer",
-        //     infoContainerContentClass: this.state.infoContainerClass === "infoContainer" ? "infoContainerContent open" : "infoContainerContent",
-        // })
+        this.setState({
+            downloadContainerClass: this.state.downloadContainerClass === "downloadContainer" ? "downloadContainer open" : "downloadContainer",
+            downloadContainerContentClass: this.state.downloadContainerClass === "downloadContainer" ? "downloadContainerContent open" : "downloadContainerContent",
+        })
     }
 
     visibilityToggle(){
@@ -36,21 +32,22 @@ class NavigationBar extends React.Component {
     }
 
     render() {
+        // <img src={menu_icon} onClick={this.visibilityToggle}/>
+        // <span onClick={()=>{window.open("https://www.w3schools.com")}}>Compleate resume</span>
+        // <span onClick={() => this.props.scrollfromParent("contact")}>Contact</span>
+        // <div style={{visibility : this.state.downloadVisibility? "visible" : "hidden"}}>
+        //     <DowloadPage toggleVisibility={this.visibilityToggle}/>
+        // </div>
         return (
             <div className="navBar">
-                <img src={menu_icon} onClick={this.visibilityToggle}/>
-                <span onClick={()=>{window.open("https://www.w3schools.com")}}>Compleate resume</span>
-                <span onClick={() => this.props.scrollfromParent("contact")}>Contact</span>
-                <div style={{visibility : this.state.downloadVisibility? "visible" : "hidden"}}>
-                    <DowloadPage toggleVisibility={this.visibilityToggle}/>
-                </div>
 
 
 
 
 
 
-                <div className={this.state.infoContainerClass}>
+
+               <div className={this.state.downloadContainerClass}>
                     <div id="nav-container" onClick={this.renderInfo} >
                         <div id="nav-icon1">
                             <span style={{backgroundColor: "white"}}></span>
@@ -58,14 +55,15 @@ class NavigationBar extends React.Component {
                             <span style={{backgroundColor: "white"}}></span>
                         </div>
                     </div>
-                    <div className={this.state.infoContainerContentClass}>
+                    <div className={this.state.downloadContainerContentClass}>
                         <div className="infoDisplay">
-                    +kw+0kw+0kd+wkd
+                            dwdwd
                         </div>
                         <div className="divider"></div>
 
                         <div className="filesDisplay">
 
+                        asdasd
                         </div>
                     </div>
                 </div>

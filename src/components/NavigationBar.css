@@ -2,53 +2,69 @@
     color:white;
     margin-top: 20px;
 }
-.navBar span{
-    margin: 20px;
-    font-size: 20px;
-    cursor: pointer;
-}
 
 /* ***************************************** */
-.connectionInfoContainer {
+.connectiondownloadContainer {
   display: inline-block;
 }
 
-.infoContainer {
+.downloadContainer {
     width: calc(4.5vw + 6vh);
     height: calc(4.5vw + 6vh);
 }
 
-.infoContainer.open {
-  width: 25vw;
-  min-width: 250px;
+.downloadContainer.open {
+    position: absolute;
+    left: 0;
+    top:0;
+  width: 50vw;
   height: 100vh;
+  padding: 40px;
   overflow-y: scroll;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.infoContainer.open::-webkit-scrollbar {
+.downloadContainer.open::-webkit-scrollbar {
   display: none;
 }
 
-.infoContainerContent {
+.downloadContainerContent {
   visibility: hidden;
-  padding: 2vh 1.5vw;
 }
 
-.infoContainerContent.open {
+.downloadContainerContent.open {
   visibility: visible;
   height: 100vh;
-  padding: 2vh 1.5vw;
 }
 
+.infoDisplay {
+    margin-top: 20vh;
+  display: block;
+  color: white;
+}
+
+.divider {
+  width: 80%;
+  height: 0px;
+  border-bottom: 0.6vh solid white;
+  padding-bottom: 3vh;
+  display: table;
+  margin: 0 auto;
+}
+
+.filesDisplay {
+
+  overflow-x: hidden;
+  margin-top: 2vh;
+}
 
 #nav-container {
   display: block;
   width: calc(3vw + 4vh);
   height: calc(3vw + 4vh);
-  float: left;
   cursor: pointer;
-  margin-left: 2vw;
-  margin-top: 2.5vh;
+  position: absolute;
+  left: calc(1vw + 2vh);
+  top:calc(1vw + 2vh);;
 }
 
 #nav-icon1 {
@@ -104,12 +120,10 @@
 
 #nav-icon1.open span:nth-child(2) {
   opacity: 0;
-  left: -30vw;
 }
 
 #nav-icon1.open span:nth-child(3) {
   top: calc(1vw + 1.5vh);
-  margin-right: -10px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
