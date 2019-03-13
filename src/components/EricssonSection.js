@@ -12,8 +12,8 @@ class EricssonSection extends React.Component {
         return (
             <div className="ericssonBody">
               <div>
-                <h1>Jobs as programmer</h1>
-                <h3>oem+v oe+mo våemvm emvemvp mvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo  mvm emvemvpomqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo  omqeåvm pelvomepno qenpnved ko ckw owck wp cp kwo opscnisnvc +woc+onwncw +woc+own+cn +wfc+omw+cm w+mc+omwqmc+wom w´0j+mwomcmw</h3>
+                <h1>Ericsson</h1>
+                <h3>Simultaneously working at two companies that were like day and night in terms of size was a great experience, I got an insight in how such an enormous company is managed. More importantly, I made some great friends and Improved my coding skills. I worked with web development with focus on WebRTC.</h3>
               </div>
             </div>
         );
