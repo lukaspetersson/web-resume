@@ -51,7 +51,7 @@ class OtherSection extends React.Component {
                     }
                 },
                 driver:{
-                    year:"March 2017",
+                    year:"2017",
                     description:"I have have had a driver's license since March 9th 2017.",
                     image: {
                       front: car_icon,

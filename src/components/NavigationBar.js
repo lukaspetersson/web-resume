@@ -59,7 +59,7 @@ class NavigationBar extends React.Component {
     render() {
         return (
             <div className="navBar">
-               <div className={this.state.downloadContainerClass} style={{right: this.state.menuSize}}>
+               <div className={this.state.downloadContainerClass} style={{right: this.state.menuSize, height: this.state.downloadContainerClass === "downloadContainer" ? "20vh" : "100vh"}}>
                     <div id="nav-container" onClick={this.renderInfo} >
                         <div id="nav-icon1">
                             <span style={{backgroundColor: "white"}}></span>

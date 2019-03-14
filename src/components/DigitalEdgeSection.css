@@ -1,6 +1,5 @@
 .digitalEdgeBody{
 text-align: center;
-margin: 0 40px
 }
 
 .pepperImg{
@@ -14,7 +13,7 @@ margin: 0 40px
 .pepperImg img:nth-child(2){
     position: absolute;
     top:270px;
-    left: 190px;
+    left: 150px;
   height: 40px;
 }
 
@@ -22,4 +21,9 @@ margin: 0 40px
   position: relative;
   display: inline-block;
   margin-top: 5vw;
+  margin-bottom: 0;
+}
+
+.digitalEdgeBody h3{
+  margin: 30px;
 }

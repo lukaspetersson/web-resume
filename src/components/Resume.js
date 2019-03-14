@@ -55,8 +55,8 @@ class Resume extends React.Component {
                     other: {
                         image:moreLogo,
                         title: "Other",
-                        examples: ["Liberal Youth party","Erasmus +", "Unga forskare", "Brommapojkarna", "Alexa development", "Driving licence", ],
-                        examplesYear: ["2018-present", "2017", "2018", "2004-2019", "2019", "2019"],
+                        examples: ["Liberal Youth party","Erasmus +", "Unga forskare", "Brommapojkarna", "Alexa development", "driver's license"],
+                        examplesYear: ["2018-present", "2017", "2018", "2004-2019", "2019", "2017"],
                         color: "rgb(191, 183, 33)",
                         subColor: "rgba(102, 98, 15, 0.7)"
                     },
