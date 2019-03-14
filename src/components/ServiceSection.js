@@ -31,7 +31,7 @@ class ServiceSection extends React.Component {
                     }
                 },
                 iesb:{
-                    year:"Oct-Nov 2018",
+                    year:"Oct - Nov 2018",
                     description:"3 years after graduating from IESB I came back but this time in the role of a substitute teacher. My respect for teachers grew as I realized how hard the balance between inspiration and authority is.",
                     image: {
                       front: iesb_logo,
@@ -39,7 +39,7 @@ class ServiceSection extends React.Component {
                     }
                 },
                 hemkop:{
-                    year:"Oct-Nov 2018",
+                    year:"Oct - Nov 2018",
                     description:"The magic of a supermarket was ruined for me while I was working at Hemköp. The shelfs apparently don´t get filled by themselves, but by hard work and time optimization.",
                     image: {
                       front: hemkop_logo,
@@ -47,7 +47,7 @@ class ServiceSection extends React.Component {
                     }
                 },
                 drottningholm:{
-                    year:"2015-2017",
+                    year:"2015 - 2017",
                     description:"Leadership, planning and organization were essential skills in my work as a golf instructor, although pronouncing all the names during attendance was by far the hardest part.",
                     image: {
                       front: drottningholm_logo,
@@ -63,7 +63,7 @@ class ServiceSection extends React.Component {
                     }
                 },
                 abbekas:{
-                    year:"summer 2015+2015",
+                    year:"summer 2015 & 2015",
                     description:"My first ever job was a harsh but fun welcoming into working life. Washing dishes at a restaurant is an extremely stressful task. When the piles stack up, there is no time to waste.",
                     image: {
                       front: abbekas_logo,

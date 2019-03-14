@@ -18,21 +18,23 @@ class Resume extends React.Component {
                         image:educationLogo,
                         title: "Education",
                         examples: ["Engelska Skolan", "Cambridge IGCSE", "Kungsholmens gymnasium"],
-                        examplesYear: ["-2015", "2014-2015", "2015-2018"],
+                        examplesYear: ["-2015", "2014 - 2015", "2015 - 2018"],
                         color: "rgb(34, 94, 191)",
                         subColor: "rgba(19, 54, 109, 0.7)"
                     },
                     digitalEdge: {
                         image:pepperPic,
                         title: "Robots",
-                        subTitle: ["Consultant developer for Digital Edge"],
+                        subTitle: "Consultant developer for Digital Edge",
+                        subTitleYear: "Nov 2018 - present",
                         color: "rgb(191, 33, 33)",
                         subColor: "rgba(140, 8, 8, 0.7)"
                     },
                     ericsson: {
                         image:ericssonLogo,
                         title: "Internship",
-                        subTitle: ["Intern developer at Ericsson"],
+                        subTitle: "Intern developer at Ericsson",
+                        subTitleYear: "Jan 2019 - present",
                         color: "rgb(191, 33, 146)",
                         subColor: "rgba(112, 19, 85, 0.7)"
                     },
@@ -48,7 +50,7 @@ class Resume extends React.Component {
                         image:bamseLogo,
                         title: "Service jobs",
                         examples: ["Abbekås hamnkrog", "Drottningholms GK", "Bedinge GK", "TUI", "Hemköp", "Engelska skolan"],
-                        examplesYear: ["summer 2015+2015", "2015-2017", "summer 2017", "summer 2018", "Oct-Nov 2018" , "Oct-Nov 2018"],
+                        examplesYear: ["summer 2015 & 2016", "2015 - 2017", "summer 2017", "summer 2018", "Oct - Nov 2018" , "Oct - Nov 2018"],
                         color: "rgb(33, 191, 117)",
                         subColor: "rgba(13, 86, 52, 0.7)"
                     },
@@ -56,7 +58,7 @@ class Resume extends React.Component {
                         image:moreLogo,
                         title: "Other",
                         examples: ["Liberal Youth party","Erasmus +", "Unga forskare", "Brommapojkarna", "Alexa development", "driver's license"],
-                        examplesYear: ["2018-present", "2017", "2018", "2004-2019", "2019", "2017"],
+                        examplesYear: ["2018 - present", "2017", "2018", "2004 - 2019", "2019", "2017"],
                         color: "rgb(191, 183, 33)",
                         subColor: "rgba(102, 98, 15, 0.7)"
                     },
@@ -65,6 +67,7 @@ class Resume extends React.Component {
             this.resizeWindow = this.resizeWindow.bind(this)
           }
       componentDidMount(){
+          this.resizeWindow()
            window.addEventListener('resize', this.resizeWindow)
       }
 
@@ -76,11 +79,11 @@ class Resume extends React.Component {
               this.setState({
                 boxSize: 100/3
               })
-          }else if(window.innerWidth < 800 && window.innerWidth > 400){
+          }else if(window.innerWidth < 800 && window.innerWidth > 410){
               this.setState({
                 boxSize: 100/2
               })
-          }else if(window.innerWidth < 400){
+          }else if(window.innerWidth < 410){
               this.setState({
                 boxSize: 100
               })

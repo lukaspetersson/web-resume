@@ -17,7 +17,7 @@ class OtherSection extends React.Component {
             this.state = {
                 luf:{
                     year:"2018 - present",
-                    description:"“You shouldn't talk about politics at the dinner table” is a cliche advice that I have not followed, I like expressing my opinions. I therefore joined  political youth party.",
+                    description:"“You shouldn't talk about politics at the dinner table” is a cliche advice that I have not followed, I like expressing my opinions. I therefore joined a political youth party.",
                     image: {
                       front: luf_logo,
                     }
@@ -37,7 +37,7 @@ class OtherSection extends React.Component {
                     }
                 },
                 football:{
-                    year:"2004-2019",
+                    year:"2004 - 2019",
                     description:"I have always liked exercising and being active and I played football for Brommapojkarna for 14 years.",
                     image: {
                       front: bp_logo,
