@@ -1,21 +1,20 @@
 .digitalEdgeBody{
 text-align: center;
-
+margin: 0 40px
 }
 
 .pepperImg{
   margin-left: 30px;
   float:left;
-  display: inline-block;
-  height: 500px;
 }
 .pepperImg img:first-child{
   height: 500px;
+   display: inline-block;
 }
 .pepperImg img:nth-child(2){
     position: absolute;
     top:270px;
-    left: 150px;
+    left: 190px;
   height: 40px;
 }
 

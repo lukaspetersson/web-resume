@@ -15,21 +15,21 @@ class EducationSection extends React.Component {
             super(props)
             this.state = {
                 iesb:{
-                    year:"- 2015",
+                    year:"-2015",
                     description:"Choosing IESB is one of the best choices of my life, not only because it improved my english skills enormously, but also because the diversity of the students taught me different perspectives.",
                     image: {
                       front: iesb_logo,
                     }
                 },
                 igcse:{
-                    year:"2014 - 2015",
+                    year:"2014-2015",
                     description:"I took extra IGCSE courses in math, english and science because I longed for a challenge and I have always been curious. As it turned out, I made great friends as well!",
                     image: {
                       front: igcse_logo,
                     }
                 },
                 kungsholmen:{
-                    year:"2015 - 2018",
+                    year:"2015-2018",
                     description:"Choosing a international Science program at Kungsholmens gymnasium was an obvious choice. I loved math, and going from an international school to another felt natural.",
                     image: {
                       front: kg_logo,
@@ -82,13 +82,13 @@ class EducationSection extends React.Component {
                 <img className="arrowsEducation" id="firstArrowEducation" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="educationContainer" ref={this.appsContainerRef} >
                     <div className="education">
-                        <SmallBlock info={this.state.iesb} height={"350px"}/>
+                        <SmallBlock info={this.state.iesb} height={"380px"}/>
                     </div>
                     <div className="education">
-                        <SmallBlock info={this.state.igcse} height={"350px"}/>
+                        <SmallBlock info={this.state.igcse} height={"380px"}/>
                     </div>
                     <div className="education">
-                        <SmallBlock info={this.state.kungsholmen} height={"350px"}/>
+                        <SmallBlock info={this.state.kungsholmen} height={"380px"}/>
                     </div>
                 </div>
                 <img className="arrowsEducation" id="secondArrowEducation" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>

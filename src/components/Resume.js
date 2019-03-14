@@ -39,8 +39,8 @@ class Resume extends React.Component {
                     mobileApps: {
                         image:booklogLogo,
                         title: "Mobile Development",
-                        examples: ["Brännbollräknare", "BookLog", "FallingKitten"],
-                        examplesYear: ["2018", "2018-2019", "2018"],
+                        examples: ["BookLog", "Brännbollräknare", "FallingKitten"],
+                        examplesYear: ["2019", "2018", "2018"],
                         color: "rgb(143, 33, 191)",
                         subColor: "rgba(65, 15, 86, 0.7)"
                     },
@@ -48,15 +48,15 @@ class Resume extends React.Component {
                         image:bamseLogo,
                         title: "Service jobs",
                         examples: ["Abbekås hamnkrog", "Drottningholms GK", "Bedinge GK", "TUI", "Hemköp", "Engelska skolan"],
-                        examplesYear: ["summer 2015 + 2015", "2015 - 2017", "summer 2017", "summer 2018", "Oct-Nov 2018" , "Oct-Nov 2018"],
+                        examplesYear: ["summer 2015+2015", "2015-2017", "summer 2017", "summer 2018", "Oct-Nov 2018" , "Oct-Nov 2018"],
                         color: "rgb(33, 191, 117)",
                         subColor: "rgba(13, 86, 52, 0.7)"
                     },
                     other: {
                         image:moreLogo,
                         title: "Other",
-                        examples: ["Driving licence", "Erasmus +", "Unga forskare"],
-                        examplesYear: ["2017", "2017", "2018"],
+                        examples: ["Liberal Youth party","Erasmus +", "Unga forskare", "Brommapojkarna", "Alexa development", "Driving licence", ],
+                        examplesYear: ["2018-present", "2017", "2018", "2004-2019", "2019", "2019"],
                         color: "rgb(191, 183, 33)",
                         subColor: "rgba(102, 98, 15, 0.7)"
                     },

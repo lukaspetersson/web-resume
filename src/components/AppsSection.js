@@ -23,7 +23,7 @@ class AppsSection extends React.Component {
                     }
                 },
                 burnBall:{
-                    year:"2019",
+                    year:"2018",
                     description:"The Brännbollräknare takes away the inconvenience of handling pen and paper during your brännboll matches.",
                     image: {
                       front: burnball_logo,
@@ -31,7 +31,7 @@ class AppsSection extends React.Component {
                     }
                 },
                 fallingKitten:{
-                    year:"2019",
+                    year:"2018",
                     description:"In this adorable endless arcade game, you will rotate the kittens falling from the sky and save them from exploding.",
                     image: {
                       front: fallingkitten_logo,

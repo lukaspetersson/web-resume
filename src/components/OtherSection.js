@@ -20,7 +20,6 @@ class OtherSection extends React.Component {
                     description:"“You shouldn't talk about politics at the dinner table” is a cliche advice that I have not followed, I like expressing my opinions. I therefore joined  political youth party.",
                     image: {
                       front: luf_logo,
-                      back: fallingkitten_screen
                     }
                 },
                 erasmus:{
@@ -28,7 +27,6 @@ class OtherSection extends React.Component {
                     description:"My physics paper go chosen to represent my school. I traveled to Genoa to present it to 20 other students from europe.",
                     image: {
                       front: erasmus_logo,
-                      back: fallingkitten_screen
                     }
                 },
                 ungaForskare:{
@@ -36,7 +34,6 @@ class OtherSection extends React.Component {
                     description:"I improved that same physics paper from Erasmus and competed in in a competition by Ungaforskare.",
                     image: {
                       front: ungaforskare_logo,
-                      back: fallingkitten_screen
                     }
                 },
                 football:{
@@ -44,7 +41,6 @@ class OtherSection extends React.Component {
                     description:"I have always liked exercising and being active and I played football for Brommapojkarna for 14 years.",
                     image: {
                       front: bp_logo,
-                      back: fallingkitten_screen
                     }
                 },
                 alexa:{
@@ -52,7 +48,6 @@ class OtherSection extends React.Component {
                     description:"As a hobby I have built apps for Alexa. Built with an API from my local public transport system I can now ask “when is the next train leaving?”",
                     image: {
                       front: alexa_logo,
-                      back: fallingkitten_screen
                     }
                 },
                 driver:{
@@ -60,7 +55,6 @@ class OtherSection extends React.Component {
                     description:"I have have had a driver's license since March 9th 2017.",
                     image: {
                       front: car_icon,
-                      back: fallingkitten_screen
                     }
                 },
                 arrowStyle:{
@@ -111,22 +105,22 @@ class OtherSection extends React.Component {
                 <img className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="otherContainer" ref={this.appsContainerRef} >
                     <div className="other">
-                        <SmallBlock info={this.state.luf} height={"350px"}/>
+                        <SmallBlock info={this.state.luf} height={"370px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.erasmus} height={"350px"}/>
+                        <SmallBlock info={this.state.erasmus} height={"370px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.ungaForskare} height={"350px"}/>
+                        <SmallBlock info={this.state.ungaForskare} height={"370px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.football} height={"350px"}/>
+                        <SmallBlock info={this.state.football} height={"370px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.alexa} height={"350px"}/>
+                        <SmallBlock info={this.state.alexa} height={"370px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.driver} height={"350px"}/>
+                        <SmallBlock info={this.state.driver} height={"370px"}/>
                     </div>
                 </div>
                 <img className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
