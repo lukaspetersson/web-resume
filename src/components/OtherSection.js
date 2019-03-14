@@ -1,11 +1,12 @@
 import React from 'react';
 import './OtherSection.css';
-import booklog_logo from "./../img/booklog_logo.png"
-import fallingkitten_logo from "./../img/fallingkitten_logo.png"
-import burnball_logo from "./../img/burnball_logo.png"
-import booklog_screen from "./../img/booklog_screen.png"
+import car_icon from "./../img/car_icon.png"
+import alexa_logo from "./../img/alexa_logo.png"
+import bp_logo from "./../img/bp_logo.png"
+import luf_logo from "./../img/luf_logo.png"
+import ungaforskare_logo from "./../img/ungaforskare_logo.png"
+import erasmus_logo from "./../img/erasmus_logo.jpg"
 import fallingkitten_screen from "./../img/fallingkitten_screen.png"
-import burnball_screen from "./../img/burnball_screen.png"
 import arrow_back from "./../img/arrow_back.png"
 import arrow_forward from "./../img/arrow_forward.png"
 import SmallBlock from "./SmallBlock.js";
@@ -18,23 +19,23 @@ class OtherSection extends React.Component {
                     year:"2018 - present",
                     description:"“You shouldn't talk about politics at the dinner table” is a cliche advice that I have not followed, I like expressing my opinions. I therefore joined  political youth party.",
                     image: {
-                      front: booklog_logo,
-                      back: booklog_screen
+                      front: luf_logo,
+                      back: fallingkitten_screen
                     }
                 },
                 erasmus:{
                     year:"2017",
                     description:"My physics paper go chosen to represent my school. I traveled to Genoa to present it to 20 other students from europe.",
                     image: {
-                      front: burnball_logo,
-                      back: burnball_screen
+                      front: erasmus_logo,
+                      back: fallingkitten_screen
                     }
                 },
                 ungaForskare:{
                     year:"2018",
                     description:"I improved that same physics paper from Erasmus and competed in in a competition by Ungaforskare.",
                     image: {
-                      front: fallingkitten_logo,
+                      front: ungaforskare_logo,
                       back: fallingkitten_screen
                     }
                 },
@@ -42,7 +43,7 @@ class OtherSection extends React.Component {
                     year:"2004-2019",
                     description:"I have always liked exercising and being active and I played football for Brommapojkarna for 14 years.",
                     image: {
-                      front: fallingkitten_logo,
+                      front: bp_logo,
                       back: fallingkitten_screen
                     }
                 },
@@ -50,7 +51,7 @@ class OtherSection extends React.Component {
                     year:"2019",
                     description:"As a hobby I have built apps for Alexa. Built with an API from my local public transport system I can now ask “when is the next train leaving?”",
                     image: {
-                      front: fallingkitten_logo,
+                      front: alexa_logo,
                       back: fallingkitten_screen
                     }
                 },
@@ -58,7 +59,7 @@ class OtherSection extends React.Component {
                     year:"March 2017",
                     description:"I have have had a driver's license since March 9th 2017.",
                     image: {
-                      front: fallingkitten_logo,
+                      front: car_icon,
                       back: fallingkitten_screen
                     }
                 },
