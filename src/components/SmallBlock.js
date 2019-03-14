@@ -6,25 +6,34 @@ class SmallBlock extends React.Component {
             super(props)
     }
     render() {
-        return (
-            <div className="flip-card" style={{height:this.props.height}}>
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <div className="SmallBlock" style={{height:this.props.height}}>
-                      <img src={this.props.info.image.front}/>
-                       <p>{this.props.info.year}</p>
-                      <p>{this.props.info.description}</p>
+        if(!this.props.info.image.back){
+            return (
+                <div className="flip-card" style={{height:this.props.height}}>
+                      <div className="SmallBlock" style={{height:this.props.height}}>
+                          <img src={this.props.info.image.front}/>
+                           <p>{this.props.info.year}</p>
+                          <p>{this.props.info.description}</p>
+                      </div>
+                </div>
+            );
+        }else{
+            return (
+                <div className="flip-card" style={{height:this.props.height}}>
+                  <div className="flip-card-inner">
+                    <div className="flip-card-front">
+                      <div className="SmallBlock" style={{height:this.props.height}}>
+                          <img src={this.props.info.image.front}/>
+                           <p>{this.props.info.year}</p>
+                          <p>{this.props.info.description}</p>
+                      </div>
+                    </div>
+                    <div className="flip-card-back">
+                      <img src={this.props.info.image.back} style={{height:this.props.height}}/>
+                    </div>
                   </div>
                 </div>
-                <div className="flip-card-back">
-                  <img src={this.props.info.image.back} style={{height:this.props.height}}/>
-                </div>
-              </div>
-            </div>
-
-
-
-        );
+            );
+        }
     }
 }
 

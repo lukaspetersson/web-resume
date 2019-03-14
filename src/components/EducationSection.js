@@ -1,8 +1,8 @@
 import React from 'react';
 import './EducationSection.css';
-import booklog_logo from "./../img/booklog_logo.png"
-import fallingkitten_logo from "./../img/fallingkitten_logo.png"
-import burnball_logo from "./../img/burnball_logo.png"
+import iesb_logo from "./../img/iesb_logo.png"
+import kg_logo from "./../img/kg_logo.png"
+import igcse_logo from "./../img/igcse_logo.png"
 import booklog_screen from "./../img/booklog_screen.png"
 import fallingkitten_screen from "./../img/fallingkitten_screen.png"
 import burnball_screen from "./../img/burnball_screen.png"
@@ -18,24 +18,21 @@ class EducationSection extends React.Component {
                     year:"- 2015",
                     description:"Choosing IESB is one of the best choices of my life, not only because it improved my english skills enormously, but also because the diversity of the students taught me different perspectives.",
                     image: {
-                      front: booklog_logo,
-                      back: booklog_screen
+                      front: iesb_logo,
                     }
                 },
                 igcse:{
                     year:"2014 - 2015",
                     description:"I took extra IGCSE courses in math, english and science because I longed for a challenge and I have always been curious. As it turned out, I made great friends as well!",
                     image: {
-                      front: burnball_logo,
-                      back: burnball_screen
+                      front: igcse_logo,
                     }
                 },
                 kungsholmen:{
                     year:"2015 - 2018",
                     description:"Choosing a international Science program at Kungsholmens gymnasium was an obvious choice. I loved math, and going from an international school to another felt natural.",
                     image: {
-                      front: fallingkitten_logo,
-                      back: fallingkitten_screen
+                      front: kg_logo,
                     }
                 },
                 arrowStyle:{
