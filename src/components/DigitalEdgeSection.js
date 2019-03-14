@@ -2,6 +2,7 @@ import React from 'react';
 import './DigitalEdgeSection.css';
 import pepper_hello from "./../img/pepper_hello.png"
 import we_are_the_robots from "./../img/we_are_the_robots.gif"
+import hello_animation from "./../img/hello_animation.gif"
 
 class DigitalEdgeSection extends React.Component {
     constructor(props){
@@ -15,7 +16,7 @@ class DigitalEdgeSection extends React.Component {
             <div className="digitalEdgeBody">
                 <div className="pepperImg">
                     <img src={pepper_hello}/>
-                    <img src={we_are_the_robots}/>
+                    <img src={hello_animation}/>
                 </div>
                 <div>
                   <h1>Digital Edge</h1>

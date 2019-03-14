@@ -14,9 +14,9 @@ text-align: center;
 }
 .pepperImg img:nth-child(2){
     position: absolute;
-    top:220px;
-    left: 143px;
-  height: 100px;
+    top:270px;
+    left: 150px;
+  height: 40px;
 }
 
 .digitalEdgeBody h1{
