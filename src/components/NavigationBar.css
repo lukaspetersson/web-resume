@@ -28,6 +28,10 @@
 .downloadContainerContent.open {
   visibility: visible;
   height: 100vh;
+  -webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
 }
 
 .infoDisplay {
@@ -57,7 +61,7 @@ text-align: center;
 }
 
 .filesDisplay a{
-   display: block;
+   display: inline-block;
    margin: 10px;
    font-size: 20px;
    color: white;
