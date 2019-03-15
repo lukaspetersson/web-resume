@@ -6,6 +6,10 @@
   padding: 10px;
 }
 
+.contactBody h1{
+    color: var(--white);
+}
+
 .contactBody img{
   width: 32px;
   display: inline-block;

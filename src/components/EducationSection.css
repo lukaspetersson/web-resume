@@ -1,10 +1,10 @@
 .educationBody{
-    padding: 10px 20px;
+    padding: 20px 20px;
     height: auto;
 }
 .educationContainer{
     display: inline-block;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     width: 100%;
     scroll-behavior: smooth;
@@ -14,7 +14,7 @@
     display: inline-block;
     position: relative;
     vertical-align:top;
-    margin: 0px 10px;
+    margin: 20px 10px;
 }
 
 .arrowsEducation{

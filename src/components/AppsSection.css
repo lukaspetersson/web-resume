@@ -1,10 +1,10 @@
 .appsBody{
-    padding: 10px 20px;
+    padding: 20px 20px;
     height: auto;
 }
 .appsContainer{
     display: inline-block;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     width: 100%;
     scroll-behavior: smooth;

@@ -2,7 +2,7 @@
     width:210px;
     padding: 0 10px;
     text-align: center;
-    background-color: var(--white);
+    border: 5px solid var(--sky);
     color: var(--tree);
     white-space: normal;
     cursor: default;
@@ -51,6 +51,7 @@
 
 .flip-card-back img{
     width:210px;
-    padding: 0 10px;
+    padding: 0;
   object-fit: cover;
+  border: 5px solid var(--sky);
 }

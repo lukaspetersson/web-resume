@@ -22,6 +22,10 @@ html {
     overflow-x: hidden;
 }
 
+h1{
+    color: var(--sky);
+}
+
 .navigationMenu{
     position: absolute;
     left:0;

@@ -6,6 +6,10 @@
   color:var(--white);
 }
 
+.ericssonBody h1{
+    color: var(--white);
+}
+
 .ericssonBody div{
   text-align: center;
   padding: 4% 15%;
