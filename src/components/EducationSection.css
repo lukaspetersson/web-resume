@@ -4,10 +4,16 @@
 }
 .educationContainer{
     display: inline-block;
-    overflow: visible;
     white-space: nowrap;
     width: 100%;
     scroll-behavior: smooth;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.educationContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .education{

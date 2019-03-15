@@ -4,17 +4,23 @@
 }
 .otherContainer{
     display: inline-block;
-    overflow: visible;
     white-space: nowrap;
     width: 100%;
     scroll-behavior: smooth;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.otherContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .other{
     display: inline-block;
     position: relative;
     vertical-align:top;
-    margin: 0px 10px;
+    margin:10px;
 }
 
 .arrowsOther{
