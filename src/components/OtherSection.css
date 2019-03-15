@@ -37,5 +37,5 @@
 
 .otherBody h3{
   margin: 20px 10px;
-  color: #375A63;
+  color: var(--tree);
 }

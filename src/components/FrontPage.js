@@ -16,9 +16,6 @@ class FrontPage extends React.Component {
     constructor(props){
             super(props)
             this.state = {
-                resumeBackground:{
-                    backgroundColor : "#98878f",
-                },
                 NavigationBarBackground:{
                     backgroundColor :"transparent",
                 },
@@ -48,7 +45,6 @@ class FrontPage extends React.Component {
             this.refOther = React.createRef()
             this.refContact = React.createRef()
 
-            this.handleData = this.handleData.bind(this);
             this.handleScroll = this.handleScroll.bind(this);
             //this.changeNav = this.changeNav.bind(this);
 
@@ -76,13 +72,6 @@ class FrontPage extends React.Component {
     //             },
     //         });
     // }
-    handleData(data) {
-        this.setState({
-            resumeBackground:{
-                backgroundColor : data,
-            },
-        });
-    }
     handleScroll(data) {
         switch(data) {
             case "top":

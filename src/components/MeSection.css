@@ -9,7 +9,7 @@
 }
 
 .infoContainer h3{
-    color: #375A63;
+    color: #344346;
 
 }
 
@@ -17,7 +17,7 @@
     display: inline-block;
   position: relative;
   cursor: pointer;
-  background-color: #375A63;
+  background-color: #344346;
   padding: 0 15px;
   border-radius: 40px;
   margin-bottom: 15px;
@@ -31,5 +31,5 @@
 .readMoreContainer h3{
 display: inline-block;
 vertical-align: top;
-
+color:white;
 }

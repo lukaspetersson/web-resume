@@ -1,7 +1,7 @@
 .contactBody{
  height: auto;
   color: white;
-  background-color: #375A63;
+  background-color: var(--tree);
   text-align: center;
   padding: 10px;
 }

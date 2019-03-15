@@ -2,8 +2,8 @@
     width:210px;
     padding: 0 10px;
     text-align: center;
-    background-color: white;
-    color: #375A63;
+    background-color: var(--white);
+    color: var(--tree);
     white-space: normal;
     cursor: default;
 }
