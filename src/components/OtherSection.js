@@ -7,8 +7,8 @@ import luf_logo from "./../img/luf_logo.png"
 import ungaforskare_logo from "./../img/ungaforskare_logo.png"
 import erasmus_logo from "./../img/erasmus_logo.jpg"
 import fallingkitten_screen from "./../img/fallingkitten_screen.png"
-import arrow_back from "./../img/arrow_back.png"
-import arrow_forward from "./../img/arrow_forward.png"
+import arrow_back from "./../img/arrow_back.svg"
+import arrow_forward from "./../img/arrow_forward.svg"
 import SmallBlock from "./SmallBlock.js";
 
 class OtherSection extends React.Component {

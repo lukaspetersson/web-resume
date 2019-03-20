@@ -14,8 +14,8 @@ import drottningholm_back from "./../img/drottningholm_back.jpg"
 import bedinge_back from "./../img/bedinge_back.jpg"
 import iesb_back from "./../img/iesb_back.png"
 
-import arrow_back from "./../img/arrow_back.png"
-import arrow_forward from "./../img/arrow_forward.png"
+import arrow_back from "./../img/arrow_back.svg"
+import arrow_forward from "./../img/arrow_forward.svg"
 import SmallBlock from "./SmallBlock.js";
 
 class ServiceSection extends React.Component {

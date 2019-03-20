@@ -6,8 +6,8 @@ import igcse_logo from "./../img/igcse_logo.png"
 import booklog_screen from "./../img/booklog_screen.png"
 import fallingkitten_screen from "./../img/fallingkitten_screen.png"
 import burnball_screen from "./../img/burnball_screen.png"
-import arrow_back from "./../img/arrow_back.png"
-import arrow_forward from "./../img/arrow_forward.png"
+import arrow_back from "./../img/arrow_back.svg"
+import arrow_forward from "./../img/arrow_forward.svg"
 import SmallBlock from "./SmallBlock.js";
 
 class EducationSection extends React.Component {
