@@ -8,7 +8,7 @@ class SmallBlock extends React.Component {
     render() {
         if(!this.props.info.image.back){
             return (
-                <div className="flip-card" style={{height:this.props.height}}>
+                <div className="card" style={{height:this.props.height}}>
                       <div className="SmallBlock" style={{height:this.props.height}}>
                           <img src={this.props.info.image.front}/>
                            <p>{this.props.info.year}</p>
@@ -21,7 +21,7 @@ class SmallBlock extends React.Component {
                 <div className="flip-card" style={{height:this.props.height}}>
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
-                      <div className="SmallBlock" style={{height:this.props.height}}>
+                      <div className="SmallBlock" style={{height:this.props.height, boxShadow: "0 4px 8px 0 rgba(0,0,0,0.3)"}}>
                           <img src={this.props.info.image.front}/>
                            <p>{this.props.info.year}</p>
                           <p>{this.props.info.description}</p>
