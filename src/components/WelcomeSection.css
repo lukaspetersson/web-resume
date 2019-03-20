@@ -17,6 +17,7 @@
 
 .welcomeText img {
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .welcomeText p {
