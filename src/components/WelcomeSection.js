@@ -13,8 +13,8 @@ class WelcomeSection extends React.Component {
         return (
             <div className="welcomeBody">
                 <div className="welcomeText">
-                    <p>Welcome!</p>
-                    <img src={down_logo} style={{marginTop: this.state.margin}} onClick={() => this.props.scrollfromParent("me")} onMouseEnter={()=>{this.setState({margin:"10px"})}} onMouseLeave={()=>{this.setState({margin:"0px"})}}/>
+                    <p></p>
+                    <img src={down_logo} style={{marginTop: this.state.margin}} onClick={() => this.props.scrollfromParent("me")} onMouseEnter={()=>{this.setState({margin:"20px"})}} onMouseLeave={()=>{this.setState({margin:"0px"})}}/>
                 </div>
             </div>
 
