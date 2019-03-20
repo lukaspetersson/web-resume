@@ -14,6 +14,7 @@
   height: 100vh;
   padding: 5vw;
   overflow-y: hidden;
+  transition: 1s;
   background-color: var(--sky);
 }
 .downloadContainer.open::-webkit-scrollbar {
