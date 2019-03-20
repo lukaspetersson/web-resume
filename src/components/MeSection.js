@@ -20,7 +20,7 @@ class MeSection extends React.Component {
             <div className="meBody">
               <div className="infoContainer">
                 <h1>About me</h1>
-                <h3>oem+v oe+mo våemvm emvemvpomqeåvm pelv omepno qenpnved ko ckw owck wp cp kwo spncåqsoåc noqwcqow+ opbncqow+pncb+ qowpnc pwi cie vew   n099 h 9 09 0vomepno qenpnved ko ckw owck wp cp kwo spncåqsoåcnoq wcqow+opbncqow+pncb+qowpnc pwi cie vew   n099 h 9 09 0vomepno qenpnved ko ckw owck wp cp kwo spncåqsoåcnoqwcqow+opbncqow+pncb+qowpnc pwi cie vew   n099 h 9 09 0vomepno qenpnved ko ckw owck wp cp kwo spncåqsoåcnoqwcqow+opbncqow+pncb+qowpnc pwi cie vew   n099 h 9 09 0vomepno qenpnved ko ckw owck wp cp kwo spncåqsoåcnoqw cqow+opb ncq ow+pncb+qowpnc pwi cie vew   n099 h 9 09 0vomepno qenpnved ko ckw owck wp cp kwo spncåqsoåcnoqwcq ow+opbncqow +pncb+qowpnc pwi cie vew   n099 h 9 09 0vomepno qenpnved ko ckw owck wp cp kwo spncåqsoåcnoqwc qow+opbn cqow+pncb+qowpnc pwi cie vew   n099 h 9 09 0</h3>
+                <h3>Im Lukas, a self taught developer currently working at Ericsson and Digital Edge in Stockholm. Driven by curiosity, I constantly seek new things to learn like philosophy, politics, physics or technology. Programming wise I have mostly worked with android, react, and vue, but I have also done VR and Alexa development. I am eager to explore new lands within programming in the future.</h3>
               </div>
               <div className="readMoreContainer" onClick={this.downloadURI}>
                 <h3>Full personal letter</h3>
