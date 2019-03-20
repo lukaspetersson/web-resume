@@ -19,21 +19,7 @@ class FrontPage extends React.Component {
                 NavigationBarBackground:{
                     backgroundColor :"transparent",
                 },
-                navShowSection:{
-                  me:{
-                    borderBottom: "0px"
-                  },
-                  web:{
-                    borderBottom: "0px"
-                  },
-                  apps:{
-                    borderBottom: "0px"
-                  },
-                  service:{
-                    borderBottom: "0px"
-                  }
-
-                },
+                menuColor:"var(--white)"
             }
             this.refResume = React.createRef()
             this.refMe = React.createRef()
@@ -46,8 +32,21 @@ class FrontPage extends React.Component {
             this.refContact = React.createRef()
 
             this.handleScroll = this.handleScroll.bind(this);
-
         }
+
+        componentDidMount(){
+             window.addEventListener('scroll', this.scrollWindow)
+        }
+
+        componentWillUnmount() {
+          window.removeEventListener('scroll', this.scrollWindow)
+        }
+        scrollWindow = () =>{
+            this.setState({
+              menuColor: window.pageYOffset > 450? "var(--sky)" : "var(--white)",
+            })
+        }
+
     handleScroll(data) {
         switch(data) {
             case "top":
@@ -77,7 +76,7 @@ class FrontPage extends React.Component {
             case "contact":
                 window.scrollTo(0, this.refContact.current.offsetTop);
                 break;
-            default: 
+            default:
         }
     }
     render() {
@@ -85,7 +84,7 @@ class FrontPage extends React.Component {
 
                 <div className="body">
                         <div className="navigationMenu">
-                            <NavigationBar scrollfromParent={this.handleScroll}/>
+                            <NavigationBar scrollfromParent={this.handleScroll} menuColor={this.state.menuColor}/>
                         </div>
                         <div className="WelcomeSection">
                             <WelcomeSection scrollfromParent={this.handleScroll}/>

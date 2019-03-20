@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavigationBar.css';
-import menu_icon from "./../img/menu_icon.png"
+import car_icon from "./../img/car_icon.png"
 
 class NavigationBar extends React.Component {
     constructor(props){
@@ -60,9 +60,9 @@ class NavigationBar extends React.Component {
                <div className={this.state.downloadContainerClass} style={{right: this.state.menuSize, height: this.state.downloadContainerClass === "downloadContainer" ? "20vh" : "100vh"}}>
                     <div id="nav-container" onClick={this.renderInfo} >
                         <div id="nav-icon1">
-                            <span style={{backgroundColor: "white"}}></span>
-                            <span style={{backgroundColor: "white"}}></span>
-                            <span style={{backgroundColor: "white"}}></span>
+                            <span style={{backgroundColor: this.state.downloadContainerClass === "downloadContainer open" ? "white" : this.props.menuColor}}></span>
+                            <span style={{backgroundColor: this.state.downloadContainerClass === "downloadContainer open" ? "white" : this.props.menuColor}}></span>
+                            <span style={{backgroundColor: this.state.downloadContainerClass === "downloadContainer open" ? "white" : this.props.menuColor}}></span>
                         </div>
                     </div>
                     <div className={this.state.downloadContainerContentClass}>
@@ -71,21 +71,21 @@ class NavigationBar extends React.Component {
                         </div>
                         <div className="divider"/>
                         <div className="filesDisplay">
-                        <a href={menu_icon} download>Resume</a>
+                        <a href={car_icon} download>Resume</a>
                         <br/>
-                        <a href={menu_icon} download>Personal letter</a>
+                        <a href={car_icon} download>Personal letter</a>
                         <br/>
-                        <a href={menu_icon} download>IGCSE grades</a>
+                        <a href={car_icon} download>IGCSE grades</a>
                         <br/>
-                        <a href={menu_icon} download>Gymnasium grades</a>
+                        <a href={car_icon} download>Gymnasium grades</a>
                         <br/>
-                        <a href={menu_icon} download>TUI work certificate</a>
+                        <a href={car_icon} download>TUI work certificate</a>
                         <br/>
-                        <a href={menu_icon} download>Abbekås work certificate</a>
+                        <a href={car_icon} download>Abbekås work certificate</a>
                         <br/>
-                        <a href={menu_icon} download>Drottningholm work certificate</a>
+                        <a href={car_icon} download>Drottningholm work certificate</a>
                         <div className="divider"/>
-                        <a href={menu_icon} download>Full resume</a>
+                        <a href={car_icon} download>Full resume</a>
                         </div>
                     </div>
                 </div>

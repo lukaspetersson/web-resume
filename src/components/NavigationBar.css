@@ -3,7 +3,6 @@
     margin-top: 20px;
 }
 
-/* ***************************************** */
 .connectiondownloadContainer {
   display: inline-block;
 }
@@ -15,7 +14,7 @@
   height: 100vh;
   padding: 5vw;
   overflow-y: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--sky);
 }
 .downloadContainer.open::-webkit-scrollbar {
   display: none;
@@ -37,18 +36,19 @@ user-select: none; /* Standard */
 .infoDisplay {
     margin-top: calc(1.5vw + 5vh);
   display: block;
-  color: white;
+  color: var(--white);
   text-align: center;
 }
 
 .infoDisplay h1{
     position: relative;
+    color:var(--white);
 }
 
 .divider {
   width: 30%;
   height: 0px;
-  border-bottom: 0.2vh solid white;
+  border-bottom: 0.2vh solid var(--white);
   padding-bottom: 3vh;
   display: table;
   margin: 0 auto;
@@ -64,7 +64,7 @@ text-align: center;
    display: inline-block;
    margin: 10px;
    font-size: 20px;
-   color: white;
+   color: var(--white);
 }
 
 #nav-container {
@@ -121,11 +121,11 @@ text-align: center;
 }
 
 #nav-icon1.open span:nth-child(1) {
-  top: calc(1vw + 1.5vh);
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
+    top: calc(1vw + 1.5vh);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 #nav-icon1.open span:nth-child(2) {
@@ -133,9 +133,9 @@ text-align: center;
 }
 
 #nav-icon1.open span:nth-child(3) {
-  top: calc(1vw + 1.5vh);
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+    top: calc(1vw + 1.5vh);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
