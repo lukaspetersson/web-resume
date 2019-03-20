@@ -24,7 +24,7 @@ class MeSection extends React.Component {
               </div>
               {/*<div className="readMoreContainer" onClick={this.downloadURI}>
                 <h3>Full personal letter</h3>
-                <img src={download_icon}/>
+                <img alt="" src={download_icon}/>
               </div>*/}
             </div>
         );

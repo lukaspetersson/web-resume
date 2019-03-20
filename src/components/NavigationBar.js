@@ -1,8 +1,6 @@
 import React from 'react';
 import './NavigationBar.css';
 import menu_icon from "./../img/menu_icon.png"
-import DowloadPage from "./DowloadPage.js";
-
 
 class NavigationBar extends React.Component {
     constructor(props){
@@ -91,14 +89,6 @@ class NavigationBar extends React.Component {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
             </div>
         );
     }

@@ -46,32 +46,8 @@ class FrontPage extends React.Component {
             this.refContact = React.createRef()
 
             this.handleScroll = this.handleScroll.bind(this);
-            //this.changeNav = this.changeNav.bind(this);
 
         }
-    // changeNav() {
-    //     const body = this.bodyRef.current;
-    //         this.setState({
-    //             NavigationBarBackground:{
-    //                 backgroundColor: body.scrollTop > 1800 ? "black":"transparent"
-    //             },
-    //             navShowSection:{
-    //               me:{
-    //                 borderBottom: (body.scrollTop >= 1200 && body.scrollTop < 1700) ? "7px solid white" : "0px"
-    //               },
-    //               web:{
-    //                 borderBottom: (body.scrollTop >= 1700 && body.scrollTop < 2200) ? "7px solid white" : "0px"
-    //               },
-    //               apps:{
-    //                 borderBottom: (body.scrollTop >= 2200 && body.scrollTop < 2700) ? "7px solid white" : "0px"
-    //               },
-    //               service:{
-    //                 borderBottom: (body.scrollTop >= 2700 && body.scrollTop < 3300) ? "7px solid white" : "0px"
-    //               }
-    //
-    //             },
-    //         });
-    // }
     handleScroll(data) {
         switch(data) {
             case "top":
@@ -101,6 +77,7 @@ class FrontPage extends React.Component {
             case "contact":
                 window.scrollTo(0, this.refContact.current.offsetTop);
                 break;
+            default: 
         }
     }
     render() {

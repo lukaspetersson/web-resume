@@ -3,9 +3,6 @@ import './EducationSection.css';
 import iesb_logo from "./../img/iesb_logo.png"
 import kg_logo from "./../img/kg_logo.png"
 import igcse_logo from "./../img/igcse_logo.png"
-import booklog_screen from "./../img/booklog_screen.png"
-import fallingkitten_screen from "./../img/fallingkitten_screen.png"
-import burnball_screen from "./../img/burnball_screen.png"
 import arrow_back from "./../img/arrow_back.svg"
 import arrow_forward from "./../img/arrow_forward.svg"
 import SmallBlock from "./SmallBlock.js";
@@ -79,7 +76,7 @@ class EducationSection extends React.Component {
         return (
             <div className="educationBody">
                 <h1>Education</h1>
-                <img className="arrowsEducation" id="firstArrowEducation" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
+                <img alt="" className="arrowsEducation" id="firstArrowEducation" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="educationContainer" ref={this.appsContainerRef} >
                     <div className="education">
                         <SmallBlock info={this.state.iesb} height={"380px"}/>
@@ -91,7 +88,7 @@ class EducationSection extends React.Component {
                         <SmallBlock info={this.state.kungsholmen} height={"380px"}/>
                     </div>
                 </div>
-                <img className="arrowsEducation" id="secondArrowEducation" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
+                <img alt="" className="arrowsEducation" id="secondArrowEducation" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }

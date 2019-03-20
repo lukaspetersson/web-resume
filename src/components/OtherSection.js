@@ -6,7 +6,6 @@ import bp_logo from "./../img/bp_logo.png"
 import luf_logo from "./../img/luf_logo.png"
 import ungaforskare_logo from "./../img/ungaforskare_logo.png"
 import erasmus_logo from "./../img/erasmus_logo.jpg"
-import fallingkitten_screen from "./../img/fallingkitten_screen.png"
 import arrow_back from "./../img/arrow_back.svg"
 import arrow_forward from "./../img/arrow_forward.svg"
 import SmallBlock from "./SmallBlock.js";
@@ -102,7 +101,7 @@ class OtherSection extends React.Component {
             <div className="otherBody">
                 <h1>Other</h1>
                 <h3>Here you can read about some hobbies and projects I have had the past years.</h3>
-                <img className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
+                <img alt="" className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="otherContainer" ref={this.appsContainerRef} >
                     <div className="other">
                         <SmallBlock info={this.state.luf} height={"370px"}/>
@@ -123,7 +122,7 @@ class OtherSection extends React.Component {
                         <SmallBlock info={this.state.driver} height={"370px"}/>
                     </div>
                 </div>
-                <img className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
+                <img alt="" className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }

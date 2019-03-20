@@ -15,19 +15,19 @@ class ContactSection extends React.Component {
             <div className="contactBody">
                 <h1>Contact</h1>
                 <div className="withText">
-                    <img src={email_logo}/>
+                    <img alt="" src={email_logo}/>
                     <p>Lukas.Petersson.1999@gmail.com</p>
                 </div>
                 <div className="withText">
-                    <img src={phone_logo}/>
+                    <img alt="" src={phone_logo}/>
                     <p>0707898860</p>
                 </div>
                 <div className="withText" style={{cursor:'pointer'}} onClick={function(event){ window.open("https://github.com/lukaspetersson");}}>
-                    <img src={github_logo}/>
+                    <img alt="" src={github_logo}/>
                     <p>https://github.com/lukaspetersson</p>
                 </div>
                 <div className="withText" style={{cursor:'pointer'}} onClick={function(){  window.open("https://www.linkedin.com/in/lukas-petersson-181a83172/");}}>
-                    <img src={linkedin_logo}/>
+                    <img alt="" src={linkedin_logo}/>
                     <p>https://linkedin.com/in/lukas-petersson-181a83172/</p>
                 </div>
 

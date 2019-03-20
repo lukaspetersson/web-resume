@@ -28,7 +28,7 @@ class BoxResume extends React.Component {
     toggleOpacity(onMouse){
       if(window.innerWidth > 800){
         this.setState({
-          textOpacity:onMouse == "leave" ? 0 : 1
+          textOpacity:onMouse === "leave" ? 0 : 1
         })
       }
     }
@@ -38,8 +38,8 @@ class BoxResume extends React.Component {
             var examples =[]
             var years = [];
             for(var i = 0; i < this.props.info.examples.length; i++){
-                examples.push(<p  style={{float : "left", clear:"both", margin: "10px"}}>{this.props.info.examples[i]}</p>)
-                years.push(<p  style={{float : "right", clear:"both", margin: "10px"}}>{this.props.info.examplesYear[i]}</p>)
+                examples.push(<p  key={"e"+i} style={{float : "left", clear:"both", margin: "10px"}}>{this.props.info.examples[i]}</p>)
+                years.push(<p key={"y"+i} style={{float : "right", clear:"both", margin: "10px"}}>{this.props.info.examplesYear[i]}</p>)
 
             }
         }
