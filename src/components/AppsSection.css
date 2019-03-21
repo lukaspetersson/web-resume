@@ -1,15 +1,16 @@
 .appsBody{
-    padding: 20px 20px;
+    margin: -15px 0;
     height: auto;
+    margin-top: 20px;
 }
 .appsContainer{
     display: inline-block;
     white-space: nowrap;
     width: 100%;
     scroll-behavior: smooth;
-
+    padding: 25px 0;
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y: visible;
 }
 
 .appsContainer::-webkit-scrollbar {
