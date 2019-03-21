@@ -4,6 +4,7 @@
   background-color: var(--tree);
   text-align: center;
   padding: 10px;
+  padding-bottom: 30px;
 }
 
 .contactBody h1{

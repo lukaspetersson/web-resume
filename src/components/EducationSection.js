@@ -3,6 +3,7 @@ import './EducationSection.css';
 import iesb_logo from "./../img/iesb_logo.png"
 import kg_logo from "./../img/kg_logo.png"
 import igcse_logo from "./../img/igcse_logo.png"
+import lund_logo from "./../img/lund_logo.png"
 import arrow_back from "./../img/arrow_back.svg"
 import arrow_forward from "./../img/arrow_forward.svg"
 import SmallBlock from "./SmallBlock.js";
@@ -30,6 +31,13 @@ class EducationSection extends React.Component {
                     description:"Choosing a international Science program at Kungsholmens gymnasium was an obvious choice. I loved math, and going from an international school to another felt natural.",
                     image: {
                       front: kg_logo,
+                    }
+                },
+                lund:{
+                    year:"2019 - ",
+                    description:"This fall I will move to Lund to study engineering physics at Lund University.",
+                    image: {
+                      front: lund_logo,
                     }
                 },
                 arrowStyle:{
@@ -86,6 +94,9 @@ class EducationSection extends React.Component {
                     </div>
                     <div className="education">
                         <SmallBlock info={this.state.kungsholmen} height={"380px"}/>
+                    </div>
+                    <div className="education">
+                        <SmallBlock info={this.state.lund} height={"380px"}/>
                     </div>
                 </div>
                 <img alt="" className="arrowsEducation" id="secondArrowEducation" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>

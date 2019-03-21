@@ -22,11 +22,11 @@ class ContactSection extends React.Component {
                     <img alt="" src={phone_logo}/>
                     <p>0707898860</p>
                 </div>
-                <div className="withText" style={{cursor:'pointer'}} onClick={function(event){ window.open("https://github.com/lukaspetersson");}}>
+                <div className="withText" style={{cursor:'pointer'}} title="Visit GitHub profile" onClick={function(event){ window.open("https://github.com/lukaspetersson");}}>
                     <img alt="" src={github_logo}/>
                     <p>https://github.com/lukaspetersson</p>
                 </div>
-                <div className="withText" style={{cursor:'pointer'}} onClick={function(){  window.open("https://www.linkedin.com/in/lukas-petersson-181a83172/");}}>
+                <div className="withText" style={{cursor:'pointer'}} title="Visit LinkedIn profile" onClick={function(){  window.open("https://www.linkedin.com/in/lukas-petersson-181a83172/");}}>
                     <img alt="" src={linkedin_logo}/>
                     <p>https://linkedin.com/in/lukas-petersson-181a83172/</p>
                 </div>
