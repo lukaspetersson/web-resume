@@ -49,8 +49,9 @@
 }
 
 .quote{
+    position: relative;
   display: inline-block;
-  width: 300px;
+  max-width: 300px;
   margin:10px;
   vertical-align: middle;
   color: var(--tree);

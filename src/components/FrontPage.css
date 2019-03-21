@@ -15,7 +15,7 @@ html {
     right:0;
     left:0;
     display: block;
-    background-color: var(--white);
+    background-color: #f2f2f2;
     z-index: 0;
     color: var(--tree);
     font-family: Verdana;

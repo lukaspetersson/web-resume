@@ -5,6 +5,7 @@
     color: var(--tree);
     white-space: normal;
     cursor: default;
+    background-color: var(--white);
 }
 
 .SmallBlock img{
@@ -17,7 +18,6 @@
 }
 
 .card {
-  background-color: transparent;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
 }
 
@@ -26,7 +26,6 @@
 }
 
 .flip-card {
-  background-color: transparent;
   width:210px;
   padding: 0 10px;
 }

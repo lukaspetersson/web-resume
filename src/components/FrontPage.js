@@ -53,7 +53,7 @@ class FrontPage extends React.Component {
                 window.scrollTo(0, 0);
                 break;
             case "me":
-                window.scrollTo(0, this.refMe.current.offsetTop);
+                window.scrollTo(0, this.refMe.current.offsetTop - 20);
                 break;
             case "education":
                 window.scrollTo(0, this.refEducation.current.offsetTop);
