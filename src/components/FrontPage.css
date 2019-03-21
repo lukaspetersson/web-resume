@@ -26,6 +26,15 @@ h1{
     color: var(--sky);
 }
 
+.upNav{
+    position: fixed;
+    cursor: pointer;
+    right: calc(1vw + 2vh);
+    bottom:calc(1vw + 2vh);;
+    width: calc(3vw + 5vh);
+    height: calc(3vw + 5vh);
+}
+
 .navigationMenu{
     position: absolute;
     left:0;

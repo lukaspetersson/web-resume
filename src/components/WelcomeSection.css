@@ -1,3 +1,4 @@
+
 .welcomeBody{
     position: absolute;
     top:0;
@@ -16,6 +17,8 @@
 }
 
 .welcomeText img {
+    height: 96px;
+    width: 96px;
     cursor: pointer;
     transition: 0.5s;
 }

@@ -11,6 +11,7 @@ import DigitalEdgeSection from './DigitalEdgeSection.js'
 import EricssonSection from './EricssonSection.js'
 import OtherSection from './OtherSection.js'
 import EducationSection from './EducationSection.js'
+import up_icon from "./../img/up_icon.svg"
 
 class FrontPage extends React.Component {
     constructor(props){
@@ -80,8 +81,10 @@ class FrontPage extends React.Component {
         }
     }
     render() {
+        if(window.pageYOffset > 450){
+            var upNav = <img src={up_icon} className="upNav" onClick={()=> {this.handleScroll("top")}}/>
+        }
         return (
-
                 <div className="body">
                         <div className="navigationMenu">
                             <NavigationBar scrollfromParent={this.handleScroll} menuColor={this.state.menuColor}/>
@@ -116,6 +119,7 @@ class FrontPage extends React.Component {
                         <div className="experiancesSections" ref={this.refContact}>
                             <ContactSection/>
                         </div>
+                        {upNav}
                 </div>
         );
     }
