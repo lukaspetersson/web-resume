@@ -6,13 +6,27 @@
     left: 0;
     right:0;
     color:var(--white);
+    background-image: url("./../img/welcome_colors.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.coverOver{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-image: url("./../img/madrid_cover.png");
+    background-size: cover;
+    background-position: center;
 }
 
 
 .welcomeText{
     position: relative;
     text-align: center;
-    margin-top: 390px;
+    margin-top: 50px;
     font-size: 30px;
 }
 
@@ -28,15 +42,16 @@
 }
 
 .barcaContainer{
-    position: absolute;
-    top:200px;
-    left: 35%;
-    text-align: center;
+    position: relative;
+    display: block;
+    margin: 0;
+    margin-top:220px;
 }
 
 .barcaContainer p{
     font-size: 30px;
     margin-bottom: 20px;
+    min-width: 220px;
 }
 
 .switch {
