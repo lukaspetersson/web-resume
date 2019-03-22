@@ -2,7 +2,7 @@ import React from 'react';
 import './Resume.css';
 import BoxResume from "./BoxResume.js";
 import pepperPic from "./../img/pepper_transparent.png"
-import ericssonLogo from "./../img/ericsson_logo.png"
+import ericssonLogo from "./../img/ericsson_logo.svg"
 import educationLogo from "./../img/lund_logo.png"
 import bamseLogo from "./../img/bamse_logo.png"
 import moreLogo from "./../img/more_icon.png"
