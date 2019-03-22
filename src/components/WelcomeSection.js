@@ -2,7 +2,6 @@ import React from 'react';
 import './WelcomeSection.css';
 import {Animated} from "react-animated-css";
 import down_logo from "./../img/down_logo.png"
-import cover_over from "./../img/madrid_cover.png"
 
 class WelcomeSection extends React.Component {
     constructor(props){

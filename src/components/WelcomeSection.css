@@ -17,7 +17,7 @@
     bottom: 0;
     left: 0;
     right:0;
-    background-image: url("./../img/madrid_cover.png");
+    background-image: url("./../img/scribble_white.png");
     background-size: cover;
     background-position: center;
 }
@@ -45,7 +45,7 @@
 
 .barcaContainer p{
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     min-width: 223px;
 }
 
