@@ -37,6 +37,7 @@
 }
 
 .downloadContainerContent.open {
+    margin-top:calc(50px - 10vw);
   visibility: visible;
   height: 100vh;
   -webkit-user-select: none; /* Safari */

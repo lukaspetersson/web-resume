@@ -74,21 +74,21 @@ class NavigationBar extends React.Component {
                         </div>
                         <div className="divider"/>
                         <div className="filesDisplay">
-                        <a href={car_icon} download>Resume</a>
+                        <a href={car_icon} title="Download" download>Resume</a>
                         <br/>
-                        <a href={car_icon} download>Personal letter</a>
+                        <a href={car_icon} title="Download" download>Personal letter</a>
                         <br/>
-                        <a href={car_icon} download>IGCSE grades</a>
+                        <a href={car_icon} title="Download" download>IGCSE grades</a>
                         <br/>
-                        <a href={car_icon} download>Gymnasium grades</a>
+                        <a href={car_icon} title="Download" download>Gymnasium grades</a>
                         <br/>
-                        <a href={car_icon} download>TUI work certificate</a>
+                        <a href={car_icon} title="Download" download>TUI work certificate</a>
                         <br/>
-                        <a href={car_icon} download>Abbekås work certificate</a>
+                        <a href={car_icon} title="Download" download>Abbekås work certificate</a>
                         <br/>
-                        <a href={car_icon} download>Drottningholm work certificate</a>
+                        <a href={car_icon} title="Download" download>Drottningholm work certificate</a>
                         <div className="divider"/>
-                        <a href={car_icon} download>Full resume</a>
+                        <a href={car_icon} title="Download" download>Full resume</a>
                         </div>
                     </div>
                 </div>
