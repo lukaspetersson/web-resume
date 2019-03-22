@@ -14,7 +14,7 @@ class WelcomeSection extends React.Component {
     }
     render() {
         if(this.state.isCovered){
-            var coverOver = <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={this.state.isCovered}><div className="coverOver"></div></Animated>
+            var coverOver = <Animated isVisible={this.state.isCovered}><div className="coverOver"></div></Animated>
         }
         return (
             <div className="welcomeBody">

@@ -3,6 +3,16 @@
     margin-top: 20px;
 }
 
+.outsideSpace{
+    position: fixed;
+    right:0;
+    top:0;
+    bottom: 0;
+    left:0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.4);
+}
+
 .connectiondownloadContainer {
   display: inline-block;
 }
@@ -15,6 +25,7 @@
   padding: 5vw;
   overflow-y: hidden;
   transition: 1s;
+  z-index: 3;
   background-color: var(--sky);
 }
 .downloadContainer.open::-webkit-scrollbar {
@@ -47,7 +58,7 @@ user-select: none; /* Standard */
 }
 
 .divider {
-  width: 30%;
+  width: 60%;
   height: 0px;
   border-bottom: 0.2vh solid var(--white);
   padding-bottom: 3vh;
@@ -66,6 +77,10 @@ text-align: center;
    margin: 10px;
    font-size: 20px;
    color: var(--white);
+}
+
+.filesDisplay a:hover{
+   text-decoration: none;
 }
 
 #nav-container {

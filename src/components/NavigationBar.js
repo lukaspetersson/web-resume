@@ -9,7 +9,7 @@ class NavigationBar extends React.Component {
                 downloadVisibility: false,
                 downloadContainerClass: "downloadContainer",
                 downloadContainerContentClass: "downloadContainerContent",
-                menuSize:"50vw",
+                menuSize:null,
             }
             this.visibilityToggle = this.visibilityToggle.bind(this)
             this.renderInfo = this.renderInfo.bind(this)
@@ -41,23 +41,26 @@ class NavigationBar extends React.Component {
     resizeWindow = ()=>{
         if(window.innerWidth < 600){
             this.setState({
-              menuSize:"0",
+              menuSize:0,
             })
         }else if(window.innerWidth < 800){
           this.setState({
-            menuSize:"20vw",
+            menuSize:20,
           })
         }else{
             this.setState({
-              menuSize:"50vw",
+              menuSize:50,
             })
         }
     }
 
     render() {
+        if(this.state.downloadContainerClass === "downloadContainer open"){
+            var background = <div className="outsideSpace" onClick={this.renderInfo}></div>
+        }
         return (
             <div className="navBar">
-               <div className={this.state.downloadContainerClass} style={{right: this.state.menuSize, height: this.state.downloadContainerClass === "downloadContainer" ? "20vh" : "100vh"}}>
+               <div className={this.state.downloadContainerClass} style={{right: this.state.menuSize+"vw", height: this.state.downloadContainerClass === "downloadContainer" ? "20vh" : "100vh"}}>
                     <div id="nav-container" onClick={this.renderInfo} >
                         <div id="nav-icon1">
                             <span style={{backgroundColor: this.state.downloadContainerClass === "downloadContainer open" ? "white" : this.props.menuColor}}></span>
@@ -67,7 +70,7 @@ class NavigationBar extends React.Component {
                     </div>
                     <div className={this.state.downloadContainerContentClass}>
                         <div className="infoDisplay">
-                            <h1>Resume download links</h1>
+                            <h1>Download</h1>
                         </div>
                         <div className="divider"/>
                         <div className="filesDisplay">
@@ -89,6 +92,7 @@ class NavigationBar extends React.Component {
                         </div>
                     </div>
                 </div>
+                {background}
             </div>
         );
     }
