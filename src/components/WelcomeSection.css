@@ -24,34 +24,29 @@
 
 
 .welcomeText{
-    position: relative;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
 }
 
 .welcomeText img {
     height: 96px;
     width: 96px;
     cursor: pointer;
-    transition: 0.5s;
-}
-
-.welcomeText p {
-    margin-bottom: 0;
 }
 
 .barcaContainer{
     position: relative;
     display: block;
     margin: 0;
-    margin-top:220px;
+    margin-top: calc(120px + 9vw);
 }
 
 .barcaContainer p{
     font-size: 30px;
     margin-bottom: 20px;
-    min-width: 220px;
+    min-width: 223px;
 }
 
 .switch {

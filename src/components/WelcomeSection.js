@@ -1,5 +1,6 @@
 import React from 'react';
 import './WelcomeSection.css';
+import {Animated} from "react-animated-css";
 import down_logo from "./../img/down_logo.png"
 import cover_over from "./../img/madrid_cover.png"
 
@@ -7,26 +8,26 @@ class WelcomeSection extends React.Component {
     constructor(props){
             super(props)
             this.state = {
-                margin: "0px",
+                bottom: "20px",
                 isCovered: false,
             }
     }
     render() {
         if(this.state.isCovered){
-            var coverOver = <div className="coverOver"></div>
+            var coverOver = <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={this.state.isCovered}><div className="coverOver"></div></Animated>
         }
         return (
             <div className="welcomeBody">
             {coverOver}
             <div className="barcaContainer">
-                <p>Barcelona friendly switch</p>
+                <p>Make website FC Barcelona friendly</p>
                 <label className="switch" >
                       <input type="checkbox" onClick={()=>{this.setState({isCovered : !this.state.isCovered})}}/>
                       <span className="slider round"></span>
                 </label>
             </div>
-                <div className="welcomeText">
-                    <img alt="" src={down_logo} style={{marginTop: this.state.margin}} onClick={() => this.props.scrollfromParent("me")} onMouseEnter={()=>{this.setState({margin:"20px"})}} onMouseLeave={()=>{this.setState({margin:"0px"})}}/>
+                <div className="welcomeText" style={{bottom: this.state.bottom}}>
+                    <img alt="" src={down_logo}  onClick={() => this.props.scrollfromParent("me")} onMouseEnter={()=>{this.setState({bottom:"-10px"})}} onMouseLeave={()=>{this.setState({bottom:"20px"})}}/>
                 </div>
             </div>
 
