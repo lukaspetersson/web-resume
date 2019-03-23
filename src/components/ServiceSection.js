@@ -116,10 +116,10 @@ class ServiceSection extends React.Component {
                 <h1>Service Jobs</h1>
                 <h3>Skills are great but it is wasted without hard work, I got my first job almost as soon as it was legally possible. From that I have developed an unmatchable work ethic, something my former employers can certify.</h3>
                 <div className="quote">
-                    <a href={arrow_back} title="Dowload work certificate" download>"I can really recommend this young man, even if I would rather not, as I hope to have him many years to come" -Lotta Holm</a>
+                    <a href={arrow_back} title="Download work certificate" download>"I can really recommend this young man, even if I would rather not, as I hope to have him many years to come" -Lotta Holm</a>
                 </div>
                 <div className="quote">
-                    <a href={arrow_back} title="Dowload work certificate" download>"I give him the highest possible grade" -Fredrik Lundgren</a>
+                    <a href={arrow_back} title="Download work certificate" download>"I give him the highest possible grade" -Fredrik Lundgren</a>
                 </div>
                 <img alt="" className="arrowsService" id="firstArrowService" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="serviceContainer" ref={this.appsContainerRef} >
