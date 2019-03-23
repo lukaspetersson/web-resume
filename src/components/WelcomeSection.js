@@ -12,12 +12,15 @@ class WelcomeSection extends React.Component {
             this.refMeText = React.createRef()
     }
     componentDidMount(){
-          this.forceUpdate()
+        if(this.refMeText.current){
+          this.props.setMeHeight(window.innerHeight - this.refMeText.current.clientHeight - 40)
+        }
+         this.forceUpdate()
          window.addEventListener('resize', ()=>{this.forceUpdate()})
     }
 
     componentWillUnmount() {
-      window.removeEventListener('resize', ()=>{this.forceUpdate()})
+        window.removeEventListener('resize', ()=>{this.forceUpdate()})
     }
     render() {
         // if(this.state.isCovered){
