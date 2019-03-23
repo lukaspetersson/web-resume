@@ -25,6 +25,11 @@ html {
 
 h1{
     color: var(--sky);
+    font-size:calc(1vw + 2.9vh);
+}
+
+h3{
+  font-size:calc(0.6vw + 2.1vh);
 }
 
 .upNav{

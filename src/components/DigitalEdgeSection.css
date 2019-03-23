@@ -7,7 +7,7 @@ text-align: center;
   float:left;
 }
 .pepperImg img:first-child{
-  height: 500px;
+  height: calc(250px + 20vw);
    display: inline-block;
 }
 .pepperImg img:nth-child(2){
