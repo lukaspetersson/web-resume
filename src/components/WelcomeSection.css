@@ -22,18 +22,40 @@
     background-position: center;
 }
 
+.infoContainerWelcome{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin: 0;
+  padding: 20px 7%;
+  background-color: var(--whiteDust);
+}
 
-.welcomeText{
+.infoContainerWelcome h3{
+  color: var(--tree);
+  font-size:calc(0.6vw + 2.1vh);
+  margin: 0;
+}
+
+.infoContainerWelcome h1{
+  font-size:calc(1vw + 2.9vh);
+    margin: 0;
+}
+
+.welcomeBody img:hover{
+    bottom: 0;
+}
+
+.welcomeBody img {
     position: absolute;
+    width: calc(4vw + 5vh);
+    height: calc(4vw + 5vh);
+    cursor: pointer;
+    bottom:calc(1vw + 2vh);
     left: 0;
     right: 0;
     transition: 0.5s;
-}
-
-.welcomeText img {
-    height: 96px;
-    width: 96px;
-    cursor: pointer;
+    margin: auto;
 }
 
 .barcaContainer{

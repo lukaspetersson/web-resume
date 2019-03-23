@@ -23,7 +23,8 @@ class FrontPage extends React.Component {
                 menuColor:"var(--white)"
             }
             this.refResume = React.createRef()
-            this.refMe = React.createRef()
+            //this.refMe = React.createRef()
+            this.refResume = React.createRef()
             this.refEducation = React.createRef()
             this.refDigitalEdge = React.createRef()
             this.refEricsson = React.createRef()
@@ -53,9 +54,12 @@ class FrontPage extends React.Component {
             case "top":
                 window.scrollTo(0, 0);
                 break;
-            case "me":
-                window.scrollTo(0, this.refMe.current.offsetTop - 20);
+            case "resume":
+                window.scrollTo(0, this.refResume.current.offsetTop);
                 break;
+            // case "me":
+            //     window.scrollTo(0, this.refMe.current.offsetTop - 20);
+            //     break;
             case "education":
                 window.scrollTo(0, this.refEducation.current.offsetTop);
                 break;
@@ -84,6 +88,9 @@ class FrontPage extends React.Component {
         if(window.pageYOffset > 450){
             var upNav = <img src={up_icon} className="upNav" onClick={()=> {this.handleScroll("top")}}/>
         }
+        // <div className="experiancesSections" ref={this.refMe}>
+        //     <MeSection/>
+        // </div>
         return (
                 <div className="body">
                         <div className="navigationMenu">
@@ -91,9 +98,6 @@ class FrontPage extends React.Component {
                         </div>
                         <div className="WelcomeSection">
                             <WelcomeSection scrollfromParent={this.handleScroll}/>
-                        </div>
-                        <div className="experiancesSections" ref={this.refMe}>
-                            <MeSection/>
                         </div>
                         <div className="experiancesSections" ref={this.refResume}>
                             <Resume scrollfromParent={this.handleScroll} />

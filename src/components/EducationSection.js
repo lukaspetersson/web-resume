@@ -14,21 +14,21 @@ class EducationSection extends React.Component {
             this.state = {
                 iesb:{
                     year:"- 2015",
-                    description:"Choosing IESB is one of the best choices of my life, not only because it improved my english skills enormously, but also because the diversity of the students taught me different perspectives.",
+                    description:"Choosing IESB is one of the best choices of my life! It improved my english skills enormously and  the diversity of the students taught me different perspectives.",
                     image: {
                       front: iesb_logo,
                     }
                 },
                 igcse:{
                     year:"2014 - 2015",
-                    description:"I took extra IGCSE courses in math, english and science because I longed for a challenge and I have always been curious. As it turned out, I made great friends as well!",
+                    description:"I took extracurricular IGCSE courses in math, english and science. I longed for a challenge and was curious to learn new things. As it turned out, I made great friends as well!",
                     image: {
                       front: igcse_logo,
                     }
                 },
                 kungsholmen:{
                     year:"2015 - 2018",
-                    description:"Choosing a international Science program at Kungsholmens gymnasium was an obvious choice. I loved math, and going from an international school to another felt natural.",
+                    description:"An international science programme at Kungsholmens gymnasium was an obvious choice. I loved math, and going from one international school to another felt natural.",
                     image: {
                       front: kg_logo,
                     }

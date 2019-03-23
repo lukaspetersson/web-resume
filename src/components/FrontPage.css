@@ -4,6 +4,7 @@
   --water: #79B0D9;
   --shirt: #3D4D81;
   --white: #ffffff;
+  --whiteDust: #f2f2f2;
 }
 
 html {
@@ -15,7 +16,7 @@ html {
     right:0;
     left:0;
     display: block;
-    background-color: #f2f2f2;
+    background-color: var(--whiteDust);
     z-index: 0;
     color: var(--tree);
     font-family: Verdana;
@@ -50,7 +51,8 @@ h1{
 .WelcomeSection{
     position: relative;
     width: 100%;
-    height: 500px;
+    height:100vh;
+    /* height: calc(7vw + 300px); */
 }
 
 .experiancesSections{
