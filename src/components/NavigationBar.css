@@ -17,6 +17,11 @@
   display: inline-block;
 }
 
+.downloadContainer {
+  position: absolute;
+      z-index: 2;
+}
+
 .downloadContainer.open {
     position: fixed;
     left: 0;
@@ -25,7 +30,7 @@
   padding: 5vw;
   overflow-y: hidden;
   transition: 1s;
-  z-index: 3;
+  z-index: 4;
   background-color: var(--sky);
 }
 .downloadContainer.open::-webkit-scrollbar {

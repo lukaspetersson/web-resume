@@ -42,6 +42,7 @@
     margin: 0;
     margin-top: calc(15vw);
     margin-left: calc(50vw - 50px);
+    z-index: 3;
     /* margin-top: calc(120px + 9vw); */
 }
 
