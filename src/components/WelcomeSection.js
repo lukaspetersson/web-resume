@@ -1,6 +1,6 @@
 import React from 'react';
 import './WelcomeSection.css';
-import {Animated} from "react-animated-css";
+//import {Animated} from "react-animated-css";
 import down_logo from "./../img/down_logo.png"
 
 class WelcomeSection extends React.Component {
@@ -13,7 +13,8 @@ class WelcomeSection extends React.Component {
     }
     render() {
         if(this.state.isCovered){
-            var coverOver = <Animated isVisible={this.state.isCovered}><div className="coverOver"></div></Animated>
+            //var coverOver = <Animated isVisible={this.state.isCovered}><div className="coverOver"></div></Animated>
+            var coverOver =<div className="coverOver"></div>
         }
         return (
             <div className="welcomeBody">

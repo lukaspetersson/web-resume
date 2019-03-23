@@ -20,7 +20,7 @@ class ContactSection extends React.Component {
                 </div>
                 <div className="withText">
                     <img alt="" src={phone_logo}/>
-                    <p>0707898860</p>
+                    <p>+46707898860</p>
                 </div>
                 <div className="withText" style={{cursor:'pointer'}} title="Visit GitHub profile" onClick={function(event){ window.open("https://github.com/lukaspetersson");}}>
                     <img alt="" src={github_logo}/>
