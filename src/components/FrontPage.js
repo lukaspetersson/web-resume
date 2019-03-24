@@ -91,9 +91,18 @@ class FrontPage extends React.Component {
         }
     }
     render() {
-        if(window.pageYOffset > this.state.meHeight){
-            var upNav = <img src={up_icon} className="upNav" onClick={()=> {this.handleScroll("top")}}/>
-        }
+        try{
+          if(window.pageYOffset > this.refEducation.current.offsetTop -100){
+            var sectionUp = "";
+            var sectionDown = "";
+            if(window.pageYOffset > 0){
+
+            }
+
+              var upNav = <img src={up_icon} onClick={()=> {this.handleScroll(sectionUp)}}/>
+              var downNav = <img src={up_icon} style={{transform: "rotate(180deg)"}} onClick={()=> {this.handleScroll(sectionDown)}}/>
+          }
+        }catch{}
         // <div className="experiancesSections" ref={this.refMe}>
         //     <MeSection/>
         // </div>
@@ -129,7 +138,11 @@ class FrontPage extends React.Component {
                         <div className="experiancesSections" ref={this.refContact}>
                             <ContactSection/>
                         </div>
-                        {upNav}
+                        <div className="navigationButtons">
+                            {downNav}
+                            {upNav}
+                        </div>
+
                 </div>
         );
     }

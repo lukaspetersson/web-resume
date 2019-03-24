@@ -24,23 +24,27 @@ class Resume extends React.Component {
                     },
                     digitalEdge: {
                         image:pepperPic,
-                        title: "Robots",
-                        subTitle: "Consultant developer for Digital Edge",
-                        subTitleYear: "Nov 2018 - present",
+                        title: "Work - Programming",
+                        examples: ["Digital Edge"],
+                        examplesYear: ["Nov 2018 - present"],
+                        // subTitle: "Consultant developer for Digital Edge",
+                        // subTitleYear: "Nov 2018 - present",
                         color: "rgb(191, 33, 33)",
                         subColor: "rgba(140, 8, 8, 0.7)"
                     },
                     ericsson: {
                         image:ericssonLogo,
-                        title: "Internship",
-                        subTitle: "Intern developer at Ericsson",
-                        subTitleYear: "Jan 2019 - present",
+                        title: "Internship - Programming",
+                        examples: ["Ericsson"],
+                        examplesYear: ["Jan 2019 - present"],
+                        // subTitle: "Intern developer at Ericsson",
+                        // subTitleYear: "Jan 2019 - present",
                         color: "rgb(191, 33, 146)",
                         subColor: "rgba(112, 19, 85, 0.7)"
                     },
                     mobileApps: {
                         image:booklogLogo,
-                        title: "Mobile Development",
+                        title: "Android Apps",
                         examples: ["BookLog","FallingKitten", "Brännbollräknare"],
                         examplesYear: ["2019", "2018", "2018"],
                         color: "rgb(143, 33, 191)",
@@ -48,7 +52,7 @@ class Resume extends React.Component {
                     },
                     serviceJobs: {
                         image:bamseLogo,
-                        title: "Service jobs",
+                        title: "Work - Service",
                         examples: ["Engelska skolan", "Hemköp",  "TUI", "Bedinge GK", "Drottningholms GK", "Abbekås hamnkrog"],
                         examplesYear: ["Oct - Nov 2018" , "Oct - Nov 2018", "summer 2018", "summer 2017",  "2015 - 2017", "summer 2015 & 2016"],
                         color: "rgb(33, 191, 117)",

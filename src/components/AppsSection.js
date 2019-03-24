@@ -81,8 +81,8 @@ class AppsSection extends React.Component {
         const appsContainer = this.appsContainerRef.current;
         return (
             <div className="appsBody">
-                <h1>Mobile App Development</h1>
-                <h3>Mobile app development became the catalyst to make my programming passion explode. The feeling of observing your project go from an idea in your head to an usable tool is truly satisfying. </h3>
+                <h1>Android Apps</h1>
+                <h3>Mobile app development became the catalyst to make my programming passion explode. Hundreds of hours of online courses during my free time have enabled me to publish my own apps on Google Play store.The feeling of observing your project go from an idea in your head to an usable tool is truly satisfying.</h3>
                 <img alt="" className="arrowsApps" id="firstArrowApps" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="appsContainer" ref={this.appsContainerRef} >
                     <div className="app">

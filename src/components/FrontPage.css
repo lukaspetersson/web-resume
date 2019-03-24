@@ -32,13 +32,25 @@ h3{
   font-size:calc(0.6vw + 2.1vh);
 }
 
-.upNav{
+.navigationButtons{
     position: fixed;
-    cursor: pointer;
     right: calc(1vw + 2vh);
-    bottom:calc(1vw + 2vh);;
+    bottom:calc(1vw + 2vh);
+    margin: 0;
+}
+
+.navigationButtons img{
+    cursor: pointer;
     width: calc(3vw + 5vh);
     height: calc(3vw + 5vh);
+    transition: 0.5s;
+}
+
+.navigationButtons img:first-child:hover{
+      margin-bottom: calc(-1 * (1vw + 2vh));
+}
+.navigationButtons img:nth-child(2):hover{
+      margin-bottom: calc(1vw + 2vh);
 }
 
 .upNav:hover {
