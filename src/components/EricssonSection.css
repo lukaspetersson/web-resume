@@ -6,9 +6,10 @@
   color:var(--white);
 }
 
-.ericssonBody h1{
-
+.ericssonBody h3{
+  margin-top: 5px;
 }
+
 
 .ericssonBody div{
   text-align: center;

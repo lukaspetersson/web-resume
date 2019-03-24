@@ -113,7 +113,7 @@ class ServiceSection extends React.Component {
         const appsContainer = this.appsContainerRef.current;
         return (
             <div className="serviceBody">
-                <h1>Service Jobs</h1>
+                <h1>Work - Service</h1>
                 <h3>Skills are great but it is wasted without hard work, I got my first job almost as soon as it was legally possible. From that I have developed an unmatchable work ethic, something my former employers can certify.</h3>
                 <div className="quote">
                     <a href={arrow_back} title="Download work certificate" download>"I can really recommend this young man, even if I would rather not, as I hope to have him many years to come" -Lotta Holm</a>
@@ -141,7 +141,7 @@ class ServiceSection extends React.Component {
                     </div>
                     <div className="service">
                         <SmallBlock info={this.state.abbekas} height={"400px"}/>
-                    </div>  
+                    </div>
                 </div>
                 <img alt="" className="arrowsService" id="secondArrowService" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
             </div>

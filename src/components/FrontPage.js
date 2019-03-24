@@ -91,16 +91,37 @@ class FrontPage extends React.Component {
         }
     }
     render() {
+      // console.log(window.innerHeight + window.pageYOffset , document.body.scrollHeight)
         try{
-          if(window.pageYOffset > this.refEducation.current.offsetTop -100){
+          if(window.pageYOffset > this.refEducation.current.offsetTop - 100){
             var sectionUp = "";
             var sectionDown = "";
-            if(window.pageYOffset > 0){
+            if(window.pageYOffset < this.refDigitalEdge.current.offsetTop - 100){
+                sectionUp = "resume";
+                sectionDown = "digitalEdge";
+            }else if(window.pageYOffset < this.refEricsson.current.offsetTop - 100){
+              sectionUp = "education";
+              sectionDown = "ericsson";
+            }else if(window.pageYOffset < this.refApps.current.offsetTop - 100){
+              sectionUp = "digitalEdge";
+              sectionDown = "apps";
+            }else if(window.pageYOffset < this.refService.current.offsetTop - 100){
+              sectionUp = "ericsson";
+              sectionDown = "service";
+            }else if(window.pageYOffset < this.refOther.current.offsetTop - 100){
+              sectionUp = "apps";
+              sectionDown = "other";
+            }else if((window.pageYOffset < this.refOther.current.offsetTop - 100) && (window.innerHeight + window.scrollY >= document.body.scrollHeight)){
+              sectionUp = "service";
+              sectionDown = "contact";
+            }else{
+              sectionUp = "other";
+            }
+            if(sectionDown){
+              var downNav = <img src={up_icon} style={{transform: "rotate(180deg)"}} onClick={()=> {this.handleScroll(sectionDown)}}/>
 
             }
-
-              var upNav = <img src={up_icon} onClick={()=> {this.handleScroll(sectionUp)}}/>
-              var downNav = <img src={up_icon} style={{transform: "rotate(180deg)"}} onClick={()=> {this.handleScroll(sectionDown)}}/>
+            var upNav = <img src={up_icon} onClick={()=> {this.handleScroll(sectionUp)}}/>
           }
         }catch{}
         // <div className="experiancesSections" ref={this.refMe}>
