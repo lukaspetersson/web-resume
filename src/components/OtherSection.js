@@ -37,7 +37,7 @@ class OtherSection extends React.Component {
                 },
                 football:{
                     year:"2004 - 2019",
-                    description:"I have always liked exercising and being active and I played football for Brommapojkarna for 14 years.",
+                    description:"I have always liked exercising and being active and I played football for Brommapojkarna for 15 years.",
                     image: {
                       front: bp_logo,
                     }
@@ -107,16 +107,16 @@ class OtherSection extends React.Component {
                         <SmallBlock info={this.state.luf} height={"370px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.erasmus} height={"370px"}/>
-                    </div>
-                    <div className="other">
-                        <SmallBlock info={this.state.ungaForskare} height={"370px"}/>
+                        <SmallBlock info={this.state.alexa} height={"370px"}/>
                     </div>
                     <div className="other">
                         <SmallBlock info={this.state.football} height={"370px"}/>
                     </div>
                     <div className="other">
-                        <SmallBlock info={this.state.alexa} height={"370px"}/>
+                        <SmallBlock info={this.state.ungaForskare} height={"370px"}/>
+                    </div>
+                    <div className="other">
+                        <SmallBlock info={this.state.erasmus} height={"370px"}/>
                     </div>
                     <div className="other">
                         <SmallBlock info={this.state.driver} height={"370px"}/>

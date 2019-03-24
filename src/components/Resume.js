@@ -17,8 +17,8 @@ class Resume extends React.Component {
                     education: {
                         image:educationLogo,
                         title: "Education",
-                        examples: ["Engelska Skolan", "Cambridge IGCSE", "Kungsholmens gymnasium"],
-                        examplesYear: ["-2015", "2014 - 2015", "2015 - 2018"],
+                        examples: ["Lund University","Kungsholmens gymnasium","Cambridge IGCSE", "Engelska Skolan"],
+                        examplesYear: ["2019 - " , "2015 - 2018", "2014 - 2015", " - 2015"],
                         color: "rgb(34, 94, 191)",
                         subColor: "rgba(19, 54, 109, 0.7)"
                     },
@@ -41,7 +41,7 @@ class Resume extends React.Component {
                     mobileApps: {
                         image:booklogLogo,
                         title: "Mobile Development",
-                        examples: ["BookLog", "Brännbollräknare", "FallingKitten"],
+                        examples: ["BookLog","FallingKitten", "Brännbollräknare"],
                         examplesYear: ["2019", "2018", "2018"],
                         color: "rgb(143, 33, 191)",
                         subColor: "rgba(65, 15, 86, 0.7)"
@@ -49,16 +49,16 @@ class Resume extends React.Component {
                     serviceJobs: {
                         image:bamseLogo,
                         title: "Service jobs",
-                        examples: ["Abbekås hamnkrog", "Drottningholms GK", "Bedinge GK", "TUI", "Hemköp", "Engelska skolan"],
-                        examplesYear: ["summer 2015 & 2016", "2015 - 2017", "summer 2017", "summer 2018", "Oct - Nov 2018" , "Oct - Nov 2018"],
+                        examples: ["Engelska skolan", "Hemköp",  "TUI", "Bedinge GK", "Drottningholms GK", "Abbekås hamnkrog"],
+                        examplesYear: ["Oct - Nov 2018" , "Oct - Nov 2018", "summer 2018", "summer 2017",  "2015 - 2017", "summer 2015 & 2016"],
                         color: "rgb(33, 191, 117)",
                         subColor: "rgba(13, 86, 52, 0.7)"
                     },
                     other: {
                         image:moreLogo,
                         title: "Other",
-                        examples: ["Liberal Youth party","Erasmus +", "Unga forskare", "Brommapojkarna", "Alexa development", "driver's license"],
-                        examplesYear: ["2018 - present", "2017", "2018", "2004 - 2019", "2019", "2017"],
+                        examples: ["Liberal Youth party", "Alexa development","Brommapojkarna", "Unga forskare" ,"Erasmus +","Driver's license"],
+                        examplesYear: ["2018 - present", "2019", "2004 - 2019", "2018", "2017", "2017"],
                         color: "rgb(191, 183, 33)",
                         subColor: "rgba(102, 98, 15, 0.7)"
                     },

@@ -89,10 +89,10 @@ class AppsSection extends React.Component {
                         <SmallBlock info={this.state.bookLog} height={"390px"}/>
                     </div>
                     <div className="app">
-                        <SmallBlock info={this.state.burnBall} height={"390px"}/>
+                        <SmallBlock info={this.state.fallingKitten} height={"390px"}/>
                     </div>
                     <div className="app">
-                        <SmallBlock info={this.state.fallingKitten} height={"390px"}/>
+                        <SmallBlock info={this.state.burnBall} height={"390px"}/>
                     </div>
                 </div>
                 <img alt="" className="arrowsApps" id="secondArrowApps" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>

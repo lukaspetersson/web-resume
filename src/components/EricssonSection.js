@@ -13,7 +13,7 @@ class EricssonSection extends React.Component {
             <div className="ericssonBody">
               <div>
                 <h1>Ericsson</h1>
-                <h3>Simultaneously working at two companies that were like day and night in terms of size was a great experience, I got an insight in how such an enormous company is managed. More importantly, I made some great friends and Improved my coding skills. I worked with web development with focus on WebRTC and React.js.</h3>
+                <h3>Working at two companies so different in terms of size is a great experience! It has given me valuable insight in what motivates me. As an intern the primary goal is to learn things, and I have worked with WebRTC and have built web apps with React.js.</h3>
               </div>
             </div>
         );

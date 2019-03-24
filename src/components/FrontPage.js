@@ -91,7 +91,7 @@ class FrontPage extends React.Component {
         }
     }
     render() {
-        if(window.pageYOffset > 450){
+        if(window.pageYOffset > this.state.meHeight){
             var upNav = <img src={up_icon} className="upNav" onClick={()=> {this.handleScroll("top")}}/>
         }
         // <div className="experiancesSections" ref={this.refMe}>
