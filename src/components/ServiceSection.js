@@ -24,7 +24,7 @@ class ServiceSection extends React.Component {
             this.state = {
                 tui:{
                     year:"summer 2018",
-                    description:"I spent the summer of 2018 in Greece working at a TUI hotel as a Entertainer. Me and colleagues performed on stage and hosted family games. I had the time of my life and made some great friends!",
+                    description:"I spent the summer of 2018 in Greece working at a TUI hotel as an Entertainer. Me and my colleagues performed on stage and hosted family games. I had the time of my life and made some great friends!",
                     image: {
                       front: tui_logo,
                       back: tui_back
@@ -32,7 +32,7 @@ class ServiceSection extends React.Component {
                 },
                 iesb:{
                     year:"Oct - Nov 2018",
-                    description:"3 years after graduating from IESB I came back but this time in the role of a substitute teacher. My respect for teachers grew as I realized how hard the balance between inspiration and authority is.",
+                    description:"3 years after graduating from IESB I came back but this time in the role of a substitute teacher. My respect for teachers grew as I realised how challenging it is to inspire at the same time as to act with authority.",
                     image: {
                       front: iesb_logo,
                       back: iesb_back
@@ -40,7 +40,7 @@ class ServiceSection extends React.Component {
                 },
                 hemkop:{
                     year:"Oct - Nov 2018",
-                    description:"The magic of a supermarket was ruined for me while I was working at Hemköp. The shelfs apparently don´t get filled by themselves, but by hard work and time optimization.",
+                    description:"At Hemköp I realised that the shelfs in a supermarket apparently don't get filled by themselves, but by hard work and time optimization.",
                     image: {
                       front: hemkop_logo,
                       back: hemkop_back
@@ -56,7 +56,7 @@ class ServiceSection extends React.Component {
                 },
                 bedinge:{
                     year:"summer 2017",
-                    description:"Working in a smaller restaurant sets completely different requirements, you can no longer specialize in one thing. I had become an amazing dishwasher at Abbekås, but now I had to learn new skills.",
+                    description:"Working in a smaller restaurant sets completely different requirements, and you can no longer specialize in one thing. I had become an amazing dishwasher at Abbekås, but now I had to learn new skills.",
                     image: {
                       front: bedinge_logo,
                       back: bedinge_back
@@ -64,7 +64,7 @@ class ServiceSection extends React.Component {
                 },
                 abbekas:{
                     year:"summer 2015 & 2015",
-                    description:"My first ever job was a harsh but fun welcoming into working life. Washing dishes at a restaurant is an extremely stressful task. When the piles stack up, there is no time to waste.",
+                    description:"My first ever job was a harsh but fun welcoming to working life. Washing dishes at a restaurant is an extremely stressful task. When the piles stack up, there is no time to waste.",
                     image: {
                       front: abbekas_logo,
                       back: abbekas_back
@@ -114,7 +114,7 @@ class ServiceSection extends React.Component {
         return (
             <div className="serviceBody">
                 <h1>Work - Service</h1>
-                <h3>Skills are great but it is wasted without hard work, I got my first job almost as soon as it was legally possible. From that I have developed an unmatchable work ethic, something my former employers can certify.</h3>
+                <h3>Skills must be combined with hard work to achieve results. My former employers have been impressed by my work ethic and flexible mindset, I will do whatever the situation requires.</h3>
                 <div className="quote">
                     <a href={arrow_back} title="Download work certificate" download>"I can really recommend this young man, even if I would rather not, as I hope to have him many years to come" -Lotta Holm</a>
                 </div>
