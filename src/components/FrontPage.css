@@ -47,8 +47,8 @@ h2{
 
 .navigationButtons img{
     cursor: pointer;
-    width: calc(3vw + 5vh);
-    height: calc(3vw + 5vh);
+    width: calc(2.5vw + 5vh);
+    height: calc(2.5vw + 5vh);
     transition: 0.5s;
 }
 

@@ -91,35 +91,41 @@ class FrontPage extends React.Component {
         }
     }
     render() {
+
         var body = document.body;
         var html = document.documentElement;
         var height = Math.max( body.scrollHeight, body.offsetHeight,
                            html.clientHeight, html.scrollHeight, html.offsetHeight );
         var atBottom = ((window.innerHeight + window.pageYOffset) >= (height - 30));
         try{
-          if(window.pageYOffset > this.refEducation.current.offsetTop - 100){
+          if(window.pageYOffset > this.refEducation.current.offsetTop - window.innerHeight/2){
             var sectionUp = "";
             var sectionDown = "";
-            if(window.pageYOffset < this.refDigitalEdge.current.offsetTop - 100){
+            if(window.pageYOffset < this.refDigitalEdge.current.offsetTop - window.innerHeight/2){
                 sectionUp = "resume";
                 sectionDown = "digitalEdge";
-            }else if(window.pageYOffset < this.refEricsson.current.offsetTop - 100){
+            }else if(window.pageYOffset < this.refEricsson.current.offsetTop - window.innerHeight/2){
               sectionUp = "education";
               sectionDown = "ericsson";
-            }else if(window.pageYOffset < this.refApps.current.offsetTop - 100){
+            }else if(window.pageYOffset < this.refApps.current.offsetTop - window.innerHeight/2){
               sectionUp = "digitalEdge";
               sectionDown = "apps";
-            }else if(window.pageYOffset < this.refService.current.offsetTop - 100){
+            }else if(window.pageYOffset < this.refService.current.offsetTop - window.innerHeight/2){
               sectionUp = "ericsson";
               sectionDown = "service";
-            }else if(window.pageYOffset < this.refOther.current.offsetTop - 100){
+            }else if(window.pageYOffset < this.refOther.current.offsetTop - window.innerHeight/2){
               sectionUp = "apps";
               sectionDown = "other";
           }else if(!atBottom){
               sectionUp = "service";
               sectionDown = "contact";
             }else{
-              sectionUp = "other";
+                //contact and service is in same page, no need to scroll between
+                if(this.refOther.current.clientHeight+this.refContact.current.clientHeight < window.innerHeight){
+                    sectionUp = "service";
+                }else{
+                    sectionUp = "other";
+                }
             }
             if(sectionDown){
               var downNav = <img src={up_icon} style={{transform: "rotate(180deg)"}} onClick={()=> {this.handleScroll(sectionDown)}}/>
