@@ -37,6 +37,9 @@
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
+  -moz-transition: transform 0.8s;
+  -o-transition: transform 0.8s;
   transform-style: preserve-3d;
 
 }

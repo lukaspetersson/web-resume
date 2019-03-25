@@ -50,6 +50,9 @@ h2{
     width: calc(2.5vw + 5vh);
     height: calc(2.5vw + 5vh);
     transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .navigationButtons img:first-child:hover{

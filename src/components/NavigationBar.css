@@ -30,6 +30,9 @@
   padding: 5vw;
   overflow-y: hidden;
   transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
   z-index: 4;
   background-color: var(--sky);
 }
