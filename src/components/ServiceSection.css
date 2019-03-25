@@ -12,6 +12,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .serviceContainer::-webkit-scrollbar {
