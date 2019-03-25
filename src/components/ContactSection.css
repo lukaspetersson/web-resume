@@ -12,7 +12,7 @@
 }
 
 .contactBody img{
-  width: 32px;
+  width: calc(1vw + 3vh);
   display: inline-block;
   margin-right: 10px;
 }

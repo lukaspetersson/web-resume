@@ -20,7 +20,7 @@ html {
     z-index: 0;
     color: var(--tree);
     font-family: Verdana;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 h1{

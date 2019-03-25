@@ -101,19 +101,19 @@ class FrontPage extends React.Component {
           if(window.pageYOffset > this.refEducation.current.offsetTop - window.innerHeight/2){
             var sectionUp = "";
             var sectionDown = "";
-            if(window.pageYOffset < this.refDigitalEdge.current.offsetTop - window.innerHeight/2){
+            if(window.pageYOffset < this.refDigitalEdge.current.offsetTop - this.refEducation.current.clientHeight/2){
                 sectionUp = "resume";
                 sectionDown = "digitalEdge";
-            }else if(window.pageYOffset < this.refEricsson.current.offsetTop - window.innerHeight/2){
-              sectionUp = "education";
-              sectionDown = "ericsson";
-            }else if(window.pageYOffset < this.refApps.current.offsetTop - window.innerHeight/2){
+            }else if(window.pageYOffset < this.refEricsson.current.offsetTop - this.refDigitalEdge.current.clientHeight/2){
+                sectionUp = "education";
+                sectionDown = "ericsson";
+            }else if(window.pageYOffset < this.refApps.current.offsetTop - this.refEricsson.current.clientHeight/2){
               sectionUp = "digitalEdge";
               sectionDown = "apps";
-            }else if(window.pageYOffset < this.refService.current.offsetTop - window.innerHeight/2){
+            }else if(window.pageYOffset < this.refService.current.offsetTop - this.refApps.current.clientHeight/2){
               sectionUp = "ericsson";
               sectionDown = "service";
-            }else if(window.pageYOffset < this.refOther.current.offsetTop - window.innerHeight/2){
+            }else if(window.pageYOffset < this.refOther.current.offsetTop - this.refService.current.clientHeight/2){
               sectionUp = "apps";
               sectionDown = "other";
           }else if(!atBottom){
