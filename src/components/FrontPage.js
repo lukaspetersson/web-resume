@@ -91,7 +91,11 @@ class FrontPage extends React.Component {
         }
     }
     render() {
-      // console.log(window.innerHeight + window.pageYOffset , document.body.scrollHeight)
+        var body = document.body;
+        var html = document.documentElement;
+        var height = Math.max( body.scrollHeight, body.offsetHeight,
+                           html.clientHeight, html.scrollHeight, html.offsetHeight );
+        var atBottom = ((window.innerHeight + window.pageYOffset) >= (height - 30));
         try{
           if(window.pageYOffset > this.refEducation.current.offsetTop - 100){
             var sectionUp = "";
@@ -111,7 +115,7 @@ class FrontPage extends React.Component {
             }else if(window.pageYOffset < this.refOther.current.offsetTop - 100){
               sectionUp = "apps";
               sectionDown = "other";
-            }else if((window.pageYOffset < this.refOther.current.offsetTop - 100) && (window.innerHeight + window.scrollY >= document.body.scrollHeight)){
+          }else if(!atBottom){
               sectionUp = "service";
               sectionDown = "contact";
             }else{
