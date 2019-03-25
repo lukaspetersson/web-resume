@@ -17,8 +17,8 @@ class DigitalEdgeSection extends React.Component {
                     <img alt="" src={pepper_hello}/>
                     <img alt="" src={hello_animation}/>
                 </div>
+                <h1 style={{display: window.innerWidth < 655? "inline-block" : "inline"}}>Work - Programming</h1>
                 <div>
-                  <h1>Work - Programming</h1>
                   <h2>Digital Edge</h2>
                   <h3>After spending much of my freetime teaching myself to code, I got a job as a developer at a startup called Digital Edge. My hobby had become my full time job! At Digital Edge I am programming a humanoid robot so that it can work as a receptionist. I'm using the library Vue.js and APIs like Naoqi and Google cloud. Initially I worked full time for 2 months, but when I started my internship at Ericsson I switched to work only at weekends.</h3>
                 </div>
