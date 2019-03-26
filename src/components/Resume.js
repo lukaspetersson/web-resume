@@ -27,8 +27,6 @@ class Resume extends React.Component {
                         title: "Work - Programming",
                         examples: ["Digital Edge"],
                         examplesYear: ["Nov 2018 - present"],
-                        // subTitle: "Consultant developer for Digital Edge",
-                        // subTitleYear: "Nov 2018 - present",
                         color: "rgb(191, 33, 33)",
                         subColor: "rgba(140, 8, 8, 0.7)"
                     },
@@ -37,8 +35,6 @@ class Resume extends React.Component {
                         title: "Internship - Programming",
                         examples: ["Ericsson"],
                         examplesYear: ["Jan 2019 - present"],
-                        // subTitle: "Intern developer at Ericsson",
-                        // subTitleYear: "Jan 2019 - present",
                         color: "rgb(191, 33, 146)",
                         subColor: "rgba(112, 19, 85, 0.7)"
                     },
