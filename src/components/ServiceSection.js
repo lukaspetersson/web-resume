@@ -121,7 +121,7 @@ class ServiceSection extends React.Component {
                 <div className="quote">
                     <a href={arrow_back} title="Download work certificate" download>"I give him the highest possible grade" -Fredrik Lundgren</a>
                 </div>
-                <img alt="" className="arrowsService" id="firstArrowService" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
+                <img alt="" className="arrowsService" id="firstArrowService" src={arrow_back} onClick={() => appsContainer.scrollBy(-230, 0)} style = {this.state.arrowStyle.left}/>
                     <div className="serviceContainer" ref={this.appsContainerRef} >
 
                     <div className="service">
@@ -143,7 +143,7 @@ class ServiceSection extends React.Component {
                         <SmallBlock info={this.state.abbekas} height={"400px"}/>
                     </div>
                 </div>
-                <img alt="" className="arrowsService" id="secondArrowService" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
+                <img alt="" className="arrowsService" id="secondArrowService" src={arrow_forward} onClick={() => appsContainer.scrollBy(230, 0)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }

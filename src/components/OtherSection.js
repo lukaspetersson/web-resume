@@ -101,7 +101,7 @@ class OtherSection extends React.Component {
             <div className="otherBody">
                 <h1>Other</h1>
                 <h3>Here you can read about some hobbies and projects I have had the past years.</h3>
-                <img alt="" className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => appsContainer.scrollBy(-200, 0)} style = {this.state.arrowStyle.left}/>
+                <img alt="" className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => appsContainer.scrollBy(-230, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="otherContainer" ref={this.appsContainerRef} >
                     <div className="other">
                         <SmallBlock info={this.state.luf} height={"370px"}/>
@@ -122,7 +122,7 @@ class OtherSection extends React.Component {
                         <SmallBlock info={this.state.driver} height={"370px"}/>
                     </div>
                 </div>
-                <img alt="" className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => appsContainer.scrollBy(200, 0)} style = {this.state.arrowStyle.right}/>
+                <img alt="" className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => appsContainer.scrollBy(230, 0)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }
