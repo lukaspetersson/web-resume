@@ -45,8 +45,8 @@ class Resume extends React.Component {
                     mobileApps: {
                         image:booklogLogo,
                         title: "Android Apps",
-                        examples: ["BookLog","FallingKitten", "Brännbollräknare"],
-                        examplesYear: ["2019", "2018", "2018"],
+                        examples: ["Item Tracker", "BookLog","Falling Kitten", "Brännbollräknare"],
+                        examplesYear: ["2019", "2019", "2018", "2018"],
                         color: "rgb(143, 33, 191)",
                         subColor: "rgba(65, 15, 86, 0.7)"
                     },

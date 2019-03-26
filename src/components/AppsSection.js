@@ -6,6 +6,8 @@ import burnball_logo from "./../img/burnball_logo.png"
 import booklog_screen from "./../img/booklog_screen.png"
 import fallingkitten_screen from "./../img/fallingkitten_screen.png"
 import burnball_screen from "./../img/burnball_screen.png"
+import itemTracker_logo from "./../img/itemTracker_logo.png"
+import itemTracker_screen from "./../img/itemTracker_screen.jpg"
 import arrow_back from "./../img/arrow_back.svg"
 import arrow_forward from "./../img/arrow_forward.svg"
 import SmallBlock from "./SmallBlock.js";
@@ -14,6 +16,14 @@ class AppsSection extends React.Component {
     constructor(props){
             super(props)
             this.state = {
+                itemTracker:{
+                    year:"2019",
+                    description:"Item Tracker is built to optimise bookkeeping when handling products with an expiration date. It scans the product´s barcode and adds it automatically to a SQLite database.",
+                    image: {
+                      front: itemTracker_logo,
+                      back: itemTracker_screen
+                    }
+                },
                 bookLog:{
                     year:"2019",
                     description:"The virtual bookshelf BoogLog lets you keep track of the books you read. It uses APIs such as google Books, Vision and Cloud Firestore.",
@@ -85,6 +95,9 @@ class AppsSection extends React.Component {
                 <h3>Mobile app development became the catalyst to make my programming passion explode. Hundreds of hours of online courses during my free time have enabled me to publish my own apps on Google Play store. The feeling of observing your project go from an idea in your head to an usable tool is truly satisfying.</h3>
                 <img alt="" className="arrowsApps" id="firstArrowApps" src={arrow_back} onClick={() => appsContainer.scrollBy(-230, 0)} style = {this.state.arrowStyle.left}/>
                 <div className="appsContainer" ref={this.appsContainerRef} >
+                    <div className="app">
+                        <SmallBlock info={this.state.itemTracker} height={"390px"}/>
+                    </div>
                     <div className="app">
                         <SmallBlock info={this.state.bookLog} height={"390px"}/>
                     </div>
