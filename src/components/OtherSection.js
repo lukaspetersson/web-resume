@@ -65,44 +65,53 @@ class OtherSection extends React.Component {
                   }
                 }
             }
-            this.appsContainerRef = React.createRef();
+            this.blocksContainerRef = React.createRef();
             this.resize = this.resize.bind(this);
+            this.scrollSide = this.scrollSide.bind(this);
     }
 
     componentDidMount() {
       this.resize.call();
       window.addEventListener('resize', this.resize)
 
-      const appsContainer = this.appsContainerRef.current;
-      appsContainer.addEventListener('scroll', this.resize)
+      const blocksContainer = this.blocksContainerRef.current;
+      blocksContainer.addEventListener('scroll', this.resize)
     }
     componentWillUnmount() {
       window.removeEventListener('resize', this.resize)
 
-      const appsContainer = this.appsContainerRef.current;
-      appsContainer.removeEventListener('scroll', this.resize)
+      const blocksContainer = this.blocksContainerRef.current;
+      blocksContainer.removeEventListener('scroll', this.resize)
     }
     resize = function(){
-          const appsContainer = this.appsContainerRef.current;
+          const blocksContainer = this.blocksContainerRef.current;
             this.setState({
                 arrowStyle:{
                   left:{
-                    display: appsContainer.scrollLeft < 10 ? "none": "block"
+                    display: blocksContainer.scrollLeft < 10 ? "none": "block"
                   },
                   right:{
-                    display: (appsContainer.scrollLeft + appsContainer.offsetWidth) > (appsContainer.scrollWidth -10) ? "none": "block"
+                    display: (blocksContainer.scrollLeft + blocksContainer.offsetWidth) > (blocksContainer.scrollWidth -10) ? "none": "block"
                   }
                 }
             });
     }
+    scrollSide(direction){
+      const container = this.blocksContainerRef.current;
+      try{
+        container.scrollBy(direction*230, 0)
+      }catch{
+        container.scrollLeft +=  direction*230
+      }
+    }
     render() {
-        const appsContainer = this.appsContainerRef.current;
+        const blocksContainer = this.blocksContainerRef.current;
         return (
             <div className="otherBody">
                 <h1>Other</h1>
                 <h3>Here you can read about some hobbies and projects I have had the past years.</h3>
-                <img alt="" className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => appsContainer.scrollBy(-230, 0)} style = {this.state.arrowStyle.left}/>
-                <div className="otherContainer" ref={this.appsContainerRef} >
+                <img alt="" className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
+                <div className="otherContainer" ref={this.blocksContainerRef} >
                     <div className="other">
                         <SmallBlock info={this.state.luf} height={"370px"}/>
                     </div>
@@ -122,7 +131,7 @@ class OtherSection extends React.Component {
                         <SmallBlock info={this.state.driver} height={"370px"}/>
                     </div>
                 </div>
-                <img alt="" className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => appsContainer.scrollBy(230, 0)} style = {this.state.arrowStyle.right}/>
+                <img alt="" className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }
