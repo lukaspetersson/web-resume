@@ -3,7 +3,7 @@
   background-image: url("./../img/kista.jpg");
   background-size: cover;
   background-position: center;
-  color:var(--white);
+  color:#ffffff;
 }
 
 .ericssonBody h3{

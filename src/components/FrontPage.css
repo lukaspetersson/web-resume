@@ -1,11 +1,11 @@
-:root {
+/* :root {
   --sky: #94C3F1;
   --tree: #344346;
   --water: #79B0D9;
   --shirt: #3D4D81;
   --white: #ffffff;
   --whiteDust: #f2f2f2;
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -16,15 +16,15 @@ html {
     right:0;
     left:0;
     display: block;
-    background-color: var(--whiteDust);
+    background-color: #f2f2f2;
     z-index: 0;
-    color: var(--tree);
+    color: #344346;;
     font-family: Verdana;
     overflow: hidden;
 }
 
 h1{
-    color: var(--sky);
+    color: #94C3F1;
     font-size:calc(1vw + 2.9vh);
 }
 
@@ -33,7 +33,7 @@ h3{
 }
 
 h2{
-  color: var(--sky);
+  color: #94C3F1;
   font-size:calc(0.7vw + 2.4vh);
   margin-bottom: 0;
 }

@@ -46,7 +46,7 @@
 
 .serviceBody h3{
   margin: 20px 10px;
-  color: var(--tree);
+  color: #344346;
 }
 
 .quote{
@@ -55,12 +55,12 @@
   max-width: 300px;
   margin:0;
   vertical-align: middle;
-  color: var(--tree);
+  color: #344346;
 }
 
 .quote a{
   margin: 0;
-  color: var(--tree);
+  color: #344346;
   text-decoration: none;
   font-size:calc(0.5vw + 1.7vh);
 }

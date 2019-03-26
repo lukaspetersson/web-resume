@@ -1,5 +1,5 @@
 .navBar{
-    color:var(--white);
+    color:#ffffff;
     margin-top: 20px;
 }
 
@@ -34,7 +34,7 @@
   -moz-transition: 1s;
   -o-transition: 1s;
   z-index: 4;
-  background-color: var(--sky);
+  background-color: #94C3F1;
 }
 .downloadContainer.open::-webkit-scrollbar {
   display: none;
@@ -57,19 +57,19 @@ user-select: none; /* Standard */
 .infoDisplay {
     margin-top: calc(1.5vw + 5vh);
   display: block;
-  color: var(--white);
+  color: #ffffff;
   text-align: center;
 }
 
 .infoDisplay h1{
     position: relative;
-    color:var(--white);
+    color:#ffffff;
 }
 
 .divider {
   width: 60%;
   height: 0;
-  border-bottom: 0.2vh solid var(--white);
+  border-bottom: 0.2vh solid #ffffff;
   padding-bottom: 3vh;
   display: table;
   margin: 0 auto;
@@ -85,7 +85,7 @@ text-align: center;
    display: inline-block;
    margin: 10px;
    font-size:calc(0.8vw + 1.7vh);
-   color: var(--white);
+   color: #ffffff;
 }
 
 .filesDisplay a:hover{

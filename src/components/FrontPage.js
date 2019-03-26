@@ -19,7 +19,7 @@ class FrontPage extends React.Component {
                 NavigationBarBackground:{
                     backgroundColor :"transparent",
                 },
-                menuColor:"var(--white)",
+                menuColor:"#ffffff",
                 meHeight: 500,
             }
             this.refResume = React.createRef()
@@ -45,7 +45,7 @@ class FrontPage extends React.Component {
         }
         scrollWindow = () =>{
             this.setState({
-              menuColor: window.pageYOffset > this.state.meHeight? "var(--sky)" : "var(--white)",
+              menuColor: window.pageYOffset > this.state.meHeight? "#94C3F1" : "#ffffff",
             })
         }
 
