@@ -89,7 +89,6 @@ class EducationSection extends React.Component {
       }
     }
     render() {
-        const blocksContainer = this.blocksContainerRef.current;
         return (
             <div className="educationBody">
                 <h1>Education</h1>

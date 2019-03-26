@@ -120,7 +120,6 @@ class ServiceSection extends React.Component {
       }
     }
     render() {
-
         return (
             <div className="serviceBody">
                 <h1>Work - Service</h1>

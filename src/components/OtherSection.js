@@ -105,7 +105,6 @@ class OtherSection extends React.Component {
       }
     }
     render() {
-        const blocksContainer = this.blocksContainerRef.current;
         return (
             <div className="otherBody">
                 <h1>Other</h1>
@@ -131,7 +130,7 @@ class OtherSection extends React.Component {
                         <SmallBlock info={this.state.driver} height={"370px"}/>
                     </div>
                 </div>
-                <img alt="" className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.right}/>
+                <img alt="" className="arrowsOther" id="secondArrowOther" src={arrow_forward} onClick={() => this.scrollSide(1)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }
