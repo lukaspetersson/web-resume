@@ -3,7 +3,9 @@ import './SmallBlock.css';
 
 class SmallBlock extends React.Component {
     render() {
-        if(!this.props.info.image.back){
+      var explorerUsed = !!navigator.userAgent.match(/Trident/g) || !!navigator.userAgent.match(/MSIE/g);
+  
+        if(!this.props.info.image.back || explorerUsed){
             return (
                 <div className="card" style={{height:this.props.height}}>
                       <div className="SmallBlock" style={{height:this.props.height}}>
