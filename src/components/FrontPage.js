@@ -23,7 +23,6 @@ class FrontPage extends React.Component {
                 meHeight: 500,
             }
             this.refResume = React.createRef()
-            //this.refMe = React.createRef()
             this.refResume = React.createRef()
             this.refEducation = React.createRef()
             this.refDigitalEdge = React.createRef()
@@ -62,9 +61,6 @@ class FrontPage extends React.Component {
             case "resume":
                 window.scrollTo(0, this.refResume.current.offsetTop);
                 break;
-            // case "me":
-            //     window.scrollTo(0, this.refMe.current.offsetTop - 20);
-            //     break;
             case "education":
                 window.scrollTo(0, this.refEducation.current.offsetTop);
                 break;
@@ -127,15 +123,12 @@ class FrontPage extends React.Component {
                 }
             }
             if(sectionDown){
-              var downNav = <img src={up_icon} id="downNav" style={{transform: "rotate(180deg)"}} onClick={()=> {this.handleScroll(sectionDown)}}/>
+              var downNav = <img alt="" src={up_icon} id="downNav" style={{transform: "rotate(180deg)"}} onClick={()=> {this.handleScroll(sectionDown)}}/>
 
             }
-            var upNav = <img src={up_icon} id="upNav" onClick={()=> {this.handleScroll(sectionUp)}}/>
+            var upNav = <img alt="" src={up_icon} id="upNav" onClick={()=> {this.handleScroll(sectionUp)}}/>
           }
         }catch{}
-        // <div className="experiancesSections" ref={this.refMe}>
-        //     <MeSection/>
-        // </div>
         return (
                 <div className="body">
                         <div className="navigationMenu">
