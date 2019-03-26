@@ -43,29 +43,40 @@ h2{
     right: calc(1vw + 2vh);
     bottom:calc(1vw + 2vh);
     margin: 0;
+    width: calc(5vw + 10vh);
+    height: calc(2.5vw + 5vh);
 }
 
 .navigationButtons img{
     cursor: pointer;
     width: calc(2.5vw + 5vh);
-    height: calc(2.5vw + 5vh);
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
+    position: absolute;
+    top:0;
+    bottom:0;
+}
+#downNav{
+      left:0;
+}
+#upNav{
+      right: 0;
+}
+#downNav:hover{
+      /* margin-bottom: calc(-1 * (1vw + 2vh)); */
+      width: calc(3vw + 6vh);
+}
+#upNav:hover{
+      /* margin-bottom: calc(1vw + 2vh); */
+      width: calc(3vw + 6vh);
 }
 
-.navigationButtons img:first-child:hover{
-      margin-bottom: calc(-1 * (1vw + 2vh));
-}
-.navigationButtons img:nth-child(2):hover{
-      margin-bottom: calc(1vw + 2vh);
-}
-
-.upNav:hover {
+/* .upNav:hover {
     -webkit-animation: bounce 0.6s;
     animation: bounce 0.6s;
-}
+} */
 
 .navigationMenu{
     position: absolute;

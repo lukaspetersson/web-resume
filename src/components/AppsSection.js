@@ -18,7 +18,7 @@ class AppsSection extends React.Component {
             this.state = {
                 itemTracker:{
                     year:"2019",
-                    description:"Item Tracker is built to optimise bookkeeping when handling products with an expiration date. It scans the product´s barcode and adds it automatically to a SQLite database.",
+                    description:"Item Tracker is built to optimise bookkeeping when handling products with an expiration date. It scans the product´s barcode and adds it automatically to a local SQLite database.",
                     image: {
                       front: itemTracker_logo,
                       back: itemTracker_screen

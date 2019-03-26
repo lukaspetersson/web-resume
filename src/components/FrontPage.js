@@ -128,10 +128,10 @@ class FrontPage extends React.Component {
                 }
             }
             if(sectionDown){
-              var downNav = <img src={up_icon} style={{transform: "rotate(180deg)"}} onClick={()=> {this.handleScroll(sectionDown)}}/>
+              var downNav = <img src={up_icon} id="downNav" style={{transform: "rotate(180deg)"}} onClick={()=> {this.handleScroll(sectionDown)}}/>
 
             }
-            var upNav = <img src={up_icon} onClick={()=> {this.handleScroll(sectionUp)}}/>
+            var upNav = <img src={up_icon} id="upNav" onClick={()=> {this.handleScroll(sectionUp)}}/>
           }
         }catch{}
         // <div className="experiancesSections" ref={this.refMe}>
