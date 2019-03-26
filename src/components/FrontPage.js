@@ -2,7 +2,6 @@ import React from 'react';
 import './FrontPage.css';
 import Resume from './Resume.js'
 import WelcomeSection from './WelcomeSection.js'
-import MeSection from './MeSection.js'
 import AppsSection from './AppsSection.js'
 import ServiceSection from './ServiceSection.js'
 import NavigationBar from './NavigationBar.js'
