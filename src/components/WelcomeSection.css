@@ -11,7 +11,7 @@
     background-position: center;
     text-align: center;
 }
-/* .coverOver{
+.coverOver{
     position: absolute;
     top:0;
     bottom: 0;
@@ -20,7 +20,7 @@
     background-image: url("./../img/scribble_white.png");
     background-size: cover;
     background-position: center;
-} */
+}
 
 .infoContainerWelcome{
   position: absolute;
@@ -61,19 +61,19 @@
     margin: auto;
 }
 
-/* .barcaContainer{
+.barcaContainer{
     position: relative;
     display: block;
     margin: 0;
     margin-top: calc(15vw);
     margin-left: calc(50vw - 50px);
     z-index: 3;
-    //margin-top: calc(120px + 9vw);
+    /* margin-top: calc(120px + 9vw); */
 }
 
 .barcaContainer p{
   font-size: calc(2vh + 1vw);
-    //font-size: calc(2.7vh + 1.4vw);
+    /* font-size: calc(2.7vh + 1.4vw); */
     margin: 10px;
     min-width: 223px;
 }
@@ -139,4 +139,4 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-} */
+}

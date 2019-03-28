@@ -1,6 +1,5 @@
 import React from 'react';
 import './WelcomeSection.css';
-//import {Animated} from "react-animated-css";
 import down_logo from "./../img/down_logo.png"
 
 class WelcomeSection extends React.Component {
@@ -23,27 +22,29 @@ class WelcomeSection extends React.Component {
         window.removeEventListener('resize', ()=>{this.forceUpdate()})
     }
     render() {
-        // if(this.state.isCovered){
-        //     var coverOver = <Animated isVisible={this.state.isCovered}><div className="coverOver"></div></Animated>
-        // }
+        if(this.state.isCovered && window.innerWidth/window.innerHeight < 2.4){
+            var coverOver = <div className="coverOver"></div>
+        }
         if(this.refMeText.current){
           var meHeight = this.refMeText.current.clientHeight;
         }
 
-
-        // {coverOver}
-        // <div className="barcaContainer">
-        //     <p>Make website FC Barcelona friendly</p>
-        //     <label className="switch" >
-        //           <input type="checkbox" onClick={()=>{this.setState({isCovered : !this.state.isCovered})}}/>
-        //           <span className="slider round"></span>
-        //     </label>
-        // </div>
+        if(window.innerWidth/window.innerHeight < 2.4){
+            var barcaContainer = <div className="barcaContainer">
+                             <p>Make website FC Barcelona friendly</p>
+                             <label className="switch" >
+                                   <input type="checkbox" value={1} onClick={()=>{this.setState({isCovered : !this.state.isCovered})}}/>
+                                   <span className="slider round"></span>
+                             </label>
+                         </div>
+        }
 
         return (
           <div>
             <div className="welcomeBody" style={{bottom: meHeight}}>
                     <img alt="" src={down_logo} onClick={() => this.props.scrollfromParent("resume")} />
+                    {coverOver}
+                    {barcaContainer}
             </div>
             <div className="infoContainerWelcome" ref={this.refMeText}>
               <h1>Hello!</h1>
