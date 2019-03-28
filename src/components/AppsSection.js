@@ -103,16 +103,16 @@ class AppsSection extends React.Component {
                 <h3>Mobile app development became the catalyst to make my programming passion explode. Hundreds of hours of online courses during my free time have enabled me to publish my own apps on Google Play store. The feeling of observing your project go from an idea in your head to an usable tool is truly satisfying.</h3>
                 <img alt="" className="arrowsApps" id="firstArrowApps" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
                 <div className="appsContainer" ref={this.blocksContainerRef} >
-                    <div className="app">
+                    <div className="app" title="Not on Google Play">
                         <SmallBlock info={this.state.itemTracker} height={"390px"}/>
                     </div>
-                    <div className="app">
+                    <div className="app" style={{cursor:'pointer'}} title="View on Google Play" onClick={function(event){ window.open("https://play.google.com/store/apps/details?id=com.lukas.android.booklog");}}>
                         <SmallBlock info={this.state.bookLog} height={"390px"}/>
                     </div>
-                    <div className="app">
+                    <div className="app" style={{cursor:'pointer'}} title="View on Google Play" onClick={function(event){ window.open("https://play.google.com/store/apps/details?id=com.lukas.android.fallingkitten");}}>
                         <SmallBlock info={this.state.fallingKitten} height={"390px"}/>
                     </div>
-                    <div className="app">
+                    <div className="app" style={{cursor:'pointer'}} title="View on Google Play" onClick={function(event){ window.open("https://play.google.com/store/apps/details?id=com.lukas.android.burnballcounter");}}>
                         <SmallBlock info={this.state.burnBall} height={"390px"}/>
                     </div>
                 </div>
