@@ -31,7 +31,7 @@ class WelcomeSection extends React.Component {
 
         if(window.innerWidth/window.innerHeight < 2.4){
             var barcaContainer = <div className="barcaContainer">
-                             <p>Make website FC Barcelona friendly</p>
+                             <p>Make website<br/>FC Barcelona friendly</p>
                              <label className="switch" >
                                    <input type="checkbox" checked={this.state.isCovered} onChange={()=>{this.setState({isCovered : !this.state.isCovered})}}/>
                                    <span className="slider round"></span>

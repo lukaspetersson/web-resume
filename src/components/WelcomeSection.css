@@ -62,27 +62,26 @@
 }
 
 .barcaContainer{
-    position: relative;
+    position: absolute;
     display: block;
-    margin: 0;
+    top:0;
+    right:0;
+    /* margin: 0;
     margin-top: calc(15vw);
-    margin-left: calc(50vw - 50px);
+    margin-left: calc(50vw - 50px); */
     z-index: 3;
-    /* margin-top: calc(120px + 9vw); */
 }
 
 .barcaContainer p{
-  font-size: calc(2vh + 1vw);
-    /* font-size: calc(2.7vh + 1.4vw); */
+    font-size: calc(0.7vw + 1.4vh);
     margin: 10px;
-    min-width: 223px;
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width:calc((0.1vw + 0.2vh) * 60/2.5);
+    height: calc((0.1vw + 0.2vh) * 34/2.5);
 }
 
 .switch input {
@@ -108,10 +107,10 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: calc((0.1vw + 0.2vh) * 26/2.5);
+  width: calc((0.1vw + 0.2vh) * 26/2.5);
+  left: calc((0.1vw + 0.2vh) * 4/2.5);
+  bottom: calc((0.1vw + 0.2vh) * 4/2.5);
   background-color: white;
   transition: 0.5s;
   -webkit-transition:0.5s;
@@ -128,13 +127,13 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(calc((0.1vw + 0.2vh) * 26/2.5));
+  -ms-transform: translateX(calc((0.1vw + 0.2vh) * 26/2.5));
+  transform: translateX(calc((0.1vw + 0.2vh) * 26/2.5));
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: calc((0.1vw + 0.2vh) * 34/2.5);
 }
 
 .slider.round:before {
