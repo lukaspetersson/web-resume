@@ -33,7 +33,7 @@ class WelcomeSection extends React.Component {
             var barcaContainer = <div className="barcaContainer">
                              <p>Make website FC Barcelona friendly</p>
                              <label className="switch" >
-                                   <input type="checkbox" value={1} onClick={()=>{this.setState({isCovered : !this.state.isCovered})}}/>
+                                   <input type="checkbox" checked={this.state.isCovered} onChange={()=>{this.setState({isCovered : !this.state.isCovered})}}/>
                                    <span className="slider round"></span>
                              </label>
                          </div>
