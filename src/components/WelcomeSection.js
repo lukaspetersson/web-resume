@@ -48,7 +48,7 @@ class WelcomeSection extends React.Component {
             </div>
             <div className="infoContainerWelcome" ref={this.refMeText}>
               <h1>Hello!</h1>
-              <h3>I'm Lukas, a self taught developer currently working at Ericsson and Digital Edge in Stockholm. Driven by curiosity, I constantly seek new things to learn like philosophy, politics, physics or technology. Programming wise I have mostly worked with android, react, and vue, but I have also done VR and Alexa development. I am eager to explore new lands within programming in the future.</h3>
+              <h3>I’m Lukas, a self taught developer currently working at Ericsson and Digital Edge in Stockholm. Driven by curiosity, I constantly seek new things to learn like philosophy, politics, physics or technology. Programming wise I have mostly worked with Java, Android, React, and Vue, but I have also worked with VR in Unity, Python, C#, Kotlin and AWS. I am eager to explore new lands within programming in the future.</h3>
             </div>
             </div>
         );
