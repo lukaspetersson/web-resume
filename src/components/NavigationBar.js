@@ -1,6 +1,11 @@
 import React from 'react';
 import './NavigationBar.css';
-import car_icon from "./../img/car_icon.png"
+import abbekas_work_certificate from "./../downloads/abbekas_work_certificate.pdf"
+import drottningholm_work_certificate from "./../downloads/drottningholm_work_certificate.png"
+import gymnasium_grades from "./../downloads/gymnasium_grades.pdf"
+import igcse_grades from "./../downloads/igcse_grades.pdf"
+import resume from "./../downloads/resume.pdf"
+import full_resume from "./../downloads/full_resume.zip"
 
 class NavigationBar extends React.Component {
     constructor(props){
@@ -74,21 +79,17 @@ class NavigationBar extends React.Component {
                         </div>
                         <div className="divider"/>
                         <div className="filesDisplay">
-                        <a href={car_icon} title="Download" download>Resume</a>
+                        <a href={resume} title="Download" download>Resume</a>
                         <br/>
-                        <a href={car_icon} title="Download" download>Personal letter</a>
+                        <a href={gymnasium_grades} title="Download" download>Gymnasium grades</a>
                         <br/>
-                        <a href={car_icon} title="Download" download>IGCSE grades</a>
+                        <a href={igcse_grades} title="Download" download>IGCSE grades</a>
                         <br/>
-                        <a href={car_icon} title="Download" download>Gymnasium grades</a>
+                        <a href={abbekas_work_certificate} title="Download" download>Abbekås work certificate</a>
                         <br/>
-                        <a href={car_icon} title="Download" download>TUI work certificate</a>
-                        <br/>
-                        <a href={car_icon} title="Download" download>Abbekås work certificate</a>
-                        <br/>
-                        <a href={car_icon} title="Download" download>Drottningholm work certificate</a>
+                        <a href={drottningholm_work_certificate} title="Download" download>Drottningholm work certificate</a>
                         <div className="divider"/>
-                        <a href={car_icon} title="Download" download>Full resume</a>
+                        <a href={full_resume} title="Download" download>Full resume</a>
                         </div>
                     </div>
                 </div>
