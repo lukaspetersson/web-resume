@@ -78,7 +78,7 @@ class NavigationBar extends React.Component {
                         </div>
                         <div className="divider"/>
                         <div className="filesDisplay">
-                        <h3>Spotlight:</h3>
+                        <h3>Important files:</h3>
                         <a href={resume} title="Download" download="Lukas Petersson - Resume">Resume</a>
                         <br/>
                         <a href={gymnasium_grades} title="Download" download="Lukas Petersson - Gymnasium grades">Gymnasium grades</a>

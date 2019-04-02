@@ -54,6 +54,7 @@
     bottom: 4%;
     left: 0;
     right: 0;
+    z-index: 3;
     transition: 0.5s;
     -webkit-transition:0.5s;
     -moz-transition:0.5s;
