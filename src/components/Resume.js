@@ -18,7 +18,7 @@ class Resume extends React.Component {
                         image:educationLogo,
                         title: "Education",
                         examples: ["Lund University","Kungsholmens gymnasium","Cambridge IGCSE", "Engelska Skolan"],
-                        examplesYear: ["2019 - " , "2015 - 2018", "2014 - 2015", " - 2015"],
+                        examplesYear: ["2019 - " , "2015 - 2018", "2013 - 2015", " - 2015"],
                         color: "rgb(34, 94, 191)",
                         subColor: "rgba(19, 54, 109, 0.7)"
                     },

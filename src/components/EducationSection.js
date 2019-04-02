@@ -20,7 +20,7 @@ class EducationSection extends React.Component {
                     }
                 },
                 igcse:{
-                    year:"2014 - 2015",
+                    year:"2013 - 2015",
                     description:"I took extracurricular IGCSE courses in math, english and science. I longed for a challenge and was curious to learn new things. As it turned out, I made great friends as well!",
                     image: {
                       front: igcse_logo,
