@@ -1,6 +1,7 @@
 .navBar{
     color:#ffffff;
     margin-top: 20px;
+    text-align: center;
 }
 
 .outsideSpace{
@@ -56,7 +57,7 @@ user-select: none; /* Standard */
 
 .infoDisplay {
     margin-top: calc(1.5vw + 5vh);
-  display: block;
+  display:inline-block;
   color: #ffffff;
   text-align: center;
 }

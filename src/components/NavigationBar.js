@@ -3,7 +3,6 @@ import './NavigationBar.css';
 import abbekas_work_certificate from "./../downloads/abbekas_work_certificate.pdf"
 import drottningholm_work_certificate from "./../downloads/drottningholm_work_certificate.png"
 import gymnasium_grades from "./../downloads/gymnasium_grades.pdf"
-import igcse_grades from "./../downloads/igcse_grades.pdf"
 import resume from "./../downloads/resume.pdf"
 import full_resume from "./../downloads/full_resume.zip"
 
@@ -79,17 +78,16 @@ class NavigationBar extends React.Component {
                         </div>
                         <div className="divider"/>
                         <div className="filesDisplay">
-                        <a href={resume} title="Download" download>Resume</a>
+                        <h3>Spotlight:</h3>
+                        <a href={resume} title="Download" download="Lukas Petersson - Resume">Resume</a>
                         <br/>
-                        <a href={gymnasium_grades} title="Download" download>Gymnasium grades</a>
+                        <a href={gymnasium_grades} title="Download" download="Lukas Petersson - Gymnasium grades">Gymnasium grades</a>
                         <br/>
-                        <a href={igcse_grades} title="Download" download>IGCSE grades</a>
+                        <a href={abbekas_work_certificate} title="Download" download="Lukas Petersson - Abbekås work certificate">Abbekås work certificate</a>
                         <br/>
-                        <a href={abbekas_work_certificate} title="Download" download>Abbekås work certificate</a>
-                        <br/>
-                        <a href={drottningholm_work_certificate} title="Download" download>Drottningholm work certificate</a>
-                        <div className="divider"/>
-                        <a href={full_resume} title="Download" download>Full resume</a>
+                        <a href={drottningholm_work_certificate} title="Download" download="Lukas Petersson - Drottningholm work certificate">Drottningholm work certificate</a>
+                        <h3>All files:</h3>
+                        <a href={full_resume} title="Download" download="Lukas Petersson - Complete resume">Complete resume</a>
                         </div>
                     </div>
                 </div>

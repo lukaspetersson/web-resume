@@ -126,10 +126,10 @@ class ServiceSection extends React.Component {
                 <h1>Work - Service</h1>
                 <h3>Skills must be combined with hard work to achieve results. My former employers have been impressed by my work ethic and flexible mindset, I will do whatever the situation requires.</h3>
                 <div className="quote">
-                    <a href={abbekas_work_certificate} title="Download work certificate" download>"I can really recommend this young man, even if I would rather not, as I hope to have him many years to come" -Lotta Holm, Abbekås hamnkrog</a>
+                    <a href={abbekas_work_certificate} title="Download work certificate" download="Lukas Petersson - Abbekås work certificate">"I can really recommend this young man, even if I would rather not, as I hope to have him many years to come" -Lotta Holm, Abbekås hamnkrog</a>
                 </div>
                 <div className="quote">
-                    <a href={drottningholm_work_certificate} title="Download work certificate" download>"I give him the highest possible grade" -Fredrik Lundgren, Drottningholms GK</a>
+                    <a href={drottningholm_work_certificate} title="Download work certificate" download="Lukas Petersson - Drottningholm work certificate">"I give him the highest possible grade" -Fredrik Lundgren, Drottningholms GK</a>
                 </div>
                 <img alt="" className="arrowsService" id="firstArrowService" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
                     <div className="serviceContainer" ref={this.blocksContainerRef} >
