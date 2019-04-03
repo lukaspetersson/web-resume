@@ -12,7 +12,7 @@ class WelcomeSection extends React.Component {
     }
     componentDidMount(){
         if(this.refMeText.current){
-          this.props.setMeHeight(window.innerHeight - this.refMeText.current.clientHeight - 40)
+          this.props.setCoverHeight(window.innerHeight - this.refMeText.current.clientHeight - 40)
         }
          this.forceUpdate()
          window.addEventListener('resize', ()=>{this.forceUpdate()})

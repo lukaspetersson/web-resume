@@ -20,7 +20,7 @@ class FrontPage extends React.Component {
                     backgroundColor :"transparent",
                 },
                 menuColor:"#ffffff",
-                meHeight: 500,
+                coverHeight: 500,
             }
             this.refResume = React.createRef()
             this.refResume = React.createRef()
@@ -33,7 +33,7 @@ class FrontPage extends React.Component {
             this.refContact = React.createRef()
 
             this.handleScroll = this.handleScroll.bind(this);
-            this.setMeHeight = this.setMeHeight.bind(this);
+            this.setCoverHeight = this.setCoverHeight.bind(this);
         }
 
         componentDidMount(){
@@ -45,12 +45,12 @@ class FrontPage extends React.Component {
         }
         scrollWindow = () =>{
             this.setState({
-              menuColor: window.pageYOffset > this.state.meHeight? "#94C3F1" : "#ffffff",
+              menuColor: window.pageYOffset > this.state.coverHeight? "#94C3F1" : "#ffffff",
             })
         }
 
-        setMeHeight(height){
-          this.setState({meHeight: height})
+        setCoverHeight(height){
+          this.setState({coverHeight: height})
         }
 
     handleScroll(data) {
@@ -135,7 +135,7 @@ class FrontPage extends React.Component {
                             <NavigationBar scrollfromParent={this.handleScroll} menuColor={this.state.menuColor}/>
                         </div>
                         <div className="WelcomeSection">
-                            <WelcomeSection scrollfromParent={this.handleScroll} setMeHeight={this.setMeHeight}/>
+                            <WelcomeSection scrollfromParent={this.handleScroll} setCoverHeight={this.setCoverHeight}/>
                         </div>
                         <div className="experiancesSections" ref={this.refResume}>
                             <Resume scrollfromParent={this.handleScroll} />
