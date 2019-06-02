@@ -14,7 +14,7 @@ class EricssonSection extends React.Component {
               <div>
                 <h1>Internship - Programming</h1>
                 <h2>Ericsson</h2>
-                <h3>Working at two companies so different in terms of size is a great experience! It has given me valuable insight in what motivates me. As an intern the primary goal is to learn things. I have worked with WebRTC and have built web apps with React.js and during the latter period I worked with kotlin for Android.</h3>
+                <h3>Working at two companies so different in terms of size is a great experience! It has given me valuable insight in what motivates me. As an intern the primary goal is to learn things. I have worked with WebRTC and have built web and Android apps with React.js and Kotlin.</h3>
               </div>
             </div>
         );

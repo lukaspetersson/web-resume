@@ -34,7 +34,7 @@ class Resume extends React.Component {
                         image:ericssonLogo,
                         title: "Internship - Programming",
                         examples: ["Ericsson"],
-                        examplesYear: ["Jan 2019 - present"],
+                        examplesYear: ["Jan 2019 - May 2019"],
                         color: "rgb(191, 33, 146)",
                         subColor: "rgba(112, 19, 85, 0.7)"
                     },
