@@ -60,13 +60,13 @@ class BoxResume extends React.Component {
                 <div className="hoverContainer" style={{backgroundColor : this.props.info.subColor, opacity: this.state.textOpacity}} onMouseEnter={()=>{this.toggleOpacity("enter")}} onMouseLeave={()=>{this.toggleOpacity("leave")}}>
                     <p className="boxTitle">{this.props.info.title}</p>
                     <div className="boxSubTitle">
-                        {subTitle}
-                        {subTitleYear}
+                        <span>{subTitle}</span>
+                        <span>{subTitleYear}</span>
                         <div style={{float : "left"}}>
-                        {examples}
+                        <span>{examples}</span>
                         </div>
                         <div style={{float : "right"}}>
-                        {years}
+                        <span>{years}</span>
                         </div>
                     </div>
                 </div>

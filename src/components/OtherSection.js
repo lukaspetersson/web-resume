@@ -14,6 +14,13 @@ class OtherSection extends React.Component {
     constructor(props){
             super(props)
             this.state = {
+				china:{
+                    year:"summer 2019",
+                    description:"kina kung fu",
+                    image: {
+                      front: luf_logo,
+                    }
+                },
                 luf:{
                     year:"2018 - present",
                     description:"“You shouldn't talk about politics at the dinner table” is a cliche advice that I have not followed. I like expressing my opinions and I therefore joined a political youth party.",
@@ -112,6 +119,9 @@ class OtherSection extends React.Component {
                 <img alt="" className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
                 <div className="otherContainer" ref={this.blocksContainerRef} >
                     <div className="other">
+                        <SmallBlock info={this.state.china} height={"370px"}/>
+                    </div>
+					<div className="other">
                         <SmallBlock info={this.state.luf} height={"370px"}/>
                     </div>
                     <div className="other">
