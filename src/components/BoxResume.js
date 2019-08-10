@@ -44,8 +44,8 @@ class BoxResume extends React.Component {
             var examples =[]
             var years = [];
             for(var i = 0; i < this.props.info.examples.length; i++){
-                examples.push(<p  key={"e"+i} style={{float : "left", clear:"both", margin: "10px"}}>{this.props.info.examples[i]}</p>)
-                years.push(<p key={"y"+i} style={{float : "right", clear:"both", margin: "10px"}}>{this.props.info.examplesYear[i]}</p>)
+                examples.push(<p  key={"e"+i} >{this.props.info.examples[i]}</p>)
+                years.push(<p key={"y"+i}>{this.props.info.examplesYear[i]}</p>)
 
             }
         }
@@ -57,10 +57,10 @@ class BoxResume extends React.Component {
                     <p className="boxTitle">{this.props.info.title}</p>
                     <div className="boxSubTitle">
                         <div style={{float : "left"}}>
-                        <span>{examples}</span>
+                        {examples}
                         </div>
                         <div style={{float : "right"}}>
-                        <span>{years}</span>
+                        {years}
                         </div>
                     </div>
                 </div>
