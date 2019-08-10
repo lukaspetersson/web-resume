@@ -49,10 +49,6 @@ class BoxResume extends React.Component {
 
             }
         }
-        if(this.props.info.subTitle){
-            var subTitle = <p>{this.props.info.subTitle}</p>
-            var subTitleYear = <p>{this.props.info.subTitleYear}</p>
-        }
 
         return (
             <div className="boxBody" style={{backgroundColor : this.props.info.color, backgroundImage : "url("+this.props.info.image+")"}}>
@@ -60,8 +56,6 @@ class BoxResume extends React.Component {
                 <div className="hoverContainer" style={{backgroundColor : this.props.info.subColor, opacity: this.state.textOpacity}} onMouseEnter={()=>{this.toggleOpacity("enter")}} onMouseLeave={()=>{this.toggleOpacity("leave")}}>
                     <p className="boxTitle">{this.props.info.title}</p>
                     <div className="boxSubTitle">
-                        <span>{subTitle}</span>
-                        <span>{subTitleYear}</span>
                         <div style={{float : "left"}}>
                         <span>{examples}</span>
                         </div>
