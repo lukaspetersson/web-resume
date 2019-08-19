@@ -35,7 +35,7 @@ class EducationSection extends React.Component {
                 },
                 lund:{
                     year:"2019 - ",
-                    description:"This fall I will move to Lund to study engineering physics at Lund University.",
+                    description:"I am currently studying Engineering Physics (\"Teknisk fysik\" in Swedish) at Lund University. It is a 5 year civil engineering programme.",
                     image: {
                       front: lund_logo,
                     }
