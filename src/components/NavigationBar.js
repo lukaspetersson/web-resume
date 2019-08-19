@@ -1,7 +1,6 @@
 import React from 'react';
 import './NavigationBar.css';
 import abbekas_work_certificate from "./../downloads/abbekas_work_certificate.pdf"
-import drottningholm_work_certificate from "./../downloads/drottningholm_work_certificate.png"
 import ericsson_work_certificate from "./../downloads/ericsson_work_certificate.pdf"
 import gymnasium_grades from "./../downloads/gymnasium_grades.pdf"
 import resume from "./../downloads/resume.pdf"
@@ -87,10 +86,10 @@ class NavigationBar extends React.Component {
                         <br/>
                         <a href={ericsson_work_certificate} title="Download" download="Lukas Petersson - Ericsson work certificate">Ericsson work certificate</a>
                         <br/>
-                        <a href={abbekas_work_certificate} title="Download" download="Lukas Petersson - Abbekås work certificate">Abbekås work certificate</a>
-                        <br/>
                         <a href={digitaledge_work_certificate} title="Download" download="Lukas Petersson - Digital Edge work certificate">Digital Edge work certificate</a>
-                        <h3>All files:</h3>
+						<br/>
+						<a href={abbekas_work_certificate} title="Download" download="Lukas Petersson - Abbekås work certificate">Abbekås work certificate</a>
+						<h3>All files:</h3>
                         <a href={full_resume} title="Download" download="Lukas Petersson - Complete resume">Complete resume</a>
                         </div>
                     </div>
