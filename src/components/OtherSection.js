@@ -4,6 +4,7 @@ import car_icon from "./../img/car_icon.png"
 import alexa_logo from "./../img/alexa_logo.png"
 import bp_logo from "./../img/bp_logo.png"
 import luf_logo from "./../img/luf_logo.png"
+import kungfu_logo from "./../img/kungfu_logo.gif"
 import ungaforskare_logo from "./../img/ungaforskare_logo.png"
 import erasmus_logo from "./../img/erasmus_logo.jpg"
 import arrow_back from "./../img/arrow_back.svg"
@@ -16,9 +17,9 @@ class OtherSection extends React.Component {
             this.state = {
 				china:{
                     year:"summer 2019",
-                    description:"kina kung fu",
+                    description:"I spent 6 weeks at a Chinese martial art school where I studied Kung Fu. 48 hours of training per week with the first session 5:50 in the morning was a good lesson in discipline.",
                     image: {
-                      front: luf_logo,
+                      front: kungfu_logo,
                     }
                 },
                 luf:{
