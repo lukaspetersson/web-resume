@@ -26,7 +26,7 @@ class DigitalEdgeSection extends React.Component {
                 <h1 style={{display: window.innerWidth < widthLimit? "inline-block" : "inline"}} >Work - Programming</h1>
                 <div>
                   <h2>Digital Edge</h2>
-                  <h3>After spending much of my freetime teaching myself to code, I got a job as a developer at Digital Edge. My hobby had become my full time job! At Digital Edge I am programming a humanoid robot so that it can work as a receptionist. I'm using the front-end library Vue.js and the robots internal API Naoqi together with various web APIs. Initially I worked full time for 2 months, but when I started my internship at Ericsson I switched to work only at weekends.</h3>
+                  <h3>After spending much of my free time teaching myself to code, I got a job as a developer at Digital Edge. My hobby had become my full-time job! At Digital Edge I was programming a humanoid robot so that it can work as a receptionist. I used the front-end library Vue.js and the robot’s internal API Naoqi together with various web APIs and Python. I worked full time for 5 months and during the 4 months I had my internship at Ericsson, I worked at weekends.</h3>
                 </div>
             </div>
         );
