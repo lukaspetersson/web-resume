@@ -35,7 +35,7 @@ class EducationSection extends React.Component {
                 },
                 lund:{
                     year:"2019 - ",
-                    description:"I am currently studying Engineering Physics (\"Teknisk fysik\" in Swedish) at Lund University. It is a 5 year civil engineering programme.",
+                    description:"I am currently studying M.Sc. Engineering Physics (\"Teknisk fysik\" in Swedish) at Lund University. It is a 5 year civil engineering programme.",
                     image: {
                       front: lund_logo,
                     }
