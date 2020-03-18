@@ -6,7 +6,7 @@ import AppsSection from './AppsSection.js'
 import ServiceSection from './ServiceSection.js'
 import NavigationBar from './NavigationBar.js'
 import ContactSection from './ContactSection.js'
-import DigitalEdgeSection from './DigitalEdgeSection.js'
+import ProgWorkSection from './ProgWorkSection.js'
 import EricssonSection from './EricssonSection.js'
 import OtherSection from './OtherSection.js'
 import EducationSection from './EducationSection.js'
@@ -64,7 +64,7 @@ class FrontPage extends React.Component {
             case "education":
                 window.scrollTo(0, this.refEducation.current.offsetTop);
                 break;
-            case "digitalEdge":
+            case "progWork":
                 window.scrollTo(0, this.refDigitalEdge.current.offsetTop);
                 break;
             case "ericsson":
@@ -144,7 +144,7 @@ class FrontPage extends React.Component {
                             <EducationSection/>
                         </div>
                         <div className="experiancesSections" ref={this.refDigitalEdge}>
-                            <DigitalEdgeSection/>
+                            <ProgWorkSection/>
                         </div>
                         <div className="experiancesSections" ref={this.refEricsson}>
                             <EricssonSection/>

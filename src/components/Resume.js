@@ -18,15 +18,15 @@ class Resume extends React.Component {
                         image:educationLogo,
                         title: "Education",
                         examples: ["Lund University","Kungsholmens gymnasium","Cambridge IGCSE", "Engelska Skolan"],
-                        examplesYear: ["2019 - " , "2015 - 2018", "2013 - 2015", " - 2015"],
+                        examplesYear: ["2019 - Present" , "2015 - 2018", "2013 - 2015", " - 2015"],
                         color: "rgb(34, 94, 191)",
                         subColor: "rgba(19, 54, 109, 0.7)"
                     },
-                    digitalEdge: {
+                    progWork: {
                         image:pepperPic,
                         title: "Work - Programming",
-                        examples: ["Digital Edge"],
-                        examplesYear: ["Nov 2018 - Jul 2019"],
+                        examples: ["Digital Edge", "Digital Edge"],
+                        examplesYear: ["Nov 2019 - Present", "Nov 2018 - Jul 2019"],
                         color: "rgb(191, 33, 33)",
                         subColor: "rgba(140, 8, 8, 0.7)"
                     },
@@ -58,7 +58,7 @@ class Resume extends React.Component {
                         image:moreLogo,
                         title: "Other",
                         examples: ["Kung-Fu","Liberal Youth party", "Alexa development","Brommapojkarna", "Unga forskare" ,"Erasmus +","Driver's license"],
-                        examplesYear: ["summer 2019", "2018 - present", "2019", "2004 - 2019", "2018", "2017", "2017"],
+                        examplesYear: ["summer 2019", "2018 - Present", "2019", "2004 - 2019", "2018", "2017", "2017"],
                         color: "rgb(191, 183, 33)",
                         subColor: "rgba(102, 98, 15, 0.7)"
                     },
@@ -101,8 +101,8 @@ class Resume extends React.Component {
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("education")} style={boxStyle}>
                     <BoxResume info={this.state.experiance.education}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("digitalEdge")} style={boxStyle}>
-                    <BoxResume info={this.state.experiance.digitalEdge}/>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("progWork")} style={boxStyle}>
+                    <BoxResume info={this.state.experiance.progWork}/>
                 </div>
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("ericsson")} style={boxStyle}>
                     <BoxResume info={this.state.experiance.ericsson}/>

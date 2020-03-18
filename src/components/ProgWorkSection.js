@@ -1,9 +1,9 @@
 import React from 'react';
-import './DigitalEdgeSection.css';
+import './ProgWorkSection.css';
 import pepper_hello from "./../img/pepper_hello.png"
 import hello_animation from "./../img/hello_animation.gif"
 
-class DigitalEdgeSection extends React.Component {
+class ProgWorkSection extends React.Component {
     constructor(props){
             super(props)
             this.state = {
@@ -25,6 +25,10 @@ class DigitalEdgeSection extends React.Component {
                 </div>
                 <h1 style={{display: window.innerWidth < widthLimit? "inline-block" : "inline"}} >Work - Programming</h1>
                 <div>
+                  <h2>Lunicore</h2>
+                  <h3>Alongside my engineering studies I am working as a IT-consultant for Lunicore. The application process really put my ability to learn things to the test. I had to write a web database from scratch, something I had never done before. I first learned how to do it, and then made the website just in time for the 72h deadline. Since then my work at Lunicore have made me comfortable in backend development.</h3>
+                </div>
+				<div>
                   <h2>Digital Edge</h2>
                   <h3>After spending much of my free time teaching myself to code, I got a job as a developer at Digital Edge. My hobby had become my full-time job! At Digital Edge I was programming a humanoid robot so that it can work as a receptionist. I used the front-end library Vue.js and the robot’s internal API Naoqi together with various web APIs and Python. I worked full time for 5 months and during the 4 months I had my internship at Ericsson, I worked at weekends.</h3>
                 </div>
@@ -33,4 +37,4 @@ class DigitalEdgeSection extends React.Component {
         }
 }
 
-export default DigitalEdgeSection;
+export default ProgWorkSection;
