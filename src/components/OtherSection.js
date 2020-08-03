@@ -7,6 +7,7 @@ import luf_logo from "./../img/luf_logo.png"
 import kungfu_logo from "./../img/kungfu_logo.gif"
 import ungaforskare_logo from "./../img/ungaforskare_logo.png"
 import erasmus_logo from "./../img/erasmus_logo.jpg"
+import ewb_logo from "./../img/ewb_logo.png"
 import arrow_back from "./../img/arrow_back.svg"
 import arrow_forward from "./../img/arrow_forward.svg"
 import SmallBlock from "./SmallBlock.js";
@@ -15,6 +16,13 @@ class OtherSection extends React.Component {
     constructor(props){
             super(props)
             this.state = {
+				ewb:{
+                    year:"2020 - present",
+                    description:"I am responsible for the software and the task will be to create a classroom environment on Raspberry PIs. The team will then travel to a school in Tanzania to deploy the PIs.",
+                    image: {
+                      front: ewb_logo,
+                    }
+                },
 				china:{
                     year:"summer 2019",
                     description:"I spent 6 weeks at a Chinese martial art school where I studied Kung Fu. 48 hours of training per week with the first session 5:50 in the morning was a good lesson in discipline.",
@@ -23,7 +31,7 @@ class OtherSection extends React.Component {
                     }
                 },
                 luf:{
-                    year:"2018 - present",
+                    year:"2018 - 2019",
                     description:"“You shouldn't talk about politics at the dinner table” is a cliche advice that I have not followed. I like expressing my opinions and I therefore joined a political youth party.",
                     image: {
                       front: luf_logo,
@@ -119,7 +127,10 @@ class OtherSection extends React.Component {
                 <h3>Here you can read about some hobbies and projects I have had the past years.</h3>
                 <img alt="" className="arrowsOther" id="firstArrowOther" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
                 <div className="otherContainer" ref={this.blocksContainerRef} >
-                    <div className="other">
+					<div className="other">
+						<SmallBlock info={this.state.ewb} height={"370px"}/>
+					</div>
+					<div className="other">
                         <SmallBlock info={this.state.china} height={"370px"}/>
                     </div>
 					<div className="other">
