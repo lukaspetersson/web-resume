@@ -4,17 +4,28 @@ import './SmallBlock.css';
 class SmallBlock extends React.Component {
     render() {
       var explorerUsed = !!navigator.userAgent.match(/Trident/g) || !!navigator.userAgent.match(/MSIE/g);
-  
-        if(!this.props.info.image.back || explorerUsed){
-            return (
-                <div className="card" style={{height:this.props.height}}>
-                      <div className="SmallBlock" style={{height:this.props.height}}>
-                          <img alt="" src={this.props.info.image.front}/>
-                           <p>{this.props.info.year}</p>
-                          <p>{this.props.info.description}</p>
-                      </div>
-                </div>
-            );
+
+	  if(this.props.info.header){
+		  return (
+			  <div className="card" style={{height:this.props.height}}>
+					<div className="SmallBlock" style={{height:this.props.height}}>
+						<h3>{this.props.info.header}</h3>
+						 <p>{this.props.info.year}</p>
+						<p>{this.props.info.description}</p>
+					</div>
+			  </div>
+		  );
+	  }
+        else if(!this.props.info.image.back || explorerUsed){
+			return (
+				<div className="card" style={{height:this.props.height}}>
+					  <div className="SmallBlock" style={{height:this.props.height}}>
+						  <img alt="" src={this.props.info.image.front}/>
+						   <p>{this.props.info.year}</p>
+						  <p>{this.props.info.description}</p>
+					  </div>
+				</div>
+			);
         }else{
             return (
                 <div className="flip-card" style={{height:this.props.height}}>

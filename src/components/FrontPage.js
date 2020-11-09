@@ -11,6 +11,7 @@ import EricssonSection from './EricssonSection.js'
 import OtherSection from './OtherSection.js'
 import SkillsSection from './SkillsSection.js'
 import NewEducation from './NewEducation.js'
+import PersonalProjects from './PersonalProjects.js'
 import up_icon from "./../img/up_icon.svg"
 
 class FrontPage extends React.Component {
@@ -150,14 +151,11 @@ class FrontPage extends React.Component {
                         <div className="experiancesSections" ref={this.refDigitalEdge}>
                             <ProgWorkSection/>
                         </div>
-                        <div className="experiancesSections" ref={this.refApps}>
-                            <AppsSection/>
+						<div className="experiancesSections" ref={this.refApps}>
+                            <PersonalProjects/>
                         </div>
                         <div className="experiancesSections" ref={this.refService}>
                             <ServiceSection/>
-                        </div>
-                        <div className="experiancesSections" ref={this.refOther}>
-                            <OtherSection/>
                         </div>
                         <div className="experiancesSections" ref={this.refContact}>
                             <ContactSection/>
