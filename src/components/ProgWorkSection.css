@@ -18,22 +18,25 @@ text-align: center;
     height:calc((40vh + 20vw)*0.08);;
 }
 
-
-.workBody h1{
-  position: relative;
-  margin-top: 5vw;
-  margin-bottom: 0;
-  display: block;
-
-
-
+.lunicore_DigitalEdge{
+	padding-top: 0px;
+	padding-bottom: 50px;
 }
 
-.digitalEdgeBody h3{
-  margin: 30px;
+.lunicore_DigitalEdge h2{
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+
+.lunicore_DigitalEdge h4{
   margin-top: 5px;
+  margin-bottom: 0;
 }
 
+.lunicore_DigitalEdge p{
+  margin-top: 5px;
+  margin-bottom: 0;
+}
 
 
 .ericsson{
@@ -44,8 +47,19 @@ text-align: center;
 
 }
 
-.ericsson h3{
+.ericsson h2{
+  margin-bottom: 5px;
+}
+
+.ericsson h4{
   margin-top: 5px;
+  margin-bottom: 0;
+  color:#ffffff;
+}
+
+.ericsson p{
+  margin-top: 5px;
+  margin-bottom: 0;
   color:#ffffff;
 }
 
@@ -61,11 +75,23 @@ text-align: center;
   background-image: url("./../img/northlights.jpg");
   background-size: cover;
   background-position: center;
-
+	margin-top: 20px;
 }
 
-.space h3{
+.space h2{
+  margin-bottom: 5px;
+}
+
+
+.space h4{
   margin-top: 5px;
+  margin-bottom: 0;
+  color:#ffffff;
+}
+
+.space p{
+  margin-top: 5px;
+  margin-bottom: 0;
   color:#ffffff;
 }
 
