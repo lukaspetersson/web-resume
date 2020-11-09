@@ -1,10 +1,10 @@
 import React from 'react';
-import './PersonalProjects.css';
-import arrow_back from "./../img/arrow_back.svg"
-import arrow_forward from "./../img/arrow_forward.svg"
-import SmallBlock from "./SmallBlock.js";
+import './Projects.css';
+import arrow_back from "./../../img/arrow_back.svg"
+import arrow_forward from "./../../img/arrow_forward.svg"
+import StandardCard from "./../StandardCard.js";
 
-class PersonalProjects extends React.Component {
+class Projects extends React.Component {
     constructor(props){
             super(props)
             this.state = {
@@ -93,22 +93,22 @@ class PersonalProjects extends React.Component {
                 <img alt="" className="arrowsPersonalProjects" id="firstArrowPersonalProjects" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
                 <div className="personalProjectsContainer" ref={this.blocksContainerRef} >
 					<div className="personalProjects">
-						<SmallBlock info={this.state.ncpc} height={"350px"}/>
+						<StandardCard info={this.state.ncpc} height={"350px"}/>
 					</div>
 					<div className="personalProjects">
-						<SmallBlock info={this.state.carfree} height={"350px"}/>
+						<StandardCard info={this.state.carfree} height={"350px"}/>
 					</div>
 					<div className="personalProjects">
-						<SmallBlock info={this.state.axfood} height={"350px"}/>
+						<StandardCard info={this.state.axfood} height={"350px"}/>
 					</div>
 					<div className="personalProjects">
-						<SmallBlock info={this.state.booklog} height={"350px"}/>
+						<StandardCard info={this.state.booklog} height={"350px"}/>
 					</div>
 					<div className="personalProjects">
-						<SmallBlock info={this.state.other} height={"350px"}/>
+						<StandardCard info={this.state.other} height={"350px"}/>
 					</div>
 					<div className="personalProjects">
-						<SmallBlock info={this.state.ungaForskare} height={"350px"}/>
+						<StandardCard info={this.state.ungaForskare} height={"350px"}/>
 					</div>
                 </div>
                 <img alt="" className="arrowsPersonalProjects" id="secondArrowPersonalProjects" src={arrow_forward} onClick={() => this.scrollSide(1)} style = {this.state.arrowStyle.right}/>
@@ -117,4 +117,4 @@ class PersonalProjects extends React.Component {
         }
 }
 
-export default PersonalProjects;
+export default Projects;

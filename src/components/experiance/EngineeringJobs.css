@@ -36,7 +36,7 @@ text-align: center;
 
 .ericsson{
   height: auto;
-  background-image: url("./../img/kista_blur.jpg");
+  background-image: url("./../../img/kista_blur.jpg");
   background-size: cover;
   background-position: top;
 
@@ -68,7 +68,7 @@ text-align: center;
 
 .space{
   height: auto;
-  background-image: url("./../img/northlights.jpg");
+  background-image: url("./../../img/northlights.jpg");
   background-size: cover;
   background-position: center;
 	margin-top: 20px;

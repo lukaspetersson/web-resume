@@ -1,8 +1,8 @@
 import React from 'react';
-import './NewEducation.css';
+import './Education.css';
 
 
-class NewEducation extends React.Component {
+class Education extends React.Component {
 	constructor(props){
 		super(props)
 		this.state = {
@@ -77,4 +77,4 @@ class NewEducation extends React.Component {
 	}
 }
 
-export default NewEducation;
+export default Education;

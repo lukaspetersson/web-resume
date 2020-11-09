@@ -1,11 +1,11 @@
 import React from 'react';
-import './ContactSection.css';
+import './Contact.css';
 import email_logo from "./../img/email_logo.png"
 import phone_logo from "./../img/phone_logo.png"
 import linkedin_logo from "./../img/linkedin_logo.png"
 import github_logo from "./../img/github_logo.png"
 
-class ContactSection extends React.Component {
+class Contact extends React.Component {
     constructor(props){
             super(props)
             this.state = {}
@@ -36,4 +36,4 @@ class ContactSection extends React.Component {
     }
 }
 
-export default ContactSection;
+export default Contact;

@@ -1,11 +1,11 @@
 import React from 'react';
-import './NavigationBar.css';
+import './DownloadMenu.css';
 import ericsson_work_certificate from "./../downloads/ericsson_work_certificate.pdf"
 import transcript from "./../downloads/transcript.pdf"
 import resume from "./../downloads/resume.pdf"
 import digitaledge_work_certificate from "./../downloads/digitaledge_work_certificate.pdf"
 
-class NavigationBar extends React.Component {
+class DownloadMenu extends React.Component {
     constructor(props){
             super(props)
             this.state = {
@@ -93,4 +93,4 @@ class NavigationBar extends React.Component {
     }
 }
 
-export default NavigationBar;
+export default DownloadMenu;

@@ -1,25 +1,23 @@
 import React from 'react';
-import './ServiceSection.css'
+import './OtherJobs.css'
 
-import abbekas_logo from "./../img/abbekas_logo.jpg"
-import tui_logo from "./../img/tui_logo.png"
-import hemkop_logo from "./../img/hemkop_logo.png"
-import drottningholm_logo from "./../img/drottningholm_logo.jpg"
-import bedinge_logo from "./../img/bedinge_logo.png"
-import iesb_logo from "./../img/iesb_logo.png"
-import abbekas_back from "./../img/abbekas_back.jpg"
-import tui_back from "./../img/tui_back.jpg"
-import hemkop_back from "./../img/hemkop_back.jpg"
-import drottningholm_back from "./../img/drottningholm_back.jpg"
-import bedinge_back from "./../img/bedinge_back.jpg"
-import iesb_back from "./../img/iesb_back.jpg"
-import abbekas_work_certificate from "./../downloads/abbekas_work_certificate.pdf"
-import drottningholm_work_certificate from "./../downloads/drottningholm_work_certificate.png"
-import arrow_back from "./../img/arrow_back.svg"
-import arrow_forward from "./../img/arrow_forward.svg"
-import SmallBlock from "./SmallBlock.js";
+import abbekas_logo from "./../../img/abbekas_logo.jpg"
+import tui_logo from "./../../img/tui_logo.png"
+import hemkop_logo from "./../../img/hemkop_logo.png"
+import drottningholm_logo from "./../../img/drottningholm_logo.jpg"
+import bedinge_logo from "./../../img/bedinge_logo.png"
+import iesb_logo from "./../../img/iesb_logo.png"
+import abbekas_back from "./../../img/abbekas_back.jpg"
+import tui_back from "./../../img/tui_back.jpg"
+import hemkop_back from "./../../img/hemkop_back.jpg"
+import drottningholm_back from "./../../img/drottningholm_back.jpg"
+import bedinge_back from "./../../img/bedinge_back.jpg"
+import iesb_back from "./../../img/iesb_back.jpg"
+import arrow_back from "./../../img/arrow_back.svg"
+import arrow_forward from "./../../img/arrow_forward.svg"
+import StandardCard from "./../StandardCard.js";
 
-class ServiceSection extends React.Component {
+class OtherJobs extends React.Component {
     constructor(props){
             super(props)
             this.state = {
@@ -133,22 +131,22 @@ class ServiceSection extends React.Component {
                 <img alt="" className="arrowsService" id="firstArrowService" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
                     <div className="serviceContainer" ref={this.blocksContainerRef} >
                     <div className="service">
-                        <SmallBlock info={this.state.iesb} height={"430px"}/>
+                        <StandardCard info={this.state.iesb} height={"430px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.hemkop} height={"430px"}/>
+                        <StandardCard info={this.state.hemkop} height={"430px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.tui} height={"430px"}/>
+                        <StandardCard info={this.state.tui} height={"430px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.bedinge} height={"430px"}/>
+                        <StandardCard info={this.state.bedinge} height={"430px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.drottningholm} height={"430px"}/>
+                        <StandardCard info={this.state.drottningholm} height={"430px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.abbekas} height={"430px"}/>
+                        <StandardCard info={this.state.abbekas} height={"430px"}/>
                     </div>
                 </div>
                 <img alt="" className="arrowsService" id="secondArrowService" src={arrow_forward} onClick={() => this.scrollSide(1)} style = {this.state.arrowStyle.right}/>
@@ -157,4 +155,4 @@ class ServiceSection extends React.Component {
         }
 }
 
-export default ServiceSection;
+export default OtherJobs;

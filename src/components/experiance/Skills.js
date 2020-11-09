@@ -1,10 +1,10 @@
 import React from 'react';
-import './SkillsSection.css';
-import prog_lang from "./../img/prog_lang.png"
-import technologies from "./../img/technologies.png"
+import './Skills.css';
+import prog_lang from "./../../img/prog_lang.png"
+import technologies from "./../../img/technologies.png"
 
 
-class SkillsSection extends React.Component {
+class Skills extends React.Component {
 	constructor(props){
 		super(props)
 		this.state = {
@@ -40,4 +40,4 @@ class SkillsSection extends React.Component {
 	}
 }
 
-export default SkillsSection;
+export default Skills;

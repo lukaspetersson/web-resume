@@ -1,17 +1,17 @@
-.volunteerInvolvementBody{
+.involvementBody{
 
 }
 
-.volunteerInvolvementBody h4{
+.involvementBody h4{
 	color: white;
 }
 
-.volunteerInvolvementBody p{
+.involvementBody p{
 	color: white;
 }
 
 .ewb{
-	background-image: url("./../img/ewb_blur.jpg");
+	background-image: url("./../../img/ewb_blur.jpg");
 	background-position: center;
 	background-size:cover;
 	background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 }
 
 .fadder_farad{
-	background-image: url("./../img/fadder_arkad_blur.jpg");
+	background-image: url("./../../img/fadder_arkad_blur.jpg");
 	background-position: center;
 	background-size:cover;
 	background-repeat: no-repeat;

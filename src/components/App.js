@@ -1,18 +1,15 @@
 import React from 'react';
-import './FrontPage.css';
-import Resume from './Resume.js'
-import WelcomeSection from './WelcomeSection.js'
-import AppsSection from './AppsSection.js'
-import ServiceSection from './ServiceSection.js'
-import NavigationBar from './NavigationBar.js'
-import ContactSection from './ContactSection.js'
-import ProgWorkSection from './ProgWorkSection.js'
-import EricssonSection from './EricssonSection.js'
-import OtherSection from './OtherSection.js'
-import SkillsSection from './SkillsSection.js'
-import VolunteerInvolvement from './VolunteerInvolvement.js'
-import NewEducation from './NewEducation.js'
-import PersonalProjects from './PersonalProjects.js'
+import './App.css';
+import Content from './Content.js'
+import Intro from './Intro.js'
+import OtherJobs from './experiance/OtherJobs.js'
+import DownloadMenu from './DownloadMenu.js'
+import Contact from './Contact.js'
+import EngineeringJobs from './experiance/EngineeringJobs.js'
+import Skills from './experiance/Skills.js'
+import Involvement from './experiance/Involvement.js'
+import Education from './experiance/Education.js'
+import Projects from './experiance/Projects.js'
 import up_icon from "./../img/up_icon.svg"
 
 class FrontPage extends React.Component {
@@ -135,34 +132,34 @@ class FrontPage extends React.Component {
         return (
                 <div className="body">
                         <div className="navigationMenu">
-                            <NavigationBar scrollfromParent={this.handleScroll} menuColor={this.state.menuColor}/>
+                            <DownloadMenu scrollfromParent={this.handleScroll} menuColor={this.state.menuColor}/>
                         </div>
                         <div className="WelcomeSection">
-                            <WelcomeSection scrollfromParent={this.handleScroll} setCoverHeight={this.setCoverHeight}/>
+                            <Intro scrollfromParent={this.handleScroll} setCoverHeight={this.setCoverHeight}/>
                         </div>
                         <div className="experiancesSections" ref={this.refResume}>
-                            <Resume scrollfromParent={this.handleScroll} />
+                            <Content scrollfromParent={this.handleScroll} />
                         </div>
 						<div className="experiancesSections" ref={this.refOther}>
-                            <SkillsSection/>
+                            <Skills/>
                         </div>
 						<div className="experiancesSections" ref={this.refEducation}>
-                            <NewEducation/>
+                            <Education/>
                         </div>
                         <div className="experiancesSections" ref={this.refDigitalEdge}>
-                            <ProgWorkSection/>
+                            <EngineeringJobs/>
                         </div>
 						<div className="experiancesSections" ref={this.refApps}>
-                            <PersonalProjects/>
+                            <Projects/>
                         </div>
 						<div className="experiancesSections" ref={this.refService}>
-                            <VolunteerInvolvement/>
+                            <Involvement/>
                         </div>
                         <div className="experiancesSections" ref={this.refService}>
-                            <ServiceSection/>
+                            <OtherJobs/>
                         </div>
                         <div className="experiancesSections" ref={this.refContact}>
-                            <ContactSection/>
+                            <Contact/>
                         </div>
                         <div className="navigationButtons">
                             {downNav}

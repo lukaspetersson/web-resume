@@ -1,8 +1,8 @@
 import React from 'react';
-import './WelcomeSection.css';
+import './Intro.css';
 import down_logo from "./../img/down_logo.png"
 
-class WelcomeSection extends React.Component {
+class Intro extends React.Component {
     constructor(props){
             super(props)
             this.state = {
@@ -55,4 +55,4 @@ class WelcomeSection extends React.Component {
     }
 }
 
-export default WelcomeSection;
+export default Intro;

@@ -1,7 +1,7 @@
 import React from 'react';
-import './SmallBlock.css';
+import './StandardCard.css';
 
-class SmallBlock extends React.Component {
+class StandardCard extends React.Component {
     render() {
       var explorerUsed = !!navigator.userAgent.match(/Trident/g) || !!navigator.userAgent.match(/MSIE/g);
 
@@ -68,4 +68,4 @@ class SmallBlock extends React.Component {
     }
 }
 
-export default SmallBlock;
+export default StandardCard;

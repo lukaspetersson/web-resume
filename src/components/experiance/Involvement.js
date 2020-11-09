@@ -1,7 +1,7 @@
 import React from 'react';
-import './VolunteerInvolvement.css';
+import './Involvement.css';
 
-class VolunteerInvolvement extends React.Component {
+class Involvement extends React.Component {
 	constructor(props){
 		super(props)
 		this.state = {
@@ -39,7 +39,7 @@ class VolunteerInvolvement extends React.Component {
 		}
 
 		return (
-			<div className="volunteerInvolvementBody">
+			<div className="involvementBody">
 				<div>
 					<h1>Volunteer and Student Involvement</h1>
 					<div className="ewb" style={boxStyle}>
@@ -68,4 +68,4 @@ class VolunteerInvolvement extends React.Component {
 	}
 }
 
-export default VolunteerInvolvement;
+export default Involvement;

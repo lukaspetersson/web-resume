@@ -1,8 +1,8 @@
 import React from 'react';
-import './ProgWorkSection.css';
-import pepper_hello from "./../img/pepper_hello.gif"
+import './EngineeringJobs.css';
+import pepper_hello from "./../../img/pepper_hello.gif"
 
-class ProgWorkSection extends React.Component {
+class EngineeringJobs extends React.Component {
 	constructor(props){
 		super(props)
 		this.state = {
@@ -77,4 +77,4 @@ class ProgWorkSection extends React.Component {
 	}
 }
 
-export default ProgWorkSection;
+export default EngineeringJobs;

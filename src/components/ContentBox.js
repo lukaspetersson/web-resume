@@ -1,5 +1,5 @@
 import React from 'react';
-import './BoxResume.css';
+import './ContentBox.css';
 
 class BoxResume extends React.Component {
     constructor(props){

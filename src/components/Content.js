@@ -1,8 +1,7 @@
 import React from 'react';
-import './Resume.css';
-import BoxResume from "./BoxResume.js";
+import './Content.css';
+import ContentBox from "./ContentBox.js";
 import pepperPic from "./../img/pepper_transparent.png"
-import ericssonLogo from "./../img/ericsson_logo.svg"
 import educationLogo from "./../img/lund_logo.png"
 import bamseLogo from "./../img/bamse_logo.png"
 import c_logo from "./../img/c_logo.png"
@@ -101,22 +100,22 @@ class Resume extends React.Component {
         return (
             <div >
 				<div className="boxContainer" onClick={() => this.props.scrollfromParent("ericsson")} style={boxStyle}>
-                    <BoxResume info={this.state.experiance.skills}/>
+                    <ContentBox info={this.state.experiance.skills}/>
                 </div>
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("education")} style={boxStyle}>
-                    <BoxResume info={this.state.experiance.education}/>
+                    <ContentBox info={this.state.experiance.education}/>
                 </div>
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("progWork")} style={boxStyle}>
-                    <BoxResume info={this.state.experiance.progWork}/>
+                    <ContentBox info={this.state.experiance.progWork}/>
                 </div>
 				<div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}style={boxStyle}>
-					<BoxResume info={this.state.experiance.PersonalProjects}/>
+					<ContentBox info={this.state.experiance.PersonalProjects}/>
 				</div>
 				<div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}style={boxStyle}>
-					<BoxResume info={this.state.experiance.involvement}/>
+					<ContentBox info={this.state.experiance.involvement}/>
 				</div>
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("service")} style={boxStyle}>
-                    <BoxResume info={this.state.experiance.serviceJobs}/>
+                    <ContentBox info={this.state.experiance.serviceJobs}/>
                 </div>
             </div>
         );
