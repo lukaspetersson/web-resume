@@ -31,7 +31,7 @@ class Resume extends React.Component {
                         color: "rgb(191, 183, 33)",
                         subColor:"rgba(102, 98, 15, 0.7)"
                     },
-                    progWork: {
+                    engJobs: {
                         image:pepperPic,
                         title: "Engineering Jobs",
                         examples: ["Machine Learning Intern","IT Consultant", "Junior Software Developer", "Software Developer Intern"],
@@ -39,7 +39,7 @@ class Resume extends React.Component {
                         color: "rgb(191, 33, 33)",
                         subColor: "rgba(140, 8, 8, 0.7)"
                     },
-					PersonalProjects: {
+					projects: {
                         image:android_logo,
                         title: "Competitions and Projects",
                         examples: ["Programming Competition", "Carfree Stockholm", "Pitch for Senior Executives", "First Android Projects", "More Android Apps","Science Competition"],
@@ -99,22 +99,22 @@ class Resume extends React.Component {
         }
         return (
             <div >
-				<div className="boxContainer" onClick={() => this.props.scrollfromParent("ericsson")} style={boxStyle}>
+				<div className="boxContainer" onClick={() => this.props.scrollfromParent("skills")} style={boxStyle}>
                     <ContentBox info={this.state.experiance.skills}/>
                 </div>
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("education")} style={boxStyle}>
                     <ContentBox info={this.state.experiance.education}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("progWork")} style={boxStyle}>
-                    <ContentBox info={this.state.experiance.progWork}/>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("engJobs")} style={boxStyle}>
+                    <ContentBox info={this.state.experiance.engJobs}/>
                 </div>
-				<div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}style={boxStyle}>
-					<ContentBox info={this.state.experiance.PersonalProjects}/>
+				<div className="boxContainer" onClick={() => this.props.scrollfromParent("projects")}style={boxStyle}>
+					<ContentBox info={this.state.experiance.projects}/>
 				</div>
-				<div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}style={boxStyle}>
+				<div className="boxContainer" onClick={() => this.props.scrollfromParent("involvement")}style={boxStyle}>
 					<ContentBox info={this.state.experiance.involvement}/>
 				</div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("service")} style={boxStyle}>
+                <div className="boxContainer" onClick={() => this.props.scrollfromParent("otherJobs")} style={boxStyle}>
                     <ContentBox info={this.state.experiance.serviceJobs}/>
                 </div>
             </div>

@@ -65,6 +65,7 @@ user-select: none; /* Standard */
 .infoDisplay h1{
     position: relative;
     color:#ffffff;
+	text-decoration: none;
 }
 
 .divider {
