@@ -43,6 +43,7 @@
 .infoContainerWelcome h1{
   font-size:calc(1vw + 2.9vh);
     margin: 0;
+	text-decoration: none;
 }
 
 .welcomeBody img:hover{
