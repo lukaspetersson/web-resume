@@ -48,18 +48,18 @@ class VolunteerInvolvement extends React.Component {
 						<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Jul 2020 - Present</h4>
 						<p style={{fontSize:this.state.boxSize/40+"vw"}}>Responsible for the software in a Computer for Schools project. Building a classroom environment with Raspberry PIs for a school in Tanzania.</p>
 					</div>
-					<div className="fadder_arkad" style={boxStyle}>
+					<div className="fadder_farad" style={boxStyle}>
 						<div className="fadder">
 							<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>Mentor</h2>
 							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>F-Guild at LTH</h4>
 							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Sep 2020</h4>
-							<p style={{fontSize:this.state.boxSize/40+"vw"}}>Responsible for the software in a Computer for Schools project. Building a classroom environment with Raspberry PIs for a school in Tanzania.</p>
+							<p style={{fontSize:this.state.boxSize/40+"vw"}}>Organizing a Covid-19 friendly novice period put a lot of responsibility on the mentors. I learned a lot about leadership and my effort was highly appreciated by the novices.</p>
 						</div>
-						<div className="arkad">
-							<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>IT Manager / Chauffeur</h2>
-							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Farad / Arkad</h4>
-							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Jul 2020 - Present</h4>
-							<p style={{fontSize:this.state.boxSize/40+"vw"}}>Responsible for the software in a Computer for Schools project. Building a classroom environment with Raspberry PIs for a school in Tanzania.</p>
+						<div className="Farad">
+							<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>IT Manager</h2>
+							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Farad</h4>
+							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Okt 2019 - Feb 2020</h4>
+							<p style={{fontSize:this.state.boxSize/40+"vw"}}>Responsible for the website of the F-Guild’s Career Fair Days.</p>
 						</div>
 					</div>
 				</div>

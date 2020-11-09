@@ -56,15 +56,19 @@ class NewEducation extends React.Component {
 						<h2>Extracurricular</h2>
 						<div className="bigCard">
 							<h3>Fly a Rocket!</h3>
-							<p>Selected as one out of 24 students from Europe to participate in an ESA hands-on rocket science course. Participants take an online course to learn the theory and is finishing the course by building an launching the rocket from Andøya Space Center. </p>
+							<p>Selected as one out of 24 students from Europe to participate in a hands-on rocket science course by ESA.</p>
 						</div>
 						<div className="bigCard">
 							<h3>Computer Science</h3>
-							<p>Taking non-mandatory courses in Algorithms and data structures, advanced Java, and Discrete mathematics.</p>
+							<p>Additional courses in Algorithms and data structures, advanced Java, and Discrete mathematics.</p>
+						</div>
+						<div className="bigCard">
+							<h3>Philosophy</h3>
+							<p style={{paddingLeft:"36px", paddingRight:"35px"}}>Additional courses in Philosophy of Science and Theoretical Philosophy.</p>
 						</div>
 						<div className="bigCard">
 							<h3>Lund Startup Fellowship</h3>
-							<p>Selected as one out of seven students from Lund to participate in an 6-month hands-on programme in the startup community</p>
+							<p>Selected as one out of seven students from Lund to participate in a 6-month hands-on programme in the startup community.</p>
 						</div>
 					</div>
 				</div>

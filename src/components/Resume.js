@@ -27,15 +27,15 @@ class Resume extends React.Component {
                     education: {
                         image:educationLogo,
                         title: "Education",
-                        examples: ["Engineering Physics","Fly a Rocket!","Computer Science", "Lund Startup Fellowship"],
-                        examplesYear: ["Aug 2019 - Present", "Nov 2020 - Present" , "Jan 2020 - Present", "Okt 2019 - Jun 2020"],
+                        examples: ["Engineering Physics","Fly a Rocket!","Computer Science", "Philosophy", "Lund Startup Fellowship"],
+                        examplesYear: ["Aug 2019 - Present", "Nov 2020 - Present" , "Jan 2020 - Present", "Summer 2019", "Okt 2019 - Jun 2020"],
                         color: "rgb(191, 183, 33)",
                         subColor:"rgba(102, 98, 15, 0.7)"
                     },
                     progWork: {
                         image:pepperPic,
                         title: "Engineering Jobs",
-                        examples: ["Machine Learning Intern","Full Stack Developer", "Junior Software Developer", "Software Developer Intern"],
+                        examples: ["Machine Learning Intern","IT Consultant", "Junior Software Developer", "Software Developer Intern"],
                         examplesYear: ["Nov 2020 - Present", "Nov 2019 - Present", "Nov 2018 - Jul 2019", "Jan 2019 - May 2019"],
                         color: "rgb(191, 33, 33)",
                         subColor: "rgba(140, 8, 8, 0.7)"
@@ -43,22 +43,22 @@ class Resume extends React.Component {
 					PersonalProjects: {
                         image:android_logo,
                         title: "Competitions and Projects",
-                        examples: ["Programming Competition", "Carefree Stockholm", "Pitch for Senior Executives", "First Android Projects", "More Android Apps","Science Competition"],
-                        examplesYear: ["Nov 2020","Jul 2020 - Present", "Apr 2019", "Apr 2019", "2018 - Present", "Feb 2018"],
+                        examples: ["Programming Competition", "Carfree Stockholm", "Pitch for Senior Executives", "First Android Projects", "More Android Apps","Science Competition"],
+                        examplesYear: ["2020","2020 - Present", "2019", "2018 - 2019", "2018 - Present", "2018"],
                         color: "rgb(143, 33, 191)",
                         subColor: "rgba(65, 15, 86, 0.7)"
                     },
 					involvement: {
                         image:fsek,
                         title: "Volunteer and Involvement",
-                        examples: ["Engineers Without Borders", "Mentor", "Arkad / Farad"],
+                        examples: ["Engineers Without Borders", "Mentor", "Farad"],
                         examplesYear: ["Jul 2020 - Present", "Sep 2020", "Okt 2019 - Feb 2020"],
                         color: "rgb(33, 191, 117)",
                         subColor: "rgba(13, 86, 52, 0.7)"
                     },
                     serviceJobs: {
                         image:bamseLogo,
-                        title: "Service Jobs",
+                        title: "Other Jobs",
                         examples: ["Substitute teacher", "Sales Assistant ",  "Entertainer", "Waiter", "Golf coach", "Dishwasher"],
                         examplesYear: ["Oct - Nov 2018" , "Oct - Nov 2018", "Summer 2018", "Summer 2017",  "2015 - 2017", "Summer 2015 & 2016"],
                         color: "rgb(191, 33, 146)",

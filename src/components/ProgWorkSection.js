@@ -19,7 +19,7 @@ class ProgWorkSection extends React.Component {
 		var widthLimit = this.isMobile()? 550 : 510;
 		return (
 			<div className="workBody">
-				<h1>Engineering jobs</h1>
+				<h1>Engineering Jobs</h1>
 				<div className="space">
 					<div>
 						<h2>Machine Learning Intern</h2>
@@ -34,16 +34,16 @@ class ProgWorkSection extends React.Component {
 				</div>
 				<div className="lunicore_DigitalEdge">
 					<div>
-						<h2>Full Stack Developer</h2>
+						<h2>IT Consultant</h2>
 						<h4>Lunicore</h4>
 						<h4>Nov 2019 - Present, Part time</h4>
-						<p>Alongside my engineering studies I am working as a IT-consultant for Lunicore. The application process really put my ability to learn things to the test. I had to write a web database from scratch, something I had never done before. I first learned how to do it, and then made the website just in time for the 72h deadline. Since then my work at Lunicore have made me comfortable in backend development.</p>
+						<p>Full Stack development with the MERN stack. Made me comfortable working with backend development and APIs with bad documentation. As a consultant I learned the importance of an agile approach in dialogue with the customer.</p>
 					</div>
 					<div>
 						<h2>Junior Software Developer</h2>
 						<h4>Digital Edge</h4>
 						<h4>Nov 2018 - Jul 2019, Full time</h4>
-						<p>After spending much of my free time teaching myself to code, I got a job as a developer at Digital Edge. My hobby had become my full-time job! At Digital Edge I was programming a humanoid robot so that it can work as a receptionist. I used the front-end library Vue.js and the robot’s internal API Naoqi together with various web APIs and Python. I worked full time for 5 months and during the 4 months I had my internship at Ericsson, I worked at weekends.</p>
+						<p>Part of a small team who worked with the product that would become the start-up´s specialisation. I programmed a robot to work as a receptionist using VueJS for the frontend and Python for communication with the robot´s limbs. After a year the robot could do many more things.</p>
 					</div>
 				</div>
 
@@ -52,7 +52,7 @@ class ProgWorkSection extends React.Component {
 						<h2>Software Developer Intern</h2>
 						<h4>Ericsson</h4>
 						<h4>Jan 2019 - May 2019, Full time</h4>
-						<p>Working at two companies so different in terms of size was a great experience! It gave me valuable insight into what motivates me. As an intern the primary goal is to learn things. I worked with WebRTC and I built web apps with React.js and an Android app with Kotlin.</p>
+						<p>As an intern I learned a lot in a short amount of time as I got coaching from professionals in the industry. I made web applications using React.js and Android apps using Kotlin. Working at a huge global company taught me how such organizations operates.</p>
 					</div>
 				</div>
 			</div>

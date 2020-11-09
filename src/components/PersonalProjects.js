@@ -10,32 +10,32 @@ class PersonalProjects extends React.Component {
             this.state = {
 				ncpc:{
 					header: "NCPC Programming Competition",
-                    year:"Nov 2020",
+                    year:"2020",
                     description:"Finished 5th in Sweden in the Nordic ICPC qualifiers. This was achieved with a 2-man team despite the fact that the team size should be 3!",
                 },
 				carfree:{
-					header: "Co-Founder of Carefree Stockholm",
-                    year:"Jul 2020 - Present",
-                    description:"Developed a database with an associated user-friendly tool to redraw the map of Stockholm.  Carefree Stockholm is taking an engineering approach in creating a political party.",
+					header: "Co-Founder of Carfree Stockholm Party",
+                    year:"2020 - Present",
+                    description:"Carfree Stockholm is taking an engineering approach in creating a political party. I am mining data and writing algorithms to simulate the flow of traffic in a Stockholm without cars.",
                 },
 				axfood:{
 					header: "Pitch for Senior Executives",
-                    year:"Apr 2019",
-                    description:"Developed an Android app for managing expire dates in supermarkets. Pitched the app for four of the highest managers of Axfood and was offered a role developing their software.",
+                    year:"2019",
+                    description:"Developed an Android app for managing expire dates in supermarkets. I pitched the app for the senior executives of Axfood and was offered a role to develop their software.",
                 },
 				booklog:{
 					header: "First (of many) Android Projects",
-                    year:"Apr 2019",
+                    year:"2018 - 2019",
                     description:"BookLog was the Android app that made my programming passion explode. A virtual bookshelf that I use myself every day.",
                 },
 				other:{
 					header: "More Android Apps",
                     year:"2018 - Present",
-                    description:"Published the apps Falling Kitten and Brännbollräknare on the Google Play Store.",
+                    description:"Published the apps Falling Kitten and Brännbollräknare on the Google Play Store. Hopefully there will be more to come!",
                 },
 				ungaForskare:{
 					header: "Science Competition",
-                    year:"Feb 2018",
+                    year:"2018",
                     description:"Qualified for the semi finals in Unga Forskare with a physics research project.",
                 },
                 arrowStyle:{

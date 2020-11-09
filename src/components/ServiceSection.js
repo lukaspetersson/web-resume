@@ -129,8 +129,7 @@ class ServiceSection extends React.Component {
     render() {
         return (
             <div className="serviceBody">
-                <h1>Work - Service</h1>
-                <h3>Skills must be combined with hard work to achieve results. My former employers have been impressed by my work ethic and flexible mindset, I will do whatever the situation requires.</h3>
+                <h1>Other Jobs</h1>
                 <img alt="" className="arrowsService" id="firstArrowService" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
                     <div className="serviceContainer" ref={this.blocksContainerRef} >
                     <div className="service">
