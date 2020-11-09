@@ -5,8 +5,10 @@ import pepperPic from "./../img/pepper_transparent.png"
 import ericssonLogo from "./../img/ericsson_logo.svg"
 import educationLogo from "./../img/lund_logo.png"
 import bamseLogo from "./../img/bamse_logo.png"
-import moreLogo from "./../img/more_icon.png"
-import booklogLogo from "./../img/booklog.png"
+import c_logo from "./../img/c_logo.png"
+import android_logo from "./../img/android_logo.png"
+import fsek from "./../img/fsek.png"
+
 
 class Resume extends React.Component {
     constructor(props){
@@ -14,53 +16,53 @@ class Resume extends React.Component {
             this.state = {
                 boxSize: 100/3,
                 experiance:{
-                    education: {
-                        image:educationLogo,
-                        title: "Education",
-                        examples: ["Lund University","Kungsholmens gymnasium","Cambridge IGCSE", "Engelska Skolan"],
-                        examplesYear: ["2019 - Present" , "2015 - 2018", "2013 - 2015", " - 2015"],
+					skills: {
+                        image:c_logo,
+                        title: "Skills",
+                        examples: ["Java","Python","JavaScript", "C++", "Matlab", "Kotlin"],
+                        examplesYear: ["Android","ReactJS","Git", "Backend", "Algorithms","SQL", "TensorFlow"],
                         color: "rgb(34, 94, 191)",
                         subColor: "rgba(19, 54, 109, 0.7)"
                     },
+                    education: {
+                        image:educationLogo,
+                        title: "Education",
+                        examples: ["Engineering Physics","Fly a Rocket!","Computer Science", "Lund Startup Fellowship"],
+                        examplesYear: ["Aug 2019 - Present", "Nov 2020 - Present" , "Jan 2020 - Present", "Okt 2019 - Jun 2020"],
+                        color: "rgb(191, 183, 33)",
+                        subColor:"rgba(102, 98, 15, 0.7)"
+                    },
                     progWork: {
                         image:pepperPic,
-                        title: "Work - Programming",
-                        examples: ["Lunicore", "Digital Edge"],
-                        examplesYear: ["Nov 2019 - Present", "Nov 2018 - Jul 2019"],
+                        title: "Engineering Jobs",
+                        examples: ["Machine Learning Intern","Full Stack Developer", "Junior Software Developer", "Software Developer Intern"],
+                        examplesYear: ["Nov 2020 - Present", "Nov 2019 - Present", "Nov 2018 - Jul 2019", "Jan 2019 - May 2019"],
                         color: "rgb(191, 33, 33)",
                         subColor: "rgba(140, 8, 8, 0.7)"
                     },
-                    ericsson: {
-                        image:ericssonLogo,
-                        title: "Internship - Programming",
-                        examples: ["Ericsson"],
-                        examplesYear: ["Jan 2019 - May 2019"],
-                        color: "rgb(191, 33, 146)",
-                        subColor: "rgba(112, 19, 85, 0.7)"
-                    },
-                    mobileApps: {
-                        image:booklogLogo,
-                        title: "Android Apps",
-                        examples: ["Item Tracker", "BookLog","Falling Kitten", "Brännbollräknare"],
-                        examplesYear: ["2019", "2019", "2018", "2018"],
+					PersonalProjects: {
+                        image:android_logo,
+                        title: "Competitions and Projects",
+                        examples: ["Programming Competition", "Carefree Stockholm", "Pitch for Senior Executives", "First Android Projects", "More Android Apps","Science Competition"],
+                        examplesYear: ["Nov 2020","Jul 2020 - Present", "Apr 2019", "Apr 2019", "2018 - Present", "Feb 2018"],
                         color: "rgb(143, 33, 191)",
                         subColor: "rgba(65, 15, 86, 0.7)"
                     },
-                    serviceJobs: {
-                        image:bamseLogo,
-                        title: "Work - Service",
-                        examples: ["Engelska skolan", "Hemköp",  "TUI", "Bedinge GK", "Drottningholms GK", "Abbekås hamnkrog"],
-                        examplesYear: ["Oct - Nov 2018" , "Oct - Nov 2018", "summer 2018", "summer 2017",  "2015 - 2017", "summer 2015 & 2016"],
+					involvement: {
+                        image:fsek,
+                        title: "Volunteer and Involvement",
+                        examples: ["Engineers Without Borders", "Mentor", "Arkad / Farad"],
+                        examplesYear: ["Jul 2020 - Present", "Sep 2020", "Okt 2019 - Feb 2020"],
                         color: "rgb(33, 191, 117)",
                         subColor: "rgba(13, 86, 52, 0.7)"
                     },
-                    other: {
-                        image:moreLogo,
-                        title: "Other",
-                        examples: ["Engineers Without Borders","Kung-Fu","Liberal Youth party", "Alexa development","Brommapojkarna", "Unga forskare" ,"Erasmus +","Driver's license"],
-                        examplesYear: ["2020 - Present","summer 2019", "2018 - 2019", "2019", "2004 - 2019", "2018", "2017", "2017"],
-                        color: "rgb(191, 183, 33)",
-                        subColor: "rgba(102, 98, 15, 0.7)"
+                    serviceJobs: {
+                        image:bamseLogo,
+                        title: "Service Jobs",
+                        examples: ["Substitute teacher", "Sales Assistant ",  "Entertainer", "Waiter", "Golf coach", "Dishwasher"],
+                        examplesYear: ["Oct - Nov 2018" , "Oct - Nov 2018", "Summer 2018", "Summer 2017",  "2015 - 2017", "Summer 2015 & 2016"],
+                        color: "rgb(191, 33, 146)",
+                        subColor: "rgba(112, 19, 85, 0.7)"
                     },
                 }
             }
@@ -93,28 +95,28 @@ class Resume extends React.Component {
         var boxStyle ={
             height: this.state.boxSize+"vw",
             width: this.state.boxSize+"%",
-            fontSize: this.state.boxSize/30+"vw",
+            fontSize: this.state.boxSize/32+"vw",
             lineHeight: this.state.boxSize/30+"vw",
         }
         return (
             <div >
+				<div className="boxContainer" onClick={() => this.props.scrollfromParent("ericsson")} style={boxStyle}>
+                    <BoxResume info={this.state.experiance.skills}/>
+                </div>
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("education")} style={boxStyle}>
                     <BoxResume info={this.state.experiance.education}/>
                 </div>
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("progWork")} style={boxStyle}>
                     <BoxResume info={this.state.experiance.progWork}/>
                 </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("ericsson")} style={boxStyle}>
-                    <BoxResume info={this.state.experiance.ericsson}/>
-                </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}style={boxStyle}>
-                    <BoxResume info={this.state.experiance.mobileApps}/>
-                </div>
+				<div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}style={boxStyle}>
+					<BoxResume info={this.state.experiance.PersonalProjects}/>
+				</div>
+				<div className="boxContainer" onClick={() => this.props.scrollfromParent("apps")}style={boxStyle}>
+					<BoxResume info={this.state.experiance.involvement}/>
+				</div>
                 <div className="boxContainer" onClick={() => this.props.scrollfromParent("service")} style={boxStyle}>
                     <BoxResume info={this.state.experiance.serviceJobs}/>
-                </div>
-                <div className="boxContainer" onClick={() => this.props.scrollfromParent("other")} style={boxStyle}>
-                    <BoxResume info={this.state.experiance.other}/>
                 </div>
             </div>
         );

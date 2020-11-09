@@ -33,7 +33,7 @@ class NewEducation extends React.Component {
 	render() {
 		var boxStyle ={
 			width: this.state.boxSize+"%",
-			lineHeight: this.state.boxSize/30+"vw",
+			lineHeight: this.state.boxSize/25+"vw",
 		}
 		return (
 			<div className="newEducationBody">
@@ -56,7 +56,7 @@ class NewEducation extends React.Component {
 						<h2>Extracurricular</h2>
 						<div className="bigCard">
 							<h3>Fly a Rocket!</h3>
-							<p>Selected as one out of 20 students from Europe to participate in ESA hands-on rocket science course. Participants take an online course to learn the theory and is finishing the course by building an launching the rocket from Andøya Space Center. </p>
+							<p>Selected as one out of 24 students from Europe to participate in an ESA hands-on rocket science course. Participants take an online course to learn the theory and is finishing the course by building an launching the rocket from Andøya Space Center. </p>
 						</div>
 						<div className="bigCard">
 							<h3>Computer Science</h3>

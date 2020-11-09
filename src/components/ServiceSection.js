@@ -25,6 +25,7 @@ class ServiceSection extends React.Component {
             this.state = {
                 tui:{
                     year:"summer 2018",
+					title:"Entertainer",
                     description:"I spent the summer of 2018 in Greece working at a TUI hotel as an Entertainer. Me and my colleagues performed on stage and hosted family games. I had the time of my life and made some great friends!",
                     image: {
                       front: tui_logo,
@@ -33,6 +34,7 @@ class ServiceSection extends React.Component {
                 },
                 iesb:{
                     year:"Oct - Nov 2018",
+					title:"Substitute teacher",
                     description:"3 years after graduating from IESB I came back but this time in the role of a substitute teacher. My respect for teachers grew as I realised how challenging it is to inspire at the same time as to act with authority.",
                     image: {
                       front: iesb_logo,
@@ -41,6 +43,7 @@ class ServiceSection extends React.Component {
                 },
                 hemkop:{
                     year:"Oct - Nov 2018",
+					title:"Sales Assistant",
                     description:"At Hemköp I realised that the shelfs in a supermarket apparently don't get filled by themselves, but by hard work and time optimization.",
                     image: {
                       front: hemkop_logo,
@@ -49,6 +52,7 @@ class ServiceSection extends React.Component {
                 },
                 drottningholm:{
                     year:"2015 - 2017",
+					title:"Golf coach",
                     description:"Leadership, planning and organization were essential skills in my work as a golf instructor, although pronouncing all the names during attendance was by far the hardest part.",
                     image: {
                       front: drottningholm_logo,
@@ -57,6 +61,7 @@ class ServiceSection extends React.Component {
                 },
                 bedinge:{
                     year:"summer 2017",
+					title:"Waiter",
                     description:"Working in a smaller restaurant sets completely different requirements, and you can no longer specialize in one thing. I had become an amazing dishwasher at Abbekås, but now I had to learn new skills.",
                     image: {
                       front: bedinge_logo,
@@ -65,6 +70,7 @@ class ServiceSection extends React.Component {
                 },
                 abbekas:{
                     year:"summer 2015 & 2015",
+					title:"Dishwasher",
                     description:"My first ever job was a harsh but fun welcoming to working life. Washing dishes at a restaurant is an extremely stressful task. When the piles stack up, there is no time to waste.",
                     image: {
                       front: abbekas_logo,
@@ -125,31 +131,25 @@ class ServiceSection extends React.Component {
             <div className="serviceBody">
                 <h1>Work - Service</h1>
                 <h3>Skills must be combined with hard work to achieve results. My former employers have been impressed by my work ethic and flexible mindset, I will do whatever the situation requires.</h3>
-                <div className="quote">
-                    <a href={abbekas_work_certificate} title="Download work certificate" download="Lukas Petersson - Abbekås work certificate">"I can really recommend this young man, even if I would rather not, as I hope to have him many years to come" -Lotta Holm, Abbekås hamnkrog</a>
-                </div>
-                <div className="quote">
-                    <a href={drottningholm_work_certificate} title="Download work certificate" download="Lukas Petersson - Drottningholm work certificate">"I give him the highest possible grade" -Fredrik Lundgren, Drottningholms GK</a>
-                </div>
                 <img alt="" className="arrowsService" id="firstArrowService" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
                     <div className="serviceContainer" ref={this.blocksContainerRef} >
                     <div className="service">
-                        <SmallBlock info={this.state.iesb} height={"400px"}/>
+                        <SmallBlock info={this.state.iesb} height={"430px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.hemkop} height={"400px"}/>
+                        <SmallBlock info={this.state.hemkop} height={"430px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.tui} height={"400px"}/>
+                        <SmallBlock info={this.state.tui} height={"430px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.bedinge} height={"400px"}/>
+                        <SmallBlock info={this.state.bedinge} height={"430px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.drottningholm} height={"400px"}/>
+                        <SmallBlock info={this.state.drottningholm} height={"430px"}/>
                     </div>
                     <div className="service">
-                        <SmallBlock info={this.state.abbekas} height={"400px"}/>
+                        <SmallBlock info={this.state.abbekas} height={"430px"}/>
                     </div>
                 </div>
                 <img alt="" className="arrowsService" id="secondArrowService" src={arrow_forward} onClick={() => this.scrollSide(1)} style = {this.state.arrowStyle.right}/>

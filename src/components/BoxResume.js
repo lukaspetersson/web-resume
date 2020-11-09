@@ -43,10 +43,10 @@ class BoxResume extends React.Component {
         if(this.props.info.examples){
             var examples =[]
             var years = [];
+
             for(var i = 0; i < this.props.info.examples.length; i++){
                 examples.push(<p  key={"e"+i} >{this.props.info.examples[i]}</p>)
                 years.push(<p key={"y"+i}>{this.props.info.examplesYear[i]}</p>)
-
             }
         }
 
