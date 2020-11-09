@@ -10,6 +10,7 @@ import ProgWorkSection from './ProgWorkSection.js'
 import EricssonSection from './EricssonSection.js'
 import OtherSection from './OtherSection.js'
 import SkillsSection from './SkillsSection.js'
+import VolunteerInvolvement from './VolunteerInvolvement.js'
 import NewEducation from './NewEducation.js'
 import PersonalProjects from './PersonalProjects.js'
 import up_icon from "./../img/up_icon.svg"
@@ -153,6 +154,9 @@ class FrontPage extends React.Component {
                         </div>
 						<div className="experiancesSections" ref={this.refApps}>
                             <PersonalProjects/>
+                        </div>
+						<div className="experiancesSections" ref={this.refService}>
+                            <VolunteerInvolvement/>
                         </div>
                         <div className="experiancesSections" ref={this.refService}>
                             <ServiceSection/>

@@ -1,0 +1,47 @@
+.volunteerInvolvementBody{
+
+}
+
+.volunteerInvolvementBody h4{
+	color: white;
+}
+
+.volunteerInvolvementBody p{
+	color: white;
+}
+
+.ewb{
+	background-image: url("./../img/ewb_blur.jpg");
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	position: relative;
+    display: inline-block;
+	vertical-align: middle;
+
+}
+
+.ewb h2{
+	margin-top: 20%;
+}
+
+.fadder_arkad{
+	background-image: url("./../img/fadder_arkad_blur.jpg");
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	position: relative;
+    display: inline-block;
+	vertical-align: top;
+
+}
+
+.arkad{
+	position: absolute;
+	bottom: 0;
+}
+
+.fadder{
+	position: absolute;
+	top: 0;
+}

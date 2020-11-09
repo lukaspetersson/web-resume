@@ -48,7 +48,7 @@ class ProgWorkSection extends React.Component {
 				</div>
 
 				<div className="ericsson">
-					<div>
+					<div >
 						<h2>Software Developer Intern</h2>
 						<h4>Ericsson</h4>
 						<h4>Jan 2019 - May 2019, Full time</h4>

@@ -93,22 +93,22 @@ class PersonalProjects extends React.Component {
                 <img alt="" className="arrowsPersonalProjects" id="firstArrowPersonalProjects" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
                 <div className="personalProjectsContainer" ref={this.blocksContainerRef} >
 					<div className="personalProjects">
-						<SmallBlock info={this.state.ncpc} height={"370px"}/>
+						<SmallBlock info={this.state.ncpc} height={"350px"}/>
 					</div>
 					<div className="personalProjects">
-						<SmallBlock info={this.state.carfree} height={"370px"}/>
+						<SmallBlock info={this.state.carfree} height={"350px"}/>
 					</div>
 					<div className="personalProjects">
-						<SmallBlock info={this.state.axfood} height={"370px"}/>
+						<SmallBlock info={this.state.axfood} height={"350px"}/>
 					</div>
 					<div className="personalProjects">
-						<SmallBlock info={this.state.booklog} height={"370px"}/>
+						<SmallBlock info={this.state.booklog} height={"350px"}/>
 					</div>
 					<div className="personalProjects">
-						<SmallBlock info={this.state.other} height={"370px"}/>
+						<SmallBlock info={this.state.other} height={"350px"}/>
 					</div>
 					<div className="personalProjects">
-						<SmallBlock info={this.state.ungaForskare} height={"370px"}/>
+						<SmallBlock info={this.state.ungaForskare} height={"350px"}/>
 					</div>
                 </div>
                 <img alt="" className="arrowsPersonalProjects" id="secondArrowPersonalProjects" src={arrow_forward} onClick={() => this.scrollSide(1)} style = {this.state.arrowStyle.right}/>

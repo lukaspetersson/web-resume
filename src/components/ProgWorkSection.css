@@ -41,11 +41,12 @@ text-align: center;
 
 .ericsson{
   height: auto;
-  background-image: url("./../img/kista.jpg");
+  background-image: url("./../img/kista_blur.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
 
 }
+
 
 .ericsson h2{
   margin-bottom: 5px;
