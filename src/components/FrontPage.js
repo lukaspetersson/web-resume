@@ -150,9 +150,6 @@ class FrontPage extends React.Component {
                         <div className="experiancesSections" ref={this.refDigitalEdge}>
                             <ProgWorkSection/>
                         </div>
-                        <div className="experiancesSections" ref={this.refEricsson}>
-                            <EricssonSection/>
-                        </div>
                         <div className="experiancesSections" ref={this.refApps}>
                             <AppsSection/>
                         </div>

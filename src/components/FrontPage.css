@@ -36,7 +36,21 @@ h3{
 h2{
   color: #94C3F1;
   font-size:calc(0.7vw + 2.4vh);
-  margin-bottom: 0;
+
+}
+
+.headerCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.headerCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 }
 
 .navigationButtons{

@@ -1,4 +1,4 @@
-.digitalEdgeBody{
+.workBody{
 text-align: center;
 }
 
@@ -19,7 +19,7 @@ text-align: center;
 }
 
 
-.digitalEdgeBody h1{
+.workBody h1{
   position: relative;
   margin-top: 5vw;
   margin-bottom: 0;
@@ -32,4 +32,45 @@ text-align: center;
 .digitalEdgeBody h3{
   margin: 30px;
   margin-top: 5px;
+}
+
+
+
+.ericsson{
+  height: auto;
+  background-image: url("./../img/kista.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.ericsson h3{
+  margin-top: 5px;
+  color:#ffffff;
+}
+
+
+.ericsson div{
+  text-align: center;
+  padding: 4% 15%;
+}
+
+
+.space{
+  height: auto;
+  background-image: url("./../img/northlights.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.space h3{
+  margin-top: 5px;
+  color:#ffffff;
+}
+
+
+.space div{
+  text-align: center;
+  padding: 4% 15%;
 }

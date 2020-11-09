@@ -18,15 +18,22 @@ class SkillsSection extends React.Component {
         return (
 
             <div className="skillsBody">
-			<h1>Skills</h1>
+				<div className="headerCard"><h1>Skills</h1></div>
+				<div>
 
 				<div className="skill">
+					<div className="bigCard">
+
 				<h3>Languages</h3>
 					<img alt="" src={prog_lang}/>
+					</div>
 				</div>
 				<div className="skill">
+					<div className="bigCard">
 				<h3>Technologies</h3>
 					<img alt="" src={technologies}/>
+				</div>
+				</div>
 				</div>
             </div>
         );

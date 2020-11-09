@@ -33,33 +33,38 @@ class NewEducation extends React.Component {
     render() {
 		var boxStyle ={
             width: this.state.boxSize+"%",
-            fontSize: this.state.boxSize/30+"vw",
             lineHeight: this.state.boxSize/30+"vw",
         }
         return (
             <div className="newEducationBody">
-                <h1>Education</h1>
-				<div className="physics" style={boxStyle}>
-					<div className="bigCard">
-						<h2>Engineering Physics</h2>
-						<h3>Lund University</h3>
-						<h3>Aug 2019 - May 2024</h3>
-						<h3>GPA: 4.0/4</h3>
-						<p>As the most math-heavy degree in Sweden, Engineering Physics is a demanding choice of study, but one where you learn a lot. With courses in math, physics and computer science my problem-solving and analytical thinking skills are improving every single day.</p>
-						<h3>Key courses</h3>
-						<p>Linear Algebra, Multivariable Calculus, Complex Analysis</p>
-						<p>Quantum Physics, Mechanics, Wave Theory</p>
+				<div className="headerCard"><h1>Education</h1></div>
+				<div className="cardsSection">
+					<div className="physics" style={boxStyle}>
+						<div className="headerCard"><h2>Engineering Physics</h2></div>
+						<div className="bigCard">
+							<h3>Lund University</h3>
+							<h3>Aug 2019 - May 2024</h3>
+							<h3>GPA: 4.0/4</h3>
+							<p>As the most math-heavy degree in Sweden, Engineering Physics is a demanding choice of study, but one where you learn a lot. With courses in math, physics and computer science my problem-solving and analytical thinking skills are improving every single day.</p>
+							<h3>Key courses</h3>
+							<p>Linear Algebra, Multivariable Calculus, Complex Analysis</p>
+							<p>Quantum Physics, Mechanics, Wave Theory</p>
+						</div>
 					</div>
-				</div>
-				<div className="extracurricular" style={boxStyle}>
+					<div className="extracurricular" style={boxStyle}>
+						<div className="headerCard"><h2>Extracurricular</h2></div>
+						<div className="bigCard">
+						<h3>Fly a Rocket!</h3>
+						<p>Selected as one out of 20 students from Europe to participate in ESA hands-on rocket science course. Participants take an online course to learn the theory and is finishing the course by building an launching the rocket from Andøya Space Center. </p>
+</div>
 					<div className="bigCard">
-					<h2>Extracurricular</h2>
-					<h3>Fly a Rocket!</h3>
-					<p>Selected as one out of 20 students from Europe to participate in ESA hands-on rocket science course. Participants take an online course to learn the theory and is finishing the course by building an launching the rocket from Andøya Space Center. </p>
-					<h3>Computer Science</h3>
-					<p>Taking non-mandatory courses in Algorithms and data structures, advanced Java, and Discrete mathematics.</p>
-					<h3>Lund Startup Fellowship</h3>
-					<p>Selected as one out of seven students from Lund to participate in an 6-month hands-on programme in the startup community</p>
+						<h3>Computer Science</h3>
+						<p>Taking non-mandatory courses in Algorithms and data structures, advanced Java, and Discrete mathematics.</p>
+</div>
+					<div className="bigCard">
+							<h3>Lund Startup Fellowship</h3>
+						<p>Selected as one out of seven students from Lund to participate in an 6-month hands-on programme in the startup community</p>
+						</div>
 					</div>
 				</div>
             </div>
