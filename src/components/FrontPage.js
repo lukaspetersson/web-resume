@@ -10,6 +10,7 @@ import ProgWorkSection from './ProgWorkSection.js'
 import EricssonSection from './EricssonSection.js'
 import OtherSection from './OtherSection.js'
 import EducationSection from './EducationSection.js'
+import SkillsSection from './SkillsSection.js'
 import up_icon from "./../img/up_icon.svg"
 
 class FrontPage extends React.Component {
@@ -139,6 +140,9 @@ class FrontPage extends React.Component {
                         </div>
                         <div className="experiancesSections" ref={this.refResume}>
                             <Resume scrollfromParent={this.handleScroll} />
+                        </div>
+						<div className="experiancesSections" ref={this.refOther}>
+                            <SkillsSection/>
                         </div>
                         <div className="experiancesSections" ref={this.refEducation}>
                             <EducationSection/>

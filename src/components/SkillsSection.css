@@ -1,0 +1,22 @@
+.skillsBody{
+text-align: center;
+}
+
+
+.skill{
+	text-align: left;
+	position: relative;
+	display: inline-block;
+	vertical-align: text-top;
+	margin-left: 30px;
+	margin-right: 30px;
+
+}
+
+.skill h3{
+	text-align: center;
+}
+
+.skill img{
+	height: calc(16vh + 11vw);
+}
