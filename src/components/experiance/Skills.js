@@ -18,7 +18,7 @@ class Skills extends React.Component {
 		return (
 
 			<div className="skillsBody">
-				<div className="headerCard"><h1>Skills</h1></div>
+				<h1>Skills</h1>
 				<div>
 
 					<div className="skill">

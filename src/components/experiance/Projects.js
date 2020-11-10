@@ -88,30 +88,30 @@ class Projects extends React.Component {
     }
     render() {
         return (
-            <div className="personalProjectsBody">
+            <div className="projectsBody">
                 <h1>Competitions and Personal Projects</h1>
-                <img alt="" className="arrowsPersonalProjects" id="firstArrowPersonalProjects" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
-                <div className="personalProjectsContainer" ref={this.blocksContainerRef} >
-					<div className="personalProjects">
+                <img alt="" className="arrowsProjects" id="firstArrowProjects" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
+                <div className="projectsContainer" ref={this.blocksContainerRef} >
+					<div className="projects">
 						<StandardCard info={this.state.ncpc} height={"350px"}/>
 					</div>
-					<div className="personalProjects">
+					<div className="projects">
 						<StandardCard info={this.state.carfree} height={"350px"}/>
 					</div>
-					<div className="personalProjects">
+					<div className="projects">
 						<StandardCard info={this.state.axfood} height={"350px"}/>
 					</div>
-					<div className="personalProjects">
+					<div className="projects">
 						<StandardCard info={this.state.booklog} height={"350px"}/>
 					</div>
-					<div className="personalProjects">
+					<div className="projects">
 						<StandardCard info={this.state.other} height={"350px"}/>
 					</div>
-					<div className="personalProjects">
+					<div className="projects">
 						<StandardCard info={this.state.ungaForskare} height={"350px"}/>
 					</div>
                 </div>
-                <img alt="" className="arrowsPersonalProjects" id="secondArrowPersonalProjects" src={arrow_forward} onClick={() => this.scrollSide(1)} style = {this.state.arrowStyle.right}/>
+                <img alt="" className="arrowsProjects" id="secondArrowProjects" src={arrow_forward} onClick={() => this.scrollSide(1)} style = {this.state.arrowStyle.right}/>
             </div>
         );
         }

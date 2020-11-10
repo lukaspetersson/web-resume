@@ -4,6 +4,10 @@
     margin-top: 20px;
 }
 
+.newEducationBody h1{
+	color:rgb(191, 183, 33);
+}
+
 .newEducationBody div{
 	position: relative;
     display: inline-block;

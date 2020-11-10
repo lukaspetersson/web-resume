@@ -1,9 +1,15 @@
-.personalProjectsBody{
+.projectsBody{
     margin: -15px 0;
     height: auto;
     margin-top: 0;
 }
-.personalProjectsContainer{
+
+.projectsBody h1{
+    color: rgb(143, 33, 191);
+	margin-bottom: 0;
+}
+
+.projectsContainer{
     display: inline-block;
     white-space: nowrap;
     width: 100%;
@@ -15,31 +21,27 @@
     -ms-overflow-style: none;
 }
 
-.personalProjectsContainer::-webkit-scrollbar {
+.projectsContainer::-webkit-scrollbar {
     display: none;
 }
 
-.personalProjects{
+.projects{
     display: inline-block;
     position: relative;
     vertical-align:top;
     margin: 20px;
 }
 
-.arrowsPersonalProjects{
+.arrowsProjects{
     position: absolute;
     bottom: 182px;
     width: 64px;
     cursor: pointer;
     z-index: 3;
 }
-#firstArrowPersonalProjects{
+#firstArrowProjects{
       left:10px;
 }
-#secondArrowPersonalProjects{
+#secondArrowProjects{
       right:10px;
-}
-
-.personalProjectsBody h1{
-  margin-bottom: 0;
 }
