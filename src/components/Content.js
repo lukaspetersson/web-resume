@@ -80,11 +80,11 @@ class Resume extends React.Component {
               this.setState({
                 boxSize: 100/3
               })
-          }else if(window.innerWidth < 800 && window.innerWidth > 410){
+          }else if(window.innerWidth < 800 && window.innerWidth > 460){
               this.setState({
                 boxSize: 100/2
               })
-          }else if(window.innerWidth < 410){
+          }else if(window.innerWidth < 460){
               this.setState({
                 boxSize: 100
               })
