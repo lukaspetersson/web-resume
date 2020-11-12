@@ -56,7 +56,7 @@ class Education extends React.Component {
 						<h2>Extracurricular</h2>
 						<div className="bigCard">
 							<h3>Fly a Rocket!</h3>
-							<p>Selected as one out of 24 students from Europe to participate in a hands-on rocket science course by ESA.</p>
+							<p>Selected as one out of 24 students from Europe to participate in a hands-on rocket science course by The European Space Agency.</p>
 						</div>
 						<div className="bigCard">
 							<h3>Computer Science</h3>

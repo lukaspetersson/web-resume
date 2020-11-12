@@ -33,7 +33,7 @@ class Resume extends React.Component {
                     },
                     engJobs: {
                         image:pepperPic,
-                        title: "Engineering Jobs",
+                        title: "Professional Experience",
                         examples: ["Machine Learning Intern","IT Consultant", "Junior Software Developer", "Software Developer Intern"],
                         examplesYear: ["Nov 2020 - Present", "Nov 2019 - Present", "Nov 2018 - Jul 2019", "Jan 2019 - May 2019"],
                         color: "rgb(191, 33, 33)",
@@ -41,7 +41,7 @@ class Resume extends React.Component {
                     },
 					projects: {
                         image:android_logo,
-                        title: "Competitions and Projects",
+                        title: "Projects & Competitions",
                         examples: ["Programming Competition", "Carfree Stockholm", "Pitch for Senior Executives", "First Android Projects", "More Android Apps","Science Competition"],
                         examplesYear: ["2020","2020 - Present", "2019", "2018 - 2019", "2018 - Present", "2018"],
                         color: "rgb(143, 33, 191)",
@@ -49,7 +49,7 @@ class Resume extends React.Component {
                     },
 					involvement: {
                         image:fsek,
-                        title: "Volunteer and Involvement",
+                        title: "Volunteer & Involvement",
                         examples: ["Engineers Without Borders", "Mentor", "Farad"],
                         examplesYear: ["Jul 2020 - Present", "Sep 2020", "Okt 2019 - Feb 2020"],
                         color: "rgb(33, 191, 117)",

@@ -41,9 +41,9 @@ class Involvement extends React.Component {
 		return (
 			<div className="involvementBody">
 				<div>
-					<h1>Volunteer and Student Involvement</h1>
+					<h1>Volunteer & Involvement</h1>
 					<div className="ewb" style={boxStyle}>
-						<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>Software Project Manager</h2>
+						<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>Software Technician</h2>
 						<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Engineers Without Borders</h4>
 						<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Jul 2020 - Present</h4>
 						<p style={{fontSize:this.state.boxSize/40+"vw"}}>Responsible for the software in a Computer for Schools project. Building a classroom environment with Raspberry PIs for a school in Tanzania.</p>

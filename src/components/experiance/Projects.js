@@ -89,7 +89,7 @@ class Projects extends React.Component {
     render() {
         return (
             <div className="projectsBody">
-                <h1>Competitions and Personal Projects</h1>
+                <h1>Projects & Competitions</h1>
                 <img alt="" className="arrowsProjects" id="firstArrowProjects" src={arrow_back} onClick={() => this.scrollSide(-1)} style = {this.state.arrowStyle.left}/>
                 <div className="projectsContainer" ref={this.blocksContainerRef} >
 					<div className="projects">

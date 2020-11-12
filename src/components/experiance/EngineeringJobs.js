@@ -39,7 +39,7 @@ class EngineeringJobs extends React.Component {
 
 		return (
 			<div className="workBody">
-				<h1>Engineering Jobs</h1>
+				<h1>Professional Experience</h1>
 				<div className="space">
 					<div>
 						<h2>Machine Learning Intern</h2>
@@ -60,7 +60,7 @@ class EngineeringJobs extends React.Component {
 						<h2>Junior Software Developer</h2>
 						<h4>Digital Edge</h4>
 						<h4>Nov 2018 - Jul 2019, Full time</h4>
-						<p>Part of a small team who worked with the product that would become the start-up´s specialisation. I programmed a robot to work as a receptionist using VueJS for the frontend and Python for communication with the robot´s limbs. After a year the robot could do many more things.</p>
+						<p>Part of a small team who worked with the product that would become the start-up´s specialization. I programmed a robot to work as a receptionist using VueJS for the frontend and Python for communication with the robot´s limbs. After a year the robot could do many more things.</p>
 					</div>
 				</div>
 
