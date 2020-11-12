@@ -35,7 +35,7 @@ class Resume extends React.Component {
                         image:pepperPic,
                         title: "Professional Experience",
                         examples: ["Machine Learning Intern","IT Consultant", "Junior Software Developer", "Software Developer Intern"],
-                        examplesYear: ["Nov 2020 - Present", "Nov 2019 - Present", "Nov 2018 - Jul 2019", "Jan 2019 - May 2019"],
+                        examplesYear: ["Soon", "Nov 2019 - Present", "Nov 2018 - Jul 2019", "Jan 2019 - May 2019"],
                         color: "rgb(191, 33, 33)",
                         subColor: "rgba(140, 8, 8, 0.7)"
                     },

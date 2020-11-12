@@ -44,8 +44,8 @@ class EngineeringJobs extends React.Component {
 					<div>
 						<h2>Machine Learning Intern</h2>
 						<h4>Swedish Institute of Space Physics</h4>
-						<h4>Nov 2020 - Present, Part time</h4>
-						<p>Working at two companies so different in terms of size was a great experience! It gave me valuable insight into what motivates me. As an intern the primary goal is to learn things. I worked with WebRTC and I built web apps with React.js and an Android app with Kotlin.</p>
+						<h4>Soon, Part time</h4>
+						<p>Building a ML model with TensorFlow to predict northern lights based on space weather data. The project will start soon and will have given me valuable experience once the summer arrives.</p>
 					</div>
 				</div>
 				{pepper}
