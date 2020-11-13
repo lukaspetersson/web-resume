@@ -1,5 +1,9 @@
 Deploy with firebase
 
+npm run build
+
+flytta filerna i build till deployed mappen
+
 firebase --version
 
 om bash: firebase comand not found
