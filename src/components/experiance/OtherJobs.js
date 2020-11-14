@@ -22,9 +22,9 @@ class OtherJobs extends React.Component {
             super(props)
             this.state = {
                 tui:{
-                    year:"summer 2018",
+                    year:"Summer 2018",
 					title:"Entertainer",
-                    description:"I spent the summer of 2018 in Greece working at a TUI hotel as an Entertainer. Me and my colleagues performed on stage and hosted family games. I had the time of my life and made some great friends!",
+                    description:"I spent the Summer of 2018 in Greece working at a TUI hotel as an Entertainer. Me and my colleagues performed on stage and hosted family games. I had the time of my life and made some great friends!",
                     image: {
                       front: tui_logo,
                       back: tui_back
@@ -58,7 +58,7 @@ class OtherJobs extends React.Component {
                     }
                 },
                 bedinge:{
-                    year:"summer 2017",
+                    year:"Summer 2017",
 					title:"Waiter",
                     description:"Working in a smaller restaurant sets completely different requirements, and you can no longer specialize in one thing. I had become an amazing dishwasher at Abbekås, but now I had to learn new skills.",
                     image: {
@@ -67,7 +67,7 @@ class OtherJobs extends React.Component {
                     }
                 },
                 abbekas:{
-                    year:"summer 2015 & 2015",
+                    year:"Summer 2015 & 2016",
 					title:"Dishwasher",
                     description:"My first ever job was a harsh but fun welcoming to working life. Washing dishes at a restaurant is an extremely stressful task. When the piles stack up, there is no time to waste.",
                     image: {
