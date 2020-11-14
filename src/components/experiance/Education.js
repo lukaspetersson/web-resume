@@ -64,7 +64,7 @@ class Education extends React.Component {
 						</div>
 						<div className="bigCard">
 							<h3>Philosophy</h3>
-							<p style={{paddingLeft:"36px", paddingRight:"35px"}}>Additional courses in Philosophy of Science and Theoretical Philosophy.</p>
+							<p>Additional courses in Philosophy of Science and Theoretical Philosophy.</p>
 						</div>
 						<div className="bigCard">
 							<h3>Lund Startup Fellowship</h3>

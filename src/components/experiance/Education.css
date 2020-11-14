@@ -22,7 +22,13 @@
   margin-bottom: 20px;
   background-color: white;
   padding: 10px;
+  width: -moz-available;
+     width: -webkit-fill-available; 
+     width: fill-available;
+
 }
+
+
 
 .bigCard:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
