@@ -42,7 +42,7 @@ class Intro extends React.Component {
         return (
           <div>
             <div className="welcomeBody" style={{bottom: meHeight}}>
-                    <img alt="" src={down_logo} onClick={() => this.props.scrollfromParent("resume")} />
+                    <img alt="" src={down_logo} onClick={() => this.props.scrollfromParent("content")} />
                     {coverOver}
                     {barcaContainer}
             </div>
