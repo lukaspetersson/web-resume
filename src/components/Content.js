@@ -34,7 +34,7 @@ class Resume extends React.Component {
                     engJobs: {
                         image:pepperPic,
                         title: "Professional Experience",
-                        examples: ["Flight Software Systems Intern","IT Consultant", "Junior Software Developer", "Software Developer Intern"],
+                        examples: ["Flight Software Intern","IT Consultant", "Junior Software Developer", "Software Developer Intern"],
                         examplesYear: ["Summer 2021", "Nov 2019 - Present", "Nov 2018 - Jul 2019", "Jan 2019 - May 2019"],
                         color: "rgb(191, 33, 33)",
                         subColor: "rgba(140, 8, 8, 0.7)"
@@ -42,8 +42,8 @@ class Resume extends React.Component {
 					projects: {
                         image:android_logo,
                         title: "Projects & Competitions",
-                        examples: ["Programming Competition", "Carfree Stockholm", "Pitch for Senior Executives", "First Android Projects", "More Android Apps","Science Competition"],
-                        examplesYear: ["2020","2020 - Present", "2019", "2018 - 2019", "2018 - Present", "2018"],
+                        examples: ["Programming Competition", "Pitch for Senior Executives", "First Android Projects", "More Android Apps","Science Competition"],
+                        examplesYear: ["2020", "2019", "2018 - 2019", "2018 - Present", "2018"],
                         color: "rgb(143, 33, 191)",
                         subColor: "rgba(65, 15, 86, 0.7)"
                     },

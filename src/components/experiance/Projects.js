@@ -13,11 +13,6 @@ class Projects extends React.Component {
                     year:"2020",
                     description:"Finished 5th in Sweden in the Nordic ICPC qualifiers. This was achieved with a 2-man team despite the fact that the team size should be 3!",
                 },
-				carfree:{
-					header: "Co-Founder of Carfree Stockholm Party",
-                    year:"2020 - Present",
-                    description:"Carfree Stockholm is taking an engineering approach in creating a political party. I am mining data and writing algorithms to simulate the flow of traffic in a Stockholm without cars.",
-                },
 				axfood:{
 					header: "Pitch for Senior Executives",
                     year:"2019",
@@ -94,9 +89,6 @@ class Projects extends React.Component {
                 <div className="projectsContainer" ref={this.blocksContainerRef} >
 					<div className="projects">
 						<StandardCard info={this.state.ncpc} height={"350px"}/>
-					</div>
-					<div className="projects">
-						<StandardCard info={this.state.carfree} height={"350px"}/>
 					</div>
 					<div className="projects">
 						<StandardCard info={this.state.axfood} height={"350px"}/>
