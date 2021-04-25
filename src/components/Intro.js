@@ -48,7 +48,7 @@ class Intro extends React.Component {
             </div>
             <div className="infoContainerWelcome" ref={this.refMeText}>
               <h1>Hello!</h1>
-              <h3>I’m Lukas, a self-taught software developer with an entrepreneurial mindset currently studying M.Sc. Engineering Physics at Lund University. Driven by curiosity, I constantly seek new challenges and am committed to lifelong learning. My primary interests are within the STEM fields, but I also enjoy philosophy and politics. I am eager to explore new lands within programming in the future.</h3>
+              <h3>Most people outgrow their childhood desire to become an astronaut, but I have not. Becoming an adult has not diminished the awe I feel when I look up in the night sky. My name is Lukas and I am a M.Sc. Engineering Physics student and software hobbyist with a huge interest in understanding our universe.</h3>
             </div>
             </div>
         );
