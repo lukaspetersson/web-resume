@@ -42,8 +42,8 @@ class Resume extends React.Component {
 					projects: {
                         image:android_logo,
                         title: "Projects & Competitions",
-                        examples: ["Programming Competition", "Pitch for Senior Executives", "First Android Projects", "More Android Apps","Science Competition"],
-                        examplesYear: ["2020", "2019", "2018 - 2019", "2018 - Present", "2018"],
+                        examples: ["Programming Competition", "Shaolin Kunf Fu", "Pitch for Senior Executives", "First Android Projects", "More Android Apps","Science Competition"],
+                        examplesYear: ["2020", "2019", "2019", "2018 - 2019", "2018 - Present", "2018"],
                         color: "rgb(143, 33, 191)",
                         subColor: "rgba(65, 15, 86, 0.7)"
                     },

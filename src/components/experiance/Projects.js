@@ -13,6 +13,11 @@ class Projects extends React.Component {
                     year:"2020",
                     description:"Finished 5th in Sweden in the Nordic ICPC qualifiers. This was achieved with a 2-man team despite the fact that the team size should be 3!",
                 },
+				kungfu:{
+						header:"Shaolin Kunf Fu",
+						year:"2019",
+						description:"Went outside my comfort zone by traveling alone to a Martial art camp and training for 6 weeks."
+				},
 				axfood:{
 					header: "Pitch for Senior Executives",
                     year:"2019",
@@ -89,6 +94,9 @@ class Projects extends React.Component {
                 <div className="projectsContainer" ref={this.blocksContainerRef} >
 					<div className="projects">
 						<StandardCard info={this.state.ncpc} height={"350px"}/>
+					</div>
+					<div className="projects">
+						<StandardCard info={this.state.kungfu} height={"350px"}/>
 					</div>
 					<div className="projects">
 						<StandardCard info={this.state.axfood} height={"350px"}/>
