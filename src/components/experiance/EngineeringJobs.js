@@ -42,10 +42,10 @@ class EngineeringJobs extends React.Component {
 				<h1>Professional Experience</h1>
 				<div className="space">
 					<div>
-						<h2>Machine Learning Intern</h2>
-						<h4>Swedish Institute of Space Physics</h4>
-						<h4>Soon, Part time</h4>
-						<p>Building a ML model with TensorFlow to predict northern lights based on space weather data. The project will start soon and will have given me valuable experience once the summer arrives.</p>
+						<h2>Flight Software Systems Intern</h2>
+						<h4>European Space Agency</h4>
+						<h4>Summer 2021</h4>
+						<p>Implementation of a model-based workbench for system-engineering using Java and model transformation languages. Gave me insight into the space industry.</p>
 					</div>
 				</div>
 				{pepper}
