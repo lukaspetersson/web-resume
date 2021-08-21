@@ -14,8 +14,8 @@
 	color: white;
 }
 
-.ewb{
-	background-image: url("./../../img/ewb_blur.jpg");
+.formula{
+	background-image: url("./../../img/obj_detection_blur.png");
 	background-position: center;
 	background-size:cover;
 	background-repeat: no-repeat;
@@ -25,8 +25,10 @@
 
 }
 
-.ewb h2{
+.formula h2{
 	margin-top: 20%;
+	-webkit-text-stroke: 0.5px black;
+
 }
 
 .fadder_farad{

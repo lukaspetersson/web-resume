@@ -48,8 +48,8 @@ class Education extends React.Component {
 							<h4>GPA: 4.0/4</h4>
 							<p>As the most math-heavy degree in Sweden, Engineering Physics is a demanding choice of study, but one where you learn a lot. With courses in math, physics and computer science my problem-solving and analytical thinking skills are improving every single day.</p>
 							<h4>Key courses</h4>
-							<p>Linear Algebra, Multivariable Calculus, Complex Analysis</p>
-							<p>Quantum Physics, Mechanics, Wave Theory</p>
+							<p>Linear Algebra, Complex Analysis, PDEs, Linear Systems</p>
+							<p>Quantum Physics, Mechanics, Control Theory, Electronics</p>
 						</div>
 					</div>
 					<div className="extracurricular" style={boxStyle}>

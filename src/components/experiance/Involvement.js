@@ -42,11 +42,11 @@ class Involvement extends React.Component {
 			<div className="involvementBody">
 				<div>
 					<h1>Volunteer & Involvement</h1>
-					<div className="ewb" style={boxStyle}>
-						<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>Software Technician</h2>
-						<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Engineers Without Borders</h4>
-						<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Jul 2020 - Present</h4>
-						<p style={{fontSize:this.state.boxSize/40+"vw"}}>Responsible for the software in a Computer for Schools project. Building a classroom environment with Raspberry PIs for a school in Tanzania.</p>
+					<div className="formula" style={boxStyle}>
+						<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>Self Driving Engineer</h2>
+						<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Lund Formula Student</h4>
+						<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Aug 2020 - Present</h4>
+						<p style={{fontSize:this.state.boxSize/40+"vw"}}>I use ML and Control theory to make Sweden’s best Formula Student car self-driven. Building a map of the track with CNNs and SLAM and using PD-controllers for control</p>
 					</div>
 					<div className="fadder_farad" style={boxStyle}>
 						<div className="fadder">

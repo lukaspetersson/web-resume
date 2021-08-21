@@ -45,7 +45,9 @@ class EngineeringJobs extends React.Component {
 						<h2>Flight Software Systems Intern</h2>
 						<h4>European Space Agency</h4>
 						<h4>Summer 2021</h4>
-						<p>Implementation of a model-based workbench for system-engineering using Java and model transformation languages. Gave me insight into the space industry.</p>
+						<p>	• Implementing a syntax/sematic validator for a lowlevel language using modeling tools and Java</p>
+						<p>	• Significant improvement on existing technology</p>
+						<p>	• Paper publication and presentation for a conference</p>
 					</div>
 				</div>
 				{pepper}
@@ -54,13 +56,16 @@ class EngineeringJobs extends React.Component {
 						<h2>IT Consultant</h2>
 						<h4>Lunicore</h4>
 						<h4>Nov 2019 - Present, Part time</h4>
-						<p>Full Stack development with the MERN stack. Made me comfortable working with backend development and APIs with bad documentation. As a consultant I learned the importance of an agile approach in dialogue with the customer.</p>
+						<p>	• Helped small businesses digitalize by building full-stack websites and tools</p>
+						<p>	• Agile approach in dialogue with the customer</p>
 					</div>
 					<div>
-						<h2>Junior Software Developer</h2>
+						<h2>Junior Robotics Software Developer</h2>
 						<h4>Digital Edge</h4>
 						<h4>Nov 2018 - Jul 2019, Full time</h4>
-						<p>Part of a small team who worked with the product that would become the start-up´s specialization. I programmed a robot to work as a receptionist using VueJS for the frontend and Python for communication with the robot´s limbs. After a year the robot could do many more things.</p>
+						<p>	• Developed a big part of the robotic software which would become the start-up’s specialization</p>
+						<p>	• Enhanced robot-human interactions by building user friendly interfaces and implementing facial recognition and speech-to-text libraries</p>
+						<p>	• Outside the box thinking when implementing an Android solution for the robot’s microphone</p>
 					</div>
 				</div>
 
@@ -69,7 +74,9 @@ class EngineeringJobs extends React.Component {
 						<h2>Software Developer Intern</h2>
 						<h4>Ericsson</h4>
 						<h4>Jan 2019 - May 2019, Full time</h4>
-						<p>As an intern I learned a lot in a short amount of time as I got coaching from professionals in the industry. I made web applications using React.js and Android apps using Kotlin. Working at a huge global company taught me how such organizations operates.</p>
+						<p>	• Improved internal communication by creating a real-time file sharing web application with ReactJS</p>
+						<p>	• Built an improved Android phone app with Kotlin</p>
+						<p>	• Insight into how huge global companies operates</p>
 					</div>
 				</div>
 			</div>

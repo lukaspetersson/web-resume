@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.css';
-import prog_lang from "./../../img/prog_lang.png"
-import technologies from "./../../img/technologies.png"
+import cs_skills from "./../../img/cs_skills.jpg"
+import eng_skills from "./../../img/eng_skills.jpg"
 
 
 class Skills extends React.Component {
@@ -24,14 +24,14 @@ class Skills extends React.Component {
 					<div className="skill">
 						<div className="bigCard">
 
-							<h3>Languages</h3>
-							<img alt="" src={prog_lang}/>
+							<h3>Computer Science</h3>
+							<img alt="" src={cs_skills}/>
 						</div>
 					</div>
 					<div className="skill">
 						<div className="bigCard">
-							<h3>Technologies</h3>
-							<img alt="" src={technologies}/>
+							<h3>Engineering</h3>
+							<img alt="" src={eng_skills}/>
 						</div>
 					</div>
 				</div>
