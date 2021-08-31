@@ -40,16 +40,24 @@ class Education extends React.Component {
 				<div className="headerCard"><h1>Education</h1></div>
 				<div className="cardsSection">
 					<div className="physics" style={boxStyle}>
-						<h2>Degree</h2>
+						<h2>Degrees</h2>
 						<div className="bigCard">
 							<h3>M.Sc. Engineering Physics</h3>
 							<h4>Lund University</h4>
 							<h4>Aug 2019 - May 2024</h4>
 							<h4>GPA: 4.0/4</h4>
-							<p>As the most math-heavy degree in Sweden, Engineering Physics is a demanding choice of study, but one where you learn a lot. With courses in math, physics and computer science my problem-solving and analytical thinking skills are improving every single day.</p>
-							<h4>Key courses</h4>
-							<p>Linear Algebra, Complex Analysis, PDEs, Linear Systems</p>
-							<p>Quantum Physics, Mechanics, Control Theory, Electronics</p>
+							<h4>Key courses so far:</h4>
+							<p>Linear Algebra, PDEs, Numerical Analysis</p>
+							<p>Quantum/Nuclear/Atomic Physics, Mechanics, Electronics</p>
+						</div>
+						<div className="bigCard">
+							<h3>M.Sc. Engineering Mathematics</h3>
+							<h4>Lund University</h4>
+							<h4>Aug 2019 - May 2024</h4>
+							<h4>GPA: 4.0/4</h4>
+							<h4>Key courses so far:</h4>
+							<p>Complex Analysis, Discrete Math, Linear Systems</p>
+							<p>Control Theory, Algorithms and Data Structures</p>
 						</div>
 					</div>
 					<div className="extracurricular" style={boxStyle}>
@@ -57,6 +65,10 @@ class Education extends React.Component {
 						<div className="bigCard">
 							<h3>Fly a Rocket!</h3>
 							<p>Selected as one out of 24 students from Europe to participate in a hands-on rocket science course by The European Space Agency.</p>
+						</div>
+						<div className="bigCard">
+							<h3>Google Get Ahead</h3>
+							<p>Selected to participate in an algorithm course by Google.</p>
 						</div>
 						<div className="bigCard">
 							<h3>Computer Science</h3>

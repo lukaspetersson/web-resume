@@ -26,8 +26,8 @@ class Resume extends React.Component {
                     education: {
                         image:educationLogo,
                         title: "Education",
-                        examples: ["Engineering Physics","Fly a Rocket!","Computer Science", "Philosophy", "Lund Startup Fellowship"],
-                        examplesYear: ["Aug 2019 - Present", "Nov 2020 - Present" , "Jan 2020 - Present", "Summer 2019", "Okt 2019 - Jun 2020"],
+                        examples: ["Engineering Physics", "Engineering Mathematics", "Google Get Ahead","Fly a Rocket!","Computer Science", "Philosophy", "Lund Startup Fellowship"],
+                        examplesYear: ["Aug 2019 - Present", "Aug 2019 - Present","Jul 2021 - Aug 2021", "Nov 2020 - Oct 2021" , "Jan 2020 - Present", "Summer 2019", "Okt 2019 - Jun 2020"],
                         color: "rgb(191, 183, 33)",
                         subColor:"rgba(102, 98, 15, 0.7)"
                     },
