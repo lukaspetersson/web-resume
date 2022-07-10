@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.css';
-import cs_skills from "./../../img/cs_skills.jpg"
-import eng_skills from "./../../img/eng_skills.jpg"
+import cs_skills from "./../../img/cs_skills.svg"
+import eng_skills from "./../../img/eng_skills.svg"
 
 
 class Skills extends React.Component {
