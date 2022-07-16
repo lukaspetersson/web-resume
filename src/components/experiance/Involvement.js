@@ -41,25 +41,25 @@ class Involvement extends React.Component {
 		return (
 			<div className="involvementBody">
 				<div>
-					<h1>Volunteer & Involvement</h1>
+					<h1>Extracurricular</h1>
 					<div className="formula" style={boxStyle}>
 						<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>Self Driving Engineer</h2>
 						<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Lund Formula Student</h4>
-						<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Aug 2020 - Present</h4>
-						<p style={{fontSize:this.state.boxSize/40+"vw"}}>I use ML and Control theory to make Sweden’s best Formula Student car self-driven. Building a map of the track with CNNs and SLAM and using PD-controllers for control</p>
+						<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>July 2020 - Aug 2022</h4>
+						<p style={{fontSize:this.state.boxSize/40+"vw"}}>Turning Sweden’s best Formula Student car autonomous with ML and controls. Improved state estimation by building an Extended Kalman Filter library</p>
 					</div>
 					<div className="fadder_farad" style={boxStyle}>
 						<div className="fadder">
-							<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>Mentor</h2>
-							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>F-Guild at LTH</h4>
-							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Sep 2020</h4>
-							<p style={{fontSize:this.state.boxSize/40+"vw"}}>Organizing a Covid-19 friendly novice period put a lot of responsibility on the mentors. I learned a lot about leadership and my effort was highly appreciated by the novices.</p>
+							<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>Robotics Software Specialist</h2>
+							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>ARIS</h4>
+							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>July 2022 - Present</h4>
+							<p style={{fontSize:this.state.boxSize/40+"vw"}}>Underwater robot to explore the oceans of Jupiter and Saturn’s icy moons</p>
 						</div>
 						<div className="Farad">
-							<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>IT Manager</h2>
-							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Farad</h4>
-							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Okt 2019 - Feb 2020</h4>
-							<p style={{fontSize:this.state.boxSize/40+"vw"}}>Responsible for the website of the F-Guild’s Career Fair Days.</p>
+							<h2 style={{fontSize:this.state.boxSize/30+"vw"}}>Lund Startup Fellowship</h2>
+							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Skåne Startups</h4>
+							<h4 style={{fontSize:this.state.boxSize/40+"vw"}}>Nov 2019 - June 2020</h4>
+							<p style={{fontSize:this.state.boxSize/40+"vw"}}>Organised entrepreneurial events for up to hundreds of guests and co-funded startup society</p>
 						</div>
 					</div>
 				</div>

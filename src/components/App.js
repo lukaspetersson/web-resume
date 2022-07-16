@@ -10,6 +10,7 @@ import Skills from './experiance/Skills.js'
 import Involvement from './experiance/Involvement.js'
 import Education from './experiance/Education.js'
 import Projects from './experiance/Projects.js'
+import Writing from './experiance/Writing.js'
 
 class FrontPage extends React.Component {
     constructor(props){
@@ -29,6 +30,7 @@ class FrontPage extends React.Component {
             this.refSkills = React.createRef()
             this.refContact = React.createRef()
 			this.refOtherJobs = React.createRef()
+			this.refWriting = React.createRef()
 
             this.handleScroll = this.handleScroll.bind(this);
             this.setCoverHeight = this.setCoverHeight.bind(this);
@@ -77,6 +79,9 @@ class FrontPage extends React.Component {
 			case "otherJobs":
                 window.scrollTo(0, this.refOtherJobs.current.offsetTop);
                 break;
+			case "Writing":
+                window.scrollTo(0, this.refWriting.current.offsetTop);
+                break;
             case "contact":
                 window.scrollTo(0, this.refContact.current.offsetTop);
                 break;
@@ -99,17 +104,20 @@ class FrontPage extends React.Component {
 						<div className="experiancesSections" ref={this.refSkills}>
                             <Skills/>
                         </div>
+                        <div className="experiancesSections" ref={this.refEngineeringJobs}>
+                            <EngineeringJobs/>
+                        </div>
 						<div className="experiancesSections" ref={this.refEducation}>
                             <Education/>
                         </div>
-                        <div className="experiancesSections" ref={this.refEngineeringJobs}>
-                            <EngineeringJobs/>
+						<div className="experiancesSections" ref={this.refInvolvement}>
+                            <Involvement/>
                         </div>
 						<div className="experiancesSections" ref={this.refProjects}>
                             <Projects/>
                         </div>
-						<div className="experiancesSections" ref={this.refInvolvement}>
-                            <Involvement/>
+                        <div className="experiancesSections" ref={this.refWriting}>
+                            <Writing/>
                         </div>
                         <div className="experiancesSections" ref={this.refOtherJobs}>
                             <OtherJobs/>

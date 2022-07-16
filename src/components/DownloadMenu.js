@@ -1,6 +1,5 @@
 import React from 'react';
 import './DownloadMenu.css';
-import ericsson_work_certificate from "./../downloads/ericsson_work_certificate.pdf"
 import transcript from "./../downloads/transcript.pdf"
 import resume from "./../downloads/resume.pdf"
 import digitaledge_work_certificate from "./../downloads/digitaledge_work_certificate.pdf"
@@ -81,9 +80,7 @@ class DownloadMenu extends React.Component {
                         <br/>
                         <a href={transcript} title="Download" download="Lukas Petersson - transcript">University transcript</a>
                         <br/>
-                        <a href={ericsson_work_certificate} title="Download" download="Lukas Petersson - Ericsson work certificate">Ericsson work certificate</a>
                         <br/>
-                        <a href={digitaledge_work_certificate} title="Download" download="Lukas Petersson - Digital Edge work certificate">Digital Edge work certificate</a>
                         </div>
                     </div>
                 </div>
