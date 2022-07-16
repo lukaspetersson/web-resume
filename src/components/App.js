@@ -79,7 +79,7 @@ class FrontPage extends React.Component {
 			case "otherJobs":
                 window.scrollTo(0, this.refOtherJobs.current.offsetTop);
                 break;
-			case "Writing":
+			case "writing":
                 window.scrollTo(0, this.refWriting.current.offsetTop);
                 break;
             case "contact":
