@@ -3,6 +3,7 @@ Deploy with firebase
 npm run build
 
 flytta filerna i build till deployed mappen
+flytta även booklog mappen till deploy mappen
 
 firebase --version
 

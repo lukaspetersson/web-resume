@@ -91,9 +91,8 @@ class EngineeringJobs extends React.Component {
 						<h2>Software Engineering Intern</h2>
 						<h4>Ericsson</h4>
 						<h4>Jan 2019 - May 2019</h4>
-						<p>	• Improved internal communication by creating a real-time file sharing web application with ReactJS</p>
-						<p>	• Built an improved Android phone app with Kotlin</p>
 						<p>	• Improved internal communication by developing a real-time file sharing web app</p>
+						<p>	• Developed an improved Android phone app with Kotlin</p>
 					</div>
 				</div>
 			</div>
